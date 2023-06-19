@@ -1,0 +1,37 @@
+.account-page{
+	table>thead>tr{ background: #ededed;}
+}
+.form_order-filter{
+	.main-content{
+		@extend .silver-static;
+	}
+
+	footer{
+		.order-filter-small{
+			&:hover{
+				color: silver;
+			}
+			&.active{
+				background: $main-color-soft;
+				color: $main-normal-textcolor;
+				&>.text{
+					border-color: transparent;
+				}
+			}
+		}
+	}
+}
+.table_order-history{
+	.order-date{
+		color: #797979;
+	}
+	.order-status{
+		.when-payed{ color: #366e00;}
+	}
+}
+.profile-action{
+	@extend .btn-silver;
+}
+.btn-add-account-profile{
+	@include set-colors('.text', $main-normal-textcolor);
+}

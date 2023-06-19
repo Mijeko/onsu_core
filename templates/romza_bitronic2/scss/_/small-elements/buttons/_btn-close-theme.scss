@@ -1,0 +1,12 @@
+.btn-close{
+	color: #000;
+		
+	@include set-border-colors('.btn-text', transparent,
+							initial, initial, transparent);
+
+	.popup_map &{
+		color: #fff;
+		@include set-border-colors('.btn-text', transparent,
+							initial, initial, transparent);
+	}
+}

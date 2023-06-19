@@ -1,0 +1,84 @@
+.quantity-counter{
+	white-space: nowrap;
+	margin-bottom: 5px;
+	.btn-silver{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		width: 25px;
+		height: 25px;
+		border-radius: 3px;
+		
+		&:active {
+			.plus:before,
+			.plus:after,
+			.minus:before {
+				top: 0px;
+			}
+		}
+		&.quantity-change {
+			.plus:before, .plus:after, .minus:before {
+				background:#666;
+			}
+		}
+	}
+
+	.quantity-input{
+		display: inline-block;
+		vertical-align: middle;
+		height: 25px;
+		width: 40px;
+		padding: 0;
+		border-radius: 3px;
+		color: #000;
+		text-align: center;
+	}
+
+	.plus, .minus {
+		position: relative;
+		display: block;
+	}
+
+	.plus:before, .plus:after, .minus:before {
+		content: '';
+		position: absolute;
+		height: 2px;
+		width: 12px;
+		top: -1px;
+		left: 7px;
+		background:#aaa;
+	}
+
+	.disabled {
+		.plus:before, .plus:after, .minus:before {
+			left: 6px;
+		}
+	}
+
+	.plus:after {
+		transform: rotate(90deg);
+	}
+
+	@media (max-width: 767px){
+		.btn-silver{
+			width: 36px;
+			height: 36px;
+			&:active{
+				.plus:before,
+				.plus:after,
+				.minus:before {
+					top: 1px;
+				}
+			}
+		}
+		.quantity-input{
+			height: 37px;
+			font-size: 16px;
+		}
+		.plus:before, .plus:after, .minus:before {
+			left: 10px;
+			width: 16px;
+			top: 0;
+		}
+	}
+}/* .quantity-counter */

@@ -1,0 +1,161 @@
+.btn-city-toggle{
+	i:before{
+		margin-right: 0; // too big space with default 5px
+	}
+
+	@media (max-width: 767px){
+		display: inline-block;
+		vertical-align: middle;
+		border: 2px solid;
+		border-right: none;
+		padding: 0px 10px 0 5px;
+		height: 40px;
+		line-height: 38px;
+
+		text-transform: uppercase;
+
+		&>i:before{
+			// margin-top: -2px;
+		}
+	}
+}
+
+.time{
+	position: relative;
+	margin-left: 15px; // move away from city toggle
+	.time-content{
+		@media (min-width: 768px){
+			display: inline-block !important;
+			opacity: 1 !important;
+		}
+	}
+
+	.working-days, .holidays{
+		position: relative; // to position colored bars
+		display: inline-block;
+		
+
+		font-size: em(12px);
+		font-weight: bold;
+
+		&:hover{
+			cursor: help;
+		}
+	}
+
+	.notification-popup{
+		@media (min-width: 768px){
+			//display: inline !important;
+		}
+		z-index: 6;
+		width: 190px;
+		top: 105%;
+		margin-top: 10px;
+		left: 50%;
+		margin-left: -95px;
+		white-space: normal;
+		text-align: center;
+		padding: 5px;
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: 100%;
+			border: 6px solid transparent;
+			left: 50%;
+			margin-left: -6px;
+			border-bottom-color: fade-out(#000, 0.23);
+		}
+	}
+	
+	.bars{
+		position: absolute;
+		top: -2px;
+		left: 0;
+		right: 0;
+		height: 3px;
+		font-size: 0; // removing spaces between bars (inline-blocks)
+	}
+	.working-time{
+		position: relative;
+		border-bottom: 1px dotted;
+	}
+	.bar{
+		display: inline-block;
+		vertical-align: top;
+		height: 3px;
+		&.holiday{
+			width: 42%;
+			& + .bar{ margin-left: 16%;}
+		}
+		&.workday{
+			width: 15%;
+			& + .bar{ margin-left: 6.25%;}
+		}
+	}
+
+	.work-from:after{
+		content: ' -';
+	}
+
+	.working-days{
+		margin-right: 10px;
+		
+	}
+
+	@media (max-width: 767px){
+		.time-content{
+			display: none;
+			padding: 10px;
+			width: 150px;
+			position: absolute;
+			z-index: 6;
+			top: 100%;
+			left: 0;
+			&.um_popup-shown{
+				.notification-popup{
+					display: block !important;
+					opacity: 1 !important;
+				}
+			}
+			.working-days, .holidays{
+				display: block;
+			}
+			.working-days{
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+			.working-time{
+				border-bottom: none;
+			}
+		}
+		.notification-popup{
+			position: static;
+			padding: 0;
+			opacity: 1;
+			display: block;
+			margin-top: 0;
+			margin-left: 0;
+			width: auto;
+			text-align: left;
+			&:before{
+				display: none;
+			}
+		}
+		margin-left: 0;
+		&>i{
+			display: inline-block;
+			vertical-align: middle;
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			text-align: center;
+
+			&:before{
+				display: inline;
+				margin: 0;
+			}
+
+		}
+	}
+	
+}

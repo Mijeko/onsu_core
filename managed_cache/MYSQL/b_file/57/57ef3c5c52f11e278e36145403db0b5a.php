@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001684038244';
+$dateexpire = '001684041844';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{i:9927;a:16:{s:2:"ID";s:4:"9927";s:11:"TIMESTAMP_X";s:19:"02.08.2018 10:20:10";s:9:"MODULE_ID";s:6:"iblock";s:6:"HEIGHT";s:3:"512";s:5:"WIDTH";s:3:"512";s:9:"FILE_SIZE";s:5:"20100";s:12:"CONTENT_TYPE";s:9:"image/png";s:6:"SUBDIR";s:10:"iblock/6d8";s:9:"FILE_NAME";s:36:"6d88b265b282398b3339560bf0d027de.png";s:13:"ORIGINAL_NAME";s:16:"spring-rolls.png";s:11:"DESCRIPTION";s:0:"";s:10:"HANDLER_ID";N;s:11:"EXTERNAL_ID";s:32:"a7d51c7cb8e1b8f4b1f670cc54aa1628";s:19:"VERSION_ORIGINAL_ID";s:0:"";s:4:"META";s:0:"";s:3:"SRC";s:55:"/upload/iblock/6d8/6d88b265b282398b3339560bf0d027de.png";}i:9928;a:16:{s:2:"ID";s:4:"9928";s:11:"TIMESTAMP_X";s:19:"02.08.2018 10:20:10";s:9:"MODULE_ID";s:6:"iblock";s:6:"HEIGHT";s:3:"512";s:5:"WIDTH";s:3:"512";s:9:"FILE_SIZE";s:5:"20100";s:12:"CONTENT_TYPE";s:9:"image/png";s:6:"SUBDIR";s:10:"iblock/fe0";s:9:"FILE_NAME";s:36:"fe0d0e4906142ad7b975c94e8bea278c.png";s:13:"ORIGINAL_NAME";s:16:"spring-rolls.png";s:11:"DESCRIPTION";s:0:"";s:10:"HANDLER_ID";N;s:11:"EXTERNAL_ID";s:32:"eedeae20ad6e82da8b5da369bc54bf41";s:19:"VERSION_ORIGINAL_ID";s:0:"";s:4:"META";s:0:"";s:3:"SRC";s:55:"/upload/iblock/fe0/fe0d0e4906142ad7b975c94e8bea278c.png";}}}';
+return true;
+?>

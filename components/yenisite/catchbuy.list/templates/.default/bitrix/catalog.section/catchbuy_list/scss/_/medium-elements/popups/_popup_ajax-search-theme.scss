@@ -1,0 +1,22 @@
+.popup_ajax-search{
+	@extend .silver-static;
+}
+
+.ajax-search-item{
+	&:hover{
+		background: #e8e8e8;
+	}
+}
+
+.avail-dot{
+	background: #f8f8f8;
+	box-shadow: inset 0px 1px 5px fade-out(#000, 0.69);
+	&.when-in-stock:before{
+		background: #327a12; // fallback from gradient
+		background: linear-gradient(#8cc926, #327a12);
+	}
+	&.when-out-of-stock:before{
+		background: #8b1d23; // fallback from gradient
+		background: linear-gradient(#8b1d23, #fc4448);
+	}
+}

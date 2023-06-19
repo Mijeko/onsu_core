@@ -1,0 +1,97 @@
+.account-personal-order-list {
+	.bx-content {
+		.sale-order-list-container { border: 1px solid $main-color-soft; }
+		.sale-order-list-button, .sale-order-detail-about-order-inner-container-repeat,
+		input[type="submit"], input[type="button"], button {
+			@include btn-main;
+		}
+
+		.sale-order-link,
+		.sale-order-history-link,
+		.sale-order-list-about-link,
+		.sale-order-list-repeat-link,
+		.sale-order-list-cancel-link,
+		.sale-order-detail-about-order-inner-container-repeat {
+			@extend .link-std;
+		}
+		.inactive-button {@include btn-silver;}
+	}
+}
+
+.account-personal-order-detailed {
+	.bx-content {
+		.sale-order-detail-about-order-inner-container-repeat-button,
+		.sale-order-detail-payment-options-methods-button-element,
+		input[type="submit"], input[type="button"], button, .btn-theme {
+			@include btn-main;
+		}
+		.sale-order-detail-about-order-inner-container-repeat-button,
+		.sale-order-detail-payment-options-methods-button-element,
+		input[type="submit"], input[type="button"], button, .btn-theme {
+			&.inactive-button {@include btn-silver;}
+		}
+
+		.sale-order-detail-general {
+			&,
+			.sale-order-detail-order-item-imgcontainer,
+			.sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-graf-container {
+				border-color: $main-color-soft;
+			}
+			.sale-order-detail-general-head {
+				@include main-normal;
+				.sale-order-detail-general-item { color: $main-normal-textcolor; }
+			}
+		}
+
+		.sale-order-detail-about-order-inner-container-repeat-button,
+		.sale-order-detail-show-link,
+		.sale-order-detail-back-to-list-link-up,
+		.sale-order-detail-back-to-list-link-down,
+		.sale-order-detail-order-item-title a,
+		.sale-order-detail-about-order-inner-container-name-read-more,
+		.sale-order-detail-payment-options-methods-info-change-link,
+		.sale-order-detail-about-order-inner-container-name-read-less,
+		.sale-order-detail-hide-link,
+		.sale-order-list-cancel-payment,
+		.sale-order-list-change-payment {
+			@extend .link-std;
+		}
+
+		.sale-order-detail-about-order-inner-container-repeat-cancel {
+			@include set-colors(false, #aaa);
+			@include set-border-colors(false, transparent, initial, initial, transparent);
+		}
+
+		div.sale-order-detail-payment-options-methods {
+			&.sale-order-detail-active-event {
+				div.sale-order-detail-payment-options-methods-template { border-color: $main-color-soft; }
+			}
+		}
+	}
+}
+
+.account-personal-money {
+	.bx-content {
+		.sale-personal-account-wallet-container {
+			[data-styling-type="skew"] & {@include main-normal;}
+		}
+		.sale-personal-account-wallet-title {
+			[data-styling-type="skew"] & {background: none;}
+			[data-styling-type="flat"] & {@include main-clicked;}
+		}
+		
+		.sale-personal-account-wallet-list-container {
+			[data-styling-type="skew"] & {background: none;}
+			[data-styling-type="flat"] & {@include main-normal;}
+			.sale-personal-account-wallet-currency>* { color: $main-normal-textcolor; }
+		}
+
+		.sale-acountpay-pp-company {
+			&:hover .sale-acountpay-pp-company-graf-container { border-color: $main-color-light; }
+			&.bx-selected .sale-acountpay-pp-company-graf-container { border-color: $main-color-soft; }
+		}
+
+		.sale-account-pay-button, .bx-sap input[type="submit"] { @include btn-main; }
+		.inactive-button {@include btn-silver;}
+	}
+}

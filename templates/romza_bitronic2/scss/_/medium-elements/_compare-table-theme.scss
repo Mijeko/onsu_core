@@ -1,0 +1,34 @@
+.deleted-properties {
+	.deleted-property { @extend .link; }
+}
+
+.compare-outer-wrapper .scroller__track_h {
+	@include scroller__track_h-theme;
+	&>.scroller__bar_h { @include scroller__bar_h-theme; }
+}
+
+.compare-items {
+	.compare-switch {
+		@include btn-silver;
+		&.active { @include main-clicked; }
+	}
+
+	.compare-item .drag-handle {
+		background: $main-color-dark;
+		&:hover { background: lighten($main-color-dark, 10%); }
+		&:active { background: darken($main-color-dark, 10%); }
+	}
+}
+
+.compare-table .section-toggle {
+	@include set-colors(false, #000, lighten(#000, 50%));
+}
+
+.m-compare-table {
+	.btn-delete {
+		@include btn-silver;
+		&:hover, &:active {
+			> i { color: #000; }
+		}
+	}
+}

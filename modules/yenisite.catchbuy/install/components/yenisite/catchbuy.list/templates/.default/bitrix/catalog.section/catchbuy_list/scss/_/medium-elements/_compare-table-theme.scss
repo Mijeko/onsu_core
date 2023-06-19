@@ -1,0 +1,85 @@
+.deleted-properties{
+	.deleted-property{
+		@extend .link;
+	}
+}
+
+.compare-outer-wrapper{
+	border-color: silver;
+	.scroller__track_h{
+		@include scroller__track_h-theme;
+
+		&>.scroller__bar_h{
+			@include scroller__bar_h-theme;
+		}
+	}
+}
+.compare-items{
+	.compare-category{
+		background: #efefef;
+	}
+	.compare-switch{
+		@extend .btn-silver;
+		&.active{
+			@extend .main-clicked;
+		}
+	}
+
+	.desc{
+		background: url('../../img/bg/compare.png') no-repeat top center;
+	}
+	.compare-item{
+		.drag-handle{
+			background: $main-color-dark;
+			&:hover{
+				background: lighten($main-color-dark, 10%);
+			}
+			&:active{
+				background: darken($main-color-dark, 10%);
+			}
+		}
+	}
+}
+.compare-table{
+	.compare-item-name{
+		background: #eaeaea;
+	}
+	thead > tr{ 
+		background-color: #fff;
+	}
+	tbody tr:nth-of-type(odd), tbody tr.odd{
+		background-color: #fff;
+	}
+	tbody tr:nth-of-type(even), tbody tr.even{ background-color: #f3eff5;}
+	
+	.section-toggle{
+		@include set-colors(false, #000, lighten(#000, 50%));
+	}
+
+	tbody>tr.hovered{
+		background: #fff6a8;
+	}
+	// td:nth-child(even), th:nth-child(even){
+	// 	background: fade-out(#000, 0.95);
+	// }
+
+	// th{
+	// 	&.hovered:not(:first-child){
+	// 		background: fade-out($main-color-dark, 0.6);
+	// 	}
+	// }
+	
+	// td{ 
+	// 	&.hovered{
+	// 		background: fade-out($main-color-dark, 0.6);
+	// 	}
+	// }
+
+	// &.clone{
+	// 	&.header{
+	// 		th.hovered:not(:first-child){
+	// 			background: fade-out($main-color-dark, 0.6);
+	// 		}
+	// 	}
+	// }
+}

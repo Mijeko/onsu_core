@@ -1,0 +1,149 @@
+// if we set colors for current selector, then $internal-class
+// must be false. Otherwise colors are set for that class inside
+// current selector
+@mixin set-colors($internal-class, $base, 
+					$hover: $base,
+					$active: $base,
+					$visited: $base){
+	@if $internal-class == false {
+		&, &:link{ color: $base;}
+		&:visited{ color: $visited;}
+		&:hover{ color: $hover;}
+		&:active{ color: $active;}
+	} @else {
+		& #{$internal-class}, &:link #{$internal-class}{ color: $base;}
+		&:visited #{$internal-class}{ color: $visited;}
+		&:hover #{$internal-class}{ color: $hover;}
+		&:active #{$internal-class}{ color: $active;}
+	}
+}
+@mixin set-border-colors($internal-class, $base, 
+					$hover: $base,
+					$active: $base,
+					$visited: $base){
+	@if $internal-class == false {
+		&, &:link{ border-color: fade-out($base, 0.6);}
+		&:visited{ border-color: fade-out($visited, 0.6);}
+		&:hover{ border-color: $hover;}
+		&:active{ border-color: $active;}	
+	} @else {
+		& #{$internal-class}, &:link #{$internal-class}{ border-color: fade-out($base, 0.6);}
+		&:visited #{$internal-class}{ border-color: fade-out($visited, 0.6);}
+		&:hover #{$internal-class}{ border-color: $hover;}
+		&:active #{$internal-class}{ border-color: $active;}
+	}
+	
+}
+
+@mixin scroller__track_h-theme{
+	background-color: #f0f0f0;
+	box-shadow: $scroll-track-h-shadow;
+	&:before{
+	    background: #c0c0c0;
+	    box-shadow: $scroll-h-innertrack-shadow;
+	}
+}
+@mixin scroller__bar_h-theme{
+	background: $scroll-bar-h-bg;
+    box-shadow: $scroll-bar-h-shadow;
+    &:before{
+        color: #cbcdcc;
+    }
+
+    &:hover{
+    	background: $scroll-bar-h-hovered-bg;
+    }
+
+    &:active, &.dragged{
+    	box-shadow: $scroll-bar-h-active-shadow;
+    	background: $scroll-bar-h-active-bg;
+    }
+}
+
+@mixin main-normal{
+	color: 		$main-normal-textcolor;
+	fill: 		$main-normal-textcolor;
+	text-shadow:$main-normal-textshadow;
+	background: $main-normal-bg;
+	box-shadow: $main-normal-shadow;
+
+	&>.text, &>i, &:before, &:after{ color: $main-normal-textcolor;}
+}
+@mixin main-hovered{
+	color: 		$main-hovered-textcolor;
+	fill: 		$main-hovered-textcolor;
+	text-shadow:$main-hovered-textshadow;
+	background: $main-hovered-bg;
+	box-shadow: $main-hovered-shadow;
+
+	&>.text, &>i, &:before, &:after{ color: $main-hovered-textcolor;}
+}
+@mixin main-clicked{
+	color: 		$main-clicked-textcolor;
+	fill: 		$main-clicked-textcolor;
+	text-shadow:$main-clicked-textshadow;
+	background: $main-clicked-bg;
+	box-shadow: $main-clicked-shadow;
+
+	&>.text, &>i, &:before, &:after{ color: $main-clicked-textcolor;}
+}
+@mixin btn-main{
+	&, &:visited, &:focus, &:link { @include main-normal;}
+	&:hover{ @include main-hovered;}
+	&:active{ @include main-clicked;}
+}
+@mixin btn-main__black{
+	&, &:visited, &:hover, &:active, &:focus, &:link {
+		color: $main-normal-textcolor__black;
+		fill: $main-normal-textcolor__black;
+	}
+	&>.text, &>i, &:before, &:after { color: $main-normal-textcolor__black; }
+}
+
+@mixin silver-static{
+	color: 		$silver-static-textcolor;
+	fill: 		$silver-static-textcolor;
+	background: $silver-static-bg;
+	box-shadow: $silver-static-shadow;
+	border: 	$silver-static-border;
+}
+@mixin silver-normal{
+	color: 		$silver-normal-textcolor;
+	fill: 		$silver-normal-textcolor;
+	text-shadow:$silver-normal-textshadow;
+	background: $silver-normal-bg;
+	box-shadow: $silver-normal-shadow;
+	border: 	none;
+}
+@mixin silver-hovered{
+	color: 		$silver-hovered-textcolor;
+	fill: 		$silver-hovered-textcolor;
+	text-shadow:$silver-hovered-textshadow;
+	background: $silver-hovered-bg;
+	box-shadow: $silver-hovered-shadow;
+	border: 	none;
+}
+@mixin silver-clicked{
+	color: 		$silver-clicked-textcolor;
+	fill: 		$silver-clicked-textcolor;
+	text-shadow:$silver-clicked-textshadow;
+	background: $silver-clicked-bg;
+	box-shadow: $silver-clicked-shadow;
+	border: 	none;
+}
+@mixin silver-disabled{
+	color: 		$silver-disabled-textcolor;
+	fill: 		$silver-disabled-textcolor;
+	text-shadow:$silver-disabled-textshadow;
+	background: $silver-disabled-bg;
+	box-shadow: $silver-disabled-shadow;
+	border: 	1px solid $silver-disabled-bordercolor;
+}
+@mixin btn-silver{
+	&, &:visited, &:focus, &:link {
+		@include silver-normal;
+	}
+	&:hover{ @include silver-hovered;}
+	&:active{ @include silver-clicked;}
+	&.disabled{ @include silver-disabled;}
+}

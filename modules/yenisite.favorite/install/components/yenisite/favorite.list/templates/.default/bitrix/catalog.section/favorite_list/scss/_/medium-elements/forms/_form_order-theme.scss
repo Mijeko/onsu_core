@@ -1,0 +1,40 @@
+.form-order{
+	h3{
+		color: #2b3946;
+		border-bottom-color: #c8c2cb;
+	}
+
+	input[name="payer-type"]+.radio-content, .delivery-info{
+		color: #5a555d;
+	}
+	
+	.delivery-type, .payment-system-type{
+		.radio-item{
+			border-color: transparent;
+			&-header{ color: #5a555d;}
+			&-description{ color: #5a555d;}
+
+			&:hover{
+				border-color: #c8c2cb;
+				box-shadow: 0px 1px 4px fade-out(#000, 0.5);
+			}
+		}
+		input:checked+.radio-item{
+			border-color: $main-color-dark;
+			box-shadow: 0px 1px 4px fade-out(#000, 0.5);
+		}
+
+	}
+
+	.radio-img{	
+		@extend .silver-static;
+	}
+	.basket{ border-top-color: transparent;}
+	.total-price, .total-weight{
+		color: #000;
+		span{ color: $main-color-dark;}
+	}
+	.make-order{
+		@extend .btn-main;
+	}
+}/* .form-order */

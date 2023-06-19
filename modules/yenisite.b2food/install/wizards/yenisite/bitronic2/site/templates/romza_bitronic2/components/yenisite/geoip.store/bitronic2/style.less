@@ -1,0 +1,49 @@
+.btn-store-toggle {
+	position: relative;
+	top: -3px;
+	display: inline-block;
+	vertical-align: top;
+	i:before {
+		margin-right: 0;
+	}
+}
+
+.geoipstore_add_text {
+	&.after {
+		padding: 0 3px;
+	}
+}
+
+#modal_store-select-panel {
+	h2 {
+		text-indent: -1px;
+	}
+	.stores {
+		padding:    0;
+		list-style: none;
+		> li {
+			color: #949494;
+			&:first-child {
+				padding-top: 0.5em;
+			}
+		}
+	}
+	.items {
+		padding-top: 1em;
+	}
+	.item {
+		text-align: left;
+		.itemlink {
+			text-decoration: underline;
+		}
+		&.active {
+			.itemlink {
+				text-decoration: none;
+				font-weight:     bold;
+				color:           #000;
+				cursor:          default;
+				font-size:       1.1em;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.collection-wrap{
+	.main-header{
+		&>.content{
+			background: #fff;
+		}
+	}
+
+	.sub-header{
+		&>.custom-collection{
+			@include set-colors(false, #000);
+			@include set-colors('.text', #000, #909090);
+			@include set-border-colors('.text', #000, #909090);
+		}
+	}
+
+	footer{
+		&>i{
+			color: $main-normal-textcolor;
+			background: $main-normal-bg;
+		}
+		background: #e4e4e4;
+		&>.total-full{
+			&>.price-old{
+				color: #000;
+			}
+		}
+
+	}
+}
+.col-wrap{
+	border-color: #f0f0f0;
+}
+.collection{
+	&>.item{
+		border-color: #f0f0f0;
+
+		.main-data{
+			&>a{
+				@include set-colors('.text', $link-base-color, $link-hover-color,
+												$link-clicked-color, $link-visited-color);
+				@include set-border-colors('.text', $link-base-color, transparent,
+												transparent, $link-visited-color);
+			}
+		}
+	}
+}

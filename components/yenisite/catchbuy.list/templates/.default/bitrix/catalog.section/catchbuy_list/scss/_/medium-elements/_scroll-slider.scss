@@ -1,0 +1,116 @@
+.sly-scroll{
+	position: absolute;
+	z-index: 1;
+	left: 60px;
+	right: 60px;
+	bottom: 13px;
+	
+	height: 15px;
+	border-radius: 11px;
+	&:before{
+	    content: '';
+	    position: absolute;
+	    top: 5px;
+	    bottom: 5px;
+	    left: 8px;
+	    right: 8px;
+	    border-radius: 3px;
+	}
+	@include scroller__track_h;
+	&>.sly-bar{
+		@include scroller__bar_h;
+	}
+}
+
+.scroll-slider-wrap{
+	position: relative;
+
+	.submenu-wrap > &{ 
+		display: none;
+		.hits-shown &{ display: block;}
+	}
+	
+	@media (max-width: 767px){
+		display: none !important;
+	}
+
+	.ctrl-arrow-wrap{
+		position: absolute;
+		z-index: 1;
+		bottom: 2px;
+		&.prev{ left: 5px;}
+
+		&.next{ right: 5px;}
+	}
+
+	.submenu-wrap > &{
+		margin-top: 25px;
+	}
+}
+.scroll-slider{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	
+	.slider-content{
+		white-space: nowrap;
+		display: inline-block;
+	}
+
+	.slider-item{
+		display: inline-block;
+		vertical-align: top;
+		white-space: normal;
+
+		// width is (container-width)-70 (parent paddings 20 + 20
+		// and container paddings 15 + 15)
+		// divided by needed items in row
+		width: $submenu-h-col-xxl;
+		@media (max-width: 1919px){	width: $submenu-h-col-xl;}
+		@media (max-width: 1599px){width: $submenu-h-col-lg;}
+		@media (max-width: 1200px){	width: $submenu-h-col-md;}
+		@media (max-width: 991px){ width: $submenu-h-col-sm;}
+
+		padding-bottom: 50px;
+
+		text-align: center;
+		.photo{
+			line-height: 150px;
+			text-align: center;
+
+			width: 100%;
+			height: 150px;
+			img{
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		.name{
+			display: inline-block;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.price-wrap{
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		.price-old, .price{
+			display: inline-block;
+		}
+
+		.price{
+			margin-left: 6px;
+			font-weight: bold;
+			font-size: 24px;
+		}
+
+		.action-buttons{
+			.catalog-menu &{
+				display: none;
+			}
+		}
+	}
+}

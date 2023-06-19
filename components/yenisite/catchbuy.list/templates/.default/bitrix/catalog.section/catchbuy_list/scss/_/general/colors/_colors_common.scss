@@ -1,0 +1,113 @@
+// CONSTANTS: NOT CHANGED BETWEEN THEMES
+$table-hovered-bg: darken(#fff, 5%);
+
+$link-base-color: #0066ff;
+$link-hover-color: #001d8b;
+$link-clicked-color: #0066ff;
+$link-visited-color: #006cff;
+
+$link-topline-color: #0066ff;
+$link-topline-hover-color: #000942;
+
+$headers-base-color: #000;
+
+$footer-middle-bg: #46455d;
+$footer-middle-text: #999aa3;
+$footer-nav-text: #fff;
+$footer-bottom-bg: #141419;
+$footer-bottom-text: #fff;
+
+$ul-circles-color: #d6d6d6;
+
+$textinput-base: #d9d7e5;
+$textinput-hover: #bdbbcb;
+$textinput-valid: #04b100;
+$textinput-not-valid: #ff4949;
+
+$bg-light: #fff2b2;
+$accessory-border: #f0f0f0;
+
+$tooltip-bg: #ffeb90;
+$tooltip-border: #ffc629;
+
+$textinput-focus: $main-color-dark;
+$bigslider-btnview-textcolor: #6d6d6d;
+
+// main colors of all themes (for demos on settings panel)
+$demo-yellow-skew-bg: linear-gradient(to top, #fdc141 18%, #ffe400 100%);
+$demo-yellow-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #e5a626;
+
+$demo-red-skew-bg: linear-gradient(to top, #c20000 18%, #fe2e2e 100%);
+$demo-red-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #a40000;
+
+$demo-violet-skew-bg: linear-gradient(to top, #a700e5 18%, #ee7dff 100%);
+$demo-violet-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #8500b7;
+
+$demo-pink-skew-bg: linear-gradient(to top, #ff80e6 0%, #d00067 27%, #ff4da5 100%);
+$demo-pink-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #af008c;
+
+$demo-orange-skew-bg: linear-gradient(to top, rgb(255,144,0) 6%, rgb(255,135,0) 9%, #ff7e00 18%, #ff9000 100%);
+$demo-orange-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #e75c01;
+
+$demo-mint-skew-bg: linear-gradient(to top, rgb(149,255,246) 0%, rgb(110,229,213) 3%, #46cbb4 22%, #7bffd5 100%);
+$demo-mint-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #009c9a;
+
+$demo-lightblue-skew-bg: linear-gradient(to top, rgb(65,238,254) 0%, rgb(56,211,254) 3%, #2eb7fe 22%, #52e9ff 76%);
+$demo-lightblue-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #008ed8;
+
+$demo-green-skew-bg: linear-gradient(to top, rgb(224,255,164) 0%, rgb(176,219,82) 8%, #80b600 18%, #b4e53e 100%);
+$demo-green-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #458c00;
+
+$demo-gray-skew-bg: linear-gradient(to top, rgb(230,231,241) 0%, rgb(198,201,207) 3%, #a6aaad 22%, #dddddd 77%);
+$demo-gray-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #6d6d6d;
+
+$demo-darkviolet-skew-bg: linear-gradient(to top, rgb(182,153,255) 4%, rgb(156,100,255) 7%, #812efe 26%, #ae7dff 100%);
+$demo-darkviolet-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #5a00e0;
+
+$demo-darkblue-skew-bg: linear-gradient(to top, rgb(108,143,255) 0%, rgb(72,113,245) 11%, #2352eb 29%, #569aff 100%);
+$demo-darkblue-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #002e7b;
+
+$demo-blue-skew-bg: linear-gradient(to top, rgb(149,206,255) 0%, rgb(111,166,239) 3%, #487ddf 22%, #7bbcff 76%);
+$demo-blue-skew-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px #0045b6;
+
+$demo-yellow-flat-bg: #ffe023;
+$demo-yellow-flat-shadow: inset 0px -2px 0px #e7c125;
+
+$demo-violet-flat-bg: #e76cfb;
+$demo-violet-flat-shadow: inset 0px -2px 0px #b363bc;
+
+$demo-red-flat-bg: #f12323;
+$demo-red-flat-shadow: inset 0px -2px 0px #ba0707;
+
+$demo-pink-flat-bg: #fe4ca4;
+$demo-pink-flat-shadow: inset 0px -2px 0px #cd4287;
+
+$demo-orange-flat-bg: #f68e0b;
+$demo-orange-flat-shadow: inset 0px -2px 0px #cd7c09;
+
+$demo-mint-flat-bg: #56dbbc;
+$demo-mint-flat-shadow: inset 0px -2px 0px #47b89c;
+
+$demo-green-flat-bg: #9fd122;
+$demo-green-flat-shadow: inset 0px -2px 0px #88b41a;
+
+$demo-darkviolet-flat-bg: #a362fa;
+$demo-darkviolet-flat-shadow: inset 0px -2px 0px #7f5db1;
+
+$demo-darkblue-flat-bg: #3570f2;
+$demo-darkblue-flat-shadow: inset 0px -2px 0px #1243ae;
+
+$demo-blue-flat-bg: #78bbff;
+$demo-blue-flat-shadow: inset 0px -2px 0px #649fd7;

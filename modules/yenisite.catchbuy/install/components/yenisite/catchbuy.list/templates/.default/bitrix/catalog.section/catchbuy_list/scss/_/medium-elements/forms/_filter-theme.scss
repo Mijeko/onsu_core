@@ -1,0 +1,35 @@
+.form_filter{
+	box-shadow: 0px 2px 6px fade-out(#000, 0.82);
+	background: rgb(252,252,252);
+}
+
+.filter-section{
+	&>header{
+		&>.help{
+			@extend .btn-silver;
+		}
+		&>.text:hover{
+			color: #7c7c7c;
+		}
+	}
+}
+
+.filter-results{
+	&>.text{
+		background: lighten($main-color-light, 30%);
+		border-color: $main-color-light;
+	}
+}
+
+.toggle-filter{
+	background: #e7e7e7;
+	&:hover{
+		background: lighten(#e7e7e7, 3%);
+		.text{
+			border-bottom-color: transparent;
+		}
+	}
+	&:active{
+		background: darken(#e7e7e7, 10%);
+	}
+}

@@ -1,0 +1,49 @@
+$fontsize-base: 14px;
+
+$xxl-min: 2560px;
+$xl-max: 2559px;
+$xl-min: 1920px;
+$lg-max: 1919px;
+
+$con-xxl: 1740px;
+$con-xl: 1440px;
+$con-lg: 1140px;
+$con-md: 940px;
+$con-sm: 720px;
+
+$submenu-padding: 15px;
+$submenu-borders: 2px;
+
+$submenu-h-cols-xxl: 6;
+$submenu-v-cols-xxl: 5;
+$submenu-h-cols-xl: 5;
+$submenu-v-cols-xl: 4;
+$submenu-h-cols-lg: 4;
+$submenu-v-cols-lg: 3;
+$submenu-h-cols-md: 4;
+$submenu-v-cols-md: 3;
+$submenu-h-cols-sm: 3;
+$submenu-v-cols-sm: 2;
+
+$v-menu-width-xxl: ($con-xxl / $submenu-h-cols-xxl) - 30px;
+$v-menu-width-xl: ($con-xl / $submenu-h-cols-xl) - 30px;
+$v-menu-width-lg: ($con-lg / $submenu-h-cols-lg) - 30px;
+$v-menu-width-md: ($con-md / $submenu-h-cols-md) - 30px;
+$v-menu-width-sm: ($con-sm / $submenu-h-cols-sm) - 30px;
+
+$submenu-h-col-xxl: ($con-xxl - $submenu-padding * 2 - $submenu-borders) / $submenu-h-cols-xxl;
+$submenu-v-col-xxl: ($con-xxl - $v-menu-width-xxl - ($submenu-padding * 2 + $submenu-borders)) / $submenu-v-cols-xxl;
+$submenu-h-col-xl: ($con-xl - $submenu-padding * 2 - $submenu-borders) / $submenu-h-cols-xl;
+$submenu-v-col-xl: ($con-xl - $v-menu-width-xl - ($submenu-padding * 2 + $submenu-borders)) / $submenu-v-cols-xl;
+$submenu-h-col-lg: ($con-lg - $submenu-padding * 2 - $submenu-borders) / $submenu-h-cols-lg;
+$submenu-v-col-lg: ($con-lg - $v-menu-width-lg - ($submenu-padding * 2 + $submenu-borders)) / $submenu-v-cols-lg;
+$submenu-h-col-md: ($con-md - $submenu-padding * 2 - $submenu-borders) / $submenu-h-cols-md;
+$submenu-v-col-md: ($con-md - $v-menu-width-md - ($submenu-padding * 2 + $submenu-borders)) / $submenu-v-cols-md;
+$submenu-h-col-sm: ($con-sm - $submenu-padding * 2 - $submenu-borders) / $submenu-h-cols-sm;
+$submenu-v-col-sm: ($con-sm - $v-menu-width-sm - ($submenu-padding * 2 + $submenu-borders)) / $submenu-v-cols-sm;
+
+$submenu-v-width-xxl: $con-xxl - $v-menu-width-xxl;
+$submenu-v-width-xl: $con-xl - $v-menu-width-xl;
+$submenu-v-width-lg: $con-lg - $v-menu-width-lg;
+$submenu-v-width-md: $con-md - $v-menu-width-md;
+$submenu-v-width-sm: $con-sm - $v-menu-width-sm;

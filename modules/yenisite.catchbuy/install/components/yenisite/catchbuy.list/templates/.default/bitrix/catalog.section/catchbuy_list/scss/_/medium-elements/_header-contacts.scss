@@ -1,0 +1,126 @@
+.header-contacts{
+	border-radius: 4px;
+	.contacts-content{
+		@media (min-width: 768px){
+			display: block !important;
+			opacity: 1 !important;
+		}
+		min-width: 170px;
+		position: relative;
+		padding: 7px 8px 10px;
+		border-radius: 4px;
+		border: 2px solid;
+		transition: border-color .3s;
+
+		.address-wrap, .modal-form{
+			display: none;
+		}
+	}
+	i.phone{
+		position: absolute;
+		left: 4px;
+		top: 6px;
+		&:before{ 
+			font-size: 32px;
+		}
+	}/* i */
+	
+	.phones{
+		overflow: hidden;
+		max-height: 25px;
+		padding-bottom: 1px;
+	}
+	&:hover{
+		z-index: 5; // to be over minified main menu when phones expand
+		.phones{
+			max-height: none;
+		}
+	}
+	.phone-wrap{
+		display: inline-block;
+		margin-left: 30px;
+		margin-bottom: 5px;
+		&>a{
+			border-bottom: 1px dotted;
+			font-weight: bold;	
+			font-size: em(16px);
+		}
+	}
+	.free-call-text{
+		font-size: 12px;
+		margin-left: 30px;
+	}
+	
+	.email-wrap{
+		margin-top: 6px;
+	}
+
+	.phone-link + .tooltip{
+		margin-top: 2px;
+	}
+
+
+	@media (max-width: 767px){
+		.phones{
+			max-height: none;
+		}
+		.contacts-content{ // .um_popup-shown
+			&:before{
+				display: none;
+			}
+			
+			display: none;
+			position: absolute;
+			z-index: 6;
+			left: 0;
+
+			.free-call-text{
+				margin-top: 5px;
+				margin-left: 0 !important;
+				clear: left !important;
+			}
+			.address-wrap, .modal-form{
+				display: block;
+			}
+			
+			.address{
+				display: block;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				font-size: 12px;
+				position: relative;
+
+				padding-left: 30px;
+				>i{
+					position: absolute;
+					left: 3px;
+					top: 0;
+				}
+			}
+			.modal-form{
+				padding-bottom: 10px;
+				h2{
+					margin: 0;
+					margin-top: 10px;
+					padding: 10px 10px 0px;
+				}
+				.btn-submit{
+					width: 100%;
+				}
+				.required-info{
+					font-size: 12px;
+				}
+				.label-text{
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}/* .header-contacts */
+
+#switch-contacts{
+	display: none;
+	@media (max-width: 767px){
+		display: inline-block;
+	}
+}

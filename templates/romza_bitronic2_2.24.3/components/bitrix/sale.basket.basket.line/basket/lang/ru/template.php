@@ -1,0 +1,28 @@
+<?
+$MESS["BITRONIC2_FAVORITES_LIST"] = "Избранное";
+$MESS["BITRONIC2_YOURS_BASKET"] = "Ваши покупки:";
+$MESS["BITRONIC2_BASKET_ON_SUMM"] = "на сумму";
+$MESS["BITRONIC2_BASKET_ITOGO"] = "Итого: ";
+$MESS["BITRONIC2_BASKET_BUY"] = "Купить";
+$MESS["BITRONIC2_BASKET_DELAY"] = "Отложить";
+$MESS["BITRONIC2_BASKET_DELETE"] = "Удалить";
+$MESS["BITRONIC2_BASKET_DELETE_ALL"] = "Удалить все";
+$MESS["BITRONIC2_BASKET_FROM_BASKET"] = " из корзины";
+$MESS["BITRONIC2_BASKET_NOT_AVAIL"] = "Нет в наличии";
+$MESS["BITRONIC2_BASKET_SEND_ABOUT_AVAIL"] = "Сообщить о поступлении";
+$MESS["BITRONIC2_BASKET_IN_BASKET"] = "Уже в корзине:";
+$MESS["BITRONIC2_BASKET_GOODS"] = "товара";
+$MESS["BITRONIC2_BASKET_GOOD"] = "Товар";
+$MESS["BITRONIC2_BASKET_QUANTITY"] = "Количество";
+$MESS["BITRONIC2_BASKET_PRICE_FOR_1"] = "Цена за ед.";
+$MESS["BITRONIC2_BASKET_PRICE_DISCOUNT"] = "Скидка";
+$MESS["BITRONIC2_BASKET_PRICE_SUMM"] = "Сумма";
+$MESS["BITRONIC2_BASKET_YOUR_CHOOSE"] = "Вы выбрали #COUNT# #PRODUCT# на сумму";
+$MESS["BITRONIC2_BASKET_TO_BASKET"] = "Вернуться к корзине";
+$MESS["BITRONIC2_BASKET_WAIT"] = "Отложенных";
+$MESS["BITRONIC2_BASKET_WAIT_GOODS"] = " товаров";
+$MESS["BITRONIC2_BASKET_IN_WAIT_LIST"] = "В списке отложенных #COUNT# товара на сумму";
+$MESS["BITRONIC2_BASKET_MAKE_ORDER"] = "Оформить заказ";
+$MESS["BITRONIC2_BASKET_ONE_CLICK"] = "Купить в 1 клик";
+$MESS["BITRONIC2_BASKET_ARTICUL"] = "Артикул";
+?>

@@ -1,0 +1,19 @@
+.rating-stars{
+	margin-top: 5px;
+	margin-left: -2px;
+	font-size: 0;
+	i{
+		display: inline-block;
+		position: relative;
+		width: 18px;
+		height: 18px;
+		&:hover{ cursor: pointer;}
+		&:before{ 
+			font-size: 16px;
+			position: absolute;
+			left: -1px;
+
+			@include transition(false, color);
+		}
+	}
+}

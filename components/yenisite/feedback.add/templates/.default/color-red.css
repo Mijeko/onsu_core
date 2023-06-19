@@ -1,0 +1,39 @@
+div#ys-feedback_add .button2 {
+    background-color: #cf2020;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fd9742), color-stop(100%, #cf2020));
+    background-image: -webkit-linear-gradient(top, #fd9742, #cf2020);
+    background-image: -moz-linear-gradient(top, #fd9742, #cf2020);
+    background-image: -ms-linear-gradient(top, #fd9742, #cf2020);
+    background-image: -o-linear-gradient(top, #fd9742, #cf2020);
+    background-image: linear-gradient(top, #fd9742, #cf2020);
+    border: 1px solid #cf2020;
+    -webkit-box-shadow: 0 1px 0 0 #ffcd30 inset, 0 2px 0 0 #e5e5e5;
+    -moz-box-shadow: 0 1px 0 0 #ffcd30 inset, 0 2px 0 0 #e5e5e5;
+    box-shadow: 0 1px 0 0 #ffcd30 inset;
+    color: #fff !important;
+    text-shadow: 0 -1px 0 #d12522;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fd9742', endColorstr='#cf2020')";
+}
+
+div#ys-feedback_add .button2:hover {
+    background: #ea6534;
+    box-shadow: 0 1px 0 0 #f99826 inset;
+}
+
+div#ys-feedback_add .button2:active {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cf2020), color-stop(100%, #fd9742));
+    background-image: -webkit-linear-gradient(top, #cf2020, #fd9742);
+    background-image: -moz-linear-gradient(top, #cf2020, #fd9742);
+    background-image: -ms-linear-gradient(top, #cf2020, #fd9742);
+    background-image: -o-linear-gradient(top, #cf2020, #fd9742);
+    background-image: linear-gradient(top, #cf2020, #fd9742);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf2020', endColorstr='#fd9742')";
+}
+
+div#ys-feedback_add .txt, div#ys-feedback_add textarea {
+    border: 1px solid #000000;
+}
+
+div#ys-feedback_add .txt:focus, div#ys-feedback_add textarea:focus {
+    border-color: #e00c0c;
+}

@@ -1,0 +1,7 @@
+.form_account-settings {
+	.btn-plus { @include btn-main; }
+	.btn-fileinput { @include btn-main; }
+	.avatar {
+		.img-container { @include silver-static; }
+	}
+}

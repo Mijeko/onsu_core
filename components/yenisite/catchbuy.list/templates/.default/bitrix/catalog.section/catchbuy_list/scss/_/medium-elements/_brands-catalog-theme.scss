@@ -1,0 +1,20 @@
+.brands-catalog{
+	.brand{
+		@extend .silver-static;
+		&:hover{
+			background: $silver-hovered-bg;
+		}
+
+		&.active{
+			border-color: $main-color-dark;
+			box-shadow: none;
+			background: $silver-static-bg;
+		}
+
+		&.disabled, &.disabled:hover, &.disabled.active{
+			@extend .silver-disabled;
+			color: #000 !important;
+			opacity: 0.5;
+		}
+	}
+}

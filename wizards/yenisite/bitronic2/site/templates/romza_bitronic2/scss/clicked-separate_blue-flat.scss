@@ -1,0 +1,16 @@
+@import '_/general/colors/colors_blue-flat';
+@import 'theme-imports_flat';
+
+@mixin main-clicked{
+	color: 		$main-clicked-textcolor;
+	text-shadow:$main-clicked-textshadow;
+	background: $main-clicked-bg;
+	box-shadow: $main-clicked-shadow;
+
+	&>.text, &>i{ color: $main-clicked-textcolor;}
+}
+.main-clicked.forced{
+	&, &:hover, &:active{
+		@include main-clicked;
+	}
+}

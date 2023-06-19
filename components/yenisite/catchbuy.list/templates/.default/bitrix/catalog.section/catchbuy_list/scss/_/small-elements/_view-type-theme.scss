@@ -1,0 +1,14 @@
+.view-type{
+	&>a{
+		@extend .silver-static;
+
+		&:hover{
+			@extend .main-normal;
+		}
+
+		&.active, &:active{
+			@extend .main-clicked;
+		}
+	}
+
+}

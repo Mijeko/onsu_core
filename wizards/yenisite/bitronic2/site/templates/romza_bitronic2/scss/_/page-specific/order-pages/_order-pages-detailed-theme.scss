@@ -1,0 +1,39 @@
+.order-details-page {
+	.bx-soa-section.bx-selected { border: 1px solid $main-color-soft !important; }
+
+	.bx-soa-pp-company.bx-selected .bx-soa-pp-company-graf-container,
+	.bx-soa-coupon-input input.form-control[type="text"]:focus {
+		border-color: $main-color-soft !important;
+	}
+
+	.bx-soa-more-btn .btn-default.pull-right,
+	#bx-soa-orderSave .pull-right.btn.btn-default,
+	#bx-soa-total .btn.btn-default, #bx-soa-total-mobile .btn.btn-default {
+		@include btn-main;
+	}
+
+	#bx-soa-orderSave .pull-right.btn.btn-default { @extend .btn-continue; }
+
+	.bx-soa input.form-control[type="text"] {
+		@extend .textinput;
+		background: none;
+		[data-styling-type="flat"] & { box-shadow: none; }
+	}
+	.form-group .form-control {
+		@extend .textinput;
+		background: none;
+		[data-styling-type="flat"] & { box-shadow: none; }
+	}
+	
+	.bx-soa-more-btn .btn-default.pull-left { @include btn-silver; }
+	.bx-soa-section.bx-selected .bx-soa-editstep { @extend .link-std; }
+
+	.bx-soa-section,
+	.bx-soa-total-mobile,
+	.bx-soa-main-notifications,
+	#bx-soa-order {
+		.btn-default { @include btn-silver; }
+	} 
+
+	a:not(.btn) { @extend .link-std; }
+}

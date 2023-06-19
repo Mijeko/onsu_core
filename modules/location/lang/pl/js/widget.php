@@ -1,0 +1,3 @@
+<?php
+$MESS["LOCATION_WIDGET_AUI_ADDRESS_APPLY"] = "Zastosuj";
+$MESS["LOCATION_WIDGET_AUI_ADDRESS_CHANGED_NEW_ADDRESS"] = "Adres uległ zmianie. Nowy adres:";

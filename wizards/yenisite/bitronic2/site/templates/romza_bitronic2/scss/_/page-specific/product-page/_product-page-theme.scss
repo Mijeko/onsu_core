@@ -1,0 +1,4 @@
+.product-page {
+	.brand { @include silver-normal; }
+	span.edost_link { @extend .link-std; }
+}

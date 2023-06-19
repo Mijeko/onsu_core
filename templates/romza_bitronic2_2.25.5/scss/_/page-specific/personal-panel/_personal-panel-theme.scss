@@ -1,0 +1,25 @@
+.account-personal-panel {
+	ul.panel {
+		.panel-item {
+			[data-styling-type="skew"] & {
+				@include btn-silver;
+				box-shadow: $main-hovered-shadow;
+
+				&:hover, &:active {
+					background: $main-normal-bg;
+					.panel-icon { fill: $main-normal-textcolor; }
+					.panel-name { color: $main-normal-textcolor; }
+				}
+			}
+			
+			[data-styling-type="flat"] & {
+				@include main-normal;
+				&:hover { @include main-hovered; }
+				&:active { @include main-clicked; }
+				&.disabled { @include silver-disabled; }
+				.panel-icon { fill: $main-normal-textcolor; }
+				.panel-name { color: $main-normal-textcolor; }
+			}
+		}
+	}
+}

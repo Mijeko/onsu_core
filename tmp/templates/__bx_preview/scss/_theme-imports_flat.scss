@@ -1,0 +1,137 @@
+// ======= SILVER ========
+$silver-normal-shadowcolor: fade-out(#000, 0.83);
+$silver-normal-textcolor: #000;
+$silver-normal-textshadow: none;
+$silver-normal-bg: #dedce4;
+$silver-normal-shadow: none;
+$silver-normal-bordercolor: transparent;
+
+$silver-hovered-shadowcolor: #e0e0e0;
+$silver-hovered-textcolor: $silver-normal-textcolor;
+$silver-hovered-textshadow: $silver-normal-textshadow;
+$silver-hovered-bg: #ebe8f1;
+$silver-hovered-shadow: none;
+$silver-hovered-bordercolor: transparent;
+
+$silver-clicked-shadowcolor: fade-out(#000, 0.83);
+$silver-clicked-textcolor: $silver-normal-textcolor;
+$silver-clicked-textshadow: $silver-normal-textshadow;
+$silver-clicked-bg: #d6d3de;
+$silver-clicked-shadow: none;
+$silver-clicked-bordercolor: transparent;
+
+$silver-disabled-textcolor: #e1e1e1 !important;
+$silver-disabled-textshadow: $silver-normal-textshadow;
+$silver-disabled-bg: #fff;
+$silver-disabled-shadow: none;
+$silver-disabled-bordercolor: #e2e2ea;
+
+$silver-static-textcolor: #000;
+$silver-static-bg: #fff;
+$silver-static-shadow: none;
+$silver-static-border: 1px solid #e4e4e4;
+// ==== END OF SILVER ====
+
+$bigslider-gradient: linear-gradient(to bottom, #e5e8f0, #d7dce6);
+$coolslider-track-shadow: none;
+$coolslider-bar-bordercolor: transparent;
+$coolslider-bar-shadow: none;
+$coolslider-dot-bg: $silver-normal-bg;
+$coolslider-dot-shadow: none;
+$coolslider-innerdot-bg: $main-color-soft;
+$coolslider-innerdot-shadow: none;
+
+$hurry-sold-track-shadow: none;
+$hurry-sold-bar-shadow: none;
+$hurry-sold-bar-bordercolor: transparent;
+
+$scroll-bar-v-shadow: none;
+$scroll-bar-v-clicked-outline: none;
+
+$checkbox-normal-bg: #fff;
+$checkbox-normal-shadow: none;
+$checkbox-normal-bordercolor: #d9d9d9;
+$checkbox-hovered-bordercolor: $main-color-soft;
+$checkbox-checked-bg: $main-normal-bg;
+$checkbox-checked-shadow: none;
+$checkbox-checked-bordercolor: transparent;
+
+$radio-normal-bg: #e3e1e8;
+$radio-normal-shadow: none;
+$radio-normal-dot-bg: #b7b2cc;
+$radio-normal-dot-shadow: none;
+$radio-hovered-bg: $radio-normal-bg;
+$radio-hovered-dot-bg: #656178;
+$radio-checked-bg: $radio-normal-bg;
+$radio-disabled-bg: #fff;
+$radio-disabled-dot-bg: #ededed;
+$radio-disabled-border: 1px solid #e7e7e7;
+
+$hurry-slidercontrols-bg: #e3e1e8;
+$hurry-slidercontrols-shadow: none;
+$hurry-slidercontrols-dot-bg: #fff;
+$hurry-slidercontrols-dot-shadow: none;
+$hurry-slidercontrols-active-bg: $hurry-slidercontrols-bg;
+$hurry-slidercontrols-active-shadow: none;
+$hurry-slidercontrols-active-dot-bg: $main-color-soft;
+
+// table view in catalog
+$quantity-counter-shadow: none;
+$quantity-counter-bg: transparent;
+
+// range sliders
+$noui-simple-track-shadow: none;
+$noui-simple-bar-bg: $main-color-soft;
+$noui-simple-bar-shadow: none;
+$noui-simple-bar-bordercolor: $main-color-soft;
+
+$noui-range-track-shadow: none;
+$noui-range-bar-normal-bg: $main-color-soft;
+$noui-range-bar-shadow: none;
+$noui-range-bar-bordercolor: $main-color-soft;
+$noui-range-bar-hovered-bg: $main-color-light;
+$noui-range-bar-hovered-shadow: none;
+$noui-range-handle-active-glowdisplay: none;
+
+$scroll-track-h-shadow: none;
+$scroll-h-innertrack-shadow: none;
+$scroll-bar-h-bg: #efefef;
+$scroll-bar-h-shadow: $silver-normal-shadow;
+$scroll-bar-h-hovered-bg: #f5f5f5;
+$scroll-bar-h-active-shadow: $silver-normal-shadow;
+$scroll-bar-h-active-bg: #dddddd;
+
+$arrow-disabled-color: #e1e1e1;
+$arrow-color: #fff;
+$arrow-hovered-color: #fff;
+$arrow-clicked-color: #fff;
+
+$arrowed-btn-shadow: none;
+$arrowed-btn-bg: $main-color-soft;
+$arrowed-btn-hovered-shadow: none;
+$arrowed-btn-hovered-bg: $main-color-light;
+$arrowed-btn-clicked-shadow: none;
+$arrowed-btn-clicked-bg: $main-color-dark;
+
+$arrowed-silverbtn-bg: $silver-normal-bg;
+$arrowed-silverbtn-hovered-bg: $silver-hovered-bg;
+$arrowed-silverbtn-clicked-bg: $silver-clicked-bg;
+$arrowed-silverbtn-disabled-bg: #fff;
+
+$arrowed-silverbtn-l-shadow: none;
+$arrowed-silverbtn-l-hovered-shadow: none;
+$arrowed-silverbtn-l-clicked-shadow: none;
+
+$arrowed-silverbtn-r-shadow: none;
+$arrowed-silverbtn-r-hovered-shadow: none;
+$arrowed-silverbtn-r-clicked-shadow: none;
+
+$submenu-wrap-borders-shadow: none;
+
+$cats-bar-normal-bg: $main-color-soft;
+$cats-bar-hovered-bg: $main-color-dark;
+$cats-bar-hovered-shadow: $main-normal-shadow;
+$cats-bar-clicked-bg: $main-color-light;
+
+.pagination-item{line-height: 26px !important;}
+.view-type>a{line-height: 27px;}

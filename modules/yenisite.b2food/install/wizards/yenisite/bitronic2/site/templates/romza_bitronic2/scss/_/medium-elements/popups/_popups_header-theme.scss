@@ -1,0 +1,39 @@
+.top-line-popup {
+	@include silver-static;
+}
+
+.popup_basket {
+	.popup-header {
+		.total-price {
+			background: $main-color-soft;
+			color: white;
+		}
+	}
+
+	.basket-waitlist-toggle {
+		@include set-colors('.btn-text', $link-base-color, $link-hover-color, $link-clicked-color, $link-visited-color);
+		@include set-border-colors('.btn-text', transparent, initial, initial, transparent);
+	}
+
+	.popup-footer {
+		.btn-main { @include set-colors('.text', $main-normal-textcolor); }
+	}
+}
+
+.popup_account-menu {
+	li {
+		a {
+			text-shadow: none;
+			@include set-colors(false, #000, $main-normal-textcolor, $main-normal-textcolor, #000);
+			@include set-colors('.link-text', $link-base-color, $main-normal-textcolor, $main-normal-textcolor, $link-base-color);
+			@include set-border-colors('.link-text', transparent, initial, initial, transparent);
+
+			svg { fill: #000; }
+
+			&:hover {
+				background: $main-color-soft;
+				svg { fill: $main-normal-textcolor; }
+			}
+		}
+	}
+}

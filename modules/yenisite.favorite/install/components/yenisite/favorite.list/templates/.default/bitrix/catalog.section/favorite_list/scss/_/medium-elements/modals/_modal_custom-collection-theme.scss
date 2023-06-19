@@ -1,0 +1,55 @@
+.modal_custom-collection{
+	.item{
+		border-color: #ebeceb;
+		background: #fff;
+		@include set-colors(false, #000);
+		.item-main-data{
+			.name-wrap>a{
+				@include set-colors('.text', $link-base-color, $link-hover-color,
+												$link-clicked-color, $link-visited-color);
+				@include set-border-colors('.text', $link-base-color, transparent,
+												transparent, $link-visited-color);
+			}
+		}
+	}
+}
+$remove-color: #ff5a5a;
+$add-color: green;
+.ghost{
+	&.ready-to-add{ border-color: $add-color;}
+	&.ready-to-remove{ border-color: $remove-color;}
+	&.to-add .custom-collection-control{ 
+		border-top-color: $add-color;
+		border-right-color: $add-color;
+	}
+}
+.custom-collection-content{
+	.item:hover{
+		border-color: $remove-color;
+	}
+	.product{ border-color: $main-color-dark;}
+	.final{border-color: transparent;}
+}
+
+.items-to-choose-from{
+	background: fade-out(#ffde00, 0.81);
+
+	&:before{
+		border-bottom-color: fade-out(#ffde00, 0.81);
+	}
+
+	.item:hover{
+		border-color: $add-color;
+	}
+	.custom-collection-control{
+		border-top-color: $add-color;
+		border-right-color: $add-color;
+	}
+}
+
+.custom-collection-control{
+	color: #fff;
+	border-color: transparent;
+	border-top-color: $remove-color;
+	border-right-color: $remove-color;
+}

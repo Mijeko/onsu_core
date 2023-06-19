@@ -1,0 +1,211 @@
+#ys-ms-slider .ms_tab_block ul li.loader {
+	color: #e00c0c!important;
+}
+
+/*TABS*/ 
+/*
+#ys-ms-slider  .slider_cat li:active span {
+background: url(../img/tv_tab_active_red.png) top center no-repeat !important;
+}
+*/
+#ys-ms-slider .slider_cat li.active span, #ys-ms-slider .slider_cat li:active:not(.child_hover) span {
+    background: url(../img/tv_tab_active_red.png) top center no-repeat !important;
+}
+
+#ys-ms-slider .slider_cat li.active .cl, #ys-ms-slider .slider_cat li:active:not(.child_hover) .cl {
+    background: url(../img/tv_tab_active_corners_red.png) top left no-repeat !important;
+}
+
+#ys-ms-slider .slider_cat li.active .cr, #ys-ms-slider  .slider_cat li:active:not(.child_hover) .cr {
+    background: url(../img/tv_tab_active_corners_red.png) -5px 0 no-repeat !important;
+}
+
+#ys-ms-slider .slider_cat li.active a, .slider_cat li:active:not(.child_hover) a { 
+    color: #ffffff !important;
+    text-shadow: 1px 1px 0 #e00c0c !important;
+}
+
+
+
+
+
+
+
+
+
+#ys-ms-slider  .button1, #ys-ms-slider  .button2, #ys-ms-slider  .button7, #ys-ms-slider  .button8  {
+    background-color: #cf2020 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fd9742), color-stop(100%, #cf2020)) !important;
+    background-image: -webkit-linear-gradient(top, #fd9742, #cf2020) !important;
+    background-image: -moz-linear-gradient(top, #fd9742, #cf2020) !important;
+    background-image: -ms-linear-gradient(top, #fd9742, #cf2020) !important;
+    background-image: -o-linear-gradient(top, #fd9742, #cf2020) !important;
+    background-image: linear-gradient(top, #fd9742, #cf2020) !important;
+    border: 1px solid #cf2020 !important;
+    -webkit-box-shadow: 0 1px 0 0 #ffcd30 inset, 0 2px 0 0 #e5e5e5 !important;
+    -moz-box-shadow: 0 1px 0 0 #ffcd30 inset, 0 2px 0 0 #e5e5e5 !important;
+    box-shadow: 0 1px 0 0 #ffcd30 inset !important;
+    color: #fff !important;
+    text-shadow: 0 -1px 0 #d12522 !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fd9742', endColorstr='#cf2020')" !important;
+}
+
+#ys-ms-slider  .button1:hover , #ys-ms-slider  .button2:hover, #ys-ms-slider  .button7:hover , #ys-ms-slider  .button8:hover  {
+    background: #ea6534 !important;
+    box-shadow: 0 1px 0 0 #f99826 inset !important;
+}
+
+#ys-ms-slider  .button1:active , #ys-ms-slider  .button2:active, #ys-ms-slider  .button7:active , #ys-ms-slider  .button8:active {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cf2020), color-stop(100%, #fd9742)) !important;
+    background-image: -webkit-linear-gradient(top, #cf2020, #fd9742) !important;
+    background-image: -moz-linear-gradient(top, #cf2020, #fd9742) !important;
+    background-image: -ms-linear-gradient(top, #cf2020, #fd9742) !important;
+    background-image: -o-linear-gradient(top, #cf2020, #fd9742) !important;
+    background-image: linear-gradient(top, #cf2020, #fd9742) !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf2020', endColorstr='#fd9742')" !important;
+}
+
+#ys-ms-slider a {
+    color: #e00c0c!important;
+    border-color: #f39e9e!important;
+}
+
+#ys-ms-slider a:hover {
+    color: #ff7b11;
+    border-color: #ffb980!important;
+}
+
+#ys-ms-slider .add_to_basket {
+    text-shadow: 0 -1px 1px #e00c0c;
+    background: url(../img/add_to_basket_red.png) top left no-repeat;
+}
+
+#ys-ms-slider .button1 span {
+    background: url(../img/i_phone_red.png) no-repeat left;
+}
+
+#ys-ms-slider .button2 span {
+    background: url(../img/i_basket_red.png) no-repeat left;
+}
+
+#ys-ms-slider .have {
+    background: #f4f5f5!important;
+}
+
+
+
+
+
+/*Фон слайдера*/
+.slider1_BG{
+    width:747px !important;
+    height:5px !important;
+    margin-left: -70px !important;
+     -webkit-border-radius: 3px/2px !important;
+   -moz-border-radius: 3px/2px !important;
+   border-radius: 3px/2px !important;
+    background-color: #f4f5f5 !important;
+    -webkit-box-shadow: inset 1px 1px 3px rgba(110,114,118,.5) !important;
+    -moz-box-shadow: inset 1px 1px 3px rgba(110,114,118,.5) !important;
+    box-shadow: inset 1px 1px 3px rgba(110,114,118,.5) !important;
+    
+}
+
+/*Стиль кнопки слайдера*/
+#ys-ms-slider .ui-slider-handle {
+    background: none !important;
+    height:6px !important;
+    width:120px !important;
+    margin-left: -60px !important;
+    position:absolute !important;
+    top:-2px !important;
+   /*  display:block !important; */
+    cursor:pointer !important;
+    -webkit-border-radius: 3px/2px 2px 3px !important;
+    -moz-border-radius: 3px/2px 2px 3px !important;
+    border-radius: 3px/2px 2px 3px !important;
+    background-color: #259c01 !important;
+    -webkit-box-shadow: 1px 2px rgba(0,0,0,.15), inset 0 1px #ffd0ac !important;
+    -moz-box-shadow: 1px 2px rgba(0,0,0,.15), inset 0 1px #ffd0ac !important;
+    box-shadow: 1px 2px rgba(0,0,0,.15), inset 0 1px #ffd0ac !important;
+    border: solid 1px #cf2020 !important;
+    background-image: -webkit-linear-gradient(bottom, #cf2020, #ff9b43) !important;
+    background-image: -moz-linear-gradient(bottom, #cf2020, #ff9b43) !important;
+    background-image: -o-linear-gradient(bottom, #cf2020, #ff9b43) !important;
+    background-image: linear-gradient(to top, #cf2020, #ff9b43) !important;
+
+}
+
+
+#ys-ms-slider .ui-slider:not(.ui-slider-disabled) .ui-slider-handle:hover{
+    
+ 
+    border: solid 1px #cb766f !important;
+    background-image: -webkit-linear-gradient(bottom, #ff4848, #ffc490) !important;
+    background-image: -moz-linear-gradient(bottom, #ff4848, #ffc490) !important;
+    background-image: -o-linear-gradient(bottom, #ff4848, #ffc490) !important;
+    background-image: linear-gradient(to top, #ff4848, #ffc490) !important;
+
+}
+#ys-ms-slider .ui-slider:not(.ui-slider-disabled) .ui-slider-handle.ui-state-active{
+   border: solid 1px #cf2020 !important;
+    background-image: -webkit-linear-gradient(top, #cf2020, #ff9b43) !important;
+    background-image: -moz-linear-gradient(top, #cf2020, #ff9b43) !important;
+    background-image: -o-linear-gradient(top, #cf2020, #ff9b43) !important;
+    background-image: linear-gradient(to bottom, #cf2020, #ff9b43) !important;
+}
+
+
+
+
+
+#ys-ms-slider .slider_cat li a.ys-mainspec-rounded,
+#ys-ms-slider .slider_cat li.active a.ys-mainspec-rounded,
+#ys-ms-slider .blc_special a.ys-mainspec-rounded {
+    display: inline-block !important;
+    position: relative !important;
+    text-shadow: none !important;
+    border-bottom:none !important;
+    top: -8px !important;
+    width: 24px !important;
+    height: 24px !important;
+    -webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
+    border-radius: 12px !important;
+    background-color: #cf2020 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fd9742), color-stop(100%, #cf2020)) !important;
+    background-image: -webkit-linear-gradient(top, #fd9742, #cf2020) !important;
+    background-image: -moz-linear-gradient(top, #fd9742, #cf2020) !important;
+    background-image: -ms-linear-gradient(top, #fd9742, #cf2020) !important;
+    background-image: -o-linear-gradient(top, #fd9742, #cf2020) !important;
+    background-image: linear-gradient(top, #fd9742, #cf2020) !important;
+    border: 1px solid #cf2020 !important;
+    -webkit-box-shadow: 0 1px 0 0 #ffcd30 inset, 0 2px 0 0 #e5e5e5 !important;
+    -moz-box-shadow: 0 1px 0 0 #ffcd30 inset, 0 2px 0 0 #e5e5e5 !important;
+    box-shadow: 0 1px 0 0 #ffcd30 inset !important;
+    color: #fff !important;
+  
+}
+
+
+#ys-ms-slider .slider_cat li a.ys-mainspec-rounded:not(.unactive):hover,
+#ys-ms-slider .slider_cat li.active a.ys-mainspec-rounded:not(.unactive):hover,
+#ys-ms-slider .blc_special a.ys-mainspec-rounded:not(.unactive):hover {
+    background: #ea6534 !important;
+    box-shadow: 0 1px 0 0 #f99826 inset !important;
+}
+
+#ys-ms-slider .slider_cat li a.ys-mainspec-rounded:not(.unactive):active,
+#ys-ms-slider .slider_cat li.active a.ys-mainspec-rounded:not(.unactive):active,
+#ys-ms-slider .blc_special a.ys-mainspec-rounded:not(.unactive):active {
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cf2020), color-stop(100%, #fd9742)) !important;
+    background-image: -webkit-linear-gradient(top, #cf2020, #fd9742) !important;
+    background-image: -moz-linear-gradient(top, #cf2020, #fd9742) !important;
+    background-image: -ms-linear-gradient(top, #cf2020, #fd9742) !important;
+    background-image: -o-linear-gradient(top, #cf2020, #fd9742) !important;
+    background-image: linear-gradient(top, #cf2020, #fd9742) !important;
+}
+
+#ys-ms-slider .slider_cat li:hover:not(.active) span a.tab_main{
+	color: #ff7b11 !important;
+}

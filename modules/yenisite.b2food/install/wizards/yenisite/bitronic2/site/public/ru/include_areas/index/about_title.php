@@ -1,0 +1,1 @@
+<div class="title-h3">О магазине</div>

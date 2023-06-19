@@ -1,0 +1,38 @@
+.switch-stock{
+	position: fixed;
+	z-index: 10;
+	top: 200px;
+	right: 2px;
+	width: 150px;
+	height: 50px;
+
+	@media (max-width: 991px){
+		display: none;
+	}
+}
+.product-main{
+	position: relative;
+	padding-right: 35%;
+
+	@media (max-width: 767px){
+		padding-right: 15px;
+	}
+}/* .product-main */
+
+.similar-products, .viewed-products{
+	margin-top: 50px;
+	header{
+		text-align: center;
+		font-weight: bold;
+		font-size: em(24px);
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: 767px){
+		display: none;
+	}
+}
+
+.viewed-products{
+	margin-bottom: 70px;
+}

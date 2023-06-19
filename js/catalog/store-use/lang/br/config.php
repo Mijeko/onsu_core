@@ -1,0 +1,20 @@
+<?php
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_CLOSE"] = "Fechar";
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_CONDUCTED_DOCUMENTS_EXIST"] = "Existem objetos de inventário processados. A gestão de inventário não pode ser desativada enquanto esses objetos de inventário existirem.";
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_DISABLE_POPUP_TITLE"] = "Desativar gerenciamento do inventário";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_DETAILS"] = "Informações";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_1"] = "Cancelar";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_2"] = "Redefinir estoque";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_3"] = "Redefinir estoque";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_4"] = "Existem produtos com estoque atual diferente de zero. Você deve redefinir os valores de estoque antes de ativar a gestão de estoque.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_5"] = "Você pode atualizar os valores de estoque depois de ter ativado a gestão de inventário.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_6"] = "Desativar";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_7"] = "Tem certeza que deseja desativar a gestão de inventário?";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_8"] = "Você não será capaz de processar objetos de inventário.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_10"] = "Ativar gerenciamento do inventário";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_CLEAR_CONFIRM"] = "O estoque atual em seu(s) depósito(s) não corresponde à quantidade especificada no catálogo. Isso pode ser devido à atualização manual da quantidade do produto após a desativação do Gerenciamento de Inventário. É recomendável excluir os objetos de inventário existentes antes de usar as funções de Gerenciamento de Inventário.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_CONFIRM"] = "Existem objetos de inventário que você criou e usou antes. Deseja mantê-los ou excluí-los?";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_EASY"] = "Manter";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_LINK_TITLE"] = "Saiba mais";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_TITLE"] = "Ativar gerenciamento do inventário";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_WITH_RESET"] = "Excluir";

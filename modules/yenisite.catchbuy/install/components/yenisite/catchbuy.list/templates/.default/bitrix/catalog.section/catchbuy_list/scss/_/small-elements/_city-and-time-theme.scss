@@ -1,0 +1,42 @@
+.btn-city-toggle{
+	i:before{
+		color: #000;
+	}
+	@media (max-width: 767px){
+		border-color: #d6d6d6;
+	}
+}
+
+.bar{
+	&.holiday{ background: #ff7171;}
+	&.workday{ background: #68c000;}
+}
+
+.working-days{
+	color: #000;
+}
+
+.holidays{
+	color: #7b7792;
+}
+
+.time{
+	@media (max-width: 767px){
+		.time-content{
+			@include silver-static;
+			.notification-popup{
+				background: none;
+				color: #000;
+			}
+		}
+		&>i{
+			background: #d6d6d6;
+			&.toggled{
+				background: $main-color-soft;
+				color: $main-normal-textcolor;
+			}
+		}
+
+	}
+}
+

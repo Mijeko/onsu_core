@@ -1,0 +1,82 @@
+div#ys-feedback_add {
+    width: 70%;
+    background: none repeat scroll 0 0 #F4F5F5;
+    position: relative;
+    margin: 10px 0px 20px 10px !important;
+    padding: 20px 0px 20px 20px !important;
+}
+
+div#ys-feedback_add .req_block {
+    position: absolute;
+    right: 30px;
+    top: 68px;
+    width: 170px;
+    font-size: 14px;
+}
+
+div#ys-feedback_add h3 {
+    color: #000000 !important;
+    direction: ltr !important;
+    font-family: Arial,Tahoma,Verdana,sans-serif !important;
+    font-size: 14px !important;
+    font-size-adjust: none !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    letter-spacing: normal !important;
+    line-height: 18px !important;
+    margin: 8px 0 3px !important;
+    text-align: start !important;
+    text-decoration: none !important;
+    text-overflow: clip !important;
+    text-transform: none !important;
+    vertical-align: baseline !important;
+    word-spacing: 0 !important;
+}
+
+div#ys-feedback_add h2 {
+    font-size: 24px !important;
+}
+
+div#ys-feedback_add label {
+    display: block !important;
+    margin-bottom: 2px !important;
+    font-size: 14px !important;
+}
+
+div#ys-feedback_add div.field {
+    margin-top: 8px !important;
+}
+
+div#ys-feedback_add .txt {
+    width: 205px !important;
+}
+
+div#ys-feedback_add textarea {
+    font-size: 10pt !important;
+    width: 230px !important;
+}
+
+div#ys-feedback_add .txt, div#ys-feedback_add  textarea {
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 2px #D0D0D0 inset;
+    padding: 6px 10px;
+}
+
+div#ys-feedback_add div.ys-captcha {
+    margin-top: 25px !important;
+}
+
+div#ys-feedback_add div.ys-captcha input{
+    margin-top: 10px !important;
+}
+
+div#ys-feedback_add .button2 {
+    margin-top: 15px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    padding: 8px 13px !important;
+}
+
+div#ys-feedback_add .button2:hover {
+    cursor: pointer;
+}

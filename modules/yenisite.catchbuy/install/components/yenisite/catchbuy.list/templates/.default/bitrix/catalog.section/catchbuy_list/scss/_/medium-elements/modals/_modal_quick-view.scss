@@ -1,0 +1,50 @@
+.modal_quick-view{
+	width: 920px;
+	padding: 30px 15px;
+	h2{
+		margin-top: 0;
+		font-size: 28px;
+	}
+
+	.info.price-update-date{
+		display: none;
+	}
+	
+	.product-photos{
+		float: left;
+		padding-right: 100px;
+		padding-top: 0;
+		width: 500px;
+	}
+	.buy-block-origin{
+		width: 370px;
+		float: right;
+		margin-right: 10px;
+	}
+	.buy-block-content>.price-wrap>.price-actions{
+		display: none;
+	}
+	.one-click-wrap{
+		display: none;
+	}
+	.go2detailed{
+		position: absolute;
+		top: 102%;
+		right: 110px;
+	}
+
+	@media (max-width: 991px){
+		width: 760px;
+		.product-photos{
+			padding-right: 0;
+			width: 400px;
+		}
+		.buy-block-origin{
+			width: 320px;
+			margin-right: 0;
+		}
+		.go2detailed{
+			right: 10px;
+		}
+	}
+}

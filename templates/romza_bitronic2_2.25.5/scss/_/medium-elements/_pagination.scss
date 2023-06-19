@@ -1,0 +1,115 @@
+.static-pagination-wrap{
+	margin-top: 15px;
+	.current-state{
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+.pagination-wrap{
+	@include clearfix;
+	text-align: center;
+	padding: 9px 10px 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	// text-align: justify;
+	// line-height: 0;
+	// &:after{
+	// 	content: '';
+	// 	display: inline-block;
+	// 	vertical-align: top;
+	// 	width: 100%;
+	// }
+
+	&>.current-state{
+		position: relative;
+		z-index: 1;
+		height: 40px;
+		line-height: 40px;
+		float: left;
+		// display: inline-block;
+		// vertical-align: middle;
+
+		font-size: 12px;
+	}
+
+	@media (max-width: 767px){
+		display: none;
+	}
+}
+
+.pagination{
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	position: relative;
+	top: -2px;
+
+	.search-results-page &{
+		clear: both;
+	}
+}
+
+.pagination-item{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	height: 28px;
+	line-height: 27px;
+	min-width: 28px;
+
+	text-align: center;
+	
+	&.arrow{
+		&>i{
+			position: relative;
+			&:before{
+				font-size: 14px;
+			}
+		}
+		&.left>i{ left: -1px;}
+		&.right>i{ left: 1px;}
+	}
+	&.to-start, &.to-end{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	&.active, &:active{
+		[data-styling-type="skew"] & {top: 1px;}
+	}
+
+	&.disabled, &.disabled:hover, &.disabled:active{
+		cursor: default;
+		top: 0;
+
+		.btn-text{
+			background: none;
+			border: none;
+			cursor: default;
+		}
+	}
+
+	@media (max-width: 767px){
+		&.to-start, &.to-end{
+			display: none;
+		}
+	}
+}
+
+.show-by{
+	position: relative;
+	z-index: 4;
+	float: right;
+	height: 40px;
+	line-height: 36px;
+	// display: inline-block;
+	// vertical-align: middle;
+	// position: relative;
+	// line-height: normal;
+
+	.text{
+		margin-right: 5px;
+	}
+}

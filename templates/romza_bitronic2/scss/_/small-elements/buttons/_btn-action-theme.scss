@@ -1,0 +1,29 @@
+.btn-action {
+	&.compare, &.favorite {
+		@include btn-silver;
+		&.toggled {
+			&, &:hover, &:active {
+				@include main-clicked;
+			}
+		}
+	}
+}
+
+.btn-buy-wrap {
+	.buy { @include btn-main; }
+	.out-of-stock & .buy, .when-out-of-stock {
+		background: none !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+		border: none !important;
+		pointer-events: none;
+		color: #ff3232;
+	}
+}
+
+.buy + .tooltip {
+	.link {
+		@include set-colors('.text', $link-base-color);
+		@include set-border-colors('.text', $link-base-color, transparent, transparent, $link-base-color);
+	}
+}

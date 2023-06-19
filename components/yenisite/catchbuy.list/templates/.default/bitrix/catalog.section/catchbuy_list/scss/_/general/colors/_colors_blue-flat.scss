@@ -1,0 +1,37 @@
+$theme: 'blue-flat';
+// ======= COMMON ========
+$main-color-dark: #5babff; // см. ховер на телефоны в UI
+$main-color-light: #9dc9fa;
+$main-color-soft: #78bbff; // см. ховер на категории
+
+$main-gradient-to-top: $main-color-soft;
+$main-gradient-to-bottom: $main-color-soft;
+$main-gradient-to-right: $main-color-soft;
+// ==== END OF COMMON ====
+// ======== MAIN =========
+$main-normal-shadowcolor: #649fd7;
+$main-normal-textcolor: #fff;
+$main-normal-textshadow: none;
+$main-normal-bg: $main-color-soft;
+$main-normal-shadow: inset 0px -2px 0px $main-normal-shadowcolor;
+
+$main-hovered-shadowcolor: #7eaadb;
+$main-hovered-textcolor: $main-normal-textcolor;
+$main-hovered-textshadow: $main-normal-textshadow;
+$main-hovered-bg: $main-color-light;
+$main-hovered-shadow: inset 0px -2px 0px $main-hovered-shadowcolor;
+
+$main-clicked-shadowcolor: #4a90d8;
+$main-clicked-textcolor: $main-normal-textcolor;
+$main-clicked-textshadow: $main-normal-textshadow;
+$main-clicked-bg: $main-color-dark;
+$main-clicked-shadow: inset 0px 2px 0px $main-clicked-shadowcolor;
+// ===== END OF MAIN =====
+
+$shadow-specialblocks-silver: inset 0px -5px 0px fade-out(#000, 0.82);
+$shadow-specialblocks-main: inset 0px -5px 0px $main-normal-shadowcolor;
+$feedback-dots: #303435;
+$bigslider-textcolor: #00173c;
+
+$hurry-banner: url('../../img/bg/hurry-banner_' + $theme + '.png') no-repeat center top;
+// $benefit-bg: url('../../img/bg/benefit-bg_' + $theme + '.png') no-repeat center;

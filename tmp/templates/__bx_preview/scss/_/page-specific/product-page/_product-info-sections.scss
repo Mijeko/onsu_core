@@ -1,0 +1,237 @@
+.product-info-sections{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 1px solid #f0f0f0;
+	.combo-links{
+		display: table;
+		width: 100%;
+		>.links-wrap{
+			display: table-row;
+		}
+	}
+
+	&.full .combo-link {
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
+	&.tabs .combo-link {
+		padding-top: 6px;
+		padding-bottom: 7px;
+	}
+
+	.combo-header{
+		padding-top: 7px;
+		padding-bottom: 7px;
+		background: #f0f0f0;
+
+		&:hover { background: #d0d0d0; }
+	}
+
+	.combo-link, .combo-header{
+		
+		@include transition(false, (background, color));
+
+		&.active{
+			&:hover{
+				cursor: default;
+			}
+		}
+
+		&>.text{
+			margin-left: 5px;
+
+			font-size: em(15px);
+		}
+
+		&>i, &>.text{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		&>i{
+			display: none;
+		}
+	}
+
+	&.full, &[data-product-info-mode="full"]{
+		padding-right: 180px;
+		>.combo-links{
+			width: 182px;
+			display: block;
+			margin-top: -1px;
+			margin-bottom: -1px;
+			margin-right: -1px;
+			>.links-wrap{
+				display: block;
+			}
+		}
+		.combo-link{
+			padding-left: 15px;
+			>i{
+				display: inline-block;
+				width: 20px;
+			}
+			// &:first-of-type {padding-top: 5px;}
+			&:last-of-type {padding-bottom: 4px;}
+		}
+
+		@media (max-width: 991px){
+			padding-right: 0;
+			>.combo-links{
+				display: none;
+			}
+		}
+	}
+
+	&.tabs, &[data-product-info-mode="tabs"]{
+		.combo-link {
+			background: #f0f0f0;
+
+			&.active {
+				[data-styling-type="skew"] & { box-shadow: inset 0px 1px 2px 0px rgba(88, 37, 0, 0.36); }
+			}
+		}
+
+		@media (max-width: 991px){
+			>.combo-links{ display: none;}
+
+			.combo-target, .combo-header{
+				display: block !important;
+			}
+			.combo-header{
+				text-align: center;
+			}
+		}
+	}
+
+	.combo-target-content{
+		padding: 15px;
+	}
+
+	.document-link{
+		.text{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		i{
+			&:before{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 36px;
+			}
+		}
+	}
+	.video{
+		& + .video{
+			margin-top: 30px;
+		}
+		position: relative;
+		width: 100%;
+		padding-bottom: 56.25%;
+		iframe{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.availability {
+		.store {
+			@extend .clearfix;
+			position: relative;
+			padding: 15px;
+			margin-left: -15px;
+			margin-right: -15px;
+			transition: background .4s;
+
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				height: 1px;
+				left: 15px;
+				right: 15px;
+				bottom: -1px;
+				background: #f0f0f0;
+			}
+
+			&:hover {
+				cursor: pointer;
+				background: #f0f0f0;
+
+				&:before {
+					left: 0;
+					right: 0;
+				}
+			}
+
+			&:last-of-type {
+				margin-bottom: 0;
+				&:before {display: none;}
+			}
+			.store-info {
+				float: left;
+				width: 60%;
+			}
+
+			.store-name {font-weight: bold;}
+
+			.store-address {
+				font-size: .9em;
+				color: #777;
+			}
+
+			.store-phone {font-size: .9em;}
+
+			.store-count {
+				float: right;
+				width: 40%;
+			}
+
+			.store-indicator, .store-text, .store-numeric {
+				margin-left: 8px;
+				float: right;
+			}
+
+			.store-indicator {
+				position: relative;
+
+				.many { display: inline-block; }
+			}
+
+			.popup_map {right: auto;}
+
+			@media (max-width: 767px) {
+				.store-info{padding-right: 15px;}
+				.store-count {font-size: .9em;}
+			}
+		}
+	}
+
+	> .combo-links .combo-link[href="#availability"] { display: none; }
+
+	&.full, &[data-product-info-mode="full"] {
+		> .combo-links .combo-link[href="#availability"] {
+			[data-product-availability="tabs"] & { display: block; }
+		}
+	}
+
+	&.tabs, &[data-product-info-mode="tabs"] {
+		> .combo-links .combo-link[href="#availability"] {
+			[data-product-availability="tabs"] & { display: table-cell; }
+		}
+	}
+
+	> .tab-targets .combo-target#availability {
+		display: none;
+		[data-product-availability="tabs"] & { display: block; }
+	}
+
+	@media (max-width: 767px){
+		margin-left: -15px;	
+		margin-right: -15px;
+	}
+	
+}/* .product-info-sections */

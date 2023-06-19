@@ -1,0 +1,80 @@
+
+.vacancy {
+	.element-item {
+		text-align: center;
+		overflow: hidden;
+		cursor: pointer;
+
+		position: relative;
+		float: left;
+		width: 48%;
+		height: $elem-h;
+		margin: 1%;
+		padding: 10px;
+
+		@media (max-width: $screen-xs-max) {
+			width: 90%;
+			margin: 5%;
+		}
+
+		&:before {
+			content: '';
+			height: $elem-h - 20px;
+			width: 0;
+			opacity: 0;
+			display: inline-block;
+			vertical-align: middle;
+			transition: .5s;
+		}
+		.title {
+			font-size: 18px;
+			display: inline-block;
+			vertical-align: middle;
+			width: 100%;
+			margin-left: -4px;
+			transition: .5s;
+		}
+		.salary {
+			position: absolute;
+			top: 42px;
+			left: 0;
+			right: 0;
+			line-height: 1;
+			text-align: center;
+			transform: scale(1.8);
+			opacity: 0;
+			transition: .5s;
+			font-size: 22px;
+
+			@media (min-width: 768px) {font-size: 20px;}
+			@media (min-width: 991px) {font-size: 26px;}
+			@media (min-width: 1200px) {font-size: 32px;}
+		}
+		.desc {
+			text-align: left;
+			opacity: 0;
+			transition: .5s;
+			transform: translateY(100px);
+			margin-top: 110px;
+		}
+		&.gigante {
+			height: auto;
+			max-height: none;
+			max-width: 100%;
+
+			&:before {height: 0;}
+
+			.salary {
+				transform: scale(1);
+				opacity: 1;
+			}
+
+			.title {transform: translateY(100px);}
+
+			.desc {opacity: 1; transform: translateY(0); }
+
+			.more-info {opacity: 1;transform: translateY(0);}
+
+		}
+	}
+}

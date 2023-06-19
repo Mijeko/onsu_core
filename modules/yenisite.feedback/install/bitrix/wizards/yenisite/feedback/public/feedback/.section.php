@@ -1,0 +1,3 @@
+<?
+$sSectionName = "#SECTION_NAME#";
+?>

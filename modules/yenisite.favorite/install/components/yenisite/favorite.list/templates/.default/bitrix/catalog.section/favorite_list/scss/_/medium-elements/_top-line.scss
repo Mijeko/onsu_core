@@ -1,0 +1,472 @@
+.top-line{
+	width: 100%;
+	position: relative;
+	z-index: 5; // otherwise all popups are under darken
+	border: none !important;
+	>.container, >.container-fluid{ position: relative;}
+
+	[class*="fixed-"] &{
+		transform: translate3d(0,0,0);
+		position: fixed;
+		z-index: 20;
+	}
+	.fixed-top &, .fixed-bottom &, .not-fixed &{
+		.account-not-authorized>.content{
+			opacity: 1 !important;
+			display: inline-block !important;
+		}
+	}
+	.fixed-top &{
+		top: 0;
+		left: 0;
+	}
+	.fixed-bottom &{
+		bottom: 0;
+		left: 0;
+	}
+	.fixed-left &, .fixed-right &{
+		border: 2px solid gray !important;
+		bottom: 40%;
+		width: 50px;
+		>.container, >.container-fluid{
+			padding: 0;
+			width: 100%;
+			margin: 0;
+		}
+	}
+	.fixed-left &{
+		left: 0;
+		border-left: none !important;
+	}
+	.fixed-right &{
+		right: 0;
+		border-right: none !important;
+	}
+
+	@media (max-width: 767px){
+		>.container, >.container-fluid{
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.fixed-left &, .fixed-right &{
+			bottom: 0;
+			width: 40px;
+		}
+	}
+}
+
+.top-line-content{
+	text-align: justify;
+	line-height: 0; // to hide :after
+	height: 48px;
+
+	&:after{
+		content: '';
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+	}
+
+	.top-line-item{
+		position: relative;
+		z-index: 3;
+		//^ without it, bottom part is impossible to hover and
+		// click ( :after element screws it somehow)
+		// 2 for its popup to be over search-wrap
+		// 3 for its popup to be over btn-catalog on mobile
+		display: inline-block;
+		line-height: 45px;
+		vertical-align: top;
+		height: 48px;
+
+		&>a{
+			display: block;
+			height: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+
+			&>i:before{
+				vertical-align: top;
+			}
+
+			&.toggled{
+				.link-text{
+					border: none;
+					transition: none;
+				}
+			}
+		}
+		&>i:before{
+			vertical-align: top;
+		}
+		&.account-authorized{ display: none;}
+		&.account-not-authorized>.content{
+			display: inline-block;
+			padding-left: 0;
+			padding-right: 0px;
+		}
+	}/* .top-line-item */
+
+	@media (max-width: 1200px){
+		position: relative;
+		.top-line-item{
+			position: static; // for popups to be positioned
+			// relative to top-line-content
+		}
+	}
+	@media (max-width: 991px){
+		.btn-favorites, .btn-compare{
+			.link-text{ display: none;}
+		}
+		
+	}
+	@media (max-width: 767px){
+		height: 44px;
+
+		.items-inside{
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			line-height: 16px;
+			top: 5px;
+			right: 5px;
+			border-radius: 50%;
+			text-align: center;
+			font-size: 10px;
+		}
+		
+
+		.top-line-item{
+			line-height: 45px;
+			height: 44px;
+			
+			&.favorites{
+				// right: 44px;
+				width: 44px;
+				text-align: center;
+
+				&>a>i:before{
+					margin-right: 0;
+					font-size: 24px;
+				}
+
+				&.toggled{
+					right: auto;
+					left: 0;
+				}
+			}
+			.btn-favorites{
+				position: relative;
+			}
+
+			&.basket{
+				right: -1px;
+				width: 44px;
+				&>a>i:before{
+					font-size: 30px;
+				}
+			}
+			
+			&>a{
+				padding-left: 0px;
+				padding-right: 0px;
+			}
+
+			&.account-not-authorized{
+				padding-left: 15px;
+			}
+			&.account-authorized{
+				line-height: 44px;
+			}
+		}/* .top-line-item */
+	}/* @media (max-width: 767px) */
+
+
+	.fixed-left &, .fixed-right &{
+		text-align: left;
+		line-height: normal;
+		height: auto;
+		width: 100%;
+		&:after{display: none;}
+
+		.items-inside{
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			line-height: 16px;
+			top: 5px;
+			right: 5px;
+			border-radius: 50%;
+			text-align: center;
+			font-size: 10px;
+			>.hidden-xs{display: none;}
+		}
+
+		.top-line-item{
+			position: static;
+			width: 100%;
+			height: 48px;
+			line-height: 47px;
+			&.with-icon i:before, .with-icon i:before{
+				margin-right: 0;
+			}
+			.btn-compare, .btn-favorites{
+				position: relative;
+				>.link-text{display: none;}
+				>i{
+					display: block;
+					text-align: center;
+					height: 100%;
+				}
+			}
+
+			>a{
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		.account-not-authorized{
+			position: relative;
+			>.content{
+				white-space: nowrap;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 0px;
+				display: none;
+				overflow: hidden;
+				padding-right: 10px;
+				padding-left: 10px;
+				
+				text-align: center;
+				border: 1px solid gray!important;
+				box-shadow: none !important;
+
+				@include transition(false, (width));
+				&.um_popup-shown{
+					width: 160px;
+				}
+			}
+			>.avatar{
+				display: block;
+				text-align: center;
+				line-height: 48px;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+		}
+
+		.account-authorized{
+			width: 100%;
+			height: 48px;
+			max-width: none;
+			position: relative;
+			#account-menu-toggler{
+				position: absolute;
+				overflow: hidden;
+				height: 100%;
+				width: 48px;
+				padding: 0;
+				transition: width .3s,
+							padding .3s;
+
+				&:hover{
+					cursor: pointer;
+				}
+				&.toggled{
+					padding-right: 50px;
+					width: 280px;
+					>.account.pseudolink{
+						margin-left: 5px;
+					}
+					>.btn-logout{
+						opacity: 1;
+						visibility: visible;
+					}
+					.avatar{
+						margin-right: 10px;
+					}
+				}
+
+
+			}
+			.btn-logout{
+				opacity: 0;
+				visibility: hidden;
+				transition: opacity .4s,
+							visibility .4s;
+			}
+		}
+
+		
+		@media (max-width: 767px){
+			position: static;
+			width: 100%;
+
+			.top-line-item{
+				&.account-not-authorized{
+					padding-left: 0;
+					>.avatar{
+						line-height: 40px;
+					}
+				}
+				height: 40px;
+				line-height: 39px;
+			}
+
+			.account-authorized{
+				height: 40px;
+				line-height: 35px;
+				#account-menu-toggler{
+					width: 40px;
+					>.account.pseudolink{
+						margin-left: 0;
+					}
+					.avatar{
+						width: 30px;
+						height: 30px;
+						margin: 5px;
+					}
+					.link-text{
+						position: relative;
+						top: -1px;
+					}
+					&.toggled{
+						width: 272px;
+						.account.pseudolink{
+							margin-left: 0;
+						}
+					}
+					.btn-logout{
+						top: 2px;
+						line-height: 45px;
+					}
+				}
+			}
+		}
+
+	}/* .fixed-left &, .fixed-right & */
+	.fixed-left &{
+		.account-not-authorized{
+			>.content{
+				left: 100%;
+				border-radius: 0 25px 25px 0;
+				border-left: none !important;
+			}
+		}
+		.account-authorized{
+			>#account-menu-toggler{
+				left: 0;
+			}
+		}
+	}
+	.fixed-right &{
+		.account-not-authorized{
+			>.content{
+				right: 100%;
+				border-radius: 25px 0 0 25px;
+				border-right: none !important;
+			}
+		}
+		.account-authorized{
+			>#account-menu-toggler{
+				right: 0;
+			}
+		}
+	}
+}/* .top-line-content */
+
+.account-authorized{
+	#account-menu-toggler{
+		position: relative;
+		height: 100%;
+		padding-left: 5px;
+		padding-right: 50px;
+	}
+	.account.pseudolink{
+		max-width: 100%;
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5px;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+		white-space: nowrap;
+		.link-text{
+			transition: none;
+		}
+
+
+	}
+	.avatar{
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin-top: -4px;
+		
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+
+		border-radius: 50%;
+		border: 1px solid;
+
+		text-align: center;
+		i:before{
+			position: relative;
+			left: 1px;
+			top: -1px;
+		}
+		img{
+			border-radius: 50%;
+			position: absolute;
+			transform: translateZ(0);
+			top: 0;
+			left: 0;
+			
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.btn-logout{
+		position: absolute;
+		top: 6px;
+		right: 5px;
+		width: 33px;
+		height: 33px;
+
+		&:hover{ cursor: pointer;}
+
+		&:before{
+			position: absolute;
+			top: -5px;
+			left: 7px;
+		}
+	}
+
+	
+
+	max-width: 30%;
+	@media (max-width: 1200px){
+		max-width: 25%;
+	}
+	@media (max-width: 991px){
+		max-width: 40%;
+	}
+	@media (max-width: 767px){
+		max-width: 60%;
+		#account-menu-toggler{
+			padding-left: 5px;
+		}
+		.btn-logout{
+			top: 5px;
+		}
+	}
+
+}

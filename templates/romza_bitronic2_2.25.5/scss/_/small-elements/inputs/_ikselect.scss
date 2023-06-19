@@ -1,0 +1,255 @@
+.ik_select {
+	/*
+	Wraps all the plugin's HTML code.
+	Probably you should not add any styles here
+	*/
+	display: inline-block;
+	vertical-align: middle !important;
+	[data-styling-type="skew"] & {
+		padding: 3px 3px 5px;
+		height: 40px;
+	}
+
+	[data-styling-type="flat"] &  {
+		height: 32px;
+	}
+	border-radius: 3px;
+	
+	z-index: 0 !important; // override inline styles set by plugin
+	&.opened{
+		z-index: 1 !important;
+	}
+	
+	text-align: left;
+
+	.search-controls &{
+		height: auto;
+		padding: 0;
+	}
+
+	@mixin touch {
+		select {
+			left: auto !important;
+			height: 32px !important;
+			opacity: 0 !important;
+
+			[data-styling-type="skew"] & {
+				top: 3px !important;
+			}
+			[data-styling-type="flat"] & {
+				top: 0 !important;
+			}
+		}
+		.ik_select_link {pointer-events: none}
+	}
+
+	.bx-touch & {
+		@include touch();
+	}
+
+	@media (max-width: 767px) {
+		@include touch();
+	}
+}
+	.ik_select_link {
+		/* Fake select you click on to open the dropdown */
+		height: 100%;
+		padding: 0px 35px 0 10px;
+		border-radius: 3px;
+		border: 1px solid;
+		@include transition(false, box-shadow);
+
+		white-space: nowrap;
+		position: relative;
+		z-index: 11;
+		cursor: pointer;
+		.search-controls &{
+			height: 30px;
+			border: none;
+			border-radius: 3px;
+			padding: 0 22px 0 7px;
+		}
+
+		.trigger{
+			// position: relative;
+			// display: inline-block;
+			// vertical-align: middle;
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30px;
+			height: 100%;
+			border-radius: 0px 3px 3px 0px;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				left:50%;
+				margin-left: -4px;
+				margin-top: -2px;
+
+				border: 4px solid;
+				border-left-color: transparent;
+				border-right-color: transparent;
+				border-bottom-width: 0;
+			}
+
+			.search-controls &{
+				width: 20px;
+			}
+		}
+
+		&.opened .trigger{
+			&:before{
+				border-bottom-width: 4px;
+				border-top-width: 0;
+			}
+		}
+
+		&.ik_select_link_disabled {
+			cursor: default;
+			border-color: #CCC;
+			background: #F5F5F5;
+			box-shadow: none;
+			color: #888;
+			/* Disabled state of the fake select */
+		}
+	}
+	.ik_select_link_focus {
+		/* Focused state of the fake select */
+	}
+	
+		.ik_select_link_text {
+			/*
+			Wrapper for the text inside the link.
+			It's best to add some width limiting rules here like
+			display:block;
+			overflow:hidden;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			*/
+			display: block;
+			line-height: 32px;
+			width: 100%;
+			overflow: hidden;
+			// text-overflow: ellipsis;
+			white-space: nowrap;
+			line-height: 30px;
+			text-align: left;
+		}
+
+
+	.ik_select_dropdown {
+		/*
+		Dropdown wrapper. Needed for script calculations.
+		You should not add any visual styles here.
+		You can shift the position of the dropdownз
+		by changing top and left values like
+		top: -2px;
+		left: -5px;
+		*/
+		font-family: $font-family-base;
+		max-width: 400px;
+		// z-index: 3 !important;
+	}
+		.ik_select_list {
+			/*
+			Wrapper for the options list.
+			Now that's a good place to add visual styles.
+			*/
+			overflow: hidden;
+			.ik_select_list_inner{
+				position: static !important;
+			}
+			ul{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+
+				border-radius: 0px 0px 3px 3px;
+			}
+			li{
+				text-align: left;
+				padding: 5px 35px 6px 10px; // right padding 35 for trigger arrow
+				// white-space: nowrap;
+				// text-overflow: ellipsis;
+				// overflow: hidden;
+				&:hover{
+					cursor: pointer;
+				}
+				.search-controls &{
+					padding-right: 15px;
+				}
+				@include transition(false, background);
+			}
+
+			li:last-child{
+				border-radius: 0px 0px 3px 3px;
+			}
+
+		}
+		.ik_select_optgroup {
+			/* Optgroup */
+		}
+		.ik_select_optgroup_label {
+			/* Optgroup label */
+		}
+		.ik_select_option {
+			/* Option */
+			[data-styling-type="flat"] & {
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					width: 3px;
+					opacity: 0;
+				}
+			}
+
+			.bx-touch .ik_select_list & {
+				min-height: 48px;
+				padding: 14px 35px 6px 10px;
+			}
+
+			.ik_select_list & {
+				@media (max-width: 767px){
+					min-height: 48px;
+					padding: 14px 35px 6px 10px;
+				}
+			}
+		}
+			.ik_select_option_label {
+				/* Option label */
+			}
+			.ik_select_option_disabled{
+				pointer-events: none;
+				cursor: default;
+				color: silver;
+			}
+		.ik_select_hover {
+			/* The hovered state of an option */
+			[data-styling-type="flat"] & {
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+		.ik_select_active {
+			/* The active state of an option */
+			font-weight: bold;
+		}
+
+		.ik_select_filter_wrap {
+			/* Wrapper for the filter input */
+		}
+		.ik_select_filter {
+			/* Filter input */
+		}
+		.ik_nothing_found {
+			/* Block that's shown when there's nothing found. */
+		}

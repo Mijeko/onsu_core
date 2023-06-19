@@ -1,0 +1,8 @@
+.popup_ajax-search {
+	@include silver-static;
+	border: none;
+
+	table, .popup-ajax-footer {
+		border: $silver-static-border;
+	}
+}

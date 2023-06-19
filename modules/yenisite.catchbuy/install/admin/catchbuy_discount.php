@@ -1,0 +1,1 @@
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/yenisite.catchbuy/admin/catchbuy_discount.php");

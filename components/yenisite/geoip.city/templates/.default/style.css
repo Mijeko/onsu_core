@@ -1,0 +1,194 @@
+#ys-locator {
+	font: 12px / 18px Arial, Tahoma, Verdana, sans-serif !important;
+	z-index: 1100 !important;
+}
+
+#ys-geoip-mask {
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+    /*z-index: 100 !important;*/
+    top: 0 !important;
+    left: 0 !important;
+    background: url("images/mask.png") top left repeat !important;
+    display: none;
+}
+
+.ys-geoip-mask{
+	z-index: 1000;
+}
+
+.ys-popup {
+    width: 240px !important;
+    position: fixed !important;
+    top: 40px !important;
+    left: 50% !important;
+    margin: 0 0 0 -141px !important;
+    z-index: 1100 !important;
+    background: #fff !important;
+    border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    box-shadow: 0 1px 3px #777 !important;
+    padding: 28px 21px 20px !important;
+    display: none;
+}
+
+.ys-popup a.close {
+    width: 32px !important;
+    height: 32px !important;
+    display: block !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    top: 15px !important;
+    right: 10px !important;
+    border: none !important;
+}
+
+.ys-popup a.close:hover {
+    background-position: 0 -32px !important;
+}
+
+.ys-popup a.close:active {
+	background-position: 0 -64px !important;
+}
+
+#ys-locator .sym {
+	font-family: WebSymbolsLigaRegular !important;
+}
+
+#ys-locator .txt, #ys-locator textarea {
+    border-radius: 3px;
+    padding: 6px 10px !important;
+    box-shadow: inset 0 2px 2px #d0d0d0;
+}
+
+#ys-locator .txt:hover, #ys-locator  textarea:hover,
+#ys-locator .txt:focus, #ys-locator  textarea:focus {
+    box-shadow: inset 0 2px 2px #dfdfdf;
+}
+
+#ys-locator {
+	width: 423px !important;
+	top: 20% !important;
+	left: 40% !important;
+}
+
+#ys-locator h2 {
+	font-size: 20px !important;
+	width: 550px !important;
+	font-weight: normal !important;
+}
+
+#ys-locator .ys-my-city {
+	margin: 5% 0 0 35% !important;
+}
+
+#ys-locator .txt {
+	margin-top: 15px !important;
+}
+
+#ys-locator .ys-loc-cities ul {
+	list-style-type: none !important;
+	float: left !important;
+	padding: 0 !important;
+	margin: 0 0 0 30px !important;
+	width: 120px !important;
+}
+
+#ys-locator .ys-loc-cities ul li {
+	margin: 0 0 5px 0 !important;
+	display: list-item !important;
+}
+
+#ys-locator .ys-loc-cities ul.ys-loc-first {
+	margin: 0 !important;
+}
+
+#ys-locator .ys-loc-cities ul li a {
+	background: none !important;
+	width: auto !important;
+	float: none !important;
+}
+
+.ys-loc-cities {
+	margin-top: 20px !important;
+}
+
+.ys-loc-choose {
+	margin-top: 25px !important;
+}
+
+.ys-loc-choose-country, .ys-loc-choose-region, .ys-loc-choose-city {
+	margin: 5px 0 15px 0 !important;
+}
+
+.ys-loc-choose-region {
+	display: none !important;
+}
+
+a.ys-loc-city {
+	display: inline;
+}
+
+.ys-loc-autocomplete {
+	position: absolute !important;
+	display: none;
+	width: 350px !important;
+	max-height: 400px !important;
+	overflow: auto !important;
+	z-index: 1200 !important;
+	background: white !important;
+	border: 1px solid #aaa !important;
+	border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	box-shadow: 0 1px 2px #777 !important;
+}
+
+.ys-loc-autocomplete div {
+	line-height: 14px !important;
+	padding: 3px 5px !important;
+	cursor: pointer !important;
+	font-size: 14px !important;
+}
+
+.ys-loc-autocomplete div strong {
+	/* font-weight: normal; */
+	color: red !important;
+}
+
+.ys-loc-autoc-selected {
+	background: #e0e0e0 !important;
+}
+
+#ys-locator a {
+	text-decoration: none !important;
+}
+
+#ys-locator a span {
+	border-bottom: 1px dashed !important;
+}
+
+.ys-your-city  .sym {
+	color: red !important;
+}
+
+a.ys-loc-city {
+	border-bottom: 1px dashed !important;
+	text-decoration: none !important;
+}
+
+#ys-locator .button {
+	-webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    -ms-border-radius: 3px !important;
+    -o-border-radius: 3px !important;
+    border-radius: 3px !important;
+    font-size: 14px !important;
+    padding: 5px 16px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+	padding: 6px 10px !important;
+	cursor: pointer !important;
+}

@@ -1,0 +1,52 @@
+.items-table{
+	thead>tr{
+		background: #eaeaea;
+		border-color: darken(#eaeaea, 10%);
+	}
+
+	tfoot{
+		background: #eaeaea;
+	}
+
+	.apply-coupon{
+		@extend .btn-main;
+	}
+}
+.table-item{
+	&, & + .table-item{
+		border-color: silver;
+	}
+	&:hover{
+		background: $table-hovered-bg;
+	}
+	&.out-of-stock{
+		.photo>img, .price-new{
+			opacity: 0.3;
+			filter: alpha(opacity=30);
+			.tooltip{
+				opacity: 1;
+			}
+		}
+		.price-old{display: none;}
+		.sum, .discount{
+			opacity: 0;
+			filter: alpha(opacity=0);
+		}
+	}
+
+	@media (max-width: 991px){
+		button:hover{
+			>i{ color: $main-color-dark;}
+		}
+	}
+	@media (max-width: 767px){
+		.actions>button{
+			@include btn-silver;
+			&:hover, &:active{
+				>i{
+					color: #000;
+				}
+			}
+		}
+	}
+}

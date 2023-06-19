@@ -1,0 +1,21 @@
+.scroller__bar_v {
+    background: $main-normal-bg;
+    box-shadow: $scroll-bar-v-shadow;
+
+    &:hover { background: $main-hovered-bg; }
+    &:active {
+        background: $main-clicked-bg;
+        outline: $scroll-bar-v-clicked-outline;
+    }
+}
+
+// SCROLLBAR RAIL
+.scrollbar-rail.slider-content {
+    & > .scroll-element {
+        &.scroll-x .scroll-bar { background: $silver-normal-bg; }
+
+        .scroll-element_outer:hover {
+            .scroll-bar { background: $silver-hovered-bg; }
+        }
+    }
+}

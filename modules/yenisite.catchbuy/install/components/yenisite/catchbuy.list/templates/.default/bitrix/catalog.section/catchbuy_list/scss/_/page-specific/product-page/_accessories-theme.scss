@@ -1,0 +1,44 @@
+.accessories{
+	&>header{
+		background: $main-color-light;
+		text-shadow: 0px 1px 0px $main-normal-textshadow;
+
+		&>i{
+			background: url('../../img/4sprites/badge.png') no-repeat center 0;
+		}
+	}
+}
+
+.accessory{
+	&:before{ border-bottom-color: $accessory-border;}
+	&:after{ border-bottom-color: #fff;}
+	border-color: $accessory-border;
+	&:hover{
+		border-color: $main-color-light;
+		&:before{ border-bottom-color: $main-color-light;}
+	}
+
+	&.out-of-stock:hover{
+		border-color: $accessory-border;
+		&:before{ border-bottom-color: $accessory-border;}
+	}
+
+
+	.main-data{
+		&>a{
+			@include set-colors('.text', $link-base-color, $link-hover-color,
+											$link-clicked-color, $link-visited-color);
+			@include set-border-colors('.text', $link-base-color, transparent,
+											transparent, $link-visited-color);
+		}
+	}
+	.add-to-order{
+		border-right-color: $main-color-light;
+		border-top-color: $main-color-light;
+	}
+	&.out-of-stock .add-to-order{
+		border-right-color: $accessory-border;
+		border-top-color: $accessory-border;
+		.text{ color: #c7c7c7;}
+	}
+}

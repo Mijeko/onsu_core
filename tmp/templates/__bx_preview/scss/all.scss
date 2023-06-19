@@ -1,0 +1,128 @@
+@import 'bootstrap';
+
+// general: fonts, variables, mixins, common styles, resets, etc...
+@import '_/general/fonts/alsrubl';
+@import '_/general/fonts/archive';
+@import '_/general/fonts/flaticon';
+@import '_/general/variables';
+@import '_/general/mixins';
+@import '_/general/general';
+@import '_/general/scrollbars';
+@import '_/general/minicolors';
+@import '_/general/grid-animations';
+@import '_/general/animations';
+@import '_/general/countdown';
+@import '_/general/magnify';
+
+// small elements styling: buttons, inputs, links
+@import '_/small-elements/with-icon';
+@import '_/small-elements/breadcrumbs';
+@import '_/small-elements/buttons/btn-main';
+@import '_/small-elements/buttons/btn-basket';
+@import '_/small-elements/buttons/btn-settings-toggle';
+@import '_/small-elements/buttons/btn-close';
+@import '_/small-elements/buttons/btn-password-toggle';
+@import '_/small-elements/buttons/btn-delete';
+@import '_/small-elements/buttons/btn-to-waitlist';
+@import '_/small-elements/buttons/align-btn';
+@import '_/small-elements/city-and-time';
+@import '_/small-elements/store-indicator';
+@import '_/small-elements/inputs/textinput';
+@import '_/small-elements/inputs/checkbox-styled';
+@import '_/small-elements/inputs/radio-styled';
+@import '_/small-elements/inputs/ikselect';
+@import '_/small-elements/quantity-counter';
+@import '_/small-elements/rating-stars';
+@import '_/small-elements/buttons/actions';
+@import '_/small-elements/buttons/btn-action';
+@import '_/small-elements/tooltips';
+@import '_/small-elements/view-type';
+@import '_/small-elements/sort-n-view';
+@import '_/small-elements/availability-info';
+@import '_/small-elements/slider-controls-wrap';
+@import '_/small-elements/progression';
+@import '_/small-elements/one-click-buy';
+@import '_/chosen_v1.4.2/chosen.scss';
+
+// medium elements styling: forms, menus, basket, catalog items
+@import '_/medium-elements/modals/modal_settings-panel';
+@import '_/medium-elements/modals/modal_city-select-panel';
+@import '_/medium-elements/modals/modal_forms';
+@import '_/medium-elements/modals/modal_basket';
+@import '_/medium-elements/modals/modal_quick-view';
+@import '_/medium-elements/modals/modal_custom-collection';
+@import '_/medium-elements/modals/modal_big-img';
+@import '_/medium-elements/popups/popup_ajax-search';
+@import '_/medium-elements/popups/popups_header';
+@import '_/medium-elements/menus/catalog-menu';
+@import '_/medium-elements/menus/sitenav';
+@import '_/medium-elements/forms/form_search';
+@import '_/medium-elements/header-contacts';
+@import '_/medium-elements/top-line';
+@import '_/medium-elements/scroll-slider';
+@import '_/medium-elements/pagination';
+@import '_/medium-elements/forms/filter';
+@import '_/medium-elements/range-slider';
+@import '_/medium-elements/big-slider';
+@import '_/medium-elements/cool-slider';
+@import '_/medium-elements/categories';
+@import '_/medium-elements/basket-content';
+@import '_/medium-elements/forms/form_order';
+@import '_/medium-elements/basket-big';
+@import '_/medium-elements/brands-catalog';
+@import '_/medium-elements/compare-table';
+@import '_/medium-elements/settings-panel';
+@import '_/medium-elements/combo-blocks';
+@import '_/medium-elements/benefits';
+
+
+
+// page big parts (modals, header, footer, catalog as a whole) and certain pages styling
+@import '_/page-parts/header';
+@import '_/page-parts/footer';
+@import '_/page-parts/catalog-page';
+@import '_/page-parts/catalog';
+@import '_/page-parts/catalog-lvl0-page';
+@import '_/page-parts/isotope';
+
+
+// page specific styles
+@import '_/page-specific/product-page/product-page';
+@import '_/page-specific/product-page/short-info';
+@import '_/page-specific/product-page/product-photos';
+@import '_/page-specific/product-page/buy-block';
+@import '_/page-specific/product-page/product-info-sections';
+@import '_/page-specific/product-page/characteristics';
+@import '_/page-specific/product-page/comments';
+@import '_/page-specific/product-page/accessories';
+@import '_/page-specific/product-page/collections';
+@import '_/page-specific/product-page/review';
+@import '_/page-specific/product-page/table_product-modifications';
+
+@import '_/page-specific/home-page/home-page';
+@import '_/page-specific/home-page/special-blocks';
+@import '_/page-specific/home-page/feedback';
+@import '_/page-specific/home-page/hurry';
+@import '_/page-specific/home-page/promos';
+
+@import '_/page-specific/news-page/news';
+
+@import '_/page-specific/brands-page/brands-page';
+
+@import '_/page-specific/order-pages/order-pages';
+@import '_/page-specific/order-pages/order-pages-detailed';
+
+@import '_/page-specific/personal-panel/personal-panel';
+@import '_/page-specific/personal-panel/personal-all';
+@import '_/page-specific/personal-panel/personal-waiting-goods';
+
+@import '_/page-specific/account/account-pages';
+@import '_/page-specific/account/account-menu';
+@import '_/page-specific/account/account-settings';
+@import '_/page-specific/account/account-subscribe-settings';
+
+// components
+@import '_/page-specific/staff-page/staff-base.scss';
+@import '_/page-specific/cert-page/cert-base.scss';
+@import '_/page-specific/partners-page/partners-base.scss';
+@import '_/page-specific/vacancy-page/vacancy-base.scss';

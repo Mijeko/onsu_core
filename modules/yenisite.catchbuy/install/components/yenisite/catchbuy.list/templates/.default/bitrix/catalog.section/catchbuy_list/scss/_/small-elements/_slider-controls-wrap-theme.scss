@@ -1,0 +1,38 @@
+.slider-controls-wrap{
+	&:before{
+		background: #d1cee2;
+	}
+
+	.slider-arrow{
+		background: #fff;
+		&.disabled{
+			color: silver;
+		}
+	}
+	.dots{
+		background: #fff;
+
+		.dot{
+			background: $hurry-slidercontrols-bg;
+			box-shadow: $hurry-slidercontrols-shadow;
+			&:before{
+				background: $hurry-slidercontrols-dot-bg;
+				box-shadow: $hurry-slidercontrols-dot-shadow;
+			}
+			&:hover{
+				&:before{
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+
+			&.active{
+				background: $hurry-slidercontrols-active-bg;
+				box-shadow: $hurry-slidercontrols-active-shadow;
+				&:before{
+					background: $hurry-slidercontrols-active-dot-bg;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,121 @@
+.form_account-subscribe-settings{
+	$left: 100px;
+	width: 100%;
+	max-width: 670px;
+	
+	.textinput{ width: 270px;}
+	.helper-text{
+		font-size: 12px;
+		color: #797979;
+	}
+	.subscribe-info{
+		padding-left: $left+15px;
+		.current-email{
+			position: relative;
+			&>.text{
+				position: absolute;
+				left: -$left;
+			}
+		}
+		&>.text{
+			margin-top: 15px;
+			margin-bottom: 15px;
+			margin-left: -$left;
+		}
+
+		.btn-main{
+			.when-opened{display: none;}
+			&.toggled{
+				&>.when-opened{display: inline;}
+				&>.when-closed{display: none;}
+			}
+		}
+	}
+	.subscribe-edit{
+		display: none;
+		margin-top: 25px;
+		padding: 15px;
+		padding-left: $left+15px;
+		padding-bottom: 30px;
+		background: #fffbde;
+
+		&>.text{
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+	}
+	.input-small-wrap + .input-small-wrap{
+		margin-top: 3px;
+	}
+	.input-wrapper{
+		display: block;
+		position: relative;
+		
+		.label-text{
+			position: absolute;
+			top: 0;
+			left: -$left;
+
+			width: $left;
+			height: 44px; // same as input height
+			line-height: 44px;
+			// ^ width and height are set for user to be able to click
+			// anywhere between text and input to focus on that input
+			&:hover{ cursor: pointer;}
+			// ^ and making pointer for user to see that he/she CAN
+			// click there to get some result
+			font-size: 14px;
+			font-weight: normal;
+		}
+	}/* .input-wrapper */
+
+	.btn-main{
+		&:active>.btn-text{
+			position: relative;
+			top: 1px;
+		}
+
+		margin-top: 20px;
+		border-radius: 4px;
+		padding: 10px 25px;
+		
+		.btn-text{
+			font-size: 18px;
+			.more_bold & {font-weight: bold;}
+		}
+	}/* .btn-submit */
+
+	@media (max-width: 767px){
+		padding-left: 0;
+		
+		.input-wrapper{
+			padding-top: 31px;
+			.textinput{
+				height: 45px;
+			}
+
+			.label-text{
+				left: 0px;
+				width: 100%;
+			}
+		}/* .input-wrapper */
+
+		.subscribe-info{
+			padding-left: 0;
+			>.text{
+				margin-left: 0;
+			}
+			.current-email{
+				&>.text{
+					position: relative;
+					left: auto;
+				}
+			}
+		}
+
+		.subscribe-edit{
+			padding-left: 0;
+			padding-top: 0;
+		}
+	}
+}/* .form_account-subscribe-settings */

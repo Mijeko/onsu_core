@@ -1,0 +1,56 @@
+.btn-to-waitlist{
+	font-size: em(12px);
+	margin: 0 !important;
+	i:before{
+		font-size: 26px;
+		margin-right: 0;
+	}
+
+	.btn-text{
+		display: inline-block;
+		vertical-align: middle;
+		@extend .pseudolink-bd;
+	}
+
+	.table-item .actions &{ //.btn-to-waitlist
+		display: inline-block;
+		vertical-align: baseline;
+		padding-top: 25px;
+		position: relative;
+		margin-right: 5px !important;
+		i{
+			position: absolute;
+			top: -2px;
+			left: 0;
+			right: 0;
+
+			&:before{
+				font-size: 26px;
+			}
+		}
+		.btn-text{
+			font-size: em(10px, 12px);
+			text-transform: uppercase;
+		}
+	}
+
+	.ajax-search-item &{
+		position: relative;
+		padding-top: 25px;
+		i{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+		
+
+		@media (max-width: 767px){
+			width: 25px;
+			.btn-text{
+				display: none;
+			}
+		}
+	}
+	
+}

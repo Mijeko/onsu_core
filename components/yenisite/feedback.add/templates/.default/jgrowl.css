@@ -1,0 +1,20 @@
+div.jGrowl div.error {
+    background: none repeat scroll 0 0 #FF7B11;
+    border: 2px solid #E00C0C;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 2px 0 #535353;
+    color: #FFFFFF;
+    font-size: 14px;
+    opacity: 1;
+    padding: 20px;
+}
+div.jGrowl div.ok {
+    background: none repeat scroll 0 0 #EBFFDD;
+    border: 2px solid #35AB01;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 2px 0 #535353;
+    color: #000000;
+    font-size: 14px;
+    opacity: 1;
+    padding: 20px;
+}

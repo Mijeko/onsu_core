@@ -1,0 +1,116 @@
+.select {
+  display: inline-block;
+
+  @media (max-width: 767px) {
+    @include silver-normal;
+
+    &:before {
+      [data-styling-type="skew"] & {
+        background: $main-normal-bg;
+        box-shadow: $main-normal-shadow;
+      }
+
+      [data-styling-type="flat"] & {
+        background: $silver-normal-bg;
+        box-shadow: $silver-normal-shadow;
+      }
+
+      .search-controls & {
+        border-top-color: $main-normal-textcolor;
+
+        .opened & {
+          border-top-color: transparent;
+          border-bottom-color: $main-normal-textcolor;
+        }
+      }
+    }
+
+    &:after {
+      [data-styling-type="skew"] & { color: $main-normal-textcolor; }
+      [data-styling-type="flat"] & { color: $silver-normal-textcolor; }
+    }
+
+    select {
+      border-color: $textinput-base !important;
+      background: #fff;
+
+      [data-styling-type="skew"] & { box-shadow: inset 0px 1px 5px fade-out(#000, 0.85); }
+
+      &:hover {
+        [data-styling-type="skew"] & { box-shadow: inset 0px 1px 5px fade-out(#000, 0.75); }
+      }
+
+    }
+
+    .search-controls & {
+      select { @include btn-silver; }
+
+      &:before {
+        background: none !important;
+        box-shadow: none !important;
+      }
+
+      &:after { color: #000 !important; }
+    }
+  }
+}
+
+.chosen-container {
+  .chosen-drop { @include silver-static; }
+
+  .chosen-results li {
+    &.highlighted {
+      [data-styling-type="skew"] & { background-color: $main-color-soft; }
+      [data-styling-type="flat"] & {
+        &:before { background: $main-color-soft; }
+      }
+    }
+  }
+}
+
+.chosen-container-single {
+  @include silver-normal;
+
+  .search-controls & {
+    @include btn-silver;
+
+    .chosen-single div {
+      background: none !important;
+      box-shadow: none !important;
+      &:before { color: #000 !important; }
+    }
+  }
+
+  .chosen-single {
+    border-color: $textinput-base !important;
+    background: #fff;
+
+    [data-styling-type="skew"] & { box-shadow: inset 0px 1px 5px fade-out(#000, 0.85); }
+
+    &:hover {
+      [data-styling-type="skew"] & { box-shadow: inset 0px 1px 5px fade-out(#000, 0.75); }
+    }
+
+    .search-controls & {
+      border: none;
+      box-shadow: none;
+      background: none;
+
+      &:hover { box-shadow: none; }
+    }
+
+    div {
+      [data-styling-type="skew"] & { @include btn-main; }
+      [data-styling-type="flat"] & { @include btn-silver; }
+
+      .search-controls & {
+        border-top-color: $main-normal-textcolor;
+
+        .opened & {
+          border-top-color: transparent;
+          border-bottom-color: $main-normal-textcolor;
+        }
+      }
+    }
+  }
+}

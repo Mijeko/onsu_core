@@ -1,0 +1,10 @@
+#gallery {
+list-style-type:none;
+float: left;
+width: 100%;
+}
+#gallery li {
+list-style-type:none;         
+float: left;
+padding: 5px;
+}

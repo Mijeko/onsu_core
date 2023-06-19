@@ -1,0 +1,8 @@
+@font-face{
+	font-family: 'WebSymbolsLigaRegular';
+		src: url('fonts/websymbolsligaregular.eot');
+		src: url('fonts/websymbolsligaregular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/websymbolsligaregular.woff') format('woff'),
+			url('fonts/websymbolsligaregular.ttf') format('truetype'),
+			url('fonts/websymbolsligaregular.svg#WebSymbolsRegular') format('svg');
+}

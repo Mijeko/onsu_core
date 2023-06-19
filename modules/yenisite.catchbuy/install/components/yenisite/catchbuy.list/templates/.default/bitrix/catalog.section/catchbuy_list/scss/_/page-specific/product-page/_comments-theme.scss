@@ -1,0 +1,28 @@
+.comments{
+	.form-wrap{
+		border-color: #f0f0f0;
+		header{
+			background: #f0f0f0;
+			&:hover{
+				background: darken(#f0f0f0, 10%);
+			}
+		}/* header */
+	}/* .form-wrap */
+}/* .comments */
+
+.comment-wrap{
+	header{
+		.avatar{
+			background: #f0f0f0;
+			color: #949494;
+		}
+
+	}
+
+	footer{
+		.link{
+			@include set-colors(false, $link-base-color, $link-hover-color,
+						$link-clicked-color, $link-visited-color);
+		}
+	}
+}

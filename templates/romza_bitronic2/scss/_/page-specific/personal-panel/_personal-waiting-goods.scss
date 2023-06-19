@@ -1,0 +1,114 @@
+.account-personal-waiting-goods {
+
+	.nav-pills {
+		display: flex;
+		@media (max-width: 767px) {flex-wrap: wrap;}
+		justify-content: center;
+		margin: 0 -7.5px 7.5px;
+		&:before, &:after {display: none;}
+		li {
+			float: none;
+			margin: 0 7.5px 7.5px;
+			padding: 0;
+			text-align: center;
+			&.active {
+				&:hover, a:hover {cursor: default;}
+			}
+			a {
+				padding: 5px 15px;
+				border: 2px solid #dedce4;
+			}
+		}
+	}
+	.btn-delete {
+		transition: .3s;
+		font-size: 12px;
+		i:before {font-size: 14px;}
+		.btn-text, i {color: #666 !important;}
+
+		@media (max-width: 767px) {
+		    font-size: 10px;
+		    white-space: nowrap;
+		}
+	}
+
+	.items-table {
+		th:last-of-type, td:last-of-type {padding-right: 15px;}
+	}
+
+	.table-item {
+		min-height: 127px;
+		position: relative;
+		&:hover .btn-delete {opacity: 1;}
+		.price {min-width: 120px;}
+
+		& + & {
+			border: none;
+			&>td {
+				border-top: 1px solid silver;
+			}
+		}
+
+	}
+	
+	.rating-stars {
+		display: block;
+		margin: 0;
+	}
+
+	.info, .info2 {
+		text-align: center;
+		clear: both;
+
+		.value {
+			padding-right: 15px;
+			white-space: nowrap;
+			font-weight: bold;
+			& + .b-rub {
+				position: absolute;
+				margin-left: -11px;
+			}
+		}
+	}
+
+	@media (min-width: 768px) {
+
+		td.info2 {
+			text-align: center;
+			&>div {margin-bottom: 10px;}
+				font-size: 1.2rem;
+			.info2-title {
+				display: block;
+				color: #777;
+			}
+		}
+
+		.date {
+			font-size: 1.2rem;
+			color: #777;
+		}
+	}
+
+	.table-item {
+		@media (max-width: 767px) {
+
+			.name {padding-left: 100px;}
+
+			.photo {
+				padding: 25px 5px 30px;
+				height: 130px;
+			}
+
+			.actions-btn {
+				position: absolute;
+				top: 100px;
+				padding: 0 !important;
+				width: 100px;
+				text-align: center;
+			}
+		}
+		
+	}
+
+
+}

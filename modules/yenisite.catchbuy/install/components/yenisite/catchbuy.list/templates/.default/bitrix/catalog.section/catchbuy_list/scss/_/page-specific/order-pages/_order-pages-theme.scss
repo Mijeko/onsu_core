@@ -1,0 +1,26 @@
+.auth-before-order-page{
+	.social-text{
+		border-color: #cacaca;
+	}
+
+	.social-modal{
+		&.vk{ background: url('../../img/icons/icon_modal_social_vk.png');}
+		&.ok{ background: url('../../img/icons/icon_modal_social_ok.png');}
+		&.mail{ background: url('../../img/icons/icon_modal_social_mail.png');}
+		&.fb{ background: url('../../img/icons/icon_modal_social_fb.png');}
+		&.black{ background: url('../../img/icons/icon_modal_social_black.png');}
+	}
+
+}
+
+.account-order-page{
+	.order-info-section{
+		header>.text-wrap:hover{
+			color: silver;
+		}
+		&>.main-content>table{
+			.desc{ color: #6b6b6b;}
+		}
+	}
+
+}

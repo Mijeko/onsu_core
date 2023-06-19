@@ -1,0 +1,24 @@
+.btn-main{
+	border: none;
+	display: inline-block;
+	[data-styling-type="flat"] & {border-radius: 3px;}
+
+	&.disabled{
+		cursor: default;
+		pointer-events: none;
+	}
+}
+
+.in-cart{display: none;}
+.main-clicked.forced, .already-in-cart{
+	.text{display: none;}
+	@media (min-width: 768px){
+		.in-cart{display: inline;}
+	}
+	@media (max-width: 767px){
+		.in-cart{display: none;}
+		.table_product-modifications & .in-cart, .btn-big & .in-cart, &.btn-big .in-cart{
+			display: inline;
+		}
+	}
+}

@@ -1,0 +1,151 @@
+
+.order-details-page {
+	#bx-soa-order-form { padding-top: 10px; }
+
+	@media (max-width: $screen-sm - 1) {
+		#bx-soa-order-form { padding-top: 20px; }
+		h1, h2, .title-h1, .title-h2 { clear: none; }
+		h2, .title-h2 { margin-top: 30px; }
+	}
+
+	@media (max-width: $screen-xs - 1) {
+		#bx-soa-order-form { padding-top: 0; }
+		#bx-soa-order-form, h1, h2, .title-h1, .title-h2 {
+			@include clearfix;
+			width: 100%;
+			float: left;
+		}
+
+		h2, .title-h2 { margin-top: 20px; }
+
+		.btn-return {
+			@include clearfix;
+			margin-bottom: 10px;
+		}
+	}
+
+	.bx-soa-section {
+		border-radius: 3px;
+		// overflow: hidden; // fix BTWO-1592
+
+		.bx-soa-custom-label {
+			@include clearfix;
+
+			.bx-authform-starrequired {
+				float: right;
+
+				&:after {
+					content: ':';
+					color: $text-color;
+				}
+			}
+		}
+	}
+
+	.bx-sls .bx-ui-sls-pane {
+		z-index: 4;
+	}
+
+	.bx-soa-section,
+	#bx-soa-total, #bx-soa-total-mobile {
+		.btn-default {
+			padding: 10px 30px;
+			border-radius: 3px;
+
+		    display: inline-block;
+
+			&.btn-sm {
+				padding: 5px 15px;
+			}
+			&.btn-lg {
+				padding: 15px 45px;
+			}
+		}
+	} 
+
+	.bx-authform-formgroup-container {
+		.btn {
+			margin-top: 15px;
+			margin-right: 30px;
+		}
+	}
+
+	#bx-soa-orderSave .pull-right.btn.btn-default {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 250px;
+		height: 50px;
+		line-height: 48px;
+		text-align: center;
+		font-size: 1.28571em;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 12px;
+			right: -13px;
+			height: 26px;
+			width: 26px;
+			transform: rotate(45deg) skew(20deg, 20deg);
+			transform: translateZ(0) rotate(45deg) skew(20deg, 20deg);
+			clip: rect(-3px, 29px, 26px, 1px);
+		}
+	}
+
+	.bx-soa-coupon-input input.form-control[type="text"] {
+		@extend .textinput;
+	}
+	.form-group .form-control {
+		&, input {@extend .textinput;}
+		.bx-ui-sls-fake {padding: 0;}
+		&.dropdown-block {padding-left: 30px;}
+
+		.bx-ui-sls-clear {
+			top: 5px;
+		}
+		.dropdown-icon {
+			top: 15px;
+		}
+	}
+
+	.bx-sls .dropdown-fade2white {
+		height: 40px;
+	}
+
+	.bx-soa-pp-company-graf-container .checkbox-content {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+	}
+	
+	.bx-soa-section.bx-selected .bx-soa-editstep {
+		&, &:hover {@extend .pseudolink-bd;}
+	}
+
+	.bx-soa-pickup-list .bx-soa-pickup-list-item {
+		padding: 30px 35px;
+	}
+
+	.bx-soa-pp-company-graf-container {
+		input, .checkbox-content {display: none;}
+	}
+
+	a:not(.btn) {@extend .link-bd;}
+
+	.bx-soa-pp-company { z-index: 3 !important; }
+
+	.bx-soa-pp-company-block {
+		.checkbox, .form-group {
+			label {
+				display: block;
+				padding-left: 0;
+			}
+
+			.bx-soa-service-small {
+				padding-top: 2px;
+				margin-top: 5px;
+			}
+		}
+	}
+}

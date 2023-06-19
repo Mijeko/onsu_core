@@ -1,0 +1,20 @@
+<?php
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_CLOSE"] = "Zamknij";
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_CONDUCTED_DOCUMENTS_EXIST"] = "Wykryto przetworzone obiekty magazynowe, które uniemożliwiają wyłączenie zarządzania asortymentem.";
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_DISABLE_POPUP_TITLE"] = "Wyłącz zarządzanie asortymentem";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_DETAILS"] = "Szczegóły";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_1"] = "Anuluj";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_2"] = "Resetuj asortyment";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_3"] = "Resetuj asortyment";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_4"] = "Istnieją produkty z niezerowym stanem magazynowym. Przed włączeniem zarządzania asortymentem należy zresetować stany magazynowe.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_5"] = "Po włączeniu zarządzania asortymentem można aktualizować stany magazynowe.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_6"] = "Wyłącz";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_7"] = "Czy na pewno chcesz wyłączyć zarządzanie asortymentem?";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_8"] = "Nie będzie można przetwarzać obiektów magazynowych.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_10"] = "Włącz zarządzanie asortymentem";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_CLEAR_CONFIRM"] = "Aktualne zapasy w magazynach nie zgadzają się z ilością określoną w katalogu. Może to być spowodowane ręczną aktualizacją ilości produktów po wyłączeniu Zarządzania asortymentem. Przed użyciem funkcji Zarządzania asortymentem zaleca się usunięcie istniejących obiektów magazynowych.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_CONFIRM"] = "Istnieją obiekty magazynowe utworzone i używane wcześniej. Czy chcesz je zachować czy usunąć?";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_EASY"] = "Zachowaj";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_LINK_TITLE"] = "Dowiedz się więcej";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_TITLE"] = "Włącz zarządzanie asortymentem";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_WITH_RESET"] = "Usuń";

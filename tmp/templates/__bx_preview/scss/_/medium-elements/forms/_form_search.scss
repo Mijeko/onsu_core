@@ -1,0 +1,160 @@
+.search-wrap{
+	position: absolute;
+	//z-index: 5; // to ajax search popup be above main menu, banner
+	right: 0;
+
+	[data-styling-type="flat"] & {
+		padding: 0;
+
+		.search-controls {
+			top: 0;
+			right: 0;
+
+			.ik_select {border-radius: 0;}
+
+			.ik_select_link, .ik_select_link_text {
+				height: 34px;
+				line-height: 34px;
+			}
+
+			.btn-search {
+				height: 36px;
+				width: 36px;
+				margin-left: -4px;
+			}
+		}
+	}
+	
+	// [data-header-version="v1"] &{
+	// 	width: 33%;
+	// 	top: 65px;
+	// }
+
+	// [data-header-version="v2"] &, [data-header-version="v5"] &{
+	// 	position: relative;
+	// 	float: right;
+	// 	clear: right;
+	// 	margin-top: 10px;
+	// 	// top: 70px;
+	// 	// width: 33%;
+	// }
+	
+	
+	.no-xxl[data-header-version="v3"] &{ 
+		@media (min-width: $xxl-min){ left: $v-menu-width-xl + 10px;}
+	}
+	.no-xl[data-header-version="v3"] &{
+		@media (min-width: $xl-min){ left: $v-menu-width-lg + 10px;}
+		@media (min-width: $xxl-min){ left: $v-menu-width-lg + 10px;}
+	}
+	[data-header-version="v3"] &{
+		width: auto;
+		bottom: 30px;
+		@media (min-width: $xxl-min){ left: $v-menu-width-xxl + 10px;}
+		@media (max-width: $xl-max){ left: $v-menu-width-xl + 10px;}
+		@media (max-width: $lg-max){ left: $v-menu-width-lg + 10px;}
+		@media (max-width: 1199px){ left: $v-menu-width-md + 10px;}
+		@media (max-width: 991px){ left: $v-menu-width-sm + 10px;}
+	}
+	
+	@media (max-width: 767px){
+		[data-header-version="v1"] &,
+		[data-header-version="v2"] &,
+		[data-header-version="v3"] &,
+		[data-header-version="v4"] &,
+		[data-header-version="v5"] &{
+			position: relative;
+			width: auto;
+			top: auto;
+			right: auto;
+			bottom: auto;
+			left: auto;
+			margin-top: 0;
+
+			.search-example-wrap{
+				display: none;
+			}
+		}
+	}
+	padding: 5px 5px 7px;
+	border-radius: 4px;
+	input{
+		padding-right: 140px;
+	}
+
+	.search-controls {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		// I don't specify height or bottom, so height will be automatically
+		// set based on max height of elements (btn-search in this case)
+		
+		white-space: nowrap;
+	}
+	.search-example-wrap{
+		position: absolute;
+		top: -7px;
+		left: 0;
+		font-size: em(12px);
+		right: 5px;
+		bottom: 7px;
+		line-height: 50px;
+		color: #999;
+		padding-left: 15px;
+		cursor: text;
+		white-space: nowrap;
+		pointer-events: none;
+		[data-styling-type="skew"] & {top: 4px;}
+	}
+	
+	.search-clear, .search-area, .btn-search{
+		display: inline-block;
+		vertical-align: middle;
+		text-align: right;
+	}
+
+	.search-clear{
+		@include transition(false);
+		display: none;
+		color: #a2a2a2;
+		&:hover{
+			cursor: pointer;
+			color: #000;
+		}
+
+		&:before{
+			font-size: 14px;
+			margin: 0;
+			margin-right: 5px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	
+	.btn-search{
+		height: 48px;
+		width: 48px;
+		text-align: center;
+
+		border-radius: 0px 4px 4px 0px;
+		margin-left: 5px;
+
+		.svg-wrap {
+			display: inline-block;
+			width: 22px;
+			height: 22px;
+			vertical-align: middle;
+		}
+	}
+
+	.search-area{
+		height: 30px;
+	}
+
+	.search-example{
+		@extend .pseudolink-bd;
+		pointer-events: auto;
+
+		&:hover{cursor: pointer; }
+	}
+}

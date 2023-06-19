@@ -1,0 +1,43 @@
+.product-info-sections {
+	&.tabs, &[data-product-info-mode="tabs"] {
+		.combo-link {
+			@include set-colors(false, #000);
+
+			&:hover {
+				color: $main-normal-textcolor;
+				background: $main-color-soft;
+				@include set-colors(false, $main-normal-textcolor);
+			}
+
+			&.active {
+				background: $main-gradient-to-top;
+				@include set-colors(false, $main-normal-textcolor);
+			}
+		}
+	}
+
+	&.full, &[data-product-info-mode="full"] {
+		>.combo-links>.links-wrap {
+			@include silver-static;
+
+			>.combo-link {
+				@include set-colors(false, #000);
+
+				&:hover {
+					background: $main-color-soft;
+					@include set-colors(false, $main-normal-textcolor);
+				}
+
+				&.active {
+					background: $main-gradient-to-top;
+					@include set-colors(false, $main-normal-textcolor);
+				}
+			}
+		}
+	}
+
+	.combo-header:hover {
+		color: $main-normal-textcolor;
+		background: $main-gradient-to-top;
+	}
+}

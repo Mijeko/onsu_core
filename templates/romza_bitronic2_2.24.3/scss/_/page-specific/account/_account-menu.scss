@@ -1,0 +1,134 @@
+.account-menu, .popup_account-menu {
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			@extend .clearfix;
+			position: relative;
+			width: 100%;
+
+			a {
+				padding: 10px 15px 10px 41px;
+				width: 100%;
+				display: block;
+			}
+				
+			[data-styling-type="flat"] &:first-child {
+				a {padding-top: 13px;}
+				.svg-wrap {top: 12px;}
+			}
+
+			.svg-wrap {
+				display: inline-block;
+				vertical-align: middle;
+				position: absolute;
+				top: 9px;
+				left: 15px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+}
+
+.account-menu{
+	border-right: 1px solid;
+	border-color: #ddd6e2;
+	padding-bottom: 50px;
+	.avatar{
+		margin: auto;
+		margin-top: 5px;
+		margin-bottom: 10px;
+
+		width: 70px;
+		height: 70px;
+		line-height: 66px;
+		text-align: center;
+
+		border-radius: 50%;
+		overflow: hidden;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			border-radius: 50%;
+		}
+	}
+	.btn-logout{
+		position: relative;
+		display: block;
+		padding: 10px 15px 10px 42px;
+		[data-styling-type="flat"] & {padding-bottom: 13px;}
+		// margin-top: 5px;
+		margin: 0 -15px;
+		&:active{
+			top: 1px;
+		}
+		&>i:before{
+			position: absolute;
+			left: 16px;
+			top: 7px;
+		}
+	}
+	.name{
+		font-weight: bold;
+		color: #000;
+	}
+	.login{
+		font-size: 13px;
+		color: #8d8d8d;
+	}
+	.profile{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.active {
+		cursor: default;
+		pointer-events: none;
+	}
+
+	ul {
+		margin: 0 -15px;
+		background: #dedce4;
+
+		li {
+			@extend .clearfix;
+			position: relative;
+			width: 100%;
+
+			a {
+				padding: 10px 15px 10px 41px;
+				width: 100%;
+				display: block;
+			}
+				
+			[data-styling-type="flat"] &:first-child {
+				a {padding-top: 13px;}
+				.svg-wrap {top: 12px;}
+			}
+
+			.svg-wrap {
+				display: inline-block;
+				vertical-align: middle;
+				position: absolute;
+				top: 9px;
+				left: 15px;
+				width: 20px;
+				height: 20px;
+			}
+		}
+	}
+
+	.active > .link {
+		&>.text { color: #646464; }
+	}
+	
+	@media (max-width: 991px){
+		.avatar{
+			float: none;
+			display: block;
+		}
+	}
+}/* .account-menu */

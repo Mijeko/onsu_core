@@ -1,0 +1,34 @@
+.menu-lvl0{
+	display: block;
+	list-style: none;
+	padding: 0;
+	width: 100%;
+	
+}
+.menu-lvl1, .menu-lvl2{
+	list-style: none;
+	padding: 0;
+	display: none;
+}
+.lvl0-item, .lvl1-item, .lvl2-item{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	border-bottom: 1px solid gray;
+}
+.lvl0-item{
+	background: lightgreen;
+	&:hover, &:active{
+		background: green;
+	}
+	
+}
+.lvl1-item{
+	background: lightblue;
+	&:hover, &:active{
+		background: blue;
+	}
+	height: 40px;
+	text-align: center;
+	border-bottom: 1px solid gray;
+}

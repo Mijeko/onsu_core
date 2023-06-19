@@ -1,0 +1,152 @@
+.header-contacts{
+	border-radius: 4px;
+	.contacts-content{
+		@media (min-width: 768px){
+			display: block !important;
+			opacity: 1 !important;
+		}
+		min-width: 170px;
+		position: relative;
+		padding: 7px 8px 10px;
+		border-radius: 4px;
+		border: 2px solid;
+		border-color: transparent;
+		transition: border-color .3s;
+
+		.address-wrap, .modal-form{
+			display: none;
+		}
+
+		&:hover {
+			box-shadow: 0px 2px 5px fade-out(#743900, 0.24);
+		}
+	}
+	i.phone{
+		position: absolute;
+		left: 4px;
+		top: 5px;
+		&:before{ 
+			font-size: 32px;
+		}
+	}/* i */
+
+	i.phone.toggled + .phone-wrap {
+		visibility: visible;
+		opacity: 1;
+	}
+	
+	.phones{
+		overflow: hidden;
+		max-height: 25px;
+		padding-bottom: 1px;
+	}
+	&:hover{
+		z-index: 5;
+		.phones {max-height: none;}
+		.phone-wrap {
+			display: inline-block;
+			opacity: 1 !important;
+			visibility: visible !important;
+		}
+		.email-wrap{display: block;}
+		.free-call-text{top: 2px;}
+	}
+	.phone-wrap{
+		display: inline-block;
+		margin-left: 30px;
+		// margin-top: 5px;
+		&:not(:first-of-type){
+			opacity: 0;
+			visibility: hidden;
+		}
+		&>a{
+			@extend .pseudolink-bd;
+			font-size: em(16px);
+		}
+	}
+	.free-call-text{
+		font-size: 12px;
+		margin-left: 30px;
+		position: relative;
+		top: -4px;
+		color: #383838;
+	}
+	
+	.email-wrap{
+		margin-top: 6px;
+		display: none;
+	}
+
+	.phone-link + .tooltip{
+		margin-top: 2px;
+	}
+
+
+	@media (max-width: 767px){
+		.phones{
+			max-height: none;
+		}
+		.contacts-content{
+			&:before{
+				display: none;
+			}
+			
+			display: none;
+			position: absolute;
+			z-index: 6;
+			left: 0;
+
+			.free-call-text{
+				margin-top: 5px;
+				margin-left: 0 !important;
+				clear: left !important;
+			}
+			.address-wrap, .modal-form{
+				display: block;
+			}
+			.email-wrap{display: block;}
+			.address{
+				display: block;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				font-size: 12px;
+				position: relative;
+
+				padding-left: 30px;
+				>i{
+					position: absolute;
+					left: 3px;
+					top: 0;
+				}
+			}
+			.modal-form{
+				padding-bottom: 10px;
+				h2{
+					margin: 0;
+					margin-top: 10px;
+					padding: 10px 10px 0px;
+				}
+				.btn-submit{
+					width: 100%;
+				}
+				.required-info{
+					font-size: 12px;
+				}
+				.label-text{
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}/* .header-contacts */
+
+#switch-contacts{
+	display: none;
+	@media (max-width: 767px){
+		display: inline-block;
+		cursor: pointer;
+	}
+}
+#switch-time-content{
+	cursor: pointer;
+}

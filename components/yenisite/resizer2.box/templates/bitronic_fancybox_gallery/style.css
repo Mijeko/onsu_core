@@ -1,0 +1,40 @@
+a.yenisite-zoom {
+	border: none !important;
+}
+
+#gallery {
+list-style-type:none;
+float: left;
+width: 100%;
+}
+#gallery li {
+list-style-type:none;         
+float: left;
+padding: 5px;
+}
+#gallery a img {
+border: 1px solid #A0BF9D;
+}
+
+
+div.yenisite-photos .yenisite-detail {border:solid 2px #9999ff;}
+
+div.yenisite-photos .yenisite-detail:hover {border:solid 2px black;}
+
+div.yenisite-photos ul{
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+div.yenisite-photos ul li{
+	list-style: none;
+	float: left;
+	margin: 4px;
+}
+
+div.yenisite-photos .yenisite-icons {border:solid 2px #9999ff;}
+
+div.yenisite-photos .yenisite-icons:hover {border:solid 2px black;}

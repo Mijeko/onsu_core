@@ -1,0 +1,23 @@
+.availability-info{
+	.when-in-stock{
+		background: #6bbe22;
+		&:hover{
+			background: #4e9510;
+		}
+	}
+	.when-out-of-stock{
+		background: #ff1d1d;
+		&:hover{
+			background: darken(#ff1d1d, 10%);
+		}
+	}
+	.when-available-for-order{
+		background: #acacb0;
+		&:hover{
+			background: darken(#acacb0, 10%);
+		}
+	}
+	.text{
+		color: #fff;
+	}
+}

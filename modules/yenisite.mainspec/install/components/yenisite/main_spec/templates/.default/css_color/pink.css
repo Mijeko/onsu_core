@@ -1,0 +1,218 @@
+#ys-ms-slider .ms_tab_block ul li.loader {
+	color: #3699de!important;
+}
+#ys-ms-slider  .button1, #ys-ms-slider  .button2, #ys-ms-slider  .button7, #ys-ms-slider  .button8  {
+    background-color: #35a3f0 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #83ccff), color-stop(100%, #35a3f0)) !important;
+    background-image: -webkit-linear-gradient(top, #83ccff, #35a3f0) !important;
+    background-image: -moz-linear-gradient(top, #83ccff, #35a3f0) !important;
+    background-image: -ms-linear-gradient(top, #83ccff, #35a3f0) !important;
+    background-image: -o-linear-gradient(top, #83ccff, #35a3f0) !important;
+    background-image: linear-gradient(top, #83ccff, #35a3f0) !important;
+    border: 1px solid #35a3f0 !important;
+    box-shadow: 0 1px 0 0 #c2e6ff inset !important;
+    color: #fff !important;
+    text-shadow: 0 -1px 0 #3699de !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#83ccff', endColorstr='#35a3f0')" !important;
+}
+
+#ys-ms-slider  .button1:hover , #ys-ms-slider  .button2:hover, #ys-ms-slider  .button7:hover , #ys-ms-slider  .button8:hover  {
+    background: #3699de !important;
+    box-shadow: 0 1px 0 0 #9bccef inset !important;
+}
+
+#ys-ms-slider  .button1:active , #ys-ms-slider  .button2:active, #ys-ms-slider  .button7:active , #ys-ms-slider  .button8:active {
+    background-color: #ffb400 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #40a9f2), color-stop(100%, #83ccff)) !important;
+    background-image: -webkit-linear-gradient(top, #40a9f2, #83ccff) !important;
+    background-image: -moz-linear-gradient(top, #40a9f2, #83ccff) !important;
+    background-image: -ms-linear-gradient(top, #40a9f2, #83ccff) !important;
+    background-image: -o-linear-gradient(top, #40a9f2, #83ccff) !important;
+    background-image: linear-gradient(top, #40a9f2, #83ccff) !important;
+    box-shadow: inset 2px 2px 5px 1px #0674c1 !important;
+    border-color: #fff !important;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#40a9f2', endColorstr='#83ccff')" !important;
+}
+
+#ys-ms-slider a {
+    color: #3699de!important;
+    border-color: #8dc5ec!important;
+} 
+
+#ys-ms-slider a:hover {
+    color: #f15182;
+    border-color: #f79db8!important;
+}
+
+
+#ys-ms-slider .tv_tab .title {
+    color: #f15182;
+}
+
+#ys-ms-slider .slider_cat li.active span, #ys-ms-slider  .slider_cat li:active:not(.child_hover) span {
+    background: url(../img/pink_tv_tab_active.png) top center no-repeat!important;
+}
+
+#ys-ms-slider .slider_cat li.active .cl, #ys-ms-slider  .slider_cat li:active:not(.child_hover) .cl {
+    background: url(../img/pink_tv_tab_active_corners.png) top left no-repeat!important;
+}
+
+#ys-ms-slider .slider_cat li.active .cr, #ys-ms-slider  .slider_cat li:active:not(.child_hover) .cr {
+    background: url(../img/pink_tv_tab_active_corners.png) -5px 0 no-repeat!important;
+}
+
+#ys-ms-slider .slider_cat li.active a {
+    color: #f15182 !important;
+    text-shadow: 0 1px 0 #fff !important;
+}
+
+#ys-ms-slider .add_to_basket {
+    text-shadow: 0 -1px 1px #0660cf;
+    background: url(../img/add_to_basket_ice.png) top left no-repeat;
+}
+
+
+
+#ys-ms-slider .button1 span {
+    background: url(../img/pink_i_phone.png) no-repeat left;
+}
+
+#ys-ms-slider .button2 span {
+    background: url(../img/pink_i_basket.png) no-repeat left;
+}
+
+
+
+#ys-ms-slider .have {
+    background: #d5f1ff!important;
+}
+
+
+
+
+.ys-title-search-result .similar_items li:hover {
+    background: #e0f2ff !important;
+}
+
+
+
+
+
+/*Фон слайдера*/
+.slider1_BG{
+    width:747px !important;
+    height:5px !important;
+    margin-left: -70px !important;
+    -webkit-border-radius: 3px/2px !important;
+    -moz-border-radius: 3px/2px !important;
+    border-radius: 3px/2px !important;
+    background-color: #ededed !important;
+    -webkit-box-shadow: inset 1px 1px rgba(138,138,138,.75) !important;
+    -moz-box-shadow: inset 1px 1px rgba(138,138,138,.75) !important;
+    box-shadow: inset 1px 1px rgba(138,138,138,.75) !important;
+    
+}
+
+/*Стиль кнопки слайдера*/
+#ys-ms-slider .ui-slider-handle {
+	background: none !important;
+    height:6px !important;
+    width:120px !important;
+    margin-left: -60px !important;
+    position:absolute !important;
+    top:-2px !important;
+   /*  display:block !important; */
+    cursor:pointer !important;
+    -webkit-border-radius: 3px/2px 2px 3px !important;
+    -moz-border-radius: 3px/2px 2px 3px !important;
+    border-radius: 3px/2px 2px 3px !important;
+    background-color: #000 !important;
+    -webkit-box-shadow: inset 0 1px rgba(255,255,255,.69) !important;
+    -moz-box-shadow: inset 0 1px rgba(255,255,255,.69) !important;
+    box-shadow: inset 0 1px rgba(255,255,255,.69) !important;
+    border: solid 1px #35a3f0 !important;
+    background-image: -webkit-linear-gradient(bottom, #34a3f0, #85cdff) !important;
+    background-image: -moz-linear-gradient(bottom, #34a3f0, #85cdff) !important;
+    background-image: -o-linear-gradient(bottom, #34a3f0, #85cdff) !important;
+    background-image: linear-gradient(to top, #34a3f0, #85cdff) !important;
+
+}
+
+
+#ys-ms-slider .ui-slider:not(.ui-slider-disabled) .ui-slider-handle:hover{
+  	background-color: #f15182 !important;
+	-webkit-box-shadow: inset 0 1px rgba(255,255,255,.69) !important;
+	-moz-box-shadow: inset 0 1px rgba(255,255,255,.69) !important;
+	box-shadow: inset 0 1px rgba(255,255,255,.69) !important;
+	border: solid 1px #f15182 !important;
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,.32), rgba(255,255,255,0)) !important;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.32), rgba(255,255,255,0)) !important;
+	background-image: -o-linear-gradient(top, rgba(255,255,255,.32), rgba(255,255,255,0)) !important;
+	background-image: linear-gradient(to bottom, rgba(255,255,255,.32), rgba(255,255,255,0)) !important;
+
+}
+#ys-ms-slider .ui-slider:not(.ui-slider-disabled) .ui-slider-handle.ui-state-active {
+ 
+  background-color: #f15182 !important;
+	-webkit-box-shadow: inset 0 1px rgba(255,255,255,.69) !important;
+	-moz-box-shadow: inset 0 1px rgba(255,255,255,.69) !important;
+	box-shadow: inset 0 1px rgba(255,255,255,.69) !important;
+	border: solid 1px #f15182 !important;
+	background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,.32), rgba(255,255,255,0)) !important;
+	background-image: -moz-linear-gradient(bottom, rgba(255,255,255,.32), rgba(255,255,255,0)) !important;
+	background-image: -o-linear-gradient(bottom, rgba(255,255,255,.32), rgba(255,255,255,0)) !important;
+	background-image: linear-gradient(to top, rgba(255,255,255,.32), rgba(255,255,255,0)) !important;
+}
+
+
+#ys-ms-slider .slider_cat li a.ys-mainspec-rounded,
+#ys-ms-slider .slider_cat li.active a.ys-mainspec-rounded,
+#ys-ms-slider .blc_special a.ys-mainspec-rounded {
+    display: inline-block !important;
+    position: relative !important;
+    text-shadow: none !important;
+    border-bottom:none !important;
+    top: -8px !important;
+    width: 24px !important;
+    height: 24px !important;
+    -webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
+    border-radius: 12px !important;
+    background-color: #35a3f0 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #83ccff), color-stop(100%, #35a3f0)) !important;
+    background-image: -webkit-linear-gradient(top, #83ccff, #35a3f0) !important;
+    background-image: -moz-linear-gradient(top, #83ccff, #35a3f0) !important;
+    background-image: -ms-linear-gradient(top, #83ccff, #35a3f0) !important;
+    background-image: -o-linear-gradient(top, #83ccff, #35a3f0) !important;
+    background-image: linear-gradient(top, #83ccff, #35a3f0) !important;
+    border: 1px solid #35a3f0 !important;
+    box-shadow: 0 1px 0 0 #c2e6ff inset !important;
+    color: #fff !important;
+  
+}
+
+
+#ys-ms-slider .slider_cat li a.ys-mainspec-rounded:not(.unactive):hover,
+#ys-ms-slider .slider_cat li.active a.ys-mainspec-rounded:not(.unactive):hover,
+ #ys-ms-slider .blc_special a.ys-mainspec-rounded:not(.unactive):hover{
+    background: #3699de !important;
+    box-shadow: 0 1px 0 0 #9bccef inset !important;
+}
+
+#ys-ms-slider .slider_cat li a.ys-mainspec-rounded:not(.unactive):active,
+#ys-ms-slider .slider_cat li.active a.ys-mainspec-rounded:not(.unactive):active,
+#ys-ms-slider .blc_special a.ys-mainspec-rounded:not(.unactive):active  {
+   background-color: #ffb400 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #40a9f2), color-stop(100%, #83ccff)) !important;
+    background-image: -webkit-linear-gradient(top, #40a9f2, #83ccff) !important;
+    background-image: -moz-linear-gradient(top, #40a9f2, #83ccff) !important;
+    background-image: -ms-linear-gradient(top, #40a9f2, #83ccff) !important;
+    background-image: -o-linear-gradient(top, #40a9f2, #83ccff) !important;
+    background-image: linear-gradient(top, #40a9f2, #83ccff) !important;
+    box-shadow: inset 2px 2px 5px 1px #0674c1 !important;
+}
+
+#ys-ms-slider .slider_cat li:hover:not(.active) span a.tab_main {
+	color: #f15182 !important;
+}
+

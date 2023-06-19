@@ -1,0 +1,8 @@
+.syco_tooltip { background: $tooltip-bg; }
+.triangle_right { border-color: transparent $tooltip-bg transparent transparent; }
+.triangle_left { border-color: transparent transparent transparent $tooltip-bg; }
+.percentagebarinner {
+	background: #fff;
+	background: $tooltip-border;
+}
+.percentagebar { background: #fff; }

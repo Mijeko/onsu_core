@@ -1,0 +1,22 @@
+.with-icon{
+	i:before{
+		margin: 0; // override default flaticon's margin
+		margin-right: 5px;
+		// vertical centering
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.svg-wrap {
+	&.icon {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+
+		svg {
+			max-width: 20px;
+			max-height: 20px;
+		}
+	}
+}

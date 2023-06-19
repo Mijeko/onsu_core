@@ -1,0 +1,21 @@
+<?php
+$MESS["C_PVG_ADD_NEW_PROPERTY_VALUE_BUTTON"] = "agregar un nuevo valor";
+$MESS["C_PVG_CREATE_VARIATION"] = "Agregar variante";
+$MESS["C_PVG_CREATE_VARIATION_PROPERTY"] = "Crear una propiedad de la variante";
+$MESS["C_PVG_SIMPLE_PRODUCT_POPUP_BUTTON_CLOSE"] = "Cerrar";
+$MESS["C_PVG_SIMPLE_PRODUCT_POPUP_BUTTON_COPY"] = "Copiar producto";
+$MESS["C_PVG_SIMPLE_PRODUCT_POPUP_DOC_LINK_INFO"] = "Más información";
+$MESS["C_PVG_SIMPLE_PRODUCT_POPUP_TEXT"] = "Cree un nuevo producto de catálogo o haga clic en #COPY_BUTTON_NAME# para clonar el producto y sus propiedades en una nueva entrada del producto donde podrá agregarle variantes. #LINK_INFO#";
+$MESS["C_PVG_SIMPLE_PRODUCT_POPUP_TITLE"] = "No se pueden agregar variantes al producto porque se creó como simple.";
+$MESS["C_PVG_STORE_ADD_NEW_BARCODE"] = "Agregar código de barras";
+$MESS["C_PVG_STORE_ADD_ONE_MORE_BARCODE"] = "Agregar más";
+$MESS["C_PVG_STORE_AMOUNT_POPUP_AMOUNT"] = "Disponible";
+$MESS["C_PVG_STORE_AMOUNT_POPUP_EMPTY"] = "Este producto está agotado en todos los almacenes.";
+$MESS["C_PVG_STORE_AMOUNT_POPUP_OPEN_SLIDER_BUTTON"] = "Ver todo (#STORE_COUNT#)";
+$MESS["C_PVG_STORE_AMOUNT_POPUP_QUANTITY_AVAILABLE"] = "Existencias disponibles";
+$MESS["C_PVG_STORE_AMOUNT_POPUP_QUANTITY_COMMON"] = "Balance";
+$MESS["C_PVG_STORE_AMOUNT_POPUP_QUANTITY_COMMON1"] = "Cantidad en el almacén";
+$MESS["C_PVG_STORE_AMOUNT_POPUP_QUANTITY_RESERVED"] = "Reservado";
+$MESS["C_PVG_STORE_AMOUNT_POPUP_STORE"] = "Almacén";
+$MESS["C_PVG_STORE_CREATE_BARCODE_PLACEHOLDER"] = "Introducir un nuevo código de barras";
+$MESS["C_PVG_VARIATIONS_TITLE"] = "Variantes";

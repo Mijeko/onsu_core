@@ -1,0 +1,32 @@
+.store-indicator{
+	font-size: 0;
+	position: relative;
+	width: 16px;
+	height: 17px;
+	.many{
+		position: absolute;
+		width: 4px;
+		bottom: 0;
+		
+		height: 17px;
+		left: 12px;
+		background: silver;
+	}
+	.average{
+		height: 13px;
+		left: 6px;
+	}
+	.few{
+		height: 8px;
+		left: 0;
+	}
+	&.many>.many{
+		background: #328d00;
+	}
+	&.average>.average{
+		background: orange;
+	}
+	&.few>.few{
+		background: red;
+	}
+}

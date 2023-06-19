@@ -1,0 +1,20 @@
+<?php
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_CLOSE"] = "Cerrar";
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_CONDUCTED_DOCUMENTS_EXIST"] = "Hay objetos del inventario procesados. La administración del inventario no se puede deshabilitar mientras estén esos objetos en el inventario.";
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_DISABLE_POPUP_TITLE"] = "Deshabilitar la administración del inventario";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_DETAILS"] = "Detalles";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_1"] = "Cancelar";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_2"] = "Restablecer existencias";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_3"] = "Restablecer existencias";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_4"] = "Hay productos con existencias actuales distintas de cero. Debe restablecer los valores de las existencias antes de habilitar la administración del inventario.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_5"] = "Puede actualizar los valores de las existencias después de habilitar la administración del inventario.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_6"] = "Desactivar";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_7"] = "¿Seguro que desea deshabilitar la administración del inventario?";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_8"] = "No podrá procesar los objetos del inventario.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_10"] = "Habilitar la administración del inventario";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_CLEAR_CONFIRM"] = "Las existencias actuales en sus almacenes no coinciden con la cantidad especificada en el catálogo. Esto puede deberse a la actualización manual de la cantidad de productos después de deshabilitar la Administración del inventario. Se recomienda eliminar los objetos existentes en el inventario antes de utilizar las funciones de Administración del inventario.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_CONFIRM"] = "Hay objetos en el inventario que creó y utilizó antes. ¿Desea conservarlos o eliminarlos?";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_EASY"] = "Mantener";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_LINK_TITLE"] = "Más información";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_TITLE"] = "Habilitar la administración del inventario";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_WITH_RESET"] = "Eliminar";

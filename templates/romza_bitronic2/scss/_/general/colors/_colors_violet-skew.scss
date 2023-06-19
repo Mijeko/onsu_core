@@ -1,0 +1,53 @@
+$theme: 'violet-skew';
+// ======= COMMON ========
+$main-color-dark: #a700e5; // см. ховер на телефоны в UI
+$main-color-light: #ee7dff;
+$main-color-soft: #ce41f3; // см. ховер на категории
+
+
+$main-gradient-to-top: linear-gradient(to top, $main-color-dark, $main-color-light 80%);
+$main-gradient-to-bottom: linear-gradient(to top, $main-color-dark, $main-color-light 80%);
+$main-gradient-to-right: linear-gradient(to right, $main-color-dark, $main-color-light 80%);
+// ==== END OF COMMON ====
+// ======== MAIN =========
+// -- this is for buttons with arrows on sides
+$btn-gradient: rgb(223,153,255) 4%, rgb(195,77,242) 7%, $main-color-dark 26%, $main-color-light 100%;
+$btn-gradient-hover: $main-color-dark 26%, $main-color-light 100%;
+$btn-gradient-click: $btn-gradient;
+// --
+$main-normal-shadowcolor: #8500b7;
+$main-normal-textcolor: #fff;
+$main-normal-textshadow: none;
+$main-normal-bg: linear-gradient(to top, $btn-gradient);
+$main-normal-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px 0px 0px $main-normal-shadowcolor;
+
+$main-hovered-shadowcolor: #ce52e2;
+$main-hovered-textcolor: $main-normal-textcolor;
+$main-hovered-textshadow: $main-normal-textshadow;
+$main-hovered-bg: linear-gradient(to bottom, $btn-gradient-hover);
+$main-hovered-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px -2px 0px $main-hovered-shadowcolor;
+
+$main-clicked-shadowcolor: #34003d;
+$main-clicked-textcolor: $main-normal-textcolor;
+$main-clicked-textshadow: $main-normal-textshadow;
+$main-clicked-bg: $main-normal-bg;
+$main-clicked-shadow: inset 0px 2px 1px $main-clicked-shadowcolor;
+// ===== END OF MAIN =====
+
+$shadow-specialblocks-silver: 0px 1px 3px fade-out(#000, 0.21),
+								inset 0px -5px 0px fade-out(#000, 0.82);
+$shadow-specialblocks-main: 0px 1px 3px fade-out(#000, 0.21),
+								inset 0px -5px 0px $main-normal-shadowcolor;
+$feedback-dots: #303435;
+$bigslider-gradient: linear-gradient(to top, #cdd9d8, #a4b5c0);
+$bigslider-textcolor: #fff;
+
+$hurry-banner: url('../../img/bg/hurry-banner_' + $theme + '.png') no-repeat center top;
+$benefit-openness: url('../../pictures/benefits/agree-white.png');
+$benefit-warranty: url('../../pictures/benefits/OK-white.png');
+$benefit-delivery: url('../../pictures/benefits/delivery-white.png');
+$benefit-profit: url('../../pictures/benefits/sale-white.png');
+$benefit-exchange: url('../../pictures/benefits/exchange-white.png');
+$benefit-bigstock: url('../../pictures/benefits/menu-white.png');

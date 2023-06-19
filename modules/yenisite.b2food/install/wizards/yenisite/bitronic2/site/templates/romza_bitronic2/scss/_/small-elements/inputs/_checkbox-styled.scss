@@ -1,0 +1,110 @@
+.checkbox-styled{
+	display: inline-block;
+	vertical-align: middle;
+	input{ display: none;}
+
+	.buyer-info &{ margin-right: 20px;}
+}
+
+.checkbox-content{
+	display: block;
+	position: relative;
+
+	font-weight: normal;
+	font-size: em(14px);
+	text-align: left;
+	user-select: none;
+
+	>i{	// fake checkbox
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		
+		margin-top: -3px;
+		margin-right: 5px;
+
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		border-radius: 3px;
+		
+		text-align: center;
+
+		&:before{ // tick
+			font-size: em(13px);
+			
+			opacity: 0;
+			visibility: hidden;
+			
+			@include transition(false, (opacity, visibility));
+		}
+		&:after{ // border on hover
+			position: absolute;
+			content: '';
+			top: 0;right: 0;bottom: 0;left: 0;
+			
+			border: 2px solid;
+			border-radius: 4px;
+
+			[data-styling-type="flat"] & {border-width: 1px;}
+			
+			@include transition(false, (border));
+		}
+	}/* i */
+
+	&:focus{ outline: none;}
+	&:hover{
+		outline: none;
+		>i{
+			&:before{
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	&:hover{
+		cursor: pointer;
+	}
+
+
+	input[disabled] + &, .disabled > &{
+		pointer-events: none;
+		&:hover{
+			cursor: default;
+			>i:before, >i:after{
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+}/* .checkbox-content */
+
+input:checked + .checkbox-content{
+	>i{
+		&:before{
+			opacity: 1;
+			visibility: visible;
+		}
+		&:after{
+			transition: none;
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	&:focus{
+		>i:after{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.disabled &{
+		>i{
+			&:before{
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}

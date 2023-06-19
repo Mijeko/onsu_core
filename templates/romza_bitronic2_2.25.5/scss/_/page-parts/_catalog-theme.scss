@@ -1,0 +1,70 @@
+.quick-view-switch {
+	>.quick-view-fake-btn { @include main-normal; }
+	&:hover {
+		>.quick-view-fake-btn { @include main-hovered; }
+	}
+	&:active{
+		>.quick-view-fake-btn { @include main-clicked; }
+	}
+}
+
+.catalog-table .table-header { @include silver-static; }
+
+.catalog-item {
+	&:hover {
+		&, .description:before {border-color: $main-color-dark;}
+	}
+
+	&.list-item {
+		.description:before {border-color: $main-color-dark;}
+	}
+	
+	.photo-thumb{
+		&:hover { border-color: lighten($main-color-dark, 10%); }
+		&.active { border-color: $main-color-dark; }
+	}
+
+	.carousel-dot {
+		&:hover { background: $main-color-dark; }
+		&.active { background: $main-color-dark; }
+	}
+
+	&.opened {
+		.xs-switch {
+			@include btn-silver;
+			color: silver;
+			&:hover, &:active { color: gray; }
+		}
+	}
+
+	.selection-color, .selection-text {
+		.selection-item {
+			@include silver-static;
+			&:hover, &.active { border-color: $main-color-dark; }
+		}
+	}
+
+	.big &:before {
+		border-color: $main-color-soft;
+	}
+}
+
+.catalog-table-item {
+	.quantity-counter {
+		box-shadow: $quantity-counter-shadow;
+		background: $quantity-counter-bg;
+	}
+
+	.photo-wrap {
+		background: $main-gradient-to-right;
+		&:before { border-left-color: $main-color-light; }
+	}
+}
+
+.list-item, .blocks-item {
+	.xs-switch {
+		@include btn-silver;
+		color: silver;
+		&:hover, &:active { color: gray; }
+	}
+}

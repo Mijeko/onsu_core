@@ -1,0 +1,120 @@
+.simple-slider{
+	margin-bottom: 20px;
+	.noUi-background {
+		background: #dedce4;
+		box-shadow: $noui-simple-track-shadow;
+	}
+	&.noUi-connect {
+		background: $noui-simple-bar-bg;
+		box-shadow: $noui-simple-bar-shadow;
+		border-color: #dedce4;
+
+		// &:hover, &:active{
+		// 	background: $main-gradient-to-bottom;
+		// }
+	}
+
+	// &.noUi-state-drag{
+	// 	.noUi-origin.noUi-connect{
+	// 		box-shadow: inset 0 1px 0px #fef536,
+	// 					0px 0px 5px #ffd100;
+	// 		background: $main-gradient-to-bottom;
+	// 	}
+	// }
+	
+	
+	/* Handles and cursors;
+	 */
+	.noUi-handle {
+		@extend .silver-normal;
+		&:before{
+			background: $main-gradient-to-top;
+			box-shadow: inset 0px 1px 2px fade-out(#582500, 0.64);
+		}
+	}
+}
+
+.range-slider{
+	/* Styling;
+	 */
+	&.noUi-horizontal, &.noUi-background, .noUi-background {
+		background: #ededed;
+		box-shadow: $noui-range-track-shadow;
+	}
+	.noUi-connect {
+		background: $noui-range-bar-normal-bg;
+		box-shadow: $noui-range-bar-shadow;
+		border-color: $noui-range-bar-bordercolor;
+
+		&:hover, &:active{
+			background: $noui-range-bar-hovered-bg;
+		}
+	}
+
+	&.noUi-state-drag{
+		.noUi-origin.noUi-connect{
+			box-shadow: $noui-range-bar-hovered-shadow;
+			background: $noui-range-bar-hovered-bg;
+		}
+	}
+	
+	.noUi-origin.noUi-background{
+		border-color: #fff;
+		box-shadow: $noui-range-track-shadow;
+		&:before{
+			border-left-color: $main-color-dark;
+		}
+	}
+	/* Handles and cursors;
+	 */
+	.noUi-handle {
+		border-color: #000;
+		background: #474747;
+		box-shadow: 0px 2px 0px #c0c0c0;
+	}
+	.noUi-active {
+		&:after{
+			content: '';
+			position: absolute;
+			z-index: 1;
+			top: -5px;right: -1px;bottom: -1px;left: -1px;
+			border-radius: 5px 5px 3px 3px;
+			background: fade-out($main-color-light, 0.6);
+			box-shadow: 0px 0px 5px $main-color-light;
+			display: $noui-range-handle-active-glowdisplay;
+		}
+		border-color: $main-color-soft;
+		.handle-inner{
+			background: $main-color-soft;
+		}
+		.stripes{
+			&:before{ background: $main-normal-textcolor;}
+			border-color: $main-normal-textcolor;
+		}
+		.arrow{
+			border-bottom-color: $main-color-soft;
+			&:before, &:after{
+				border-bottom-color: $main-color-soft;
+			}
+		}
+	}
+
+	.handle-inner{
+		.text{
+			//font-size: 10px;
+			@extend .tooltip-inner;
+		}
+	}
+
+	
+
+	/* Disabled state;
+	 */
+	[disabled].noUi-connect,
+	[disabled] .noUi-connect {
+		background: #B8B8B8;
+	}
+	[disabled] .noUi-handle {
+		cursor: not-allowed;
+	}
+}

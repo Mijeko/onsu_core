@@ -1,0 +1,39 @@
+.radio-fake{
+	background: $radio-normal-bg;
+	box-shadow: $radio-normal-shadow;
+	&:before{
+		background: $radio-normal-dot-bg;
+		box-shadow: $radio-normal-dot-shadow;
+	}
+
+	.radio-content:hover > &, input:focus + .radio-content > &{
+		background: $radio-hovered-bg;
+		&:before{ background: $radio-hovered-dot-bg;}
+
+		[data-styling-type="flat"] & {
+			background: $radio-hovered-bg;
+			&:before{ background: $main-gradient-to-top;}
+		}
+	}
+
+	input[type="radio"]:checked + .radio-content>&{
+		background: $radio-checked-bg;
+		&:before{ background: $main-gradient-to-top;}
+
+		[data-styling-type="flat"] & {
+			background: $main-gradient-to-top;
+			&:before{ background: white;}
+		}
+
+	}
+	.disabled + .radio-content>&,
+	[disabled] + .radio-content>&{
+		background: $radio-disabled-bg;
+		border: $radio-disabled-border;
+		box-shadow: none;
+		&:before{
+			box-shadow: none;
+			background: $radio-disabled-dot-bg;
+		}
+	}
+}

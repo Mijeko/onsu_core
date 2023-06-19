@@ -1,0 +1,30 @@
+.checkbox-content{
+	>i{
+		background: $checkbox-normal-bg;
+		box-shadow: $checkbox-normal-shadow;
+		&:after{ border-color: $checkbox-normal-bordercolor;}
+		&:before{ color: silver;}
+	}
+	&:hover, input:focus + &{
+		>i:after{ border-color: $checkbox-hovered-bordercolor;}
+	}
+
+	input:checked + &>i{
+		background: $checkbox-checked-bg;
+		box-shadow: $checkbox-checked-shadow;
+		&:after{ border-color: $checkbox-checked-bordercolor;}
+		&:before{ color: $main-normal-textcolor;}
+	}
+
+	input[disabled] + &, .checkbox-styled.disabled>&{
+		color: silver;
+
+		>i{
+			background: #e7e7e7;
+			box-shadow: none;
+			text-shadow: none;
+			&:before{ color: silver;}
+			&:after{ border-color: transparent;}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.modal-settings {
+	.tabs .combo-link {
+		@include set-colors(false, #000);
+		&:hover {
+			background: $main-color-soft;
+			@include set-colors(false, $main-normal-textcolor);
+		}
+
+		&.active {
+			background: $main-gradient-to-top;
+			@include set-colors(false, $main-normal-textcolor);
+		}
+	}
+
+	.combo-header {
+		&:hover {
+			background: $main-gradient-to-top;
+			color: $main-normal-textcolor;
+		}
+	}
+}

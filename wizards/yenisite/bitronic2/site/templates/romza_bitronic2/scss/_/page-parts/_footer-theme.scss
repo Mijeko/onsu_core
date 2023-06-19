@@ -1,0 +1,28 @@
+.footer-menu-item {
+	&>.link {
+		&:before { border-color: $ul-circles-color; }
+	}
+
+	&.active>.link, &.active>span { @include set-colors('.text', #000); }
+}
+
+.footer-middle { color: $footer-middle-text; }
+.footer-nav {
+	color: $footer-nav-text;
+
+	a {
+		&, &:link, &:visited {
+			color: $footer-nav-text;
+			@include set-border-colors(false, transparent, initial, initial, transparent);
+		}
+
+		&:focus, &:hover {
+			border-bottom-color: transparent;
+		}
+	}
+}
+
+.footer-bottom {
+	background: $footer-bottom-bg;
+	color: $footer-bottom-text;
+}

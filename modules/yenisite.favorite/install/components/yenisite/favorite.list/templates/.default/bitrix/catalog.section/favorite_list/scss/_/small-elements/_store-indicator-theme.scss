@@ -1,0 +1,14 @@
+.store-indicator{
+	.many{
+		background: silver;
+	}
+	&.many>.many{
+		background: #328d00;
+	}
+	&.average>.average{
+		background: orange;
+	}
+	&.few>.few{
+		background: red;
+	}
+}

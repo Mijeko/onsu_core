@@ -1,0 +1,39 @@
+.breadcrumbs{
+	>.breadcrumbs-content{
+		>a{
+			@include set-colors(false, #000, #686868);
+			@include set-border-colors(false, #000, transparent);
+		}
+
+		>span{
+			color: #686868;
+		}
+	}
+	
+	&.b2_backnav-enabled{
+		>.breadcrumbs-content{
+			>a[data-options="backnav"]{
+				background: #ebebeb;
+				@include set-colors(false, #686868);
+				transition: background .3s,
+							color .3s;
+
+				&:hover{
+					color: $main-normal-textcolor;
+					background: $main-color-soft;
+				}
+			}
+			>.backnav{
+				@extend .silver-static;
+				>li{
+					>a{
+
+					}
+					&.active>a{
+						@include set-colors(false, #686868);
+					}
+				}
+			}/* >.backnav */
+		}/* >.breadcrumbs-content */
+	}/* &.b2_backnav-enabled */
+}/* .breadcrumbs */

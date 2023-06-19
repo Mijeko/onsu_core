@@ -1,0 +1,6 @@
+.btn-delete{
+	color: #000;
+	@include set-colors('.btn-text', #000);
+	@include set-border-colors('.btn-text', transparent,
+							initial, initial, transparent);
+}

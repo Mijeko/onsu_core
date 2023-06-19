@@ -1,0 +1,15 @@
+.form_order-filter {
+	.main-content { @include silver-static; }
+
+	footer {
+		.order-filter-small {
+			&.active {
+				background: $main-color-soft;
+				color: $main-normal-textcolor;
+			}
+		}
+	}
+}
+
+.profile-action { @include btn-silver; }
+.btn-add-account-profile { @include set-colors('.text', $main-normal-textcolor); }

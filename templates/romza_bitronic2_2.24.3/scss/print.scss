@@ -1,0 +1,26 @@
+.top-line, .page-header, .breadcrumbs, .accessories, .collection-wrap,
+.product-modifications, .similar-products, .viewed-products, .footer-top,
+.footer-middle, .footer-bottom, .videos, .documentation, .comments, .combo-links,
+.action, .print-link, .under-image, .thumbnails-wrap, .socials, .view3d,
+.countdown, .notification-popup, button, .btn-main, .one-click-wrap, .color-selection,
+.benefits, .hurry-buy, .quantity-input, .inner-quan-wrap, .additionals-price, .buy-block-additional{
+	display: none !important;
+}
+.combo-target-content{
+	display: block !important;
+}
+.general-info .desc{
+	max-height: none !important;
+	&:after{display: none !important;}
+}
+.general-info .pseudolink{
+	display: none !important;
+}
+.product-photos{
+	padding-bottom: 20px !important;
+}
+.buy-block-main{
+	
+}
+body > * {display: none;}
+div.big-wrap {display: block;}

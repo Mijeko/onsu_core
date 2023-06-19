@@ -1,0 +1,26 @@
+<?php
+$MESS['PAGE_TITLE'] = 'Определение цвета товаров';
+$MESS['REINDEX_TAB'] = 'Определение цвета';
+$MESS['REINDEX_HARD_WORK'] = 'Внимание!<br>Определение цвета может занять продолжительное время.';
+$MESS['REINDEX_TAB_TITLE'] = 'Определение цвета';
+$MESS['GUESSER_FREQUENCY'] = 'Порядок определяемого цвета';
+$MESS['GUESSER_FREQUENCY_1'] = 'Первый';
+$MESS['GUESSER_FREQUENCY_2'] = 'Второй';
+$MESS['GUESSER_FREQUENCY_3'] = 'Третий';
+$MESS['GUESSER_FREQUENCY_NOTE'] = 'по плотности заполнения на фотографии товара.';
+$MESS['GUESSER_FREQUENCY_INFO'] = 'Полезно в случаях, когда большую часть площади фотографий занимает фоновый цвет,<br>или цвет товара не является превалирующим на снимках.';
+$MESS['REINDEX_IBLOCK_ID'] = 'Инфоблок';
+$MESS['REINDEX_IBLOCK_ID_CHOOSE'] = 'Выберите...';
+$MESS['REINDEX_BTN_START'] = 'Запустить';
+$MESS['REINDEX_SECTION_ID'] = 'Раздел инфоблока';
+$MESS['REINDEX_SECTION_ID_CHOOSE_ALL'] = 'Все';
+$MESS['REINDEX_SECTION_ID_CHOOSE_IBLOCK_FIRST'] = 'Сначала выберите инфоблок';
+$MESS['REINDEX_PROCESS_ERROR'] = 'Произошла ошибка';
+$MESS['REINDEX_PROCESS_ERROR_DETAIL'] = 'Пожалуйста обратитесь в техподдержку ROMZA: <a href="http://portal.yenisite.ru/support/">http://portal.yenisite.ru/support/</a> ';
+$MESS['REINDEX_PROCESS_ERROR_EMPTY'] = 'Не найдено товаров в выбранной секции';
+$MESS['GUESSER_ERROR_EMPTY_SETTINGS'] = 'Отсутствуют необходимые настройки для выполнения операции';
+$MESS['GUESSER_ERROR_EMPTY_SETTINGS_DETAILS'] = 'Перед выполнением процедуры требуется настроить определение цвета на <a href="'.BX_ROOT.'/admin/settings.php?lang='.LANGUAGE_ID.'&mid=yenisite.core">странице настроек модуля</a>.';
+$MESS['GUESSER_HLBLOCK'] = 'Справочник цветов';
+$MESS['GUESSER_HLBLOCK_NOTSET'] = 'Не указан';
+$MESS['GUESS_COMPLETE'] = 'Процесс определения цвета завершен';
+$MESS['GUESS_RESULT'] = 'Обработано #COUNT# из #TOTAL# товаров';

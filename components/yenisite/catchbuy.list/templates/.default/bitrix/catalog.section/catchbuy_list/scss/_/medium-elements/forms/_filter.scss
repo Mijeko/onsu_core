@@ -1,0 +1,272 @@
+.form_filter{
+	padding: 5px 15px 20px;
+	border: 1px solid #ddd;
+	&.closed{
+		padding-bottom: 0;
+	}
+	position: relative;
+	margin-bottom: 50px;
+	h2{
+		padding: 0 20px 10px;
+		margin-top: 8px;
+		font-size: em(18px);
+	}
+	footer{
+		text-align: center;
+	}
+	>.filter-content{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.filter-full{
+		display: none;
+		&.filter-opened{
+			display: inline !important;
+		}
+	}
+	display: none;
+	&.visible{
+		display: block;
+	}
+	#filter-at-top &{
+		padding-bottom: 0;
+		.filter-short{ 
+			float: left;
+			&.filter-opened{
+				display: inline;
+				float: none;
+			}
+		}
+		footer{ 
+			clear: both;
+			margin-top: 25px;
+		}
+
+		.show-results{ margin: 0;}
+	}
+}
+#filter-at-side{
+	position: relative;
+}
+
+.filter-section{
+	&>header{
+		position: relative;
+		font-weight: bold;
+		font-size: em(14px);
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 25px;
+		&>.text{
+			@include transition(false, color);
+			border-bottom: 1px dotted;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+		&>.help{
+			position: relative;
+			display: inline-block;
+			width: 21px;
+			height: 21px;
+			line-height: 21px;
+			text-align: center;
+			margin-left: 5px;
+
+			border-radius: 50%;
+			&:hover{ cursor: pointer;}
+			&:active{
+				top: 1px;
+			}
+		}
+	}
+
+	.checkbox-styled{
+		display: block;
+		margin: 7px 0 3px 2px;
+	}
+
+	.range-slider-inputs{
+		margin-top: 30px;
+		.textinput{
+			width: 75px;
+			height: 35px;
+			text-align: center;
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+	}
+	.price-slider+.range-slider-inputs{
+		white-space: nowrap;
+	}
+	.filter-input-wrap{
+		&>.text{
+
+			font-weight: normal;
+			text-transform: lowercase;
+			margin-right: 5px;
+		}
+		&.end{
+			margin-left: 10px;
+		}
+	}
+
+	sup{
+		font-size: 8px;
+		margin-left: 3px;
+		top: -0.7em;
+	}
+	
+	user-select: none;
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	padding: 0 20px;
+	margin-bottom: 20px;
+
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0px;
+		bottom: 0;
+		left: -1px;
+		width: 1px;
+		max-height: 100px;
+		background-color: #ddd;
+	}
+
+	#filter-at-top &{
+		width: 287px;
+		@media (max-width: 1919px){ width: 266px;}
+		@media (max-width: 1599px){ width: 280px;}
+		@media (max-width: 1199px){ width: 346px;}
+	}
+
+	@media (max-width: 991px) and (min-width: 768px){
+		#filter-at-side &,
+		#filter-at-top &{
+			width: 359px;
+		}
+	}
+
+	@media (max-width: 767px){
+		#filter-at-side &,
+		#filter-at-top &{
+			max-width: 100%;
+			width: 290px;
+		}
+
+		.range-slider{
+			display: none;
+		}
+		.range-slider-inputs{
+			margin-top: 10px;
+		}
+	}
+}
+
+.filter-results, .show-results, .reset-filter{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	margin: 10px;
+}
+.filter-results{
+	&>.text{
+		display: inline-block;
+		padding: 10px 15px;
+
+		border: 3px solid;
+		border-radius: 4px;
+	}
+}
+
+.show-results{
+	position: relative;
+	padding: 10px 15px;
+	font-size: em(16px);
+	font-weight: bold;
+
+	&:active{
+		padding: 10px 15px;
+		top: 2px;
+	}
+}
+
+.toggle-filter{
+	margin: -5px -15px 0;
+	padding: 4px 15px 7px 0;
+	text-align: center;
+	@include transition(false, background);
+	@include transition('.text', border-color);
+	&:hover{
+		cursor: pointer;
+	}
+	.text{
+		position: relative;
+		border-bottom: 1px dotted;
+
+		&:after{
+			content: '';
+			position: absolute;
+			right: -15px;
+			top: 9px;
+			border: 4px solid;
+			border-left-color: transparent;
+			border-right-color: transparent;
+			border-top-width: 0;
+
+			.closed &{
+				border-top-width: 4px;
+				border-bottom-width: 0;
+			}
+		}
+	}
+
+}
+
+.btn-toggle-full-filter{
+	position: absolute;
+	bottom: -35px;
+	right: 0;
+	height: 35px;
+	width: 200px;
+	&:active{
+		bottom: -36px;
+	}
+	.when-expanded{display: none;}
+	&.toggled{
+		.when-expanded{display: block;}
+		.when-minified{display: none;}
+	}
+
+	&>.text{
+		&:before{
+			position: relative;
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 7px;
+
+			border: 5px solid;
+			border-left-color: transparent;
+			border-right-color: transparent;
+
+			border-bottom-width: 0;
+			top: -2px;
+		}
+	}
+	&.toggled{
+		&>.text:before{
+			border-bottom-width: 5px;
+			border-top-width: 0;
+		}
+	}
+
+	// #filter-at-top &{
+	// 	display: none;
+	// }
+}
+

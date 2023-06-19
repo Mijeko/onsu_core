@@ -1,0 +1,45 @@
+.hurry{
+	header{
+		color: $main-normal-textcolor;
+		background-size: auto 100%;
+	}
+
+	header, .subheader{
+		text-shadow: $main-normal-textshadow;
+	}
+}
+
+
+.hurry-item{
+	@extend .blocks-item;
+	.economy{
+		.value{
+			color: $main-normal-textcolor;
+			background: $main-color-soft;
+		}
+	}
+
+	.already-sold{
+		&>.track{
+			background: #d1d1d1;
+			box-shadow: $hurry-sold-track-shadow;
+		}
+
+		.bar{
+			border-color: $hurry-sold-bar-bordercolor;
+			box-shadow: $hurry-sold-bar-shadow;
+			background: $main-gradient-to-top;
+		}
+	}
+
+	.remaining{
+		.value{
+			color: #797585;
+		}
+	}
+}
+.countdown{
+	.timer-wrap{
+		@extend .silver-static;
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "require-dev": {
+    "symfony/console": "4.1.*"
+  },
+  "require": {
+    "mgp25/instagram-php": "@stable"
+  }
+}

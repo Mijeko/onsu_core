@@ -1,0 +1,18 @@
+.sort-list-item {
+	>a { @include set-colors('>.text', #000); }
+	&:hover {
+		color: $main-normal-textcolor;
+		background: $main-color-soft;
+
+		>a { @include set-colors('>.text', $main-normal-textcolor); }
+		.text { border-color: transparent; }
+	}
+	&.active, &:active {
+		color: $main-normal-textcolor;
+		background: $main-normal-bg;
+		box-shadow: inset 0px 1px 3px fade-out(#5d5d5d, 0.61);
+		
+		>a { @include set-colors('>.text', $main-normal-textcolor); }
+		.text { border-color: transparent; }
+	}
+}

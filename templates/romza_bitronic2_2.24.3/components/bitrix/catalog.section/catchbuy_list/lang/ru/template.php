@@ -1,0 +1,23 @@
+<?
+$MESS["BITRONIC2_CATCH_BUY_TITLE"] = "Успей купить!";
+$MESS["BITRONIC2_CATCH_BUY_SUBTITLE"] = "Супервыгодные цены! Только для наших покупателей!";
+$MESS["BITRONIC2_CATCH_BUY_ALREADY_BUY"] = "Уже продано";
+$MESS["BITRONIC2_CATCH_BUY_ALREADY_EXIST"] = "Осталось";
+$MESS["BITRONIC2_CATCH_BUY_ADD_TO_COMPARE"] = "Добавить в <strong>список сравнения</strong>";
+$MESS["BITRONIC2_CATCH_BUY_DEL_TO_COMPARE"] = "Убрать из списка сравнения";
+$MESS["BITRONIC2_CATCH_BUY_ADD_TO_FAVORITE"] = "Добавить в избранное";
+$MESS["BITRONIC2_CATCH_BUY_TO_DETAIL"] = "Подробнее";
+$MESS["BITRONIC2_CATCH_BUY_NOTAVAIL"] = "Нет в наличии";
+$MESS["BITRONIC2_CATCH_BUY_NEW_PRICE"] = "Новая цена:";
+$MESS["BITRONIC2_CATCH_BUY_OLD_PRICE"] = "Цена без скидки:";
+$MESS["BITRONIC2_CATCH_BUY_FROM"] = "от";
+$MESS["BITRONIC2_CATCH_BUY_QUICK_VIEW"] = "Быстрый просмотр";
+$MESS["BITRONIC2_CATCH_BUY_ADMIN_INFO"] = "Информация для администратора интернет-магазина (пользователям данный блок не отображается)";
+$MESS["BITRONIC2_CATCH_BUY_ADMIN_INFO_INDEX_SORT"] = "Индекс сортировки";
+$MESS["BITRONIC2_CATCH_BUY_ADMIN_INFO_SALE_EXT"] = "Продаж (выгружено)";
+$MESS["BITRONIC2_CATCH_BUY_ADMIN_INFO_SALE_INT"] = "Продаж (подсчитано на сайте)";
+$MESS["BITRONIC2_CATCH_BUY_ADMIN_INFO_SHOW_WEEK"] = "Просмотров за неделю";
+$MESS["BITRONIC2_CATCH_BUY_ADMIN_INFO_SHOW_DAYS"] = "Просмотры по дням";
+$MESS["BITRONIC2_CATCH_BUY_ECONOM"] = "Экономия";
+$MESS["BITRONIC2_CATCH_BUY_BY_END"] = "До конца распродажи";
+$MESS["CT_BCS_TPL_ELEMENT_DELETE_CONFIRM"] = "Будет удалена вся информация, связанная с этой записью. Продолжить?";

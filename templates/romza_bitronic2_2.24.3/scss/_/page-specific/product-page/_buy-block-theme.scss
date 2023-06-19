@@ -1,0 +1,24 @@
+.buy-block-main {
+	@include main-normal;
+	text-shadow: none;
+	color: #000;
+	[data-styling-type="skew"] &:before { @include silver-normal; }
+}
+
+.buy-block-content {
+	.product-options {
+		.selection-item {
+			@include silver-static;
+			&:hover, &.active { border-color: $main-color-dark; }
+		}
+	}
+}
+
+.buy-block-footer > .action {
+	@include set-colors('i, .text', $main-normal-textcolor);
+	color: $main-normal-textcolor;
+}
+
+.buy-block-seller {
+	.seller-img { @include silver-static; }
+}

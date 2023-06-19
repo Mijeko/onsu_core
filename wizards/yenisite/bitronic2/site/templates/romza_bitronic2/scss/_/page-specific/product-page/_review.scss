@@ -1,0 +1,33 @@
+.review-item {
+	width: 100%;
+
+	&:not(:first-of-type) {
+		margin-top: 20px;
+		border-top: 1px solid #cccccc;
+	}
+
+	> header{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font-weight: bold;
+		font-size: em(18px);
+	}
+
+	.review-item-block { @include clearfix; }
+
+	.review-img {
+		display: inline-block;
+		max-width: 180px;
+		float: left;
+		padding-right: 10px;
+		padding-bottom: 8px;
+
+		@media (max-width: $screen-md - 1) {
+			max-width: 120px;
+
+			@media (min-width: $screen-sm) { max-width: 150px; }
+		}
+	}
+
+	.review-link { text-align: right; }
+}

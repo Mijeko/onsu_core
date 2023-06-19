@@ -1,0 +1,24 @@
+.account-menu{
+	border-color: #ddd6e2;
+	.avatar{ @extend .silver-static;}
+	.name{ color: #000;}
+	.login{ color: #8d8d8d;}
+	.profile{
+		color: #1561d3;
+		&>a{
+			color: #1561d3;
+			border-bottom-color: fade-out(#1561d3, 0.5);
+			&:hover{ border-bottom-color: transparent;}
+		}
+	}
+
+	.btn-logout{
+		@extend .btn-main;
+	}
+	.active > .link{
+		&>.text{
+			color: #646464;
+		}
+		
+	}
+}/* .account-menu */

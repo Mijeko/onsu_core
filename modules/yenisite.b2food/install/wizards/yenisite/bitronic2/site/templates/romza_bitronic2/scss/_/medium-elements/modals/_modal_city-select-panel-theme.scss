@@ -1,0 +1,23 @@
+.modal_city-select-panel {
+	li:not(.active) span {
+		@include set-colors(false, $link-base-color, $main-color-dark, $main-color-dark);
+		@include set-border-colors(false, $link-base-color, $main-color-dark, $main-color-dark);
+	}
+
+	li.active span {
+		border-color: transparent;
+		color: #000;
+	}
+
+	.ajax-city-search {
+		ul { @include silver-static; }
+		li {
+			&:hover { background: $bg-light; }
+		}
+	}
+	
+	.btn-close {
+		color: #000;
+		&:hover { color: silver; }
+	}
+}

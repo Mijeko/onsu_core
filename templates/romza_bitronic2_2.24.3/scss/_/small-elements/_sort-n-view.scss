@@ -1,0 +1,174 @@
+.sort-list{
+	display: inline;
+	// height: 40px;
+	line-height: 40px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	@media (max-width: 767px){
+		display: none;
+	}
+}
+
+.sort-list-item{
+	display: inline-block;
+	margin-right: 15px;
+	position: relative;
+	line-height: normal;
+	padding: 5px 10px 6px;
+
+	user-select: none;
+	@include transition(false, (background, box-shadow, color));
+	&:hover, &.active{
+	}
+	.w-links > &{
+		@include transition(false, (background, box-shadow));
+	}
+	&:hover{ cursor: pointer;}
+	&:after{
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 5px;
+		// I don't use simple shorthand 'border' to avoid default border-color
+		// which is 'transparent', but I need border to get its color from parent
+		border: 4px solid;
+		border-left-color: transparent;
+		border-right-color: transparent;
+
+		border-bottom-width: 0;
+	}
+	&.sort-up:after{
+		border-bottom-width: 4px;
+		border-top-width: 0;
+	}
+
+	.text{
+		.more_bold & {font-weight: bold;}
+	}
+
+	@media (max-width: 1199px){
+		margin-right: 0px;
+		padding: 5px 8px 6px;
+	}
+}
+
+
+.sort-n-view{
+	&.for-catalog{
+		border: 1px dashed;
+		padding: 5px 10px;
+
+		>.ik_select, >.sort-by-select {
+			[data-styling-type="skew"] & { margin-bottom: 0 !important; }
+		}
+	}
+	margin: 10px auto;
+	border: none;
+	border-bottom: 1px solid;
+	font-size: em(12px);
+	border-color: #e6e6e6 !important;
+
+	[data-styling-type="flat"] & { padding-bottom: 5px; }
+
+	.select-styled { max-width: 55%; }
+
+	>.view-type{
+		float: right;
+		height: 40px;
+		line-height: 40px;
+
+		.svg-wrap {
+			width: 18px;
+			height: 18px;
+			line-height: 18px;
+			margin-bottom: 2px;
+			vertical-align: middle;
+
+			svg {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+	}
+	
+	@media (min-width: 768px){
+		@include clearfix;
+		>.text, >.ik-select{
+			float: left;
+		}
+		>.text{
+			display: inline-block;
+			height: 40px;
+			line-height: 40px;
+			margin-right: 20px;
+
+		}
+
+		&.no-justify{
+			&>.text{
+				display: inline-block;
+				margin-right: 20px;
+			}
+		}
+
+		@media (max-width: 1199px){
+			.sort-list-item{ margin-right: 0px;}
+			>.text{ margin-right: 10px;}
+		}
+	}
+	
+
+	&.no-sort .sort-list-item:after{ display: none;}
+	
+	>.ik_select, >.sort-by-select, >.select-styled{
+		// display: none !important;
+		font-family: $font-family-base;
+
+		[data-styling-type="skew"] & { margin-bottom: 10px; }
+
+		[data-styling-type="flat"] & {
+			margin-top: 4px;
+			margin-bottom: 4px;
+		}
+
+		@media (min-width: $screen-sm) { min-width: 170px; }
+	}
+	
+	@media (max-width: 767px){
+		font-size: 14px;
+		@include clearfix;
+
+		&>.text{
+			float: left;
+			height: 40px;
+			line-height: 40px;
+			margin-right: 10px;
+		}
+		&>.ik_select, &>.sort-by-select{
+			display: block !important;
+			float: left;
+			height: 40px;
+			margin-bottom: 10px;
+		}
+
+		.view-type{
+			float: right;
+			height: 40px;
+			line-height: 40px;
+		}
+
+		&.no-justify{
+			border: none;
+			border-bottom: 1px solid;
+			padding: 0;
+			&:after{ display: block;}
+
+			&>.text{
+				display: inline-block;
+				margin-right: 20px;
+			}
+		}
+	}/* @media (max-width: 767px) */
+}/* .sort-n-view */

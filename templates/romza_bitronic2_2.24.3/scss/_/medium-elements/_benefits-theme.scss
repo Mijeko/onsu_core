@@ -1,0 +1,8 @@
+.benefit {
+	.img-wrap {
+		color: $main-normal-textcolor;
+		fill: $main-normal-textcolor;
+		background: $main-gradient-to-top;
+		[data-theme-button="black"] & {fill: black;}
+	}
+}

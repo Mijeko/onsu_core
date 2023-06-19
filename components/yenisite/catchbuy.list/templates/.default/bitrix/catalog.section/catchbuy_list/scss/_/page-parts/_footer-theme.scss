@@ -1,0 +1,35 @@
+.footer-top{
+	border-color: #b2b2b2;
+	&:before{
+		border-color: #b2b2b2;
+	}
+}
+.footer-menu-item{
+	&>.link{
+		&:before{
+			border-color: $ul-circles-color;
+		}
+	}
+}
+.footer-middle{
+	background: url('../../img/bg/footer_pattern.png');
+	color: $footer-middle-text;
+}
+.footer-nav{
+	color: $footer-nav-text;
+
+	a{
+		&, &:link, &:visited{
+			color: $footer-nav-text;
+			border-bottom-color: fade-out($footer-nav-text, 0.6);
+		}
+
+		&:focus, &:hover{
+			border-bottom-color: transparent;
+		}
+	}
+}
+.footer-bottom{
+	background: $footer-bottom-bg;
+	color: $footer-bottom-text;
+}

@@ -1,0 +1,6 @@
+.btn-basket {
+	span, strong, i {
+		[data-styling-type="skew"] & { text-shadow: $main-normal-textshadow; }
+		color: $main-normal-textcolor;
+	}
+}

@@ -1,0 +1,10 @@
+.characteristics{
+	.tech-info-block{
+		&>header:hover{
+			background: #ddd;
+		}
+	}
+	dd{
+		background: #fff;
+	}
+}

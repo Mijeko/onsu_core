@@ -1,0 +1,9 @@
+.staff-wrap {
+	.staff-item-wrap {
+		.staff-item { @include silver-static; }
+		.phone, .mail {
+			i.toggled { @include main-clicked; }
+			.text { @include silver-static; }
+		}
+	}
+}

@@ -1,0 +1,231 @@
+.feedback{
+	text-align: center;
+	box-shadow: 0px 6px 3px -3px fade-out(#000, 0.8) inset;
+	background: #EAEBEE url('../img/bg/feedback.png') no-repeat 10% top;
+	
+	header{
+		font-size: em(24px);
+		.more_bold & {font-weight: bold;}
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.slider-controls{
+		text-align: center;
+		position: static;
+		margin: 0;
+		width: auto;
+	}
+
+	.arrow {
+		position: absolute;
+		z-index: 2; // to be over darkened slide's :before
+		width: 50px;
+		height: 50px;
+		line-height: 40px;
+		top: 120px;
+		border: 5px solid;
+		border-radius: 50%;
+		user-select: none;
+		text-align: center;
+		color: #fff;
+		opacity: 0.5;
+
+		@include transition(false, opacity);
+		&:hover{ 
+			opacity: 0.9;
+			cursor: pointer;
+		}
+		&:active{
+			opacity: 1;
+		}
+
+		&:before{
+			position: relative;
+			font-size: 24px;
+		}
+
+		&.prev{
+			left: 15px;
+			&:before{
+				top: -1px;
+				left: -1px;
+			}
+		}
+		&.next {
+			right: 15px;
+			&:before{
+				//top: -1px;
+				right: -2px;
+			}
+		}
+	}
+
+	.dot{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		margin-right: 4px;
+		margin-left: 4px;
+		cursor: pointer;
+		&.active{
+			width: 13px;
+			height: 13px;
+			cursor: default;
+		}
+	}
+	.rating-stars{
+		margin: 0;
+		margin-left: 6px;
+	}
+	.comments{
+		margin-top: 15px;
+		width: calc(100% - 100px);
+		margin-left: 50px;
+		margin-right: 50px;
+
+		&.initialized {
+			.item { display: block; }
+		}
+	}
+
+	p{
+		margin: 0;
+		font-size: em(16px);
+	}
+
+	.comment {
+		width: 100%;
+		
+		&>.text {
+			@include clearfix;
+			position: relative;
+			max-height: none;
+			overflow: hidden;
+			padding: 15px 20px;
+			padding-bottom: 30px;
+			transition: max-height 0.4s;
+			box-sizing: content-box;
+
+			.comment__text-main, .comment__text-dignity, .comment__text-lack {
+				padding-bottom: 10px;
+
+				.item__text { @include clearfix; }
+			}
+
+			.info-title {
+				display: inline-block;
+				font-size: em(16px);
+				font-weight: bold;
+				margin-bottom: 0;
+			}
+
+			.height-toggle {
+				position: absolute;
+				z-index: 1;
+				display: block;
+				width: 100%;
+				height: 30px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				text-align: center;
+				padding: 9px 10px 1px;
+				transform: transitionZ(0);
+				background: #EAEBEE;
+
+				&:before { background: transparent; }
+
+				span {
+					position: relative;
+					display: inline-block;
+					line-height: 19px;
+					font-weight: normal;
+					margin-right: 15px;
+					border-bottom: 1px dotted;
+
+					&:before { content: attr(data-when-opened); }
+				}
+			}
+
+			&.minified {
+				max-height: 54px !important;
+
+				.height-toggle {
+					background: linear-gradient(to top, #EAEBEE 66%, transparent 100%);
+
+					span:before { content: attr(data-when-minified); }
+				}
+			}
+		}
+	}
+
+	.quote-start, .quote-end, .quote-start:before, .quote-end:before{
+		position: absolute;
+		height: 16px;
+		width: 8px;
+		border: 8px solid;
+		
+	}
+	.quote-start{
+		top: 80px;
+		left: 15px;
+		&, &:before{
+			border-right-width: 0;
+			border-bottom-color: transparent;
+		}
+
+		&:before{
+			content: '';
+			top: -8px;
+			left: 4px;
+		}
+	}
+	.quote-end{
+		bottom: 50px;
+		right: 15px;
+		&, &:before{
+			border-left-width: 0;
+			border-top-color: transparent;
+		}
+		&:before{
+			content: '';
+			top: -8px;
+			right: 4px;
+		}
+	}
+
+	.all-comments, .date{
+		font-size: em(12px);
+	}
+	.all-comments{
+		position: absolute;
+		right: 15px;
+		bottom: 15px;
+	}
+	.date{
+		color: gray;
+	}
+	.info{
+		text-align: center;
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}
+	.author, .info-title{
+		margin: 8px 0 5px;
+		&:before{
+			content: '-';
+			margin-right: 5px;
+		}
+		&:after{
+			content: '-';
+			margin-left: 5px;
+		}
+	}
+
+	@media (max-width: 767px){
+		display: none;
+	}
+}

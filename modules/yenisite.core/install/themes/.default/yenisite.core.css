@@ -1,0 +1,11 @@
+/* menu icons */
+.adm-submenu-item-link-icon.yenisite_core_menu_icon {background-position: center -840px;}
+/* settings page */
+#core_settings .errortext {margin: 5px 0;}
+#core_settings .rgb-yes,
+#core_settings .has-rgb .rgb-no {display: none;}
+#core_settings .has-rgb .rgb-yes {display: inline;}
+#color_guess_hlblock {background: pink;}
+.has-rgb #color_guess_hlblock {background: lightcyan;}
+/* color guesser page */
+#color-guess-frequency-info {position: relative; top: -10px;}

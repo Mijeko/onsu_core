@@ -1,0 +1,127 @@
+.modal-settings{
+	.tabs .combo-link{
+		@include set-colors(false, #000);
+		background: #f0f0f0;
+		&:hover{
+			background: $main-color-soft;
+			@include set-colors(false, $main-normal-textcolor);
+		}
+
+		&.active{
+			background: $main-gradient-to-top;
+			box-shadow: inset 0px 1px 2px 0px rgba(88, 37, 0, 0.36);
+			@include set-colors(false, $main-normal-textcolor);
+			&>.text{ border-color: transparent;}
+		}
+	}
+
+	.combo-header{
+		background: #f0f0f0;
+		&:hover{
+			background: #d0d0d0;
+			background: $main-gradient-to-top;
+			color: $main-normal-textcolor;
+		}
+	}
+
+	.settings-view-link{
+		color: #000;
+		&:hover{
+			color: silver;
+		}
+
+		&.active{
+			color: #000;
+		}
+	}
+}
+.theme-demo{
+	&.yellow-skew{
+		background: $demo-yellow-skew-bg;
+		box-shadow: $demo-yellow-skew-shadow;
+	}
+	&.red-skew{
+		background: $demo-red-skew-bg;
+		box-shadow: $demo-red-skew-shadow;
+	}
+	&.violet-skew{
+		background: $demo-violet-skew-bg;
+		box-shadow: $demo-violet-skew-shadow;
+	}
+	&.pink-skew{
+		background: $demo-pink-skew-bg;
+		box-shadow: $demo-pink-skew-shadow;
+	}
+	&.orange-skew{
+		background: $demo-orange-skew-bg;
+		box-shadow: $demo-orange-skew-shadow;
+	}
+	&.mint-skew{
+		background: $demo-mint-skew-bg;
+		box-shadow: $demo-mint-skew-shadow;
+	}
+	&.lightblue-skew{
+		background: $demo-lightblue-skew-bg;
+		box-shadow: $demo-lightblue-skew-shadow;
+	}
+	&.green-skew{
+		background: $demo-green-skew-bg;
+		box-shadow: $demo-green-skew-shadow;
+	}
+	&.gray-skew{
+		background: $demo-gray-skew-bg;
+		box-shadow: $demo-gray-skew-shadow;
+	}
+	&.darkviolet-skew{
+		background: $demo-darkviolet-skew-bg;
+		box-shadow: $demo-darkviolet-skew-shadow;
+	}
+	&.darkblue-skew{
+		background: $demo-darkblue-skew-bg;
+		box-shadow: $demo-darkblue-skew-shadow;
+	}
+	&.blue-skew{
+		background: $demo-blue-skew-bg;
+		box-shadow: $demo-blue-skew-shadow;
+	}
+	&.yellow-flat{
+		background: $demo-yellow-flat-bg;
+		box-shadow: $demo-yellow-flat-shadow;
+	}
+	&.red-flat{
+		background: $demo-red-flat-bg;
+		box-shadow: $demo-red-flat-shadow;
+	}
+	&.violet-flat{
+		background: $demo-violet-flat-bg;
+		box-shadow: $demo-violet-flat-shadow;
+	}
+	&.pink-flat{
+		background: $demo-pink-flat-bg;
+		box-shadow: $demo-pink-flat-shadow;
+	}
+	&.orange-flat{
+		background: $demo-orange-flat-bg;
+		box-shadow: $demo-orange-flat-shadow;
+	}
+	&.mint-flat{
+		background: $demo-mint-flat-bg;
+		box-shadow: $demo-mint-flat-shadow;
+	}
+	&.green-flat{
+		background: $demo-green-flat-bg;
+		box-shadow: $demo-green-flat-shadow;
+	}
+	&.darkviolet-flat{
+		background: $demo-darkviolet-flat-bg;
+		box-shadow: $demo-darkviolet-flat-shadow;
+	}
+	&.darkblue-flat{
+		background: $demo-darkblue-flat-bg;
+		box-shadow: $demo-darkblue-flat-shadow;
+	}
+	&.blue-flat{
+		background: $demo-blue-flat-bg;
+		box-shadow: $demo-blue-flat-shadow;
+	}
+}

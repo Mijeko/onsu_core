@@ -1,0 +1,135 @@
+@import "alsrubl";
+
+.yns_favorite-list {
+  font-family: "Open Sans", sans-serif;
+  float: right;
+
+  .b-rub, .b-rub_arial {
+    font-family: 'YNS_CATCHBUY_ALSRubl-Arial', Arial, sans-serif;
+  }
+  @import '_/variables';
+  @import '_/mixins';
+  @import '_/rating-stars';
+  @import '_/btn-main';
+  @import '_/btn-action';
+  @import '_/countdown';
+  @import '_/grid-animations';
+  @import '_/medium-elements/top-line';
+  @import '_/medium-elements/popups/popups_header';
+  @import '_/small-elements/buttons/btn-close';
+  @import '_/general/scrollbars';
+
+  @import '_/medium-elements/basket-content';
+  @import '_/small-elements/availability-info';
+  button {
+    border:  none;
+    outline: none;
+    padding: 0;
+  }
+  a {
+    &, &:link, &:visited, &:focus, &:hover, &:active {
+      text-decoration: none;
+      outline:         none;
+    }
+    @include transition(false, (color, background));
+  }
+  .top-line-item>a {
+    display: block;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pseudolink {
+    border: none !important;
+    .link-text {
+      border-bottom: 1px dotted;
+    }
+  }
+  .when-in-stock {
+    display:        inline-block;
+    vertical-align: middle;
+  }
+  .when-out-of-stock {
+    display: none;
+  }
+  .when-available-for-order {
+    display: none;
+  }
+  .out-of-stock {
+    .when-in-stock {
+      display: none;
+    }
+    .when-out-of-stock {
+      display:        inline-block;
+      vertical-align: middle;
+    }
+  }
+  .available-for-order {
+    .when-in-stock {
+      display: none;
+    }
+    .when-available-for-order {
+      display:        inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .price-old {
+    text-decoration: line-through;
+    color:           #9f9bb3;
+  }
+  .link, .link-on-dark {
+    & > .text {
+      border-bottom: 1px solid;
+      @include transition(false, (color, border-color));
+    }
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.more-content {
+      .bullets {
+        display:        inline-block;
+        vertical-align: middle;
+        margin-right:   3px;
+        font-size:      20px;
+        color:          #000;
+      }
+      .text {
+        display:        inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .tooltip {
+    font-size:  12px;
+
+    .accessory & {
+      min-width: 140px;
+    }
+
+    .view-type & {
+      white-space: nowrap;
+    }
+    transition: opacity .3s .2s;
+  }
+
+  .tooltip-inner {
+    border: 1px solid;
+  }
+
+  .tooltip-arrow {
+    display: none;
+  }
+
+  .top-line-item {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    line-height: 45px;
+    vertical-align: top;
+    height: 48px;
+  }
+
+}

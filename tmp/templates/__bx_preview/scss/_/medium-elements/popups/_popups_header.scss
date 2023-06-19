@@ -1,0 +1,467 @@
+.top-line-popup{
+	display: none;
+	position: absolute;
+	transform: translateZ(0);
+	z-index: 3; // to be over account avatar on mobile
+	[data-top-line-position="fixed-top"] &, [data-top-line-position="not-fixed"] &{
+		top: 100%;
+		//left: 0;
+		right: auto;
+	}
+	[data-top-line-position="fixed-bottom"] &{
+		top: auto;
+		//left: 0;
+		bottom: 100%;
+	}
+	[data-top-line-position="fixed-left"] &{
+		left: 100%;
+		bottom: -200px;
+	}
+	[data-top-line-position="fixed-right"] &{
+		right: 100%;
+		bottom: -200px;
+	}
+	
+	width: 740px;
+	line-height: normal;
+	padding: 20px 25px 5px;
+	
+	.sku{display: none;}
+	.btn-to-waitlist{ display: none;}
+	.popup-header{
+		position: relative;
+		text-align: left;
+		.header-text{
+			display: inline-block;
+			font-size: em(18px);
+			font-weight: bold;
+
+			margin-bottom: 30px;
+		}
+	}
+
+	.popup-footer{
+		text-align: justify;
+		padding-top: 10px;
+		&:after{
+			content: '';
+			display: inline-block;
+			width: 100%;
+			line-height: 0;
+		}
+		button{
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.btn-main{
+			padding-left: 40px;
+			padding-right: 40px;
+			height: 48px;
+			
+			
+			font-size: em(18px);
+			.more_bold & {font-weight: bold;}
+		}
+
+		.total{
+			display: inline-block;
+			vertical-align: middle;
+			.text{
+				font-size: em(18px);
+			}
+			
+			.price{
+				font-weight: bold;
+				font-size: em(24px);
+			}
+		}
+	}
+
+	.table-wrap{
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		width: 100%;
+		.scroller{
+			max-height: 375px;
+
+			&.baron{
+				padding-right: 8px;
+				.scroller__track{
+					top: 41px;
+				}
+			}
+		}
+
+		table{
+			width: 100%;
+		}
+
+		border-bottom: 1px solid silver;
+		border-top: 1px solid silver;
+		
+		@media (min-width: 768px){
+			tbody{
+				tr:first-child>td{
+					padding-top: 50px;
+				}
+			}
+			thead{
+				position: absolute;
+				z-index: 2; // to be over .store-info.notification-popup
+				top: 0;
+				width: 100%;
+
+				tr{
+					width: 100%;
+					display: block;
+					text-align: right;
+				}
+
+				th{
+					display: none;
+					width: 0;
+					padding-left: 0;
+					padding-right: 0;
+
+					&[colspan="2"]{
+						display: inline-block;
+					}
+
+					&.price{
+						display: inline-block;
+						text-align: left;
+					}
+					&.availability{
+						display: inline-block;
+					}
+				}
+			}
+		}
+		
+	}
+
+
+	@media (max-width: 1199px){
+		padding: 20px 25px 5px;
+		.popup-footer{
+			padding-top: 10px;
+		}
+
+		[data-top-line-position="fixed-left"] &, [data-top-line-position="fixed-right"] &{
+			width: 767px;
+		}
+	}
+	@media (max-width: 991px){
+		width: 100%;
+		[data-top-line-position="fixed-top"] &, [data-top-line-position="not-fixed"] &, [data-top-line-position="fixed-bottom"] &{
+			left: 0;
+		}
+
+		[data-top-line-position="fixed-left"] &, [data-top-line-position="fixed-right"] &{
+			width: 700px;
+		}
+	}
+	@media (max-width: 767px){
+		padding: 10px;
+		padding-bottom: 0;
+		.btn-close{
+			z-index: 1;
+			.btn-text{display: none;}
+			>i:before{
+				font-size: 18px;
+				color: darken(silver, 20%);
+
+			}
+			&:hover>i:before{ color: silver;}
+		}
+		
+		[data-top-line-position="fixed-left"] &, [data-top-line-position="fixed-right"] &{
+			width: 320px;
+			left: 0;
+			bottom: -42px;
+		}
+		[data-top-line-position="fixed-right"] &{
+			right: 0;
+			left: auto;
+		}
+		.popup-footer{
+			overflow: hidden;
+			padding-top: 10px;
+			text-align: right;
+			&:after{display: none;	}
+			.total{
+				float: right;
+			}
+			.btn-delete{
+				float: left;
+				margin: auto !important;
+				margin-right: 0 !important;
+			}
+			.btn-main{
+				padding-left: 20px;
+				padding-right: 20px;
+				font-size: em(16px);
+			}
+		}
+
+		.table-wrap{
+			.scroller{
+				&.baron{ 
+					.scroller__track{
+						top: 1px;
+					}
+				}
+			}			
+		}
+	}
+}/* .top-line-popup */
+[data-top-line-position="fixed-top"], [data-top-line-position="fixed-bottom"], [data-top-line-position="not-fixed"]{
+	.popup_favorites{
+		right: 0;
+		left: auto;
+	}
+}
+
+.popup_favorites, .popup_compare{
+	.popup-header .header-text{
+		margin-bottom: 15px;
+	}
+
+	thead{
+		th{
+			&[colspan="2"]{ width: 60%;}
+			&.price{ width: 22%;}
+			&.availability{ width: 16%;}
+		}
+	}
+}
+.popup_basket{
+	right: 0;
+	left: auto;
+	padding-bottom: 25px;
+	z-index: 10;
+
+	[data-top-line-position="fixed-top"] &, [data-top-line-position="not-fixed"] &, [data-top-line-position="fixed-bottom"] &{
+		right: 0;
+		left: auto;
+	}
+
+	.popup-header{
+		overflow: hidden; // for floats
+		.header-text{
+			display: inline-block;
+			font-size: em(18px);
+			font-weight: normal;
+
+			margin-bottom: 30px;
+
+			>.basket-content>.text{
+				display: inline-block;
+			}
+
+			.total-price{
+				display: inline-block;
+				vertical-align: baseline;
+				padding: 2px 8px;
+				padding-bottom: 4px;
+				border-radius: 3px;
+				font-size: em(24px, 18px);
+				.more_bold & {font-weight: bold;}
+			}
+		}
+		@media (max-width: 767px){
+			.header-text{
+				font-size: em(14px);
+				margin-bottom: 5px;
+				>.basket-content>.text{
+					display: block;
+				}
+				.total-price{
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+	.sku{ 
+		display: block;
+		margin-top: 5px;
+	}
+	.basket-content, .waitlist-content{width: 100%;}
+	.basket-content{ display: block;}
+	.waitlist-content{ display: none;}
+
+	&.waitlist{
+		.basket-content{ display: none;}
+		.waitlist-content{ display: block;}
+	}
+
+	.basket-waitlist-toggle{
+		position: absolute;
+		bottom: 10px;
+		right: 0px;
+
+		.btn-text{
+			display: inline-block;
+			font-size: em(14px);
+			@extend .pseudolink-bd;
+		}
+		i{
+			position: relative;
+			&:before{ 
+				position: absolute;
+				top: -2px;
+				left: -27px;
+			}
+		}
+		@include transition('.btn-text', (color, border-color));
+		
+		.basket-content{
+			i:before{ font-size: em(25px);}
+		}
+
+		.waitlist-content{
+			i:before{ font-size: 20px;}
+		}/* .waitlist-content */
+	}/* .basket-waitlist-toggle */
+
+	thead{
+		th{
+			&[colspan="2"]{ width: 45%;}
+			&.price{ width: 31%;}
+			&.availability{	width: 21%;	}
+			@media (max-width: 991px){
+				&.price{ width: 21%;}
+			}
+		}
+	}
+	.popup-footer{
+		
+		.btn-main{
+			display: inline-block;
+			position: relative;
+			line-height: 46px;
+			text-align: center;
+			max-width: 300px;
+			&:active{
+				top: 2px;
+			}
+		}
+
+		@media (max-width: 767px){
+			.btn-delete{
+				margin-top: 60px !important;
+			}
+		}
+	}
+
+	@media (max-width: 767px){
+		padding-bottom: 0px;
+	}
+
+}/* .popup-basket */
+
+.small-basket-buy-wrap{
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 300px;
+
+	text-align: center;
+
+	position: relative;
+
+	margin-bottom: -25px;
+
+	.one-click-buy{
+		margin-top: 7px;
+		margin-left: 10px;
+		i{
+			top: -2px;
+		}
+	}
+	@media (max-width: 767px){
+		float: right;
+		clear: right;
+		display: block;
+		margin: 15px auto;
+	}
+}
+
+.popup_account-menu{
+	left: 0;
+	width: auto;
+	padding: 0;
+
+	@media (max-width: 767px){
+		width: 100vw;
+		text-align: left;
+	}
+
+
+	ul{
+		padding: 0px;
+		margin: 0;
+		list-style: none;
+	}
+	li{
+		a{
+			@include transition(false, background);
+			@include transition('.link-text', (color, border-color));
+			transition: none;
+			display: block;
+			padding: 10px 10px 10px 35px;
+			// .link-text{ border-bottom: 1px solid;}
+		}
+		&:last-child>a{
+			padding-bottom: 14px;
+		}
+		i{
+			position: relative;
+			&:before{ 
+				position: absolute;
+				left: -25px;
+			}
+			&.icon-user:before{
+				font-size: 20px;
+				left: -25px;
+				top: -2px;
+			}
+			&.icon-settings:before{
+				font-size: 20px;
+				left: -25px;
+				top: -1px;
+			}
+			&.icon-history:before{
+				font-size: 16px;
+				left: -23px;
+				top: 3px
+			}
+			&.icon-subscribe:before{
+				font-size: 18px;
+				left: -23px;
+				top: 0px;
+			}
+		}
+	}
+	
+	[data-top-line-position="fixed-left"] &, [data-top-line-position="fixed-right"] &{
+		width: 232px;
+		top: 48px;
+		bottom: auto;
+
+		@media (max-width: 767px){
+			top: auto;
+			bottom: 40px;
+		}
+	}
+	[data-top-line-position="fixed-left"] &{
+		left: 100%;
+	}
+	[data-top-line-position="fixed-right"] &{
+		left: auto;
+		right: 100%;
+	}
+
+
+}

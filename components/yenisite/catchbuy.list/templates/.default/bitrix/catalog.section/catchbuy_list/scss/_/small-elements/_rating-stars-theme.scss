@@ -1,0 +1,23 @@
+.rating-stars{
+	i{ color: #cfcdd8;}
+	&.r1{
+		i:nth-child(-n+1){ color: #ec2700;}
+		i.hovered{ color: darken(#ec2700, 10%);}
+	}
+	&.r2{
+		i:nth-child(-n+2){ color: #ec2700;}
+		i.hovered{ color: darken(#ec2700, 10%);}
+	}
+	&.r3{
+		i:nth-child(-n+3){ color: #ff7200;}
+		i.hovered{ color: darken(#ff7200, 10%);}
+	}
+	&.r4{
+		i:nth-child(-n+4){ color: #fec52e;}
+		i.hovered{ color: darken(#fec52e, 10%);}
+	}
+	&.r5{
+		i:nth-child(-n+5){ color: #80b600;}
+		i.hovered{ color: darken(#80b600, 10%);}
+	}
+}

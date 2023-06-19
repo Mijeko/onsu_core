@@ -1,0 +1,42 @@
+$theme: 'blue-flat';
+// ======= COMMON ========
+$main-color-dark: #5babff; // см. ховер на телефоны в UI
+$main-color-light: #9dc9fa;
+$main-color-soft: #78bbff; // см. ховер на категории
+
+$main-gradient-to-top: $main-color-soft;
+$main-gradient-to-bottom: $main-color-soft;
+$main-gradient-to-right: $main-color-soft;
+// ==== END OF COMMON ====
+// ======== MAIN =========
+$main-normal-shadowcolor: #649fd7;
+$main-normal-textcolor: #fff;
+$main-normal-textshadow: none;
+$main-normal-bg: $main-color-soft;
+$main-normal-shadow: none;
+
+$main-hovered-shadowcolor: #7eaadb;
+$main-hovered-textcolor: $main-normal-textcolor;
+$main-hovered-textshadow: $main-normal-textshadow;
+$main-hovered-bg: $main-color-light;
+$main-hovered-shadow: none;
+
+$main-clicked-shadowcolor: #4a90d8;
+$main-clicked-textcolor: $main-normal-textcolor;
+$main-clicked-textshadow: $main-normal-textshadow;
+$main-clicked-bg: $main-color-dark;
+$main-clicked-shadow: none;
+// ===== END OF MAIN =====
+
+$shadow-specialblocks-silver: none;
+$shadow-specialblocks-main: none;
+$feedback-dots: #303435;
+$bigslider-textcolor: #00173c;
+
+$hurry-banner: url('../../img/bg/hurry-banner_' + $theme + '.png') no-repeat center top;
+$benefit-openness: url('../../pictures/benefits/agree-white.png');
+$benefit-warranty: url('../../pictures/benefits/OK-white.png');
+$benefit-delivery: url('../../pictures/benefits/delivery-white.png');
+$benefit-profit: url('../../pictures/benefits/sale-white.png');
+$benefit-exchange: url('../../pictures/benefits/exchange-white.png');
+$benefit-bigstock: url('../../pictures/benefits/menu-white.png');

@@ -1,0 +1,37 @@
+.pagination-wrap{
+	background: #eeeeee;
+	&>.current-state{ color: #494949;}
+}
+
+.pagination-item{
+	@extend .silver-static;
+	&>.btn-text, &>i{ color: #000;}
+	&:hover{
+		@extend .main-normal;
+		&>.btn-text, &>i{ color: $main-normal-textcolor;}
+	}
+	&:active, &.active{
+		@extend .main-clicked;
+		&>.btn-text, &>i{ color: $main-normal-textcolor;}
+	}
+
+	&.active, &.active:hover{
+		cursor: default;
+		.btn-text{
+			background: none;
+			border: none;
+			color: $main-normal-textcolor;
+		}
+	}
+
+	&.disabled, &.disabled:hover{
+		background: #fff;
+		box-shadow: none;
+		color: silver;
+		text-shadow: none;
+
+		&>.btn-text, &>i{
+			color: silver;
+		}
+	}
+}

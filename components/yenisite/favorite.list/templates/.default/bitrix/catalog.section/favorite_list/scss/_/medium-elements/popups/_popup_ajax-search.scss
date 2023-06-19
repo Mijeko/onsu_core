@@ -1,0 +1,109 @@
+.popup_ajax-search{
+	display: none;
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	padding-bottom: 5px;
+	z-index: 5; // to be over main menu and big slider
+
+	table{
+		width: 100%;
+		table-layout: fixed;
+	}
+	.btn-show-all{
+		display: inline-block;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: em(12px);
+	}
+	.popup-ajax-footer{
+		text-align: center;
+	}
+
+	@media (max-width: 1200px) and (min-width: 992px){
+		min-width: 500px;
+		left: auto;
+	}
+}
+
+.ajax-search-item{
+	@include transition(false, background);
+	height: 50px;
+	td{
+		padding: 2px;
+		vertical-align: middle;
+	}
+	.btn-buy{
+		font-weight: bold;
+		display: inline-block;
+		padding: 5px 15px;
+		>i{display: none;}
+	}
+	.item-photo{
+		width: 60px;
+	}
+	.item-name{
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		font-size: em(12px);
+	}
+	.item-price{
+		white-space: nowrap;
+		text-align: center;
+		font-weight: bold;
+		font-size: em(16px);
+	}
+	.item-availability{
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 20px;
+	}
+	.item-actions{
+		white-space: nowrap;
+		width: 100px;
+		text-align: center;
+	}
+	&.in-stock{
+		.btn-to-waitlist{ display: none;}
+		.btn-buy{ display: inline-block;}
+	}
+	&.out-of-stock{
+		.btn-buy{ display: none;}
+		.btn-to-waitlist{ display: inline-block;}
+	}
+
+	@media (max-width: 767px){
+		.item-price{
+			font-size: 12px;
+		}
+		.btn-buy{
+			padding: 0;
+			height: 35px;
+			width: 35px;
+			line-height: 35px;
+			text-align: center;
+			.text{display: none;}
+			>i{ 
+				display: inline-block;
+				&:before{
+					font-size: 26px;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}
+
+.avail-dot{
+	position: relative;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	
+	&:before{
+		content: '';
+		position: absolute;
+		top: 3px;right: 3px;bottom: 3px;left: 3px;
+		border-radius: 50%;
+	}
+}

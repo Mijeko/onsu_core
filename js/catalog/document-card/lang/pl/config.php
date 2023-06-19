@@ -1,0 +1,22 @@
+<?php
+$MESS["CANCEL_CONDUCT_BUTTON"] = "Anuluj przetwarzanie";
+$MESS["CONDUCT_BUTTON"] = "Przetwórz";
+$MESS["DOCUMENT_ADD_CONTRACTOR"] = "Utwórz dostawcę:";
+$MESS["DOCUMENT_ADD_CONTRACTOR_ERROR"] = "Błąd podczas tworzenia dostawcy";
+$MESS["DOCUMENT_CONDUCT_SUCCESSFUL"] = "Przetworzono pozycję";
+$MESS["DOCUMENT_CONDUCT_SUCCESSFUL_VIEW"] = "Wyświetl";
+$MESS["DOCUMENT_CONTRACTOR_FIELD_PLACEHOLDER"] = "Znajdź lub utwórz dostawcę";
+$MESS["DOCUMENT_CONTRACTOR_NOT_FILLED"] = "pusty";
+$MESS["DOCUMENT_FIRST_TIME_HINT_TEXT"] = "Zacznij od utworzenia nowej korekty zapasów dla towarów aktualnie przechowywanych w magazynie. Zapisz produkty i aktualny stan magazynowy. Tutaj możesz zmienić typ operacji, jeśli chcesz utworzyć nowy kwit składowy.";
+$MESS["DOCUMENT_FIRST_TIME_HINT_TITLE"] = "Typ dokumentu";
+$MESS["DOCUMENT_LINK_COPIED"] = "Link obiektu magazynowego został skopiowany do schowka";
+$MESS["DOCUMENT_PRODUCTS_ADD_PRODUCT"] = "Dodane produkty";
+$MESS["DOCUMENT_PRODUCTS_NOT_SHOWN"] = "jeszcze #COUNT#";
+$MESS["DOCUMENT_PRODUCTS_TOTAL"] = "Łącznie";
+$MESS["FEEDBACK_BUTTON_TITLE"] = "Informacja zwrotna";
+$MESS["SAVE_AND_CONDUCT_BUTTON"] = "Zapisz i przetwórz";
+$MESS["SLIDER_LABEL_A"] = "Kwit składowy";
+$MESS["SLIDER_LABEL_D"] = "Odpis";
+$MESS["SLIDER_LABEL_M"] = "Transfer";
+$MESS["SLIDER_LABEL_S"] = "Korekta zapasów";
+$MESS["SLIDER_LABEL_W"] = "Zamówienia sprzedaży";

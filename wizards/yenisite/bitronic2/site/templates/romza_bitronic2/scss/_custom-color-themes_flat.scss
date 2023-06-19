@@ -1,0 +1,61 @@
+@function hsb($h-hsb, $s-hsb, $b-hsb, $a: 1) {
+	@if $b-hsb == 0 {
+		@return hsla(0, 0, 0, $a)
+	} @else {
+		$l-hsl: ($b-hsb/2) * (2 - ($s-hsb/100));
+		$s-hsl: ($b-hsb * $s-hsb) / if($l-hsl < 50, $l-hsl * 2, 200 - $l-hsl * 2);
+		@return hsla($h-hsb, $s-hsl, $l-hsl, $a);
+	}
+}
+
+// ======= COMMON ========
+$main-color-soft:				hsb($main-color-h, $main-color-s, $main-color-v);
+$main-color-dark:				$main-color-soft + #161616;
+$main-color-light:				$main-color-soft - #161616;
+
+$main-gradient-to-top:			$main-color-soft;
+$main-gradient-to-bottom:		$main-color-soft;
+$main-gradient-to-right:		$main-color-soft;
+// ==== END OF COMMON ====
+
+// ======== MAIN =========
+$main-normal-shadowcolor:		hsb($main-color-h, $main-color-s + 40, $main-color-v - 30);
+$main-normal-textcolor:			#fff;
+$main-normal-textcolor__black:	#000;
+$main-normal-textshadow:		none;
+$main-normal-bg:				$main-color-soft;
+$main-normal-shadow:			none;
+
+$main-hovered-shadowcolor:		hsb($main-color-h, $main-color-s + 20, $main-color-v - 10);
+$main-hovered-textcolor:		$main-normal-textcolor;
+$main-hovered-textshadow:		$main-normal-textshadow;
+$main-hovered-bg:				$main-color-light;
+$main-hovered-shadow:			none;
+
+$main-clicked-shadowcolor:		hsb($main-color-h, $main-color-s + 40, $main-color-v - 40);
+$main-clicked-textcolor:		$main-normal-textcolor;
+$main-clicked-textshadow:		$main-normal-textshadow;
+$main-clicked-bg:				$main-color-dark;
+$main-clicked-shadow:			none;
+// ===== END OF MAIN =====
+
+$shadow-specialblocks-silver:	none;
+$shadow-specialblocks-main:		none;
+$feedback-dots:					#303435;
+$bigslider-gradient:			hsb($main-color-h, 10, $main-color-v);
+$bigslider-textcolor:			hsb($main-color-h, $main-color-s + 50, 25);
+
+$hurry-banner:					url('img/bg/hurry-banner_blue-flat.png') no-repeat center top;
+$benefit-openness:				url('pictures/benefits/agree-white.png');
+$benefit-warranty:				url('pictures/benefits/OK-white.png');
+$benefit-delivery:				url('pictures/benefits/delivery-white.png');
+$benefit-profit:				url('pictures/benefits/sale-white.png');
+$benefit-exchange:				url('pictures/benefits/exchange-white.png');
+$benefit-bigstock:				url('pictures/benefits/menu-white.png');
+
+$benefit-openness__black:		url('pictures/benefits/agree.png');
+$benefit-warranty__black:		url('pictures/benefits/OK.png');
+$benefit-delivery__black:		url('pictures/benefits/delivery.png');
+$benefit-profit__black:			url('pictures/benefits/sale.png');
+$benefit-exchange__black:		url('pictures/benefits/exchange.png');
+$benefit-bigstock__black:		url('pictures/benefits/menu.png');

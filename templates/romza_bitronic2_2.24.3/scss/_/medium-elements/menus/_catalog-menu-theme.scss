@@ -1,0 +1,205 @@
+.catalog-menu.mainmenu {
+	@media (min-width: 768px) {
+		[data-header-version="v1"] &, [data-header-version="v4"] & {
+			@include silver-static;
+			.catalog-menu-lvl0.additional { @include silver-static; }
+			.category-name { color: #000; }
+			.category-items-number { @include silver-normal; }
+			.catalog-menu-lvl0-item:hover .menu-lvl0-link, .menu-lvl0-link.active {
+				@include main-normal;
+				.category-name {
+					color: $main-normal-textcolor;
+					text-shadow: $main-normal-textshadow;
+				}
+				
+				.category-items-number, >.img-wrap { @include silver-normal; }
+			}
+			.btn-catalog {
+				background: fade-out(#d2d2d2, 0.69);
+				@include set-colors(false, #000);
+
+				&:hover { background: darken(fade-out(#d2d2d2, 0.69), 10%); }
+				&:active { background: darken(fade-out(#d2d2d2, 0.69), 20%); }
+			}
+		}
+
+		[data-header-version="v2"] &, [data-header-version="v5"] & {
+			@include main-normal;
+			.category-name {
+				color: $main-normal-textcolor;
+				text-shadow: $main-normal-textshadow;
+			}
+			.category-items-number, .menu-lvl0-link > .img-wrap { @include silver-normal; }
+			.catalog-menu-lvl0-item:hover > .menu-lvl0-link,
+			.catalog-menu-lvl0.additional>.catalog-menu-lvl0-item:hover .menu-lvl0-link,
+			.menu-lvl0-link.active {
+				@include silver-normal;
+				.category-name {
+					color: #000;
+					text-shadow: none;
+				}
+				.category-items-number { @include main-normal; }
+			}
+			.btn-catalog {
+				color: #000;
+				@include btn-silver;
+				text-shadow: none;
+			}
+			.submenu-wrap { text-shadow: none; }
+		}
+
+		[data-header-version="v1"] &,
+		[data-header-version="v2"] &,
+		[data-header-version="v5"] & {
+			.catalog-menu-lvl0.additional {
+				@include silver-static;
+
+				.category-name {
+					color: #000;
+					text-shadow: none;
+				}
+				.category-items-number { @include main-normal; }
+				.menu-lvl0-link {
+					border-bottom-color: #e3e3e3;
+					&:hover { border-bottom-color: transparent; }
+				}
+				.catalog-menu-lvl0-item:hover .menu-lvl0-link, .menu-lvl0-link.active {
+					@include main-normal;
+					.category-name {
+						color: $main-normal-textcolor;
+						text-shadow: $main-normal-textshadow;
+					}
+					
+					.category-items-number, >.img-wrap { @include silver-normal; }
+				}
+			}
+		}
+		.catalog-at-side & {
+			.category-name { color: #000; }
+			.category-items-number { @include main-normal; }
+			.catalog-menu-lvl0-item {
+				.menu-lvl0-link { border-bottom-color: #e3e3e3; }
+				&:hover .menu-lvl0-link, .menu-lvl0-link.active {
+					border-bottom-color: transparent;
+					@include main-normal;
+					.category-name {
+						color: $main-normal-textcolor;
+						text-shadow: $main-normal-textshadow;
+					}
+					.category-items-number, >.img-wrap { @include silver-normal; }
+				}
+			}
+
+			.btn-catalog {
+				@include btn-main;
+				.bullets { color: $main-normal-textcolor; }
+			}
+		}
+
+		.catalog-at-side.full & {
+			>.container, >.container-fluid { @include silver-static; }
+		}
+		.catalog-at-side.minified & {
+			.catalog-menu-lvl0 { @include silver-static; }
+		}
+	}// @media (min-width: 768px)
+	
+	@media (max-width: 767px) {
+		.btn-catalog { @include btn-main; }
+		.catalog-menu-lvl0 { background-color: #eee; }
+		.category-name {
+			color: #000;
+			text-shadow: none;
+		}
+		.category-items-number, .menu-lvl0-link > .img-wrap { @include silver-normal; }
+		.catalog-menu-lvl0-item .menu-lvl0-link {
+			background-color: #dedede;
+			border-bottom: 1px solid #ccc;
+		}
+	}
+}
+
+.catalog-menu-footer {
+	&>ul>li {
+		&:before { border-color: $ul-circles-color; }
+	}
+}
+
+.submenu-wrap {
+	@media (min-width: 768px) { @include silver-static; }
+	
+	.catalog-menu-lvl0.additional &, .catalog-at-side & {
+		&:before, &:after {
+			background: $main-gradient-to-top;
+			box-shadow: $submenu-wrap-borders-shadow;
+		}
+		border-top-width: 0;
+		border-bottom-width: 0;
+	}
+
+	@media (max-width: 767px) {
+		&:before, &:after {
+			background: $main-gradient-to-top;
+			box-shadow: $submenu-wrap-borders-shadow;
+		}
+	}
+}
+
+.catalog-menu-lvl1 {
+	.menu-lvl1-header {
+		text-shadow: none;
+		.i-number { color: black; }
+	}
+	
+	.menu-lvl1-link {
+		@include set-colors('.text', #000);
+		@include set-border-colors('.text', transparent, #000, #000, transparent);
+		&.active {
+			@include set-colors('.text', $main-color-dark);
+			@include set-border-colors('.text', transparent, $main-color-soft, $main-color-soft, transparent);
+		}
+	}
+	span.menu-lvl1-link.active {
+		&, &:hover {
+			.text {
+				&, &:hover { border-color: transparent; }
+			}
+		}
+	}
+	
+	.link {
+		@include set-colors('.text', $link-base-color, #000, #000, $link-visited-color);
+		@include set-border-colors('.text', $link-base-color, transparent, transparent, $link-visited-color);
+		&:hover, &:active, &.active {
+			color: $main-normal-textcolor;
+			background: $main-color-soft;
+			.text { color: $main-normal-textcolor; }
+		}
+	}
+	span.link.active {
+		&, &:hover, &:active {
+			.text { border-color: transparent; }
+		}
+	}
+	a.link.active {
+		@include set-border-colors('.text', $main-normal-textcolor, transparent, transparent, $main-normal-textcolor);
+		&:hover { background: $main-color-light; }
+	}
+
+	@media (max-width: 767px) {
+		>ul { background-color: #fff; }
+		.link { background-color: #fff; }
+		.menu-lvl1-link {
+			background-color: #efefef;
+			border-bottom: 1px solid #ddd;
+			&, &.active { @include set-border-colors('.text', transparent); }
+			&:focus, &:active { background-color: silver; }
+		}
+	}
+}
+
+.menu-lvl1-additional-link { @include set-colors(false, gray, darken(silver, 15%), darken(silver,15%), gray); }
+.show-hide-hits {
+	@include set-colors(false, #000);
+	@include set-border-colors('.text', transparent, #000, #000, transparent);
+}

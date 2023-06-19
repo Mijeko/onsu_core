@@ -1,0 +1,69 @@
+.top-line {
+	@include silver-static;
+	.items-inside {
+		color: $main-normal-textcolor;
+		background: $main-normal-bg;
+		box-shadow: $main-normal-shadow;
+	}
+
+	a.toggled {
+		@include btn-main;
+		@include set-colors(false, $main-normal-textcolor);
+		@include set-colors('.link-text', $main-normal-textcolor);
+		@include set-colors('i', $main-normal-textcolor);
+		@include set-colors('.items-inside', $main-normal-textcolor);
+
+		.items-inside {
+			background: #fff;
+			color: #000 !important;
+			box-shadow: none;
+		}
+	}
+	
+	.btn-compare, .btn-favorites { @include set-colors('i', #000, $link-hover-color, $link-clicked-color, #000); }
+
+	[data-top-line-position="fixed-left"] &, [data-top-line-position="fixed-right"] & {
+		.items-inside {
+			color: $main-normal-textcolor;
+			background: $main-normal-bg;
+			box-shadow: $main-normal-shadow;
+		}
+
+		a.toggled .items-inside {
+			background: #fff;
+			color: #000 !important;
+			box-shadow: none;
+		}
+
+		.account-not-authorized {
+			&:hover {
+				.text { @extend .link-std; }
+				.avatar { color: $link-hover-color; }
+			}
+
+			.content {
+				@include silver-static;
+				background: #fff;
+				border-color: gray;
+			}
+		}
+	}
+}
+
+.account-authorized{
+	.avatar{
+		border-color: #fff;
+		background-color: #e8e8e8;
+		color: #a8a8a8;
+	}
+	.btn-logout{
+		@include btn-main;
+	}
+	.toggled{
+		@include main-normal;
+		@include set-colors('.link-text', $main-normal-textcolor);
+		@include set-border-colors('.link-text', $main-normal-textcolor, transparent, transparent);
+		//box-shadow: $shadow-main-medium;
+		.btn-logout{ @include btn-silver;}
+	}
+}

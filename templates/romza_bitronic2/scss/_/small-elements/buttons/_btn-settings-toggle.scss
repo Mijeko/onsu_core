@@ -1,0 +1,53 @@
+.btn-settings-toggle{
+	position: absolute;
+	margin-left: -52px;
+	height: 48px;
+	width: 48px;
+	&.btn-main {border-radius: 0;}
+
+	[data-limit-sliders="true"] &{
+		margin-left: -64px;	
+	}
+	[data-top-line-position="fixed-left"] &, [data-top-line-position="fixed-right"] &{
+		margin-top: -52px;
+		width: 50px;
+		height: 52px;
+		border: 0 solid gray;
+	}
+
+	[data-top-line-position="fixed-right"] & {
+		border-width: 2px 0 2px 2px;
+		margin-left: -2px;
+	}
+
+	[data-top-line-position="fixed-left"] & {
+		border-width: 2px 2px 2px 0;
+		margin-left: 0;
+	}
+
+
+	@media (max-width: 767px){
+		[data-top-line-position="fixed-top"] &, [data-top-line-position="not-fixed"] &{
+			top: 0;
+			right: 96px;
+		}
+		[data-top-line-position="fixed-bottom"] &{
+			bottom: 0;
+			right: 96px;
+			top: auto;
+		}
+		[data-top-line-position="fixed-left"] &, [data-top-line-position="fixed-right"] &{
+			margin-top: -40px;
+			width: 40px;
+			height: 40px;
+			right: auto;
+			top: auto;
+		}
+		// z-index: 2;
+		top: 125px;
+		right: 0;
+		margin-left: 0;
+		height: 44px;
+		width: 44px;
+	}
+}

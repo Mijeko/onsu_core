@@ -1,0 +1,8 @@
+
+div.yenisite-photos .yenisite-detail {border:solid 2px #9999ff;}
+div.yenisite-photos .yenisite-detail:hover {border:solid 2px black;}
+
+div.yenisite-photos .yenisite-icons {border:solid 2px #9999ff;}
+div.yenisite-photos .yenisite-icons:hover {border:solid 2px black;}
+
+div.yenisite-photos .thumbs a {border: none;}

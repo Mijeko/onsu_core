@@ -1,0 +1,51 @@
+$theme: 'yellow-skew';
+// ======= COMMON ========
+$main-color-dark: #fdc141;
+$main-color-light: #ffe400;
+$main-color-soft: #fed658;
+
+$main-gradient-to-top: linear-gradient(to top, $main-color-dark, $main-color-light 80%);
+$main-gradient-to-bottom: linear-gradient(to top, $main-color-dark, $main-color-light 80%);
+$main-gradient-to-right: linear-gradient(to right, $main-color-dark, $main-color-light 80%);
+// ==== END OF COMMON ====
+// ======== MAIN =========
+// -- this is for buttons with arrows on sides
+$btn-gradient: $main-color-light 0%, $main-color-dark 18%, $main-color-light 100%;
+$btn-gradient-hover: $main-color-dark 18%, $main-color-light 100%;
+$btn-gradient-click: $btn-gradient;
+// --
+$main-normal-shadowcolor: #e5a626;
+$main-normal-textcolor: #000;
+$main-normal-textshadow: 0px 1px 0px #fef086;
+$main-normal-bg: linear-gradient(to top, $btn-gradient);
+$main-normal-shadow: 0px 1px 2px fade-out(#141311, 0.20),
+					inset 0px 0px 0px $main-normal-shadowcolor;
+
+$main-hovered-shadowcolor: $main-normal-shadowcolor;
+$main-hovered-textcolor: $main-normal-textcolor;
+$main-hovered-textshadow: $main-normal-textshadow;
+$main-hovered-bg: linear-gradient(to bottom, $btn-gradient-hover);
+$main-hovered-shadow: $main-normal-shadow;
+
+$main-clicked-shadowcolor: fade-out(#9e6c00, 0.25);
+$main-clicked-textcolor: $main-normal-textcolor;
+$main-clicked-textshadow: $main-normal-textshadow;
+$main-clicked-bg: $main-normal-bg;
+$main-clicked-shadow: inset 0px 2px 3px $main-clicked-shadowcolor;
+// ===== END OF MAIN =====
+
+$shadow-specialblocks-silver: 0px 1px 3px fade-out(#000, 0.21),
+								inset 0px -5px 0px fade-out(#000, 0.82);
+$shadow-specialblocks-main: 0px 1px 3px fade-out(#000, 0.21),
+								inset 0px -5px 0px $main-normal-shadowcolor;
+$feedback-dots: #303435;
+$bigslider-gradient: linear-gradient(to top, #cdd9d8, #a4b5c0);
+$bigslider-textcolor: #fff;
+
+$hurry-banner: url('../../img/bg/hurry-banner_' + $theme + '.jpg') no-repeat center top;
+$benefit-openness: url('../../pictures/benefits/agree.png');
+$benefit-warranty: url('../../pictures/benefits/OK.png');
+$benefit-delivery: url('../../pictures/benefits/delivery.png');
+$benefit-profit: url('../../pictures/benefits/sale.png');
+$benefit-exchange: url('../../pictures/benefits/exchange.png');
+$benefit-bigstock: url('../../pictures/benefits/menu.png');

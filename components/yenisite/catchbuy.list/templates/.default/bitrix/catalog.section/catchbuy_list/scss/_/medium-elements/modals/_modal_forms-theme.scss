@@ -1,0 +1,100 @@
+.modal-dialog{
+	@extend .silver-static;
+	@media (max-width: 767px){
+		h2{
+			color: $main-normal-textcolor;
+			background: $main-clicked-bg;
+		}
+		.btn-close{
+			color: $main-normal-textcolor;
+		}
+	}
+}
+#modal_callme{
+	.modal-dialog{
+		box-shadow: $silver-static-shadow;
+		background: #f3f5f4;
+		background: url('../../img/bg/phone.png') no-repeat 100% 100%,
+					$silver-static-bg;
+	}
+}
+#modal_inform-when-price-drops{
+	.modal-dialog{
+		box-shadow: $silver-static-shadow;
+		background: #f3f5f4;
+		background: url('../../img/bg/price-drop.png') no-repeat 100% 100%,
+					$silver-static-bg;
+	}
+}
+#modal_feedback{
+	.modal-dialog{
+		box-shadow: $silver-static-shadow;
+		background: #f3f5f4;
+		background: url('../../img/bg/modal_feedback.png') no-repeat 100% 100%,
+					$silver-static-bg;
+	}
+}
+
+.modal-form{
+	.social-modal{
+		&.vk{ background: url('../../img/icons/icon_modal_social_vk.png');}
+		&.ok{ background: url('../../img/icons/icon_modal_social_ok.png');}
+		&.mail{ background: url('../../img/icons/icon_modal_social_mail.png');}
+		&.fb{ background: url('../../img/icons/icon_modal_social_fb.png');}
+		&.black{ background: url('../../img/icons/icon_modal_social_black.png');}
+	}
+}
+#modal_login{
+	.modal-footer{
+		border-color: #cacaca;
+	}
+}
+.form_login, .form_registration, .form_callme{
+	.switch-form-block{
+		.btn-form-switch{
+			@include set-colors('.btn-text', $link-base-color, $link-hover-color, $link-clicked-color);
+			@include set-border-colors('.btn-text', $link-base-color, $link-hover-color, $link-clicked-color);
+		}
+	}/* .login-to-register */
+
+	.forgot-pass{
+		@include set-colors(false, $link-base-color, $link-hover-color, $link-clicked-color);
+		@include set-border-colors(false, $link-base-color, $link-hover-color, $link-clicked-color);
+	}
+}/* .form-login, .form_registration */
+
+.form_registration{
+	.checkbox-content{
+		a{
+			@include set-colors(false, $link-base-color, $link-hover-color, $link-clicked-color);
+			@include set-border-colors(false, $link-base-color, $link-hover-color, $link-clicked-color);
+		}
+	}
+}
+.captcha{
+	border-color: #e9e9e9;
+	background: #fff;
+}
+
+.form_inform-when-price-drops{
+	.price>.icon-before-input{
+		color: lighten(#000, 40%);
+	}
+}
+
+.form_yourcity{
+	.another-city{
+		@include set-colors(false, #000, lighten(#000, 50%));
+	}
+}
+
+.form_calc-delivery{
+	.delivery-option{
+		&:hover{
+			border-color: lighten($main-color-dark, 10%);
+		}
+		&.active, &.active:hover{
+			border-color: $main-color-dark;
+		}
+	}
+}

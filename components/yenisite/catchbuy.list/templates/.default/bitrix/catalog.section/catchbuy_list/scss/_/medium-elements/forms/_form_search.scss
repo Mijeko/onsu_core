@@ -1,0 +1,104 @@
+.search-wrap{
+	position: absolute;
+	//z-index: 5; // to ajax search popup be above main menu, banner
+	right: 0;
+	
+	.v1 &{
+		width: 33%;
+		top: 65px;
+	}
+	.v2 &{
+		top: 70px;
+		width: 33%;
+	}
+
+	.v3 &{
+		width: auto;
+		bottom: 20px;
+		left: $v-menu-width-xxl + 10px;
+		@media (max-width: 1919px){ left: $v-menu-width-xl + 10px;}
+		@media (max-width: 1599px){ left: $v-menu-width-lg + 10px;}
+		@media (max-width: 1200px){ left: $v-menu-width-md + 10px;}
+		@media (max-width: 991px){ left: $v-menu-width-sm + 10px;}
+	}
+	@media (max-width: 767px){
+		.v1 &, .v2 &, .v3 &, .v4 &{
+			position: relative;
+			width: auto;
+			top: auto;
+			right: auto;
+			bottom: auto;
+			left: auto;
+			margin-top: 0;
+
+			.search-example-wrap{
+				display: none;
+			}
+		}
+	}
+	padding: 5px 5px 7px;
+	border-radius: 4px;
+	input{
+		padding-right: 140px;
+	}
+
+	.search-controls, .search-example-wrap{
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		// I don't specify height or bottom, so height will be automatically
+		// set based on max height of elements (btn-search in this case)
+
+		white-space: nowrap;
+	}
+	
+	.search-clear, .search-area, .btn-search{
+		display: inline-block;
+		vertical-align: middle;
+		text-align: right;
+	}
+
+	.search-clear{
+		@include transition(false);
+		display: none;
+		&:hover{
+			cursor: pointer;
+		}
+
+		&:before{
+			font-size: 14px;
+			margin: 0;
+			margin-right: 5px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	
+	.btn-search{
+		height: 48px;
+		width: 48px;
+		text-align: center;
+
+		border-radius: 0px 4px 4px 0px;
+		margin-left: 5px;
+	}
+
+	.search-area{
+		height: 30px;
+	}
+
+	.search-example-wrap{
+		top: 105%;
+		left: 5px;
+
+		font-size: em(12px);
+	}
+	.search-example{
+		@include transition(false, (color, border-color));
+		border-bottom: 1px dotted;
+
+		&:hover{
+			cursor: pointer;
+		}
+	}
+}

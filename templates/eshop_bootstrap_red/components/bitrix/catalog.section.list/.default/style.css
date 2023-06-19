@@ -1,0 +1,33 @@
+.glyphicon {
+    position: absolute !important;
+    top: -2px;
+    left: 7px;
+    width: 21px;
+    height: 21px;
+    border-radius: 9px;
+    transition-duration: 500ms;
+}
+
+.glyphicon:hover {
+    background: lightcoral;
+}
+
+.glyphicon-chevron-up {
+    padding: 3px 1px 1px 4px;
+    margin-top: 1px;
+}
+
+.glyphicon-chevron-down {
+    padding: 3px 1px 1px 4px;
+    margin-top: 1px;
+}
+
+.main-menu a{
+    position: relative;
+    text-transform: uppercase;
+}
+
+.chevron:hover,
+.chevron:focus {
+    color: black;
+}

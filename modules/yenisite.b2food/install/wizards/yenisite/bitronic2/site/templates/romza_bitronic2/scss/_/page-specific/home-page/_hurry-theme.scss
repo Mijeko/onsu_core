@@ -1,0 +1,30 @@
+.hurry {
+	header {
+		color: $main-normal-textcolor;
+		background: $hurry-banner;
+		background-size: auto 100%;
+	}
+
+	header, .subheader {
+		text-shadow: $main-normal-textshadow;
+	}
+}
+
+.hurry-item {
+	@extend .blocks-item;
+	.economy {
+		.marked:before { background: $main-color-soft; }
+	}
+}
+.countdown {
+	.timer-wrap { @include silver-static; }
+}
+.already-sold__track {
+	box-shadow: $hurry-sold-track-shadow;
+
+	.bar {
+		border-color: $hurry-sold-bar-bordercolor;
+		box-shadow: $hurry-sold-bar-shadow;
+		background: $main-gradient-to-top;
+	}
+}

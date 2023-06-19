@@ -1,0 +1,22 @@
+<?php
+$MESS["CANCEL_CONDUCT_BUTTON"] = "Cancelar el procesamiento";
+$MESS["CONDUCT_BUTTON"] = "Procesar";
+$MESS["DOCUMENT_ADD_CONTRACTOR"] = "Crear un proveedor:";
+$MESS["DOCUMENT_ADD_CONTRACTOR_ERROR"] = "Error al crear el proveedor";
+$MESS["DOCUMENT_CONDUCT_SUCCESSFUL"] = "Artículo procesado con éxito";
+$MESS["DOCUMENT_CONDUCT_SUCCESSFUL_VIEW"] = "Ver";
+$MESS["DOCUMENT_CONTRACTOR_FIELD_PLACEHOLDER"] = "Buscar o crear un proveedor";
+$MESS["DOCUMENT_CONTRACTOR_NOT_FILLED"] = "vacío";
+$MESS["DOCUMENT_FIRST_TIME_HINT_TEXT"] = "Comience por crear un nuevo ajuste de existencias para las mercancías que están guardadas actualmente en el almacén, inscribir los productos y las existencias actuales. Puede cambiar el tipo de operación aquí si necesita crear un nuevo recibo de existencias.";
+$MESS["DOCUMENT_FIRST_TIME_HINT_TITLE"] = "Tipo de documento";
+$MESS["DOCUMENT_LINK_COPIED"] = "El enlace al objeto del inventario se copió en el portapapeles";
+$MESS["DOCUMENT_PRODUCTS_ADD_PRODUCT"] = "Productos agregados";
+$MESS["DOCUMENT_PRODUCTS_NOT_SHOWN"] = "#COUNT# más";
+$MESS["DOCUMENT_PRODUCTS_TOTAL"] = "Total";
+$MESS["FEEDBACK_BUTTON_TITLE"] = "Comentarios";
+$MESS["SAVE_AND_CONDUCT_BUTTON"] = "Guardar y procesar";
+$MESS["SLIDER_LABEL_A"] = "Recibo de existencias";
+$MESS["SLIDER_LABEL_D"] = "Cancelación";
+$MESS["SLIDER_LABEL_M"] = "Transferir";
+$MESS["SLIDER_LABEL_S"] = "Ajuste de las existencias";
+$MESS["SLIDER_LABEL_W"] = "Órdenes de venta";

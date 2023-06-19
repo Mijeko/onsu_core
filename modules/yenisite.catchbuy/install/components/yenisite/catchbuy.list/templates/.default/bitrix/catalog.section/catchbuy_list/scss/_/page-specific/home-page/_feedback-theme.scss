@@ -1,0 +1,9 @@
+.feedback{
+	box-shadow: 0px 6px 3px -3px fade-out(#000, 0.8) inset;
+	background: url('../../img/bg/feedback.png') no-repeat 10% top,
+				#d7dce6;
+
+	.dot{
+		background: $feedback-dots;
+	}
+}

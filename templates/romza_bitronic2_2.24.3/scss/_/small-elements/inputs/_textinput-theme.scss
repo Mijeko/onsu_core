@@ -1,0 +1,19 @@
+.textinput {
+	border-color: $textinput-base;
+
+	&:hover { border-color: $textinput-hover; }
+	&:focus { border-color: $textinput-focus; }
+	&.valid { border-color: $textinput-valid; }
+	&.not-valid { border-color: $textinput-not-valid; }
+
+	&.disabled, &[disabled] {
+		color: #bfbfbf;
+		box-shadow: none;
+		border-color: #d9d7e5;
+		background: #f7f7f7;
+	}
+}
+
+.icon-valid { color: $textinput-valid; }
+
+.icon-not-valid { color: $textinput-not-valid; }

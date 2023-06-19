@@ -1,0 +1,61 @@
+.big-slider{
+	&.full{
+		background: $bigslider-gradient;
+	}
+	&.normal, &.narrow{
+		.slide{
+			background: $bigslider-gradient;
+		}
+	}	
+
+	.slide{
+		color: $bigslider-textcolor;
+		@media (max-width: 991px){
+			color: #fff;
+		}
+	}
+	&.narrow{
+		.slide{
+			@media (max-width: 1599px){
+				color: #fff;
+			}
+		}
+	}
+
+	.dot{
+		background: fade-out(#fff, 0.5);
+		&:hover, &:active, &.active{
+			background: #fff;
+		}
+	}
+
+	.arrow{
+		color: #fff;
+	}
+
+	.buttons>a{
+		border-color: #fff;
+	}
+
+	.btn-buy{
+		@include set-colors('.text', #fff, $bigslider-btnview-textcolor, $bigslider-btnview-textcolor, #fff);
+		&:hover{
+			background: fade-out(#fff, 0.4);
+		}
+		&:active{
+			background: #fff;
+		}
+	}
+
+	.btn-view{
+		background: fade-out(#fff, 0.4);
+		@include set-colors('.text', $bigslider-btnview-textcolor);
+		&:hover{
+			background: #fff;
+		}
+		&:active{
+			background: fade-out(#fff, 0.2);
+		}
+
+	}
+}

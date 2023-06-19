@@ -1,0 +1,44 @@
+.product-info-sections{
+	&.tabs .combo-link{
+		@include set-colors(false, #000);
+		background: #f0f0f0;
+		&:hover{
+			color: $main-normal-textcolor;
+			background: $main-color-soft;
+			@include set-colors(false, $main-normal-textcolor);
+		}
+
+		&.active{
+			background: $main-gradient-to-top;
+			box-shadow: inset 0px 1px 2px 0px rgba(88, 37, 0, 0.36);
+			@include set-colors(false, $main-normal-textcolor);
+			&>.text{ border-color: transparent;}
+		}
+	}
+
+	&.full>.combo-links>.links-wrap{
+		@extend .silver-static;
+		>.combo-link{
+			@include set-colors(false, #000);
+			&:hover{
+				background: $main-color-soft;
+				@include set-colors(false, $main-normal-textcolor);
+				>.text{ border-color: transparent;}
+			}
+			&.active{
+				background: $main-gradient-to-top;
+				@include set-colors(false, $main-normal-textcolor);
+				&>.text{ border-color: transparent;}
+			}
+		}
+	}
+
+	.combo-header{
+		background: #f0f0f0;
+		&:hover{
+			background: #d0d0d0;
+			color: $main-normal-textcolor;
+			background: $main-gradient-to-top;
+		}
+	}
+}

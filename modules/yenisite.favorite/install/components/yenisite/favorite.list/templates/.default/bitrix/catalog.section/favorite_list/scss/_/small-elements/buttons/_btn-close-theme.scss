@@ -1,0 +1,29 @@
+.btn-close{
+	color: #000;
+	.btn-text{ border-color: fade-out(#000, 0.5);}
+
+	&:hover{
+		color: #9f9f9f;
+		.btn-text{ border-color: fade-out(#9f9f9f, 0.5);}
+	}
+
+	&:active{
+		color: #000;
+		.btn-text{ border-color: #000;}
+	}
+
+	.popup_map &{
+		color: #fff;
+		.btn-text{ border-color: fade-out(#fff, 0.5);}
+
+		&:hover{
+			color: #9f9f9f;
+			.btn-text{ border-color: fade-out(#9f9f9f, 0.5);}
+		}
+
+		&:active{
+			color: #fff;
+			.btn-text{ border-color: transparent;}
+		}
+	}
+}

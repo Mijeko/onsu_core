@@ -1,0 +1,5 @@
+/*Menu icon*/
+#resizer2_menu_icon {background-image:url(icons/yenisite.resizer2/small.gif);}
+#resizer2_page_icon {background-image:url(icons/yenisite.resizer2/big.gif);}
+/*Menu icon BX12*/
+.resizer2_menu_icon {background:url(icons/yenisite.resizer2/medium.png) 5px 0px no-repeat !important;}//тут другая иконка совсем, так как размеры поменялись

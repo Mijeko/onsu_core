@@ -1,0 +1,38 @@
+#modal_city-select-panel{
+	.current-city{ color: #000;}
+
+	li:not(.active) span{
+		@include set-colors(false, $link-base-color, $main-color-dark, $main-color-dark);
+		@include set-border-colors(false, $link-base-color, $main-color-dark, $main-color-dark);
+	}
+	li.active span{
+		border-color: transparent;
+		color: #000;
+	}
+
+	.input-clear{
+		color: #a2a2a2;
+		&:hover{
+			color: #000;
+		}
+	}
+
+	.ajax-city-search{
+		ul{
+			@extend .silver-static;
+		}
+
+		li{
+			&:hover{
+				background: $bg-light;
+			}
+		}
+	}
+	
+	.btn-close{
+		color: #000;
+		&:hover{
+			color: silver;
+		}
+	}
+}

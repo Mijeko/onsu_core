@@ -1,0 +1,13 @@
+.form-order {
+	.delivery-type, .payment-system-type {
+		input:checked+.radio-item { border-color: $main-color-dark; }
+	}
+
+	.radio-img { @include silver-static; }
+	
+	.total-price, .total-weight {
+		span { color: $main-color-dark; }
+	}
+
+	.make-order { @include btn-main; }
+}

@@ -1,0 +1,71 @@
+.ik_select {
+	@include silver-normal;
+	.search-controls & {
+		@include btn-silver;
+		.trigger {
+			background: none !important;
+			box-shadow: none !important;
+			&:before {color: #000 !important;}
+		}
+	}
+}
+
+.ik_select_link {
+	border-color: $textinput-base;
+	background: #fff;
+	[data-styling-type="skew"] & { box-shadow: inset 0px 1px 5px fade-out(#000, 0.85); }
+
+	&:hover {
+		[data-styling-type="skew"] & { box-shadow: inset 0px 1px 5px fade-out(#000, 0.75); }
+	}
+
+	.search-controls & {
+		border: none;
+		box-shadow: none;
+		background: none;
+		&:hover { box-shadow: none; }
+	}
+
+	.trigger {
+		[data-styling-type="skew"] & { @include btn-main; }
+		[data-styling-type="flat"] & { @include btn-silver; }
+		
+		.search-controls & {
+			background: none;
+			box-shadow: none;
+			color: inherit;
+			text-shadow: none;
+			border-top-color: $main-normal-textcolor;
+			.opened & {
+				border-top-color: transparent;
+				border-bottom-color: $main-normal-textcolor;
+			}
+			&:before { color: black; }
+		}
+		
+	}
+
+	&.ik_select_link_disabled {
+		border-color: #CCC;
+		background: #F5F5F5;
+		box-shadow: none;
+		color: #888;
+
+		.trigger {
+			&, &:hover, &:active {
+				@extend .btn-silver.disabled;
+			}
+		}
+	}
+}
+
+.ik_select_list {
+	@include silver-static;
+}
+
+.ik_select_hover {
+	[data-styling-type="skew"] & { background-color: $main-color-soft; }
+	[data-styling-type="flat"] & {
+		&:before { background: $main-color-soft; }
+	}
+}

@@ -1,0 +1,22 @@
+<?php
+$MESS["CANCEL_CONDUCT_BUTTON"] = "Annuler le traitement";
+$MESS["CONDUCT_BUTTON"] = "Traiter";
+$MESS["DOCUMENT_ADD_CONTRACTOR"] = "Créer un fournisseur :";
+$MESS["DOCUMENT_ADD_CONTRACTOR_ERROR"] = "Erreur lors de la création du fournisseur";
+$MESS["DOCUMENT_CONDUCT_SUCCESSFUL"] = "Traitement de l'article réussi";
+$MESS["DOCUMENT_CONDUCT_SUCCESSFUL_VIEW"] = "Afficher";
+$MESS["DOCUMENT_CONTRACTOR_FIELD_PLACEHOLDER"] = "Trouvez ou créez un fournisseur";
+$MESS["DOCUMENT_CONTRACTOR_NOT_FILLED"] = "vide";
+$MESS["DOCUMENT_FIRST_TIME_HINT_TEXT"] = "Commencez par créer un nouvel ajustement de stock pour les marchandises actuellement stockées dans l'entrepôt ; inscrivez les produits et le stock actuel. Vous pouvez modifier le type d'opération ici si vous devez créer un nouveau reçu de stock.";
+$MESS["DOCUMENT_FIRST_TIME_HINT_TITLE"] = "Type de document";
+$MESS["DOCUMENT_LINK_COPIED"] = "Le lien de l'objet d'inventaire a été copié dans le Presse-papiers";
+$MESS["DOCUMENT_PRODUCTS_ADD_PRODUCT"] = "Produits ajoutés";
+$MESS["DOCUMENT_PRODUCTS_NOT_SHOWN"] = "#COUNT# en plus";
+$MESS["DOCUMENT_PRODUCTS_TOTAL"] = "Total";
+$MESS["FEEDBACK_BUTTON_TITLE"] = "Commentaire";
+$MESS["SAVE_AND_CONDUCT_BUTTON"] = "Enregistrer et traiter";
+$MESS["SLIDER_LABEL_A"] = "Réception en stock";
+$MESS["SLIDER_LABEL_D"] = "Radiation";
+$MESS["SLIDER_LABEL_M"] = "Transférer";
+$MESS["SLIDER_LABEL_S"] = "Ajustement du stock";
+$MESS["SLIDER_LABEL_W"] = "Ordres de vente";

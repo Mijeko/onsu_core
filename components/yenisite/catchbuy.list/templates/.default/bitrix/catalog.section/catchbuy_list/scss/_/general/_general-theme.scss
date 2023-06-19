@@ -1,0 +1,313 @@
+h1, h2, h3, h4, h5, h6{
+	color: $headers-base-color;
+}
+
+.site-contents{
+	td>a{
+		@include set-colors(false, #000);
+		&:hover{
+			background: $main-color-soft;
+		}
+	}
+
+}
+a{
+	@include set-colors(false, $link-base-color, $link-hover-color,
+						$link-clicked-color);
+}
+.link{
+	@include set-colors(false, #000);
+	@include set-colors('> .text', $link-base-color, $link-hover-color,
+						$link-clicked-color, $link-visited-color);
+	@include set-border-colors('> .text', $link-base-color, $link-hover-color,
+						$link-clicked-color, $link-visited-color);
+
+	&-on-dark{
+		@include set-colors(false, #fff);
+		@include set-colors('> .text', $link-base-color, $link-base-color,
+							$link-base-color, $link-visited-color);
+		@include set-border-colors('> .text', $link-base-color, transparent,
+							transparent, $link-visited-color);
+	}
+}
+.flying-results-wrap{
+	
+}
+.flying-results{
+	background: #fff;
+	border-color: $main-color-dark;
+	box-shadow: 0px 1px 3px fade-out(#000, 0.34);
+
+	&:before{
+		border-color: transparent $main-color-dark transparent transparent;
+	}
+	&:after{
+		border-color: transparent;
+		border-right-color: #fff;
+	}
+}
+.btn-show-results{
+	@extend .btn-main;
+}
+.alert-toggle-btn{
+	@extend .btn-silver;
+}
+.currency-list, .lang-list{
+	background: $main-gradient-to-right;
+	&:before{
+		background: #fff;
+	}
+	
+}
+.v_error{
+	background: #fc4b4e;
+	color: #fff;
+	&:before{
+		border-color: transparent transparent #fc4b4e transparent;
+	}
+}
+.currency-switch, .lang-switch{
+	.value{
+		@include set-colors('.text', $link-base-color, $link-base-color,
+							$link-base-color, $link-visited-color);
+		@include set-border-colors('.text', $link-base-color, transparent,
+							transparent, $link-visited-color);
+	}
+}
+.info4admin{
+	border-color: $main-color-dark;
+}
+button{
+	background: none;
+}
+
+.pseudolink{
+	i{ color: #000;}
+	@include set-colors('.link-text', $link-topline-color, $link-topline-hover-color);
+	@include set-border-colors('.link-text', $link-topline-color, $link-topline-hover-color);
+}
+
+ul.circled{
+	li:before{ border-color: $ul-circles-color;}
+}
+
+body{
+	color: #000;
+}
+
+.price-old{
+	color: #9f9bb3;
+}
+
+.light-brown{ background: #c4aa8d;}
+.white{ background: #fff;}
+.dark{ background: #4d4d4d;}
+.black{ background: #000;}
+
+.required-asterisk{ color: red !important;}
+
+.notification-popup{
+	background: fade-out(#000, 0.23);
+	color: #fff;
+	&:before{ border-bottom-color: fade-out(#000, 0.23);}
+}
+
+.slider-arrow{
+	@include set-colors(false, $main-color-dark, $main-color-light, $main-color-dark, $main-color-dark);
+}
+
+.contacts-email{
+	&, .header-contacts &{
+		@include set-colors(false, #000);
+		@include set-colors('.link-text', $link-base-color, $link-hover-color,
+										$link-clicked-color, $link-visited-color);
+		@include set-border-colors('.link-text', $link-base-color, $link-hover-color,
+									$link-clicked-color, $link-visited-color);
+	}
+}
+
+.btn-return{
+	@extend .btn-silver;
+	@include set-colors(false, #000);
+	@include set-colors('.text', #000);
+	&:before{
+		background: $arrowed-silverbtn-bg;
+		box-shadow: $arrowed-silverbtn-l-shadow;
+	}
+	&:hover{
+		&:before{
+			background: $arrowed-silverbtn-hovered-bg;
+			box-shadow: $arrowed-silverbtn-l-hovered-shadow;
+		}
+	}
+	&:active{
+		&:before{
+			background: $arrowed-silverbtn-clicked-bg;
+			box-shadow: $arrowed-silverbtn-l-clicked-shadow; 
+		}
+	}
+}
+.btn-continue{
+	@extend .btn-main;
+	.text{ 
+		text-shadow: $main-normal-textshadow;
+		color: $main-normal-textcolor !important;
+	}
+	&:before{
+		box-shadow: $arrowed-btn-shadow;
+		background: $arrowed-btn-bg;
+	}
+	&:hover{
+		&:before{
+			box-shadow: $arrowed-btn-hovered-shadow;
+			background: $arrowed-btn-hovered-bg;
+		}
+	}
+	&:active{
+		&:before{
+			box-shadow: $arrowed-btn-clicked-shadow;
+			background: $arrowed-btn-clicked-bg;
+		}
+	}
+}
+
+.btn-expand{
+	@extend .btn-silver;
+}
+
+.logo{
+	@include set-colors(false, #000);
+}
+
+.site-map{
+	.site-map-item-wrap>.list-item{
+		&>i{ @extend .silver-normal;}
+		&:hover>i{ @extend .silver-hovered;}
+		&:active>i{ @extend .silver-clicked;}
+	}
+}
+
+.search-results-item{
+	.date{
+		color: #8c8c8c;
+	}
+}
+
+.popup_map{
+	background: fade-out(#000, 0.1);
+	&:before{
+		border-left-color: fade-out(#000, 0.1);
+	}
+	color: #fff;
+}
+
+.ctrl-arrow{
+	@extend .btn-silver;
+	color: $arrow-color !important;
+	&:before{
+		background: $arrowed-silverbtn-bg;
+	}
+	&:hover{
+		color: $arrow-hovered-color !important;
+		&:before{
+			background: $arrowed-silverbtn-hovered-bg;
+		}
+	}
+	&:active{
+		color: $arrow-clicked-color !important;
+		&:before{
+			background: $arrowed-silverbtn-clicked-bg;
+		}
+	}
+	&.prev.disabled, &.next.disabled{
+		&, &:hover, &:active{
+			background: $arrowed-silverbtn-disabled-bg;
+			box-shadow: none;
+			color: $arrow-disabled-color !important;
+			&:before{
+				background: $arrowed-silverbtn-disabled-bg;
+				box-shadow: none;
+			}
+		}
+	}
+
+	&.prev{
+		&:before{ box-shadow: $arrowed-silverbtn-l-shadow;}
+		&:hover:before{ box-shadow: $arrowed-silverbtn-l-hovered-shadow;}
+		&:active:before{ box-shadow: $arrowed-silverbtn-l-clicked-shadow;}
+	}
+
+	&.next{
+		&:before{ box-shadow: $arrowed-silverbtn-r-shadow;}
+		&:hover:before{ box-shadow: $arrowed-silverbtn-r-hovered-shadow;}
+		&:active:before{ box-shadow: $arrowed-silverbtn-r-clicked-shadow;}
+	}
+}
+
+.sticker{
+	&.hit{
+		background: #ffdf1f;
+	}
+	&.discount{
+		background: #ff5656;
+		color: #fff;
+	}
+	&.new{
+		background: #a9e800;
+	}
+	&.best-price{ background: #fef471;}
+	&.best-choice{ 
+		background: #e54b31;
+		color: #fff;
+	}
+	&.bestseller{
+		background: #007aa1;
+		color: #fff;
+	}
+	&.preorder{ background: #33da71;}
+	&.gift{ background: #f8949e;}
+
+	&.hurry-buy{
+		background: #ffdc20;
+	}
+	&.best-option{
+		background: #5eda2a;
+	}
+	&.exclusive{
+		background: #f88d47;
+	}
+	&.free-delivery{
+		background: #41beb0;
+		color: #fff;
+	}
+	&.credit{
+		background: #017872;
+		color: #fff;
+	}
+
+}
+.big-sticker{
+	border-color: $main-color-dark;
+	background: #fff;
+	box-shadow: 0px 2px 5px fade-out(#000, 0.76);
+	>i{
+		color: $main-color-dark;
+	}
+}
+.alert{
+	background: fade-out(#000, 0.23);
+	color: #fff;
+
+	>.btn-close{
+		color: #fff;
+		&:hover{
+			color: silver;
+		}
+	}
+	&.success, &.fail{
+		border-color: $main-color-soft;
+	}
+
+	&.success>.alert-header{ color: #5cc300;}
+	&.fail>.alert-header{ color: #ff4f4f;}
+}

@@ -1,0 +1,24 @@
+.btn-action{
+	&.compare, &.favorite{
+		@extend .btn-silver;
+		&.toggled{
+			&, &:hover, &:active{
+				@extend .main-clicked;
+			}
+		}
+	}
+}
+
+.btn-buy-wrap{
+	.buy{ @extend .btn-main;}
+	.when-out-of-stock{
+		color: #ff3232;
+	}
+	
+}
+.buy+.tooltip{
+	.link{
+		@include set-colors('.text', $link-base-color);
+		@include set-border-colors('.text', $link-base-color, transparent, transparent, $link-base-color);
+	}
+}

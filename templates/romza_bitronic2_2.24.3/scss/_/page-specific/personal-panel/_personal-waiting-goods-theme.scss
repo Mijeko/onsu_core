@@ -1,0 +1,14 @@
+.account-personal-waiting-goods {
+	.nav-pills {
+		li {
+			a {
+				&:hover { @include main-hovered; }
+				&:active { @include main-clicked; }
+			}
+			&.active a {
+				@include main-normal;
+				border-color: $main-color-soft;
+			}
+		}
+	}
+}

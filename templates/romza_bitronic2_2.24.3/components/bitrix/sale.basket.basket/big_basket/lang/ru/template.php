@@ -1,0 +1,48 @@
+<?
+$MESS["BITRONIC2_SALE_ORDER"] = "Оформить заказ";
+$MESS["BITRONIC2_SALE_OR"] = "или";
+$MESS["BITRONIC2_SALE_NAME"] = "Товар";
+$MESS["BITRONIC2_SALE_PROPS"] = "Свойства";
+$MESS["BITRONIC2_SALE_PRICE"] = "Цена за ед.";
+$MESS["BITRONIC2_SALE_TYPE"] = "Тип цены";
+$MESS["BITRONIC2_SALE_QUANTITY"] = "Количество";
+$MESS["BITRONIC2_SALE_SUM"] = "Сумма";
+$MESS["BITRONIC2_SALE_DELETE"] = "Удалить";
+$MESS["BITRONIC2_SALE_DELAY"] = "Отложить";
+$MESS["BITRONIC2_SALE_ADD_TO_BASKET"] = "В корзину";
+$MESS["BITRONIC2_SALE_RETURN_TO_BASKET"] = "Вернуть в корзину";
+$MESS["BITRONIC2_SALE_WEIGHT"] = "Вес:";
+$MESS["BITRONIC2_SALE_TOTAL_WEIGHT"] = "Общий вес:";
+$MESS["BITRONIC2_SALE_TOTAL_ITEMS"] = "Товаров на:";
+$MESS["BITRONIC2_SALE_WEIGHT_G"] = "г";
+$MESS["BITRONIC2_SALE_DELAYED_TITLE"] = "Отложено";
+$MESS["BITRONIC2_SALE_UNAVAIL_TITLE"] = "Отсутствуют в продаже";
+$MESS["STB_ORDER_PROMT"] = "Для того чтобы начать оформление заказа, нажмите кнопку \"Оформить заказ\".";
+$MESS["STB_COUPON_PROMT"] = "Введите код купона для скидки:";
+$MESS["BITRONIC2_SALE_VAT"] = "НДС:";
+$MESS["BITRONIC2_SALE_VAT_EXCLUDED"] = "Стоимость товаров без НДС:";
+$MESS["BITRONIC2_SALE_VAT_INCLUDED"] = "В том числе НДС:";
+$MESS["BITRONIC2_SALE_TOTAL"] = 'Итого, без учета <a href="#DELIVERY_URL#" class="link"><span class="text">доставки</span></a>:';
+$MESS["BITRONIC2_SALE_CONTENT_DISCOUNT"] = "Скидка";
+$MESS["BITRONIC2_SALE_DISCOUNT"] = "Скидка";
+$MESS["BITRONIC2_SALE_NOTIFY_TITLE"] = "Ожидаемые товары";
+$MESS["BITRONIC2_SALE_REFRESH_NOTIFY_DESCR"] = "Нажмите эту кнопку, чтобы удалить товары.";
+$MESS["BITRONIC2_SALE_ITEMS"] = "Товары в корзине:";
+$MESS["BITRONIC2_SALE_BASKET_ITEMS"] = "товары";
+$MESS["BITRONIC2_SALE_BASKET_ITEMS_READY"] = "Выбранные";
+$MESS["BITRONIC2_SALE_BASKET_ITEMS_DELAYED"] = "Отложенные";
+$MESS["BITRONIC2_SALE_BASKET_ITEMS_SUBSCRIBED"] = "Ожидаемые";
+$MESS["BITRONIC2_SALE_BASKET_ITEMS_NOT_AVAILABLE"] = "Отсутствующие";
+$MESS["BITRONIC2_SALE_NO_ITEMS"] = "В вашей корзине ещё нет товаров.";
+$MESS["BITRONIC2_SALE_REFRESH"] = "Пересчитать";
+$MESS["BITRONIC2_SALE_CLEAR"] = "Очистить корзину";
+$MESS["BITRONIC2_SALE_RETURN"] = "Продолжить покупки";
+$MESS["BITRONIC2_SALE_COUPON_CODE"] = "Код купона:";
+
+$MESS["BITRONIC2_PRODUCT_SUBSCRIBE"] = 'Сообщить о поступлении';
+$MESS["BITRONIC2_SALE_ARTICUL"] = "Артикул";
+$MESS["BITRONIC2_DO_YOU_HAVE_COUPON"] = "У вас есть код купона?";
+$MESS["BITRONIC2_SKU_NOT_AVAILABLE"] = "Товара с выбранными характеристиками нет в наличии. Пожалуйста, выберите другую комбинацию характеристик";
+$MESS["BITRONIC2_ONECLICK_BUTTON"] = 'Купить в 1 клик';
+$MESS["BITRONIC2_ONECLICK_HELPER"] = 'Вам потребуется указать только номер телефона';
+?>

@@ -1,0 +1,103 @@
+.btn-sitenav-toggle{
+	color: $main-color-soft;
+	&:hover{ color: $main-color-light;}
+	&:active{ color: $main-color-dark;}
+}
+.sitenav-menu-item{
+	&>a{
+		@include set-colors(false, #000, $main-normal-textcolor, $main-normal-textcolor, #000);
+		// @include set-colors('.link-text', #000);
+
+	}
+	
+	&>.submenu{
+		@extend .silver-static;
+
+		&>li>a, span{
+			@include set-colors(false, #000);
+			text-shadow: none;
+			&:hover{ background: #e8e8e8;}
+		}
+	}
+
+	.v1 &, .v4 &{
+		&>a{
+			@include set-border-colors('.link-text', #000, transparent, transparent, #000);
+		}
+		&:hover, &.active{
+			>a{
+				@include set-colors(false, $main-normal-textcolor);
+				background: $main-color-light;
+				>.link-text{
+					border-bottom-color: transparent;
+				}
+			}
+		}
+		&.toggled>a{
+			@extend .btn-main;
+			
+			background: $main-normal-bg,
+						$main-color-light;
+			//^ repeating bg here to avoid flickering
+			&:hover{
+				background: $main-hovered-bg,
+							$main-color-light;
+			}
+			//^ repeating bg here to avoid flickering
+			@include set-border-colors('.link-text', transparent);
+		}
+	}
+
+	.v2 &, .v3 &{
+		background: #ebebeb;
+		&:hover, &.active{
+			>a{ @include set-colors(false, $main-normal-textcolor);}
+			background: $main-color-light;
+		}
+		&.toggled{
+			@extend .btn-main;
+			&>a{
+				color: $main-normal-textcolor;
+			}
+			background: $main-normal-bg,
+						$main-color-light;
+			//^ repeating bg here to avoid flickering
+			&:hover{
+				background: $main-hovered-bg,
+							$main-color-light;
+			}
+			//^ repeating bg here to avoid flickering
+		}
+	}
+
+	@media (max-width: 767px){
+		.v1 &, .v2 &, .v3 &, .v4 &{
+			border-color: darken(#ebebeb, 10%);
+			background: #ebebeb;
+			&:hover{
+				@include main-hovered;
+			}
+			&.toggled{
+				@include main-clicked;
+			}
+		}
+	}
+}
+
+.sitenav-menu{
+	@media (max-width: 767px){
+		background: #ebebeb;
+	}
+}
+
+.vertical>ul>.sitenav-menu-item{
+
+	&>a{
+		color: #000;
+		@include set-colors('.link-text', $link-base-color, $link-hover-color, $link-clicked-color, $link-visited-color);
+		@include set-border-colors('.link-text', $link-base-color, $link-hover-color, $link-clicked-color, $link-visited-color);
+		&:before{
+			border-color: $ul-circles-color;
+		}
+	}
+}

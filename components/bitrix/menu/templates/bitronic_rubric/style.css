@@ -1,0 +1,28 @@
+.ye_roobriqa .item { 
+	width: 23% !important;
+	margin: 0 15px 50px 0 !important;
+	display: inline-block !important;
+	vertical-align: top !important;
+	*display: inline !important;
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif !important;
+}
+
+.ye_roobriqa .item .tit { margin-bottom: 15px !important; font-size: 26px !important; padding-right: 30px; }
+.ye_roobriqa .item .tit a { color: #000 !important; border-color: #000 !important; line-height: 30px !important; }
+.ye_roobriqa .item .tit a:hover { color: #000 !important; border: none; }
+
+.ye_roobriqa .item .tit .image {
+	/* height: 165px !important; */
+	padding-bottom: 10px;
+}
+.ye_roobriqa .item .tit .image a { border: none !important; }
+.ye_roobriqa .item ul { margin: 0 !important; padding: 0 !important; padding-left: 1px !important; }
+
+.ye_roobriqa .item ul li {
+	font-size: 14px !important;
+	list-style: none !important;
+	margin: 0 0 15px 0 !important;
+}
+
+.ye_roobriqa .item ul li sup { color: #969696 !important; font-size: 10px !important; }
+.ye_roobriqa .item .tit ul a { color: #000 !important; border-color: #000 !important; line-height: 30px !important; }

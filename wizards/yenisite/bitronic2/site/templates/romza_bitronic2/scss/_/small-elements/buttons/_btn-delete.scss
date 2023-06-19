@@ -1,0 +1,39 @@
+.btn-delete{
+	font-size: em(12px);
+	margin: 0 !important;
+	i:before{
+		margin-right: 0;
+		font-size: 16px;
+	}
+	.btn-text{
+		display: inline-block;
+		vertical-align: middle;
+		@extend .pseudolink-bd;
+	}
+
+	@include transition('.btn-text', (color, border-color));
+
+	.table-item .actions &{
+		display: inline-block;
+		vertical-align: baseline;
+		padding-top: 25px;
+		position: relative;
+		top: 0;
+		float: none;
+		i{
+			position: absolute;
+			top: 1px;
+			left: 0;
+			right: 0;
+
+			&:before{
+				margin-right: 0;
+			}
+		}
+		
+		.btn-text{
+			font-size: em(10px, 12px);
+			text-transform: uppercase;
+		}
+	}
+}

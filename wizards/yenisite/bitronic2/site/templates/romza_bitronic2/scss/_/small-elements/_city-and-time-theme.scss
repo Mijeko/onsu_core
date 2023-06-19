@@ -1,0 +1,24 @@
+.time {
+	.working-time[data-popup] { @extend .link-black; }
+
+	@media (max-width: 767px) {
+		.time-content {
+			@include silver-static;
+
+			.notification-popup {
+				&, &>.content {
+					background: none;
+					color: #000;
+				}
+			}
+		}
+
+		&>i {
+			&.toggled {
+				background: $main-color-soft;
+				color: $main-normal-textcolor;
+			}
+		}
+
+	}
+}

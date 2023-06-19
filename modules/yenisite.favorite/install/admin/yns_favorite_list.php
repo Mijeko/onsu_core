@@ -1,0 +1,1 @@
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/yenisite.favorite/admin/yns_favorite_list.php");

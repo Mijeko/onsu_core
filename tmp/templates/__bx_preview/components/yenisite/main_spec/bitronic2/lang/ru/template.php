@@ -1,0 +1,8 @@
+<?
+$MESS["BITRONIC2_MAINSPEC_TITLE"] = "Рекомендуем:";
+$MESS["BITRONIC2_MAINSPEC_TAB_NEW"] = "Новинки";
+$MESS["BITRONIC2_MAINSPEC_TAB_HIT"] = "Хиты продаж";
+$MESS["BITRONIC2_MAINSPEC_TAB_SALE"] = "Суперцена";
+$MESS["BITRONIC2_MAINSPEC_TAB_BESTSELLER"] = "Рекомендуем";
+?>
+

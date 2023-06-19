@@ -1,0 +1,13 @@
+.basket-big-page {
+	.um_tabs>a {
+		@include silver-normal;
+
+		&:hover { @include silver-hovered; }
+		&:active { @include silver-clicked; }
+		&.active { @include main-clicked; }
+	}
+
+	footer {
+		.btn-return { @include set-colors('.text', #6f6f6f); }
+	}
+}

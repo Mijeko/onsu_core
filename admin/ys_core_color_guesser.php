@@ -1,0 +1,1 @@
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/yenisite.core/admin/ys_core_color_guesser.php");?>

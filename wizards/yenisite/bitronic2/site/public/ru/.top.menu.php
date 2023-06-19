@@ -1,0 +1,61 @@
+<?
+$aMenuLinks = Array(
+	// TODO #SITE_DIR#
+	Array(
+		"О магазине", 
+		"#SITE_DIR#about/",
+		Array(),
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"#SITE_DIR#news/",
+		Array(),
+		Array(), 
+		"" 
+	),
+    Array(
+        "Акции",
+        "#SITE_DIR#actions/",
+        Array(),
+        Array(),
+        ""
+    ),
+	Array(
+		"Обзоры", 
+		"#SITE_DIR#reviews/",
+		Array(),
+		Array(), 
+		"" 
+	),
+	Array(
+		"Оплата и доставка", 
+		"#SITE_DIR#about/delivery/",
+		Array(),
+		Array(), 
+		"" 
+	),
+	Array(
+		"О компании", 
+		"#SITE_DIR#company/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"#SITE_DIR#about/contacts/",
+		Array(),
+		Array(), 
+		"" 
+	),
+	Array(
+		"Форум", 
+		"#SITE_DIR#forum/",
+		Array(),
+		Array(), 
+		"" 
+	),
+);
+?>

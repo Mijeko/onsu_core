@@ -1,0 +1,157 @@
+// ======= SILVER ========
+// -- this is for buttons with arrows on sides
+$silverbtn-gradient: #fff, #f3f5f4;
+$silverbtn-gradient-hover: #ebebeb, #fff;
+$silverbtn-gradient-click: #eaeaea, #f3f5f4;
+// --
+$silver-normal-textcolor: #000;
+$silver-normal-textshadow: none;
+$silver-normal-bg: linear-gradient($silverbtn-gradient);
+$silver-normal-shadow: 0px 1px 3px fade-out(#000, 0.34),
+						inset 0px -2px 0px fade-out(#000, 0.83);
+$silver-normal-bordercolor: transparent;
+
+$silver-hovered-textcolor: $silver-normal-textcolor;
+$silver-hovered-textshadow: $silver-normal-textshadow;
+$silver-hovered-bg: linear-gradient($silverbtn-gradient-hover);
+$silver-hovered-shadow: 0px 1px 3px fade-out(#000, 0.34),
+						inset 0px -2px 0px fade-out(#000, 0.83);
+$silver-hovered-bordercolor: transparent;
+
+$silver-clicked-textcolor: $silver-normal-textcolor;
+$silver-clicked-textshadow: $silver-normal-textshadow;
+$silver-clicked-bg: linear-gradient($silverbtn-gradient-click);
+$silver-clicked-shadow: inset 0px 2px 0px fade-out(#000, 0.83);
+$silver-clicked-bordercolor: transparent;
+
+$silver-disabled-textcolor: #fff !important;
+$silver-disabled-textshadow: $silver-normal-textshadow;
+$silver-disabled-bg: linear-gradient(#e9e9e9, #f3f5f4);
+$silver-disabled-shadow: none;
+$silver-disabled-bordercolor: #e2e2ea;
+
+$silver-static-textcolor: #000;
+$silver-static-bg: linear-gradient(#fff, #f3f5f4);
+$silver-static-shadow: 0px 1px 3px fade-out(#000, 0.34),
+						inset 0px -2px 0px fade-out(#000, 0.83);
+$silver-static-border: none;
+// ==== END OF SILVER ====
+
+$coolslider-track-shadow: inset 0px 1px 2px fade-out(#000, 0.53),
+						0px 1px 0px #fff;
+$coolslider-bar-bordercolor: $main-color-dark;
+$coolslider-bar-shadow: 0px 1px 2px fade-out(#000, 0.69),
+						inset 0px 2px 0px $main-color-soft;
+$coolslider-dot-bg: $silver-normal-bg;
+$coolslider-dot-shadow: $silver-normal-shadow;
+$coolslider-innerdot-bg: $main-normal-bg;
+$coolslider-innerdot-shadow: inset 0px 1px 2px fade-out(#582500, 0.64);
+
+$hurry-sold-track-shadow: inset 0px 1px 2px fade-out(#000, 0.53);
+$hurry-sold-bar-shadow: inset 0px 1px 0px lighten($main-color-light, 20%);
+$hurry-sold-bar-bordercolor: $main-color-dark;
+
+$scroll-bar-v-shadow: 0px 3px 4px fade-out(#141311, 0.85);
+$scroll-bar-v-clicked-outline: 1px solid $main-color-dark;
+
+$checkbox-normal-bg: $silver-normal-bg;
+$checkbox-normal-shadow: $silver-normal-shadow;
+$checkbox-normal-bordercolor: transparent;
+$checkbox-hovered-bordercolor: $main-color-soft;
+$checkbox-checked-bg: $main-normal-bg;
+$checkbox-checked-shadow: $main-normal-shadow;
+$checkbox-checked-bordercolor: transparent;
+
+$radio-normal-bg: $silver-normal-bg;
+$radio-normal-shadow: $silver-normal-shadow;
+$radio-normal-dot-bg: #e3e1e8;
+$radio-normal-dot-shadow: inset 0px 1px 3px #171717;
+$radio-hovered-bg: $silver-hovered-bg;
+$radio-hovered-dot-bg: $main-gradient-to-top;
+$radio-checked-bg: $silver-normal-bg;
+$radio-disabled-bg: #e7e7e7;
+$radio-disabled-dot-bg: #bebebe;
+$radio-disabled-border: none;
+
+$hurry-slidercontrols-bg: #e3e1e8;
+$hurry-slidercontrols-shadow: inset 0px 1px 3px fade-out(#4a4a4a, 0.39);
+$hurry-slidercontrols-dot-bg: $main-gradient-to-top;
+$hurry-slidercontrols-dot-shadow: inset 0px 1px 2px fade-out(#572505, 0.64);
+$hurry-slidercontrols-active-bg: $silver-normal-bg;
+$hurry-slidercontrols-active-shadow: $silver-normal-shadow;
+$hurry-slidercontrols-active-dot-bg: $main-gradient-to-top;
+
+// table view in catalog
+$quantity-counter-shadow: inset 0px 1px 5px fade-out(#000, 0.69);
+$quantity-counter-bg: #efefef;
+
+// range sliders
+$noui-simple-track-shadow: inset 0px 1px 2px fade-out(#000, 0.53),
+					0px 0px 0px 3px #f3f5f4;
+$noui-simple-bar-bg: $main-gradient-to-top;
+$noui-simple-bar-shadow: 0px 1px 2px fade-out(#000, 0.69),
+						inset 0px 2px 0px #fff6c8;
+$noui-simple-bar-bordercolor: #e08512;
+
+$noui-range-track-shadow: inset 0 1px 0px fade-out(#8a8a8a, 0.25),
+							2px 0px 0px 2px #fff;
+$noui-range-bar-normal-bg: $main-gradient-to-top;
+$noui-range-bar-shadow: inset 0 1px 0px lighten($main-color-light, 25%);
+$noui-range-bar-bordercolor: $main-color-dark;
+$noui-range-bar-hovered-bg: $main-gradient-to-bottom;
+$noui-range-bar-hovered-shadow: inset 0 1px 0px lighten($main-color-light, 30%),
+						0px 0px 5px $main-color-light;
+$noui-range-handle-active-glowdisplay: block;
+
+$scroll-track-h-shadow: 0px 2px 3px fade-out(#000, 0.77);
+$scroll-h-innertrack-shadow: 0px 1px 0px #fff,
+	                inset 0px 1px 2px fade-out(#000, 0.53);
+$scroll-bar-h-bg: $silver-normal-bg;
+$scroll-bar-h-shadow: 0px 1px 3px fade-out(#000, 0.34),
+						inset 0px -2px 0px #cbcdcc;
+$scroll-bar-h-hovered-bg: $silver-hovered-bg;
+$scroll-bar-h-active-shadow: 0px 0px 2px 2px $main-color-light;
+$scroll-bar-h-active-bg: $silver-clicked-bg;
+
+$arrow-disabled-color: #fff;
+$arrow-color: $main-color-dark;
+$arrow-hovered-color: $main-color-light;
+$arrow-clicked-color: $main-color-dark;
+
+$arrowed-btn-shadow: 1px 0px 2px fade-out(#141311, 0.20),
+			inset -2px 0px 0px $main-normal-shadowcolor;
+$arrowed-btn-bg: linear-gradient(-45deg, $btn-gradient);
+$arrowed-btn-hovered-shadow: 1px 0px 2px fade-out(#141311, 0.20),
+				inset -2px 0px 0px $main-hovered-shadowcolor;
+$arrowed-btn-hovered-bg: linear-gradient(135deg, $btn-gradient-hover);
+$arrowed-btn-clicked-shadow: inset 0px 2px 2px $main-clicked-shadowcolor;
+$arrowed-btn-clicked-bg: linear-gradient(-45deg, $btn-gradient-click);
+
+$arrowed-silverbtn-bg: linear-gradient(135deg, $silverbtn-gradient);
+$arrowed-silverbtn-hovered-bg: linear-gradient(135deg, $silverbtn-gradient-hover);
+$arrowed-silverbtn-clicked-bg: linear-gradient(135deg, $silverbtn-gradient-click);
+$arrowed-silverbtn-disabled-bg: #eaeaea;
+
+$arrowed-silverbtn-l-shadow: 0px 1px 3px fade-out(#000, 0.34),
+			inset 0px -2px 0px fade-out(#000, 0.83);
+$arrowed-silverbtn-l-hovered-shadow: $arrowed-silverbtn-l-shadow;
+$arrowed-silverbtn-l-clicked-shadow: inset 2px 0px 0px fade-out(#000, 0.83);
+
+$arrowed-silverbtn-r-shadow: 1px 0px 3px fade-out(#000, 0.34),
+			inset -2px 0px 0px fade-out(#000, 0.83);
+$arrowed-silverbtn-r-hovered-shadow: $arrowed-silverbtn-r-shadow;
+$arrowed-silverbtn-r-clicked-shadow: inset 0px 2px 0px fade-out(#000, 0.83);
+
+
+$submenu-wrap-borders-shadow: inset 0px 2px 0px 0px lighten($main-color-light, 15%);
+
+$cats-bar-normal-bg: linear-gradient(to right, $main-color-dark 0%, $main-color-light 15%, $main-color-light 85%, $main-color-dark);
+$cats-bar-hovered-bg: linear-gradient(to right, $main-color-dark 0%, $main-color-light 25%, $main-color-light 75%, $main-color-dark);
+$cats-bar-hovered-shadow: 0px 0px 10px $main-color-soft,
+						0px 1px 2px fade-out(#141311, 0.20),
+						inset 0px -2px 0px $main-normal-shadowcolor;
+$cats-bar-clicked-bg: linear-gradient(to right, $main-color-dark 0%, $main-color-light 50%, $main-color-dark);
+
+.pagination-item{
+	line-height: 28px !important;
+}

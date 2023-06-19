@@ -1,0 +1,25 @@
+.tooltip-inner{
+	color: #000;
+	background: $tooltip-bg;
+	border-color: $tooltip-border;
+}
+
+.buy+.tooltip{
+	>.tooltip-inner{
+		background: fade-out(#000, 0.1);
+		color: #fff;
+	}
+
+	&.top>.tooltip-arrow{
+		border-top-color: fade-out(#000, 0.1);
+	}
+	&.left>.tooltip-arrow{
+		border-left-color: fade-out(#000, 0.1);
+	}
+	&.right>.tooltip-arrow{
+		border-right-color: fade-out(#000, 0.1);
+	}
+	&.bottom>.tooltip-arrow{
+		border-bottom-color: fade-out(#000, 0.1);
+	}
+}

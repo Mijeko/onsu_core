@@ -1,0 +1,73 @@
+.brands-page, .news-page {
+	.brands-list {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 7.5px;
+		margin-bottom: 30px;
+
+		.item {
+			position: relative;
+			color: #000;
+			padding: 7.5px;
+
+			&:hover {
+				cursor: pointer;
+				.brand-item-img { opacity: .7; }
+				.content .link .text { border-bottom-color: inherit; }
+			}
+
+			@media (max-width: 767px) {
+				width: 50%;
+				margin-bottom: 30px;
+			}
+			@media (max-width: 340px) { width: 100%; }
+			@media (min-width: 768px) { width: 33.333%; }
+			@media (min-width: 991px) { width: 25%; }
+			@media (min-width: 1200px) { width: 20%; }
+			@media (min-width: 1920px) { width: 16.666%; }
+
+			.content .desc {
+				font-size: em(14px);
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.content {
+			margin-top: 5px;
+			margin-left: 0;
+			padding-left: 0;
+			text-align: center;
+
+			.link { font-size: em(16px); }
+		}
+
+		.brand-item-img, .news-item-img {
+			transition: opacity .3s;
+			display: block;
+			height: 80px;
+			overflow: hidden;
+			position: relative;
+			padding: 0;
+			margin-bottom: 18px;
+			text-align: center;
+			display: flex;
+
+			@media (max-width: 340px) { height: auto; }
+
+			img {
+				position: static;
+				max-width: 100%;
+				max-height: 100%;
+				margin: auto;
+			}
+		}
+	}
+}
+
+.brands-page {
+	.pagination {
+		display: block;
+		text-align: center;
+	}
+}

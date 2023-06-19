@@ -1,0 +1,155 @@
+// standard transition mixin, but with no transition on :active
+// how to animate specific multiple properties, example:
+// @include transition(false, (border, color), (1s, 4s));
+// $internal - internal selector instead of current
+@mixin transition($internal, $props: all, $duration: .15s, $type: ease){
+	@if $internal == false {
+		transition-property: $props;
+		transition-duration: $duration;
+		transition-timing-function: $type;
+		&:active, &.active{ transition: none;}
+	} @else {
+		@each $in in $internal{
+			& #{$in} {
+				transition-property: $props;
+				transition-duration: $duration;
+				transition-timing-function: $type;
+			}
+			&:active #{$in}{ transition: none;}
+		}
+		
+	}
+}
+
+// for calculating fontsize in ems
+// because ems are based on context, this function has optional
+// $base, which defines context if we need to
+@function em($px, $base: $fontsize-base){
+	@return ( $px / $base ) * 1em;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin scroller__track_h{
+	height: 15px;
+	border-radius: 11px;
+	cursor: pointer;
+	&:before{
+		transition: opacity .3s;
+	    content: '';
+	    position: absolute;
+	    top: 5px;
+	    bottom: 5px;
+	    left: 8px;
+	    right: 8px;
+	    border-radius: 3px;
+	}
+	&:hover{
+		&:before{ opacity: 0.8;}
+	}
+}
+@mixin scroller__bar_h{
+	position: absolute;
+	top: -1px;
+	height: 18px;
+	min-width: 50px;
+	border-radius: 11px;
+	text-align: center;
+
+	&:before{
+	    content: '|||';
+	    font-size: 9px;
+	    position: absolute;
+	    line-height: 14px;
+	    width: 20px;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	}
+
+	&:hover{ cursor: pointer;}
+	&:active, &.dragged{
+		&:before{
+			line-height: 16px;
+		}
+	}
+}
+
+@mixin make-items-row($items, $gap, $infinite: false, $between: ''){
+	$full-gap: ($items - 1) * $gap;
+	$inner-width: 100% - $full-gap;
+	$width: $inner-width / $items;
+
+	width: $width;
+	margin-right: $gap;
+	@if $infinite == false{
+		&:nth-of-type(#{$items}n){ 
+			margin-right: 0;
+			&:after{ display: none;}
+		}
+	} @else {
+		&:last-of-type{ 
+			margin-right: 0;
+			&:after{ display: none;}
+		}
+	}
+
+	@if $between != '' {
+		position: relative;
+		&:after{
+			position: absolute;
+			content: $between;
+			top: 0;
+			left: 100%;
+			width: ($gap / $width) * 100%;
+			text-align: center;
+		}
+	}
+}
+
+@mixin arrow($size: 10px, $dir: 'down', $length: ($size / 2) ){
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border: ($size / 2) solid;
+
+	@if ($dir == 'down' or $dir == 'up') {
+		height: $length;
+		width: $size;
+		right: 0;
+		border-left-color: transparent;
+		border-right-color: transparent;
+		@if $dir == 'down' {
+			border-bottom-width: 0;
+			border-top-width: $length;
+		} @else {
+			border-bottom-width: $length;
+			border-top-width: 0;
+		}
+	} @else if ( $dir == 'right' or $dir == 'left' ){
+		height: $size;
+		width: $length;
+		border-top-color: transparent;
+		border-bottom-color: transparent;
+		@if $dir == 'right' {
+			right: 0;
+			border-right-width: 0;
+			border-left-width: $length;
+		} @else {
+			left: 0;
+			border-right-width: $length;
+			border-left-width: 0;
+		}
+	}
+}

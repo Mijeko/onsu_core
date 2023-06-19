@@ -1,0 +1,9 @@
+.btn-main{
+	border: none;
+	display: inline-block;
+
+	&.disabled{
+		cursor: default;
+		pointer-events: none;
+	}
+}

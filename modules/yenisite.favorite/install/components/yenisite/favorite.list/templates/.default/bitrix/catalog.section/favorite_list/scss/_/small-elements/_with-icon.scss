@@ -1,0 +1,9 @@
+.with-icon{
+	i:before{
+		margin: 0; // override default flaticon's margin
+		margin-right: 5px;
+		// vertical centering
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

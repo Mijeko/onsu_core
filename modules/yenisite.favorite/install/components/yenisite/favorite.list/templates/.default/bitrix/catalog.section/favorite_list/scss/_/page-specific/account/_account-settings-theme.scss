@@ -1,0 +1,42 @@
+.form_account-settings{
+
+	.expandable>header>.text-wrap{
+		color: #000;
+		&:hover{
+			color: #707070;
+		}
+	}
+	.update-info>.line-wrap{
+		.text{ color: #868686;}
+	}
+	.social-list>li{
+		.social-delete{
+			border-color: fade-out(#000, 0.32);
+			&>i{
+				background: fade-out(#000, 0.32);
+				&:before{
+					color: #fff;
+				}
+			}
+		}
+	}
+	.social-list{
+		.social{
+			&.vk{ background: url('../../img/icons/icon_modal_social_vk.png');}
+			&.ok{ background: url('../../img/icons/icon_modal_social_ok.png');}
+			&.mail{ background: url('../../img/icons/icon_modal_social_mail.png');}
+			&.fb{ background: url('../../img/icons/icon_modal_social_fb.png');}
+			&.black{ background: url('../../img/icons/icon_modal_social_black.png');}
+		}
+	}
+
+	.btn-plus{ @extend .btn-main;}
+	
+	.btn-fileinput{ @extend .btn-main;}
+	.avatar{
+		.img-container{
+			@extend .silver-static;
+		}
+	}
+
+}/* .form_account-settings */

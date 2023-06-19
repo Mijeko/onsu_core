@@ -1,0 +1,5 @@
+<?
+$MESS ['BITRONIC2_MENU_CATALOG_MORE'] = "Еще товары";
+$MESS ['BITRONIC2_MENU_CATALOG_HIDE'] = "Скрыть";
+$MESS ['BITRONIC2_MENU_CATALOG_CATALOG'] = "Каталог товаров";
+?>

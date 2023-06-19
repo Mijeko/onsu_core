@@ -1,0 +1,191 @@
+#ye_mainmenu ul li a {
+    color: #e00c0c !important;
+}
+
+#ye_mainmenu ul li ul li:hover a, #ye_mainmenu ul li a:hover,
+#ye_mainmenu ul li ul li:hover span, #ye_mainmenu ul li span:hover,
+#ye_mainmenu ul li ul li:hover {
+    background: #e00c0c !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li a {
+    color: #e00c0c !important;
+    background: none !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li span { color: #000 !important; background: none !important; }
+
+.ye_submenu ul li .ye_first .ye_arrow {
+    background: url(img/red_ye_submenu_arrow.png) no-repeat top left !important;
+}
+
+.ye_submenu ul li .ye_submenu ul li .ye_first:hover .ye_arrow {
+    background-position: 0 -32px !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li a:hover, #ye_mainmenu ul li .ye_submenu ul li:hover a,
+#ye_mainmenu ul li .ye_submenu ul li span:hover, #ye_mainmenu ul li .ye_submenu ul li:hover span {
+    background: #e00c0c !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li a:hover,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li span:hover {
+    background: #e00c0c !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li a {
+    color: #e00c0c !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li span { color: #000 !important; }
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li a:hover,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li span:hover {
+    background: #e00c0c !important;
+}
+
+/* ---- */
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li:hover a,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li:hover span,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li:hover sup {
+    background: #e00c0c !important;
+    color: #fff !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li a,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li span {
+    color: #e00c0c !important;
+    background: none !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li span { color: #000 !important; }
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li sup { color: #969696 !important; background: none !important; }
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li a:hover,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover sup,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li span:hover {
+    background: #e00c0c !important;
+    color: #fff !important;
+}
+
+/* ---- */
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover a,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover span,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover sup {
+    background: #e00c0c !important;
+    color: #fff !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li a,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li span {
+    color: #e00c0c !important;
+    background: none !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li span { color: #000 !important; }
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li sup { color: #969696 !important; background: none !important; }
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li a:hover,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover sup,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li span:hover {
+    background: #e00c0c !important;
+    color: #fff !important;
+}
+
+/* ---- */
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover a,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover span,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover sup {
+    background: #e00c0c !important;
+    color: #fff !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li a,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li span {
+    color: #e00c0c !important;
+    background: none !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li span { color: #000 !important; }
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li sup { color: #969696 !important; background: none !important; }
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li a:hover,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover sup,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li span:hover {
+    background: #e00c0c !important;
+    color: #fff !important;
+}
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li:hover .ye_first .ye_arrow { background-position: 0 -32px !important; }
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_first .ye_arrow { background: url(img/red_ye_submenu_arrow.png) no-repeat top left !important; }
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_first:hover .ye_arrow { background-position: 0 -32px !important; }
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover .ye_first .ye_arrow { background-position: 0 -32px !important; }
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_first .ye_arrow { background: url(img/red_ye_submenu_arrow.png) no-repeat top left !important; }
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_first:hover .ye_arrow { background-position: 0 -32px !important; }
+
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover .ye_first .ye_arrow { background-position: 0 -32px !important; }
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_first .ye_arrow { background: url(img/red_ye_submenu_arrow.png) no-repeat top left !important; }
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_first:hover .ye_arrow { background-position: 0 -32px !important; }
+
+
+
+
+
+
+/*NEW ADDITIONAL STYLES*/
+#ye_mainmenu ul li ul li span {
+     color:hsl(0, 0%, 35%) !important
+}
+
+
+
+
+/*#ye_mainmenu ul li ul li span,*/
+#ye_mainmenu ul li .ye_submenu ul li  span,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li  span,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li  span,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li  span, 
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li  span {
+    color: hsl(0, 90%, 46%) !important;
+    background: none !important;
+}
+
+#ye_mainmenu ul li ul li.active-link:hover,
+#ye_mainmenu li ul  li:hover span.span-active,
+#ye_mainmenu ul li .ye_submenu ul li:hover  span.span-active,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li:hover   span.span-active,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover   span.span-active,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover   span.span-active, 
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover   span.span-active,
+#ye_mainmenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li:hover span.span-active  {
+      color: hsl(0, 0%, 0%) !important;
+      background:none !important;
+}
+
+
+
+
+
+/*MEGA MENU SYLE*/
+
+#ye_mainmenu ul li ul li .best h3 a,
+#ye_mainmenu ul li ul li .ye_submenu ul li .best h3 a,
+#ye_mainmenu ul li ul li .ye_submenu ul li .ye_submenu ul li .best h3 a,
+#ye_mainmenu ul li ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .best h3 a,
+#ye_mainmenu ul li ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .best h3 a{
+     color: #e00c0c !important;
+    border-bottom: 1px solid hsl(0, 78%, 79%) !important;
+
+}
+
+#ye_mainmenu ul li ul li .best h3 a:hover,
+#ye_mainmenu ul li ul li .ye_submenu ul li .best h3 a:hover,
+#ye_mainmenu ul li ul li .ye_submenu ul li .ye_submenu ul li .best h3 a:hover,
+#ye_mainmenu ul li ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .best h3 a:hover,
+#ye_mainmenu ul li ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .ye_submenu ul li .best h3 a:hover
+{
+    color: #e00c0c !important;
+    border-bottom: none !important;
+}
+/**/

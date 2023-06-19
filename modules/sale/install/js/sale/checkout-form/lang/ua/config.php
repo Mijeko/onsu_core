@@ -1,0 +1,22 @@
+<?php
+$MESS["SALE_BLOCKS_BASKET_ITEMS"] = "Всього";
+$MESS["SALE_BLOCKS_PLACE_ORDER_NOW"] = "Замовити зараз";
+$MESS["SALE_BLOCKS_PLACE_ORDER_TEXT"] = "Натискаючи кнопку \"Замовити зараз\", я даю згоду на обробку моїх персональних даних відповідно до Закону України від 01.06.2010 № 2297-VI \"Про захист персональних даних\", на умовах і для цілей.";
+$MESS["SALE_BLOCKS_PROPERTIES_ORDER_TITLE"] = "Замовлення ##ORDER_NUMBER#";
+$MESS["SALE_BLOCKS_PROPERTIES_SHIPPING_METHOD"] = "Спосіб доставки";
+$MESS["SALE_BLOCKS_PROPERTIES_SHIPPING_METHOD_DESCRIPTION"] = "Ми зателефонуємо вам, щоб обговорити спосіб і час доставки.";
+$MESS["SALE_BLOCKS_PROPERTIES_TITLE"] = "Введіть свої дані, і ми вам зателефонуємо";
+$MESS["SALE_BLOCKS_SUCCESS_CALL"] = "Вам зателефонує наш менеджер";
+$MESS["SALE_BLOCKS_SUCCESS_CHECKOUT"] = "Оплата та доставка";
+$MESS["SALE_BLOCKS_SUCCESS_CONTINUE"] = "Продовжити покупки";
+$MESS["SALE_BLOCKS_SUCCESS_DELIVERY"] = "Виконується доставка";
+$MESS["SALE_BLOCKS_SUCCESS_OR"] = "АБО";
+$MESS["SALE_BLOCKS_SUCCESS_ORDER"] = "Замовлення";
+$MESS["SALE_BLOCKS_SUCCESS_ORDER_CREATED"] = "Успішно створене!";
+$MESS["SALE_BLOCKS_SUCCESS_TO_PAID"] = "Оплачено, #PAID#";
+$MESS["SALE_BLOCKS_TOTAL_DESCRIPTION"] = "Кур'єром, поштою ";
+$MESS["SALE_BLOCKS_TOTAL_DISCOUNT"] = "Знижка";
+$MESS["SALE_BLOCKS_TOTAL_ITEMS"] = "Всього";
+$MESS["SALE_BLOCKS_TOTAL_NAME"] = "Доставка";
+$MESS["SALE_BLOCKS_TOTAL_TAXES"] = "Податки";
+$MESS["SALE_BLOCKS_TOTAL_TOTAL"] = "Загальні";

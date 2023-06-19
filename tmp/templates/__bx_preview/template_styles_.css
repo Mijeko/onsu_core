@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'introrustg-base2line';
+    src: url('fonts/introrust/introrustg-base2line-webfont.woff2') format('woff2'),
+    url('fonts/introrust/introrustg-base2line-webfont.woff') format('woff');
+    /*font-weight: normal;
+    font-style: normal;*/
+}
+.header-contacts .phones {
+    overflow: unset;
+}
+.header-contacts .phone-wrap {
+    position: relative;
+    top: 6px;
+    font-size: 16px;
+}
+.tooltip {
+    text-shadow: none;
+}
+.brand-logo, .brand-desc {
+    white-space: nowrap;
+    font-size: 15px;
+}
+.brand-logo {
+    margin-left: -10px;
+}
+.brand-name {
+    font-family: 'introrustg-base2line', sans-serif !important;
+}
+.brand-desc {
+    font-family: 'introrustg-base2line', sans-serif !important;
+    font-weight: 700;
+}
+.img-logo {
+    position: absolute;
+    left: -75px;
+    top: 6px;
+    -webkit-filter: drop-shadow(4px 4px 3px #000);
+    filter: drop-shadow(4px 4px 3px #000);
+    width: 70px;
+}
+.cool-img {
+    margin-right: 120px;
+}
+#img-zoom:before {
+    font-size: 50px
+}
+#img-zoom {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 47%;
+    color: white;
+    text-shadow: 2px 2px 3px #000;
+}
+.img-wrap:hover #img-zoom {
+    display: block;
+}
+.brand {
+    color: white !important;
+    text-shadow: 4px 4px 3px #000;
+}
+.phones {
+    font-weight: 700;
+    color: white !important;
+    text-shadow: -2px 3px 2px #000;
+}
+.phone-link {
+    color: white !important;
+    white-space: nowrap;
+}
+[data-header-version="v2"] .header-main-content .brand {
+    font-size: 17px;
+    top: -6px;
+    width: calc((100% / 3) - 111px);
+    margin-right: calc((100% / 3) - 317px);
+}
+[data-header-version="v2"] .header-main-content .header-contacts {
+    width: calc((100% / 3) - 203px);
+    margin-right: calc((100% / 3) - 180px);
+    top: 9px;
+}
+@media (min-width: 992px){
+    [data-styling-type="flat"] [data-header-version="v2"] .header-main-content .search-block{
+        position: absolute;
+        right: 0px;
+        top: 69px;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    [data-header-version="v2"] .header-main-content .brand {
+        margin-left: 150px;
+    }
+}
+@media (max-width: 767px) {
+    [data-header-version="v2"] .header-main-content .brand {
+        left: 237px;
+    }
+    [data-header-version="v2"] .header-main-content .search-block {
+        top: -31px;
+    }
+    .img-logo {
+        max-width: none;
+    }
+}
+@media (max-width: 693px) {
+    [data-header-version="v2"] .header-main-content .header-contacts {
+        position: absolute;
+        left: 16px;
+        top: 19px;
+    }
+    [data-header-version="v2"] .header-main-content .brand {
+        position: initial;
+        margin-left: 51px;
+        font-size: 2.57143vw;
+    }
+    .brand-desc {
+        font-size: 2.25vw;
+    }
+}

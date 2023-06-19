@@ -1,0 +1,13 @@
+.modal_basket, .modal_map {
+	background: $main-color-light;
+	&:before { @include silver-static; }
+
+	.additionals .dots>li.active { background: $main-normal-bg; }
+	.catalog-hits {
+		background: none;
+		box-shadow: none;
+		border: none;
+	}
+
+	.btn-return { @include set-colors('.text', #6f6f6f); }
+}

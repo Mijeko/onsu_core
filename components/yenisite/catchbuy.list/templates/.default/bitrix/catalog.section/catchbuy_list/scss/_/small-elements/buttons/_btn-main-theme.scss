@@ -1,0 +1,55 @@
+@mixin main-normal{
+	color: 		$main-normal-textcolor;
+	text-shadow:$main-normal-textshadow;
+	background: $main-normal-bg;
+	box-shadow: $main-normal-shadow;
+
+	&>.text, &>i{ color: $main-normal-textcolor;}
+}
+@mixin main-hovered{
+	color: 		$main-hovered-textcolor;
+	text-shadow:$main-hovered-textshadow;
+	background: $main-hovered-bg;
+	box-shadow: $main-hovered-shadow;
+
+	&>.text, &>i{ color: $main-hovered-textcolor;}
+}
+@mixin main-clicked{
+	color: 		$main-clicked-textcolor;
+	text-shadow:$main-clicked-textshadow;
+	background: $main-clicked-bg;
+	box-shadow: $main-clicked-shadow;
+
+	&>.text, &>i{ color: $main-clicked-textcolor;}
+}
+@mixin btn-main{
+	&, &:visited{ @include main-normal;}
+	&:hover{ @include main-hovered;}
+	&:active{ @include main-clicked;}
+}
+
+// classes below should be used in cases where some element
+// is not a button (must not react to hover and clicks),
+// but is colored like button in some state
+.main-normal{
+	@include main-normal;
+}
+
+.main-hovered{
+	@include main-hovered;
+}
+
+.main-clicked{
+	@include main-clicked;
+}
+
+// common class for main button coloring
+.btn-main{
+	@include btn-main;
+	&.disabled{
+		&, &:hover, &:active{
+			@extend .silver-static;
+			color: gray;
+		}
+	}
+}

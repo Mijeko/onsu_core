@@ -1,0 +1,22 @@
+.news-n-articles{
+	.date-wrap>.date{
+		color: #7d8096;
+	}
+}
+
+.brand-tag{
+	color: silver;
+	&:hover{
+		color: #000;
+		background: $main-color-soft;
+	}
+	&.active, &.active:hover{
+		@extend .main-normal;
+	}
+}
+.benefit{
+	.img-wrap{
+		color: $main-normal-textcolor;
+		background: $main-gradient-to-top;
+	}
+}

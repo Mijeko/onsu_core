@@ -1,0 +1,194 @@
+.bx-content {
+	.sale-order-payment-change-pp-company {
+		z-index: 1 !important;
+	}
+}
+
+.account-personal-order-list {
+	.bx-content {
+
+		.inactive-button {
+			pointer-events:none;
+			opacity: .5;
+		}
+		// .container-fluid {padding: 0;}
+
+		.sale-order-title {margin-top: 0;}
+
+		.sale-order-list-title-container,
+		.sale-order-list-accomplished-title-container {background: #dedce4;}
+		.sale-order-list-status-success {background: rgb(206, 245, 159);}
+		.sale-order-list-status-alert {background: rgb(250, 208, 208);}
+
+		.sale-order-list-button, input[type="submit"], input[type="button"], button {
+			font-family: "Open Sans", sans-serif;
+			padding: 10px;
+		    border-radius: 3px;
+		    text-align: center;
+		    height: auto;
+		    font-size: 14px;
+		    font-weight: normal;
+		    line-height: 1.4;
+		    border: none;
+		}
+		.sale-order-link,
+		.sale-order-history-link {
+			padding-right: 0;
+			margin-right: 34px;
+		}
+
+		.sale-order-list-repeat-link {
+			padding-left: 0;
+			margin-left: 13px;
+			position: relative;
+			&:before {
+				position: absolute;
+				left: -13px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.sale-order-list-about-container,
+			.sale-order-list-repeat-container,
+			.sale-order-list-cancel-container,
+			.sale-order-list-about-accomplished,
+			.sale-order-list-repeat-accomplished {
+				display: inline-block;
+				width: auto;
+				margin-right: 30px;
+			}
+		}
+
+		@media (max-width: 767px) {
+			.sale-order-list-repeat-link {
+				margin-left: 28px;
+			}
+		}
+
+		.sale-order-link,
+		.sale-order-history-link,
+		.sale-order-list-about-link,
+		.sale-order-list-repeat-link,
+		.sale-order-list-cancel-link {
+			@extend .link-bd;
+		}
+	}
+}
+
+.account-personal-order-detailed, .account-personal-order-list {	
+	.bx-content {		
+		.container-fluid {padding: 0;}
+		.sale-order-detail-order-section {border: none;}
+		.sale-order-detail-order-item-img-block {padding-left: 15px;}
+		.sale-order-detail-about-order-inner-container-repeat-button,
+		.sale-order-detail-payment-options-methods-button-element,
+		input[type="submit"], input[type="button"], button, .btn-theme {
+		    font-family: "Open Sans", sans-serif;
+		    padding: 10px;
+		    border-radius: 3px;
+		    text-align: center;
+		    height: auto;
+		    font-size: 14px;
+		    font-weight: normal;
+		    line-height: 1.4;
+		    border: none;
+		}
+		.sale-order-detail-back-to-list-link-up,
+		.sale-order-detail-back-to-list-link-down {
+			font-family: $font-family-base;
+			display: inline-block;
+			float: left;
+			padding-bottom: 0;
+		}
+		.sale-order-detail-back-to-list-link-up {
+			margin-bottom: 11px;
+		}
+		.sale-order-detail-back-to-list-link-down {
+			margin-bottom: 78px;
+		}
+		.sale-order-detail-about-order-inner-container-repeat {
+			text-align: center;
+		}
+		.sale-order-detail-about-order-inner-container-repeat-cancel {
+			display: inline-block;
+		}
+		.sale-order-detail-order-item-td-title {
+			@media (min-width: 992px) {
+				width: 100%;
+				text-align: left !important;
+			}
+		}
+		.sale-order-detail-about-order-inner-container-repeat-button,
+		.sale-order-detail-back-to-list-link-up,
+		.sale-order-detail-back-to-list-link-down,
+		.sale-order-detail-order-item-title a,
+		.sale-order-detail-about-order-inner-container-repeat-cancel {
+			@extend .link-bd;
+		}
+		.sale-order-detail-show-link,
+		.sale-order-detail-about-order-inner-container-name-read-more,
+		.sale-order-detail-payment-options-methods-info-change-link,
+		.sale-order-detail-about-order-inner-container-name-read-less,
+		.sale-order-detail-hide-link,
+		.sale-order-list-cancel-payment,
+		.sale-order-list-change-payment {
+			@extend .pseudolink-bd;
+		}
+
+
+		.sale-order-list-cancel-payment,
+		.sale-order-list-change-payment {
+			display: inline-block;
+		}
+
+		.sale-order-list-repeat-link::before {top: 2px;}
+
+		.sale-order-detail-payment-options-methods-info-title-status-success,
+		.sale-order-payment-change-status-success {background: rgb(206, 245, 159);}
+		.sale-order-detail-payment-options-methods-info-title-status-alert,
+		.sale-order-payment-change-status-alert {background: rgb(250, 208, 208);}
+
+		.sale-order-detail-general {
+			.sale-order-detail-about-order-title,
+			.sale-order-detail-payment-options-title,
+			.sale-order-detail-payment-options-order-content-title {
+				background: #dedce4;
+			}
+		}
+
+		.sale-order-detail-active-event .sale-order-detail-payment-options-methods-information-block
+
+		div.sale-order-detail-payment-options-methods {
+			.sale-order-payment-change-pp .sale-order-payment-change-pp-company { margin-bottom: 30px; }
+
+			&.sale-order-detail-active-event {
+				div.sale-order-detail-payment-options-methods-template { position: relative; }
+			}
+		}
+	}
+}
+
+.account-personal-money {
+	.bx-content {
+		.container-fluid {padding: 0;}
+		
+		.sale-personal-account-wallet-container {
+			max-width: none;
+		}
+
+		.sale-acountpay-pp-company {
+			z-index: 1;
+			input {display: none;}
+			&:hover {cursor: pointer;}
+		}
+
+		.sale-account-pay-button, .bx-sap input[type="submit"] {
+		    padding: 10px;
+		    border-radius: 3px;
+		    text-align: center;
+		    height: auto;
+		    line-height: 1.4;
+		    border: none;
+		}
+	}
+}

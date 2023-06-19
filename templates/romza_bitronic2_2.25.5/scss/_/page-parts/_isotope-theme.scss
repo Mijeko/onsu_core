@@ -1,0 +1,9 @@
+.isotope-module {
+	.isotope__button-group, .element-item { @include silver-static; }
+
+	.button {
+		&:hover { @include silver-hovered; }
+		&.is-checked { @include main-clicked; }
+		&:active { box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8); }
+	}
+}

@@ -1,0 +1,16 @@
+<?
+$MESS["CATCHBUY_ENTITY_ID_FIELD"] = "ID";
+$MESS["CATCHBUY_ENTITY_PRODUCT_ID_FIELD"] = "Товар";
+$MESS["CATCHBUY_ENTITY_DISCOUNT_ID_FIELD"] = "Скидка";
+$MESS["CATCHBUY_ENTITY_LID_FIELD"] = "Сайт";
+$MESS["CATCHBUY_ENTITY_ACTIVE_FIELD"] = "Активность";
+$MESS["CATCHBUY_ENTITY_ACTIVE_FROM_FIELD"] = "Начало активности";
+$MESS["CATCHBUY_ENTITY_ACTIVE_TO_FIELD"] = "Конец активности";
+$MESS["CATCHBUY_ENTITY_MAX_USES_FIELD"] = "Макс. количество";
+$MESS["CATCHBUY_ENTITY_COUNT_USES_FIELD"] = "Использованное количество";
+$MESS["CATCHBUY_ENTITY_TIMESTAMP_X_FIELD"] = "Дата последней правки";
+$MESS["CATCHBUY_ENTITY_CREATED_BY_FIELD"] = "Создано";
+$MESS["CATCHBUY_ENTITY_MODIFIED_BY_FIELD"] = "Изменено";
+$MESS["CATCHBUY_ENTITY_DEFAULT_DISCOUNT_NAME"] = "Успей купить! #VALUE#";
+$MESS['RZ_ERROR_MODULE_CATALOG_NOT_INSTALLED'] = 'Модуль "Каталог" не установлен!';
+$MESS['RZ_ERROR_DELETE_NOT_EXIST'] = 'Акции с таким ID несуществует (#ID#)';

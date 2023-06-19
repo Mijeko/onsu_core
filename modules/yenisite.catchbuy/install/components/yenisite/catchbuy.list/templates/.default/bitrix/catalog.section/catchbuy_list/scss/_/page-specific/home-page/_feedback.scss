@@ -1,0 +1,127 @@
+.feedback{
+	text-align: center;
+	header{
+		font-size: em(24px);
+		font-weight: bold;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.slider-controls{
+		text-align: center;
+		position: static;
+		margin: 0;
+		width: auto;
+	}
+
+	.dot{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		margin-right: 4px;
+		margin-left: 4px;
+		cursor: pointer;
+		&.active{
+			width: 13px;
+			height: 13px;
+			cursor: default;
+		}
+	}
+
+	.comments{
+		margin-top: 15px;
+		width: 100%;
+	}
+
+	p{
+		margin: 0;
+		font-size: em(16px);
+	}
+
+	.comment{
+		width: 100%;
+		
+		
+		&>.text{
+			position: relative;
+			padding: 15px 20px;
+			height: 80px;
+			min-height: 80px;
+			overflow: hidden;
+
+			&:after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 20px;
+				background: linear-gradient(to top, #d7dce6, transparent);
+			}
+
+			&:hover{
+				height: auto;
+				&:after{
+					display: none;
+				}
+			}
+		}
+
+		
+	}
+
+	.quote-start, .quote-end, .quote-start:before, .quote-end:before{
+		position: absolute;
+		height: 16px;
+		width: 8px;
+		border: 8px solid;
+		
+	}
+	.quote-start{
+		top: 100px;
+		left: 15px;
+		&, &:before{
+			border-right-width: 0;
+			border-bottom-color: transparent;
+		}
+
+		&:before{
+			content: '';
+			top: -8px;
+			left: 4px;
+		}
+	}
+	.quote-end{
+		bottom: 50px;
+		right: 15px;
+		&, &:before{
+			border-left-width: 0;
+			border-top-color: transparent;
+		}
+		&:before{
+			content: '';
+			top: -8px;
+			right: 4px;
+		}
+	}
+
+
+	.author{
+		margin-top: 25px;
+		margin-bottom: 20px;
+		&:before{
+			content: '-';
+			margin-right: 5px;
+		}
+		&:after{
+			content: '-';
+			margin-left: 5px;
+		}
+	}
+
+	@media (max-width: 767px){
+		display: none;
+	}
+}

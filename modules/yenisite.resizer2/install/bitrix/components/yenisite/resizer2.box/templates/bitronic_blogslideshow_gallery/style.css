@@ -1,0 +1,25 @@
+a.yenisite-zoom {
+	border: none !important;
+}
+
+#yenisite-gallery {
+list-style-type:none;
+float: left;
+width: 100%;
+margin: 0;
+padding: 0;
+}
+#yenisite-gallery li {
+list-style-type:none;         
+float: left;
+padding: 5px;
+}
+#yenisite-gallery a {
+	border: none;
+}
+#yenisite-gallery a img {
+border: 1px solid #A0BF9D;
+}
+#yenisite-gallery a:hover img {
+border: 1px solid #000;
+}

@@ -1,0 +1,21 @@
+<?
+$MESS["RZ_PODPISKA_OFORMLENA"] = "Подписка оформлена";
+$MESS["RZ_POLYA__OTMECHENNIE_ZVEZDOCHKOJ__OBYAZATELNI_DLYA_ZAPOLNENIYA"] = "Поля, отмеченные звездочкой, обязательны для заполнения";
+$MESS["RZ_VVEDITE_ILI_ISPOLZUJTE_BEGUNOK"] = "введите или используйте бегунок";
+$MESS["RZ_SOOBSHIT_O_SNIZHENII_TCENI"] = "Сообщить о снижении цены";
+$MESS["RZ_ZHELAEMAYA_TCENA"] = "Желаемая цена";
+$MESS["RZ_OTPRAVIT"] = "Отправить";
+$MESS["RZ_ZHELAEMAYA"] = "Желаемая";
+$MESS["RZ_ZAKRIT"] = "Закрыть";
+$MESS["RZ_RAZNITCA"] = "Разница";
+$MESS["RZ_TEKUSHAYA"] = "Текущая";
+$MESS["RZ_VASH"] = "Ваш";
+$MESS["BITRONIC2_FEED_MODAL_CAPTCHA_TITLE"] = "Введите код";
+$MESS["BITRONIC2_FEED_MODAL_CAPTCHA_ALT"] = "Защита от автоматических сообщений";
+$MESS["BITRONIC2_FEED_MODAL_SECTION_SELECT"] = "Выберите раздел";
+$MESS["BITRONIC2_FEED_MODAL_MESSAGE"] = "Сообщение";
+$MESS["BITRONIC2_FEED_MODAL_SEND"] = "Отправить";
+$MESS["BITRONIC2_FEED_MODAL_ERROR"] = "Ошибка!";
+$MESS["BITRONIC2_FEED_MODAL_REQUIRED"] = "Поля, отмеченные звездочкой, обязательны для заполнения";
+$MESS["RZ_CAPTCHA_PROTECT_TEXT"] = "Защита от автоматических сообщений";
+$MESS["RZ_CAPTCHA_INPUT_WORD"] = "Введите слово с картинки";

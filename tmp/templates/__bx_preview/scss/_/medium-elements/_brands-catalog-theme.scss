@@ -1,0 +1,30 @@
+.brands-catalog {
+	.brand {
+		@include silver-static;
+		[data-styling-type="skew"] & {
+			border: 1px solid fade-out(#000, 0.76);
+			box-shadow: inset 0px -2px 0px fade-out(#000, 0.83);
+		}
+
+		&:hover { background: $silver-hovered-bg; }
+
+		&:before { box-shadow: $silver-static-shadow; }
+
+		&.active {
+			border-color: $main-color-dark;
+			box-shadow: none;
+			background: $silver-static-bg;
+		}
+
+		&.disabled, &.disabled:hover, &.disabled.active {
+			@include silver-disabled;
+			color: #000 !important;
+		}
+	}
+}
+
+.brand-page {
+	.sub-categories {
+		border-color: $main-color-soft;
+	}
+}

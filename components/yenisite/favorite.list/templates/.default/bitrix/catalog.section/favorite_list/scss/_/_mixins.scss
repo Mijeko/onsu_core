@@ -1,0 +1,63 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+@mixin transition($internal, $props: all, $duration: .4s, $type: ease){
+	@if $internal == false {
+		transition-property: $props;
+		transition-duration: $duration;
+		transition-timing-function: $type;
+		&:active, &.active{ transition: none;}
+	} @else {
+		@each $in in $internal{
+			& #{$in} {
+				transition-property: $props;
+				transition-duration: $duration;
+				transition-timing-function: $type;
+			}
+			&:active #{$in}{ transition: none;}
+		}
+		
+	}
+}
+@mixin make-items-row($items, $gap, $infinite: false, $between: ''){
+	$full-gap: ($items - 1) * $gap;
+	$inner-width: 100% - $full-gap;
+	$width: $inner-width / $items;
+
+	width: $width;
+	margin-right: $gap;
+	@if $infinite == false{
+		&:nth-of-type(#{$items}n){ 
+			margin-right: 0;
+			&:after{ display: none;}
+		}
+	} @else {
+		&:last-of-type{ 
+			margin-right: 0;
+			&:after{ display: none;}
+		}
+	}
+
+	@if $between != '' {
+		position: relative;
+		&:after{
+			position: absolute;
+			content: $between;
+			top: 0;
+			left: 100%;
+			width: ($gap / $width) * 100%;
+			text-align: center;
+		}
+	}
+}
+
+@function em($px, $base: $fontsize-base){
+	@return ( $px / $base ) * 1em;
+}

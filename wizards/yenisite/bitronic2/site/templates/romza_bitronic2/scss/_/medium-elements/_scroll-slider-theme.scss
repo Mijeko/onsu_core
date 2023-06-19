@@ -1,0 +1,4 @@
+.sly-scroll {
+	@include scroller__track_h-theme;
+	&>.sly-bar { @include scroller__bar_h-theme; }
+}

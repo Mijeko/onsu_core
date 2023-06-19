@@ -1,0 +1,6 @@
+.filter-results {
+	&>.text {
+		background: lighten($main-color-light, 30%);
+		border-color: $main-color-light;
+	}
+}

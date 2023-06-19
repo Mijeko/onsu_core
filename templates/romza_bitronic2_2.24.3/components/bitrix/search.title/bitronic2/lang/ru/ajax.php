@@ -1,0 +1,8 @@
+<?
+$MESS["BITRONIC2_BST_SEARCH_BUTTON"] = "Поиск";
+$MESS["BITRONIC2_SEARCH_PLACEHOLDER"] = "Я ищу";
+$MESS["BITRONIC2_CLEAR_PLACEHOLDER"] = "Очистить поиск";
+$MESS["BITRONIC2_ALL_RESULTS"] = "Все результаты";
+
+$MESS["BITRONIC2_EXAMPLE"] = "Например, ";
+?>

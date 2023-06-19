@@ -1,0 +1,68 @@
+.modal-dialog {
+	@include silver-static;
+	@media (max-width: 767px) {
+		h2 {
+			color: $main-normal-textcolor;
+			background: $main-clicked-bg;
+		}
+		.btn-close {
+			.modal_city-select-panel & { color: #000; }
+		}
+	}
+}
+
+.modal_callme {
+	.modal-dialog {
+		box-shadow: $silver-static-shadow;
+	}
+}
+
+.modal_inform-when-price-drops {
+	.modal-dialog {
+		box-shadow: $silver-static-shadow;
+	}
+}
+
+.modal_feedback {
+	.modal-dialog {
+		box-shadow: $silver-static-shadow;
+	}
+}
+
+.form_login, .form_registration, .form_callme {
+	.switch-form-block {
+		.btn-form-switch {
+			@include set-colors('.btn-text', $link-base-color, $link-hover-color, $link-clicked-color);
+			@include set-border-colors('.btn-text', $link-base-color, $link-hover-color, $link-clicked-color);
+		}
+	}
+
+	.forgot-pass {
+		@include set-colors(false, $link-base-color, $link-hover-color, $link-clicked-color);
+		@include set-border-colors(false, $link-base-color, $link-hover-color, $link-clicked-color);
+	}
+}
+
+.form_registration {
+	.checkbox-content {
+		a {
+			@include set-colors(false, $link-base-color, $link-hover-color, $link-clicked-color);
+			@include set-border-colors(false, $link-base-color, $link-hover-color, $link-clicked-color);
+		}
+	}
+}
+
+.form_inform-when-price-drops {
+	.price>.icon-before-input { color: lighten(#000, 40%); }
+}
+
+.form_yourcity {
+	.another-city { @include set-colors(false, #fff, darken(#fff, 50%)); }
+}
+
+.form_calc-delivery {
+	.delivery-option {
+		&:hover { border-color: lighten($main-color-dark, 10%); }
+		&.active, &.active:hover { border-color: $main-color-dark; }
+	}
+}

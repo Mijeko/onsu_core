@@ -1,0 +1,61 @@
+// if we set colors for current selector, then $internal-class
+// must be false. Otherwise colors are set for that class inside
+// current selector
+@mixin set-colors($internal-class, $base, 
+					$hover: $base,
+					$active: $base,
+					$visited: $base){
+	@if $internal-class == false {
+		&, &:link{ color: $base;}
+		&:visited{ color: $visited;}
+		&:hover{ color: $hover;}
+		&:active{ color: $active;}
+	} @else {
+		& #{$internal-class}, &:link #{$internal-class}{ color: $base;}
+		&:visited #{$internal-class}{ color: $visited;}
+		&:hover #{$internal-class}{ color: $hover;}
+		&:active #{$internal-class}{ color: $active;}
+	}
+}
+@mixin set-border-colors($internal-class, $base, 
+					$hover: $base,
+					$active: $base,
+					$visited: $base){
+	@if $internal-class == false {
+		&, &:link{ border-color: fade-out($base, 0.6);}
+		&:visited{ border-color: fade-out($visited, 0.6);}
+		&:hover{ border-color: $hover;}
+		&:active{ border-color: $active;}	
+	} @else {
+		& #{$internal-class}, &:link #{$internal-class}{ border-color: fade-out($base, 0.6);}
+		&:visited #{$internal-class}{ border-color: fade-out($visited, 0.6);}
+		&:hover #{$internal-class}{ border-color: $hover;}
+		&:active #{$internal-class}{ border-color: $active;}
+	}
+	
+}
+
+@mixin scroller__track_h-theme{
+	background-color: #f0f0f0;
+	box-shadow: $scroll-track-h-shadow;
+	&:before{
+	    background: #c0c0c0;
+	    box-shadow: $scroll-h-innertrack-shadow;
+	}
+}
+@mixin scroller__bar_h-theme{
+	background: $scroll-bar-h-bg;
+    box-shadow: $scroll-bar-h-shadow;
+    &:before{
+        color: #cbcdcc;
+    }
+
+    &:hover{
+    	background: $scroll-bar-h-hovered-bg;
+    }
+
+    &:active, &.dragged{
+    	box-shadow: $scroll-bar-h-active-shadow;
+    	background: $scroll-bar-h-active-bg;
+    }
+}

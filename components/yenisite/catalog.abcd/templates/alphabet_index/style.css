@@ -1,0 +1,89 @@
+div.alphabetdiv { overflow:hidden; background:#007ACF; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; float:left; clear:both; }
+ul.alphabet { list-style:none; clear:both; float:left; margin:0; padding:0;}
+ul.alphabet li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px;  float:left; list-style:none; padding:0;  }
+ul.alphabet li a { color: #FFF; padding:4px; }
+ul.alphabet li b { color: #FFDAB9; padding:4px; }
+ul.alphabet li span { color: #A8B6D4; padding:4px; }
+ul.alphabet li span.alph_active { color: #FFF; padding:4px; }
+
+ul.alphabet li ul { display:none; padding:0;}
+ul.alphabet li ul li{ clear:both !important; }
+ul.alphabet li:hover ul { display:block; position:absolute; background:#191970; 
+-webkit-border-radius: 5px;
+-webkit-border-top-left-radius: 0;
+-moz-border-radius: 5px;
+-moz-border-radius-topleft: 0;
+border-radius: 5px;
+border-top-left-radius: 0;
+}
+ul.alphabet li:hover span.alph_active { 
+background:#191970; padding:4px -webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+/* .filter .alphabet{
+font-size:11px;
+color:#636e89;
+list-style:none;
+cursor:default;
+zoom:1;
+overflow:hidden;
+padding:0px 0px 10px 0px!important;
+}
+.filter .alphabetdiv{
+min-height:10px;
+width:470px;
+float:left;
+}
+.filter .alphabet span{
+color:#a8b6d4;
+cursor:pointer;
+}
+.filter .alphabet li{
+float:left;
+list-style:none;
+padding:0px 8px 0px 0px!important;
+}
+.filter .alphabet ul{
+display:none;
+}
+.filter .alph_popup{
+min-height:10px;
+width:96px;
+display:none;
+color:#3f4c6b;
+position:absolute;
+z-index:10!important;
+top:0px;
+left:0px;
+}
+.filter .alph_popup span{
+color:#5b9400;
+font-weight:bold;
+}
+.filter .alph_popup a{
+color:#3f4c6b;
+}
+.filter .alph_popup img{
+position:relative;
+display:block;
+}
+.filter .alph_popup .pubg{
+min-height:10px;
+background:#eee;
+border-left:1px solid #828ea8;
+border-right:1px solid #828ea8;
+padding:4px 8px 1px 8px;
+}
+.filter .alph_popup ul{
+list-style:none;
+padding:7px 0px 0px 0px!important;
+}
+.filter .alph_popup ul li{
+list-style:none;
+padding:0px 0px 3px 0px!important;
+} */

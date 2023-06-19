@@ -1,0 +1,137 @@
+.action{
+	@include transition(false, color);
+
+	// preparing to position icons
+	position: relative;
+	padding-left: 25px !important;
+	padding-bottom: 1px;
+	&:active{
+		padding-bottom: 1px;
+	}
+
+	font-size: 12px;
+
+	&>i{
+		position: absolute;
+		left: 0;
+		top: -5px;
+	}
+
+	&>.text{
+		border-bottom-style: dotted;
+		border-bottom-width: 1px;
+		border-bottom-color: transparent;
+		transition: border-bottom-color .25s;
+	}
+
+	&>.when-toggled{ display: none;}
+	&.toggled{
+		&>.when-not-toggled{ display: none;}
+		&>.when-toggled{ display: inline;}
+	}
+	
+	&.comment>i{
+		top: -4px;
+		&:before{
+			font-size: 18px;
+		}
+	}
+
+	&.compare>i{
+		top: -4px;
+		&:before{
+			font-size: 18px;
+		}
+	}
+
+	&.to-waitlist>i{
+		left: -2px;
+		top: -7px;
+		&:before{
+			font-size: 24px;
+		}
+	}
+
+	&.cry-for-price>i{
+		&:before{
+			font-size: 20px;
+		}
+	}
+
+	&.calc-delivery>i{
+		&:before{
+			font-weight: normal;
+		}
+	}
+
+	&.use-credit>i{
+	}
+
+	&.reset-filter>i{
+		top: -1px;
+		left: -2px;
+		&:before{
+			font-size: 16px;
+		}
+	}
+
+	&.notify-me{
+		max-width: 101px;
+		text-align: left;
+		&>i{
+			top: 2px;
+			left: -2px;
+		}
+	}
+
+	&.repeat-order>i{
+		top: -2px;
+		left: 5px;
+		&:before{
+			font-size: 18px;
+		}
+	}
+
+	&.cancel-order>i{
+		top: 1px;
+		left: 7px;
+		&:before{
+			font-size: 12px;
+		}
+	}
+
+	&.order-filter-reset>i{
+		top: 1px;
+		left: 7px;
+		&:before{
+			font-size: 12px;
+		}
+	}
+
+	&.delete>i{
+		top: 2px;
+		left: 10px;
+		&:before{
+			font-size: 10px;
+		}
+	}
+
+	&.disabled{
+		cursor: default;
+		pointer-events: none;
+		>.text{
+			border-bottom: none;
+		}
+		opacity: 0.5;
+	}
+
+	&, &>.text, &>i{ color: #000;}
+	&:hover{ &, &>.text, &>i { border-bottom-color: initial;} }
+
+	&.toggled{
+		&, &>.text, &>i{ color: #ff6600;}
+		&:hover{
+			&, &>.text, &>i{ color: #a44200; }
+		}
+	}
+}

@@ -1,0 +1,6 @@
+.partners-wrap {
+	.partners-item, .desc { @include silver-static; }
+	.partners-item-wrap {
+		.contact, .name span { @extend .link-std; }
+	}
+}

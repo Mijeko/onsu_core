@@ -1,0 +1,76 @@
+.availability-info{
+	display: inline-block;
+	vertical-align: middle;
+	&>div{
+		@include transition(false, (background, opacity));
+		padding: 1px 10px 5px;
+		&:hover{ cursor: pointer;}
+	}
+	.text{
+		border-bottom: 1px dotted;
+
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 11px;
+		white-space: nowrap;
+	}
+
+	.when-in-stock+.tooltip{
+		max-width: 150px;
+		white-space: normal;
+	}
+	.when-in-stock.toggled+.tooltip{
+		opacity: 0;
+	}
+	.when-out-of-stock+.tooltip{
+		max-width: 110px;
+	}
+	.when-available-for-order+.tooltip{
+		max-width: 170px;
+	}
+}
+
+.store-info{
+	margin-top: 12px;
+
+	&:before{
+		content: '';
+		position: absolute;
+		border: 6px solid transparent;
+		
+		bottom: 100%;
+
+		left: 50%;
+		margin-left: -6px;
+	}
+}/* .store-info */
+
+.when-in-stock{ 
+	display: inline-block;
+	vertical-align: middle;
+}
+.when-out-of-stock{ display: none;}
+.when-available-for-order{ display: none;}
+.out-of-stock{
+	.when-in-stock{ display: none;}
+	.when-out-of-stock{ 
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+.available-for-order{
+	.when-in-stock{ display: none;}
+	.when-available-for-order{ 
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.availability{
+	&>.notes>span{
+		padding: 5px 10px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 12px;
+	}
+}

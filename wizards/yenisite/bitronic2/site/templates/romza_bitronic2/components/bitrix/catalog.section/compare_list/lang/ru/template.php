@@ -1,0 +1,10 @@
+<?
+$MESS["BITRONIC2_COMPARE_TITLE"] = "Список сравнения";
+$MESS["BITRONIC2_COMPARE_IN_LIST"] = "В списке сравнения";
+$MESS["BITRONIC2_COMPARE_GOOD"] = "Товар";
+$MESS["BITRONIC2_COMPARE_GOODS"] = "товар";
+$MESS["BITRONIC2_COMPARE_FROM"] = "от";
+$MESS["BITRONIC2_COMPARE_DELETE"] = "Удалить";
+$MESS["BITRONIC2_COMPARE_PRICE"] = "Цена";
+$MESS["BITRONIC2_COMPARE_COMPARE"] = "Сравнить";
+$MESS["BITRONIC2_COMPARE_CLEAR"] = "Очистить список сравнения";

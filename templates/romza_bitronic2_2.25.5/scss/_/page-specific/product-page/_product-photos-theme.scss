@@ -1,0 +1,12 @@
+.thumbnails-wrap, .bigimg-thumbnails-wrap {
+	&>.thumbnails-frame {
+		&>.thumbnails-slidee>.thumb {
+			&:hover, &.active:not(.add-photo) {
+				color: $main-color-light;
+				border-color: $main-color-light;
+			}
+		}
+	}
+
+	&>.thumb-control { color: $main-color-dark; }
+}

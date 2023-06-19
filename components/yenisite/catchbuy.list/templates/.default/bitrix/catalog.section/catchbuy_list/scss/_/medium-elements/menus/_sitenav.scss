@@ -1,0 +1,244 @@
+.sitenav-menu-item{
+	position: relative;
+	.icon-arrow{ 
+		display: none;
+		&:before{
+			position: relative;
+			top: -2px;
+			margin-right: -5px;
+			font-size: em(8px);
+		}
+	}
+	&.with-sub{
+		@media (min-width: 768px){
+			.icon-arrow.down{ display: inline;}
+			&:hover{
+				.icon-arrow.down{ display: none;}
+				.icon-arrow.up{ display: inline;}
+
+				&>.submenu{
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+		@media (max-width: 767px){
+			.icon-arrow.down{ display: inline;}
+			&.opened{
+				.icon-arrow.down{ display: none;}
+				.icon-arrow.up{ display: inline;}
+			}
+		}
+		
+	}
+
+	&>a{
+		display: block;
+		white-space: nowrap;
+		text-align: center;
+		padding: 5px 12px;
+	}
+	&.active{
+		cursor: default;
+		pointer-events: none;
+		&.with-sub{ pointer-events: auto;}
+		&>a{
+			cursor: default;
+			>.link-text{
+				border-bottom: none !important;
+			}
+		}
+	}
+	.v1 &, .v4 &{
+		line-height: normal;
+		display: inline-block;
+		position: relative;
+		// z-index: 0;
+
+		&>a{
+			height: 100%;
+			@include transition(false, (background, color), .4s);
+			
+			&>.link-text{
+				border-bottom: 1px solid;
+				@include transition(false, border-color);
+			}
+
+		}
+	}
+	
+	.v2 &, .v3 &{
+		display: table-cell;
+		vertical-align: middle;
+		width: 1%;
+		@include transition(false, (background, color));
+		&:hover{ cursor: pointer;}
+		&>a{
+			height: 100%;
+			&>.link-text{
+				border: none;
+				text-transform: uppercase;
+			}
+		}
+	}
+	
+	.submenu{
+		position: absolute;
+		z-index: 6; // for it to be over search form
+		left: 0;
+		top: 100%;
+		width: 100%;
+		min-width: 190px;
+		max-width: 250px;
+
+		
+		opacity: 0;
+		visibility: hidden;
+
+		@include transition(false, (opacity, visibility));
+
+		list-style: none;
+		padding: 0;
+		padding-bottom: 3px;
+
+		&>li>a, span{
+			display: block;
+			padding: 10px 20px;
+			@include transition(false, (background, color));
+		}
+		&>li.active>a,span{
+			font-weight: bold;
+			&:hover{ cursor: default;}
+		}
+
+		@media (min-width: 768px){
+			display: block !important;
+		}
+	}
+
+	@media (max-width: 767px){
+		.v1 &, .v2 &, .v3 &, .v4 &{
+			display: block;
+			width: 100%;
+			padding-top: 0px;
+			padding-bottom: 0px;
+
+			border-bottom: 1px solid;
+			&>a{
+				padding-top: 10px;
+				padding-bottom: 10px;
+				&>.link-text{
+					text-transform: uppercase;
+					border: none;
+				}
+			}
+		}
+
+		.submenu{
+			position: relative;
+			opacity: 1;
+			visibility: visible;
+			display: none;
+		}
+	}
+}
+.sitenav{
+	width: 100%;
+	&>ul{
+		
+		padding: 0;
+		list-style: none;
+		width: 100%;
+		@media (min-width: 768px){
+			display: block !important;
+		}
+	}
+	.v1 &, .v4 &{
+		display: block;
+		&>ul{
+			display: block;
+			text-align: justify;
+			line-height: 0; // for :after to not consume space under the list
+
+			&:after{
+				content: '';
+				display: inline-block;
+				width: 100%;
+				vertical-align: top;
+			}
+		}
+	}
+	.v2 &, .v3 &{
+		display: table;
+		&>ul{
+			display: table-row;
+		}
+	}
+	@media (max-width: 767px){
+		.v1 &, .v2 &, .v3 &, .v4 &{
+			display: block;
+
+			&>ul{
+				position: absolute;
+				z-index: 6; // to be over search form and catalog menu
+				top: 55px;
+				display: none;
+				width: auto;
+				right: 0;
+				left: 0;
+			}
+
+		}
+		
+	}
+}
+
+.btn-sitenav-toggle{
+	display: none;
+	@media (max-width: 767px){
+		position: absolute;
+		z-index: 1;
+		top: 15px;
+		right: 2px;
+		display: block;
+		height: 40px;
+		width: 40px;
+
+		border: 2px solid;
+	}
+}
+
+.vertical{
+	.sitenav-menu-item{
+		display: block;
+		&>a{
+			display: inline-block;
+			text-align: left;
+			padding: 5px 0;
+			
+			@include transition('.link-text', (color, border-color));
+			.link-text{
+				border-bottom: 1px solid;
+			}
+
+			position: relative;
+			&:before{
+				content: '';
+				display: inline-block;
+				position: relative;
+				top: -1px;
+				margin-right: 7px;
+				border-radius: 50%;
+				width: 7px;
+				height: 7px;
+				border: 1px solid;
+
+				@media (max-width: 767px){
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}
+		
+	}
+}

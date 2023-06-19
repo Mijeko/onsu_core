@@ -1,0 +1,31 @@
+.categories{
+	@extend .silver-static;
+	box-shadow: 0px 1px 2px fade-out(#000, 0.56),
+				inset 0px -5px 0px fade-out(#000, 0.92);
+	.slide{
+		@include set-colors(false, #000);
+	}
+	.slide + .slide{
+		&:before{
+			border-right-color: #e7e7e7;
+			border-left-color: #fff;
+		}
+	}
+	
+	.scroller__track_h{
+		@include scroller__track_h-theme;
+	}
+	.scroller__bar_h{
+		box-shadow: $main-normal-shadow;
+		background: $cats-bar-normal-bg;
+
+		&:hover{
+			box-shadow: $cats-bar-hovered-shadow;
+			background: $cats-bar-hovered-bg;
+		}
+
+		&:active{
+			background: $cats-bar-clicked-bg;
+		}
+	}
+}

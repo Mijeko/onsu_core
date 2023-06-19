@@ -1,0 +1,32 @@
+.modal_basket, .modal_map{
+	background: $main-color-light;
+	border: none;
+	&:before{
+		@extend .silver-static;
+	}
+
+	.img-wrap{
+		border-color: #d4d4d4;
+	}
+
+	.additionals{
+		.dots>li{
+			background: #c6c6c6;
+			//box-shadow: inset 0px 1px 2px fade-out(#000, 0.43);
+			
+		}
+		.dots>li.active{
+			background: $main-normal-bg;
+			//box-shadow: inset 0px 1px 2px fade-out(#582500, 0.64);
+		}
+	}
+	.catalog-hits{
+		background: none;
+		box-shadow: none;
+		border: none;
+	}
+
+	.btn-return{
+		@include set-colors('.text', #6f6f6f);
+	}
+}

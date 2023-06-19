@@ -1,0 +1,65 @@
+.account-menu {
+	.avatar { @include silver-static; }
+
+	ul li a {
+		[data-styling-type="skew"] & {
+			@include btn-silver;
+			box-shadow: $main-hovered-shadow;
+
+			&:hover, &:active, &.active {
+				background: $main-normal-bg;
+				.svg-wrap { fill: $main-normal-textcolor; }
+				.text { color: $main-normal-textcolor; }
+			}
+		}
+
+		[data-styling-type="flat"] & {
+			@include silver-normal;
+			&:hover, &.active { @include main-normal; }
+			&:active { @include main-clicked; }
+			&.disabled { @include silver-disabled; }
+			&:hover {
+				.svg-wrap { fill: $main-hovered-textcolor; }
+				.text { color: $main-hovered-textcolor; }
+			}
+		}
+	}
+
+	.btn-logout {
+		[data-styling-type="skew"] & {
+			@include btn-silver;
+			&:hover {
+				i:before { color: $main-color-soft; }
+				.text { color: $main-color-soft; }
+			}
+		}
+
+		[data-styling-type="flat"] & {
+			@include silver-normal;
+			&:hover { @include main-hovered; }
+			&:active { @include main-clicked; }
+			&.disabled { @include silver-disabled; }
+			&:hover {
+				i:before { color: $main-hovered-textcolor; }
+				.text { color: $main-hovered-textcolor; }
+			}
+		}
+	}
+}
+
+.popup_account-menu {
+	ul {
+		background: #dedce4;
+
+		li {
+			[data-styling-type="flat"] & {
+				@include silver-normal;
+				&:hover, &.active { @include main-normal; }
+				&:active { @include main-clicked; }
+				&.disabled { @include silver-disabled; }
+				background: #fff;
+			}
+			background: #fff;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+#gallery {
+padding-left: 0px;
+}
+#gallery li .yenisite-zoom  img{
+	float: left; /* выстраиваем картинки в линию */
+	margin: 5px; /* отступ для красоты */
+	width: 300px;
+	height: 300px; 
+	/*overflow: visible !important;*/
+	
+}
+#gallery li {
+	float: left; /* выстраиваем картинки в линию */
+	margin: 5px; /* отступ для красоты */
+	width: 300px;
+	height: 300px; 
+	}
+	

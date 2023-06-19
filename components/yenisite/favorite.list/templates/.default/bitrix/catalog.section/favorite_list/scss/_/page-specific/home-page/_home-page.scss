@@ -1,0 +1,280 @@
+.home-page{
+	position: relative; // for .home-page-h1
+}
+.home-page-h1{
+	position: absolute;
+	right: 100%;
+}
+.text-content{
+	h3{
+		font-size: em(24px);
+		font-weight: normal;
+		margin-bottom: 20px;
+	}
+
+	.about{
+		p{
+			font-size: em(13px);
+		}
+	}
+
+}
+
+.news-n-articles{
+	.item{
+		clear: both;
+		margin-bottom: 25px;
+		margin-top: 5px;
+		&:first-child{ margin-top: 0;}
+		.date-wrap{
+			position: relative;
+			float: left;
+			width: 65px;
+			padding-top: 60px;	
+			font-size: em(12px);
+			text-align: center;
+			&>i:before{
+				position: absolute;
+				top: -5px;
+				left: -2px;
+				right: 0;
+				font-size: 50px;
+			}
+		}
+		.content{
+			padding-left: 15px;
+			margin-left: 65px;
+			.desc{ 
+				margin-top: 7px;
+				font-size: em(13px);
+			}
+		}
+
+		@media (max-width: 767px){
+			.date-wrap{
+				float: none;
+				width: auto;
+				padding-top: 0;
+				padding-left: 30px;
+				text-align: left;
+				margin-bottom: 5px;
+				&>i:before{
+					top: -5px;
+					left: 0px;
+					right: auto;
+					font-size: 20px;
+				}
+			}
+			.content{
+				clear: both;
+				margin-left: 0;
+				padding-left: 0;
+			}
+		}
+	}
+
+
+
+	.news-page &{
+		margin-bottom: 50px;
+		.item{
+			clear: none;
+		}
+		.news-item-img>img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.date-wrap{
+			display: block;
+			float: none;
+			width: auto;
+			height: 30px;
+			line-height: 30px;
+			margin-top: 15px;
+			margin-bottom: 10px;
+			padding-top: 0px;
+			padding-left: 40px;
+			text-align: left;
+
+			&>i:before{
+				font-size: 30px;
+				top: 0px;
+				left: 0px;
+				right: auto;
+			}
+		}
+		.content{
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+}
+
+.questionnaire{
+	&>.text{
+		font-size: em(13px);
+		margin-bottom: 10px;
+	}
+	.radio-styled{
+		display: block;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	
+	footer{
+		text-align: center;
+	}
+	.btn-main{
+		margin-top: 20px;
+		margin-bottom: 10px;
+		padding: 7px 20px;
+		font-size: em(16px);
+		font-weight: bold;
+	}
+}
+
+.benefits{
+	margin-bottom: 25px;
+	@media (max-width: 767px){
+		display: none;
+	}
+}
+.benefit{
+	float: none;
+	@include clearfix;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+
+	.img-wrap{
+		float: left;
+		width: 101px;
+		height: 101px;
+		border-radius: 50%;
+
+		text-align: center;
+		line-height: 98px;
+
+		img{
+			position: relative;
+			left: 1px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	.content{
+		margin-left: 115px;
+	}
+
+	header{
+		font-size: em(16px);
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	p{
+		font-size: em(13px);
+	}
+}
+.brands-tagcloud{
+	text-align: center;
+	display: none;
+	.tags &{ display: block;}
+}
+.brand-tag{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 4px 7px;
+	border-radius: 4px;
+
+	@include transition(false, (background, color));
+	&:hover{
+		cursor: pointer;
+	}
+	&.active:hover{ 
+		cursor: default;
+		pointer-events: none;
+	}
+}
+.brands-wrap{
+	.brands-outer{
+		position: relative;
+	}
+	&.carousel .brands-carousel{ display: block;}
+	&.tags .brands-carousel{ display: none;}
+	.brands-inner{
+		white-space: nowrap;
+		font-size: 0;
+		overflow: hidden;
+	}
+	h3{
+		font-size: em(24px);
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+	.brand{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 14px;
+		opacity: 0.3;
+		padding: 0px 10px;
+		@include transition(false, opacity);
+		&:hover{
+			opacity: 1;
+		}
+		width: 120px;
+		height: 100px;
+		line-height: 100px;
+		text-align: center;
+		>img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		@media (max-width: 767px){
+			width: 210px;
+		}
+	}
+	.slider-arrow{
+		position: absolute;
+		background: #fff;
+		top: 0;
+		height: 100%;
+		line-height: normal;
+		&>i{
+			&:before{ font-size: 30px;}
+		}
+
+		&.prev{
+			left: -15px;
+		}
+		&.next{
+			right: -15px;
+		}
+		&:active{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	
+	@media (max-width: 991px){
+
+	}
+	@media (max-width: 767px){
+		h3{
+			font-size: em(18px);
+		}
+		.slider-arrow{
+			&.prev{ left: 0;}
+			&.next{ right: 0;}
+		}
+		.brands-inner{
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+	}
+}

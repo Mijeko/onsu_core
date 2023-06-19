@@ -1,0 +1,20 @@
+<?php
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_CLOSE"] = "Fermer";
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_CONDUCTED_DOCUMENTS_EXIST"] = "Des objets d'inventaire ne sont pas traités. La gestion de l'inventaire ne peut pas être désactivée tant que ces objets d'inventaire existent.";
+$MESS["CAT_WAREHOUSE_MASTER_CLEAR_DISABLE_POPUP_TITLE"] = "Désactiver la gestion des stocks";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_DETAILS"] = "Détails";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_1"] = "Annuler";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_2"] = "Réinitialiser le stock";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_3"] = "Réinitialiser le stock";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_4"] = "Il y a des produits dont le stock courant n'est pas nul. Vous devez réinitialiser les valeurs de stock avant d'activer la gestion de l'inventaire.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_5"] = "Vous pouvez mettre à jour les valeurs du stock après avoir activé la gestion de l'inventaire.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_6"] = "Désactiver";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_7"] = "Voulez-vous vraiment désactiver la gestion de l'inventaire ?";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_8"] = "Vous ne serez pas en mesure de traiter les objets d'inventaire.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_10"] = "Activer la gestion des stocks";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_CLEAR_CONFIRM"] = "Le stock actuel de votre/vos entrepôt(s) ne correspond pas à la quantité spécifiée dans le catalogue. Cela peut être dû à la mise à jour manuelle de la quantité de produits après la désactivation de la Gestion de l'inventaire. Il est recommandé de supprimer les objets de l'inventaire existants avant d'utiliser les fonctions de Gestion de l'inventaire.";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_CONFIRM"] = "Il existe des objets d'inventaire que vous avez créés et utilisés auparavant. Voulez-vous les conserver ou les supprimer ?";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_EASY"] = "Conserver";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_LINK_TITLE"] = "En savoir plus";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_TITLE"] = "Activer la gestion des stocks";
+$MESS["CAT_WAREHOUSE_MASTER_STORE_USE_ENABLE_WITH_RESET"] = "Supprimer";

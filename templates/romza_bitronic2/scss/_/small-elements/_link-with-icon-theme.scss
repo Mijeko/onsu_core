@@ -1,0 +1,25 @@
+.with-icon{
+	span[class*="flaticon"]{
+		position: absolute;
+		font-family: "Flaticon";
+		&:before{
+			margin: 0;
+			color: #000;
+		}
+	}
+	&, &:link{
+		.link-text{
+			color: $link-base-color;
+		}
+	}
+	&:focus, &:hover{
+		.link-text{
+			color: $link-hover-color;
+		}
+	}
+	&:active{
+		.link-text{
+			color: $link-base-color;
+		}
+	}
+}

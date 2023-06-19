@@ -1,0 +1,15 @@
+.modal_custom-collection {
+	.item {
+		@include set-colors(false, #000);
+		.item-main-data {
+			.name-wrap>a {
+				@include set-colors('.text', $link-base-color, $link-hover-color, $link-clicked-color, $link-visited-color);
+				@include set-border-colors('.text', $link-base-color, transparent, transparent, $link-visited-color);
+			}
+		}
+	}
+}
+
+.custom-collection-content {
+	.product { border-color: $main-color-dark; }
+}

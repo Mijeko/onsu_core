@@ -1,0 +1,27 @@
+// classes below should be used in cases where some element
+// is not a button (must not react to hover and clicks),
+// but is colored like button in some state
+.silver-normal{
+	@include silver-normal;
+}
+
+.silver-hovered{
+	@include silver-hovered;
+}
+
+.silver-clicked{
+	@include silver-clicked;
+}
+
+.silver-disabled{
+	@include silver-disabled;
+}
+
+.silver-static{
+	@include silver-static;
+}
+
+// common class for silver buttons
+.btn-silver{
+	@include btn-silver;
+}

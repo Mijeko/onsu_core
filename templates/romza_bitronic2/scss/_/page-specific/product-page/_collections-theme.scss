@@ -1,0 +1,26 @@
+.collection-wrap {
+	.sub-header {
+		&>.custom-collection {
+			@include set-colors(false, #000);
+			@include set-colors('.text', #000, #909090);
+			@include set-border-colors('.text', #000, #909090);
+		}
+	}
+
+	footer {
+		&>i {
+			color: $main-normal-textcolor;
+			background: $main-normal-bg;
+		}
+
+		&>.total-full {
+			&>.price-old { color: #000; }
+		}
+	}
+}
+
+.collection {
+	&>.item .main-data {
+		&>a .text { @extend .link-std; }
+	}
+}

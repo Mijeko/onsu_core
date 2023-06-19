@@ -1,0 +1,141 @@
+.art{
+	background: #efefef;
+}
+
+.quick-view-switch{
+	>.quick-view-fake-btn{
+		@extend .main-normal;
+	}
+	&:hover{
+		>.quick-view-fake-btn{
+			@extend .main-hovered;
+		}
+	}
+	&:active{
+		>.quick-view-fake-btn{
+			@extend .main-clicked;
+		}
+	}
+}
+.catalog-table{
+	&>.table-header{
+		@extend .silver-static;
+	}
+}
+.catalog-item{
+	background: #fff;
+	.shadow &.hovered, .border-n-shadow &.hovered, .detailed-expand &.hovered{
+		box-shadow: 0px 2px 5px fade-out(#000, 0.49);
+	}
+	.border &.hovered, .border-n-shadow &.hovered{
+		border-color: $main-color-dark;
+	}
+	
+	.photo-thumb{
+		border-color: #e9e9e9;
+		&:hover{ border-color: lighten($main-color-dark, 10%);}
+		&.active{
+			border-color: $main-color-dark;
+		}
+	}
+
+	.description{
+		border-color: #d6d6d6;
+		dd{ color: #545454;}
+	}
+
+	.carousel-dot{
+		background: #e5e5e5;
+		box-shadow: inset 0px 1px 2px fade-out(#000, 0.43);
+		&:hover{
+			background: $main-color-dark;
+		}
+		&.active{
+			background: $main-color-dark;
+		}
+	}
+
+	.xs-switch{
+		color: silver;
+		&:hover, &:active{
+			color: gray;
+		}
+	}
+	&.opened{
+		.xs-switch{
+			@include btn-silver;
+			color: silver;
+			&:hover, &:active{
+				color: gray;
+			}
+		}
+	}
+}
+
+.catalog-table-item{
+	.has-admin-info &:nth-child(4n+3), &:nth-child(2n){
+		background: #efefef;
+	}
+	border-color: #efefef;
+
+	&:hover{ background: #fffac2;}
+	
+
+	.quantity-counter{
+		box-shadow: $quantity-counter-shadow;
+		background: $quantity-counter-bg;
+	}
+
+	.photo-wrap{
+		background: $main-gradient-to-right;
+		&:before{
+			border-left-color: $main-color-light;
+		}
+		&:after{
+			border-left-color: #fff;
+		}
+	}
+	.photo{
+		background: #fff;
+	}
+
+	@media (max-width: 767px){
+		.quantity-counter{
+			background: none;
+			box-shadow: none;
+		}
+		.art{
+			background: none;
+		}
+	}
+}
+
+.list-item{
+	border-color: #efefef;
+	.main-data{
+		.availability{
+			.store:hover{
+				color: #ffb400;
+			}
+		}
+	}
+	.xs-switch{
+		@include btn-silver;
+		color: silver;
+		&:hover, &:active{
+			color: gray;
+		}
+	}
+}
+
+.blocks-item{
+	border-color: #eceaf3;
+
+	.xs-switch{
+		@include btn-silver;
+		color: silver;
+		&:hover, &:active{
+			color: gray;
+		}
+	}
+}

@@ -1,0 +1,116 @@
+.btn-sitenav-toggle {
+	color: $main-color-soft;
+	background-color: #fff;
+	&:hover { color: $main-color-light; }
+	&:active { color: $main-color-dark; }
+}
+.sitenav-menu-item {
+	&>a { @include set-colors(false, #000, $main-normal-textcolor, $main-normal-textcolor, #000); }
+	
+	.submenu {
+		@include silver-static;
+
+		&>li>a, span {
+			@include set-colors(false, #000);
+			text-shadow: none;
+			&:hover { background: #e8e8e8; }
+		}
+	}
+
+	&.with-sub{
+		&.addsItems {
+			&:hover {
+				> .icon-arrow { color: $main-normal-textcolor; }
+			}
+
+			> .submenu > li {
+				&:hover, &.active {
+					transition: none !important;
+					background: $main-color-light;
+
+					> a {
+						&, span {
+							transition: none !important;
+							@include set-colors(false, $main-normal-textcolor);
+							background: transparent !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	[data-header-version="v1"] &, [data-header-version="v4"] & {
+		&>a { @include set-border-colors('.link-text', #000, transparent, transparent, #000); }
+		&:hover, &.active {
+			>a {
+				@include set-colors(false, $main-normal-textcolor);
+				background: $main-color-light;
+				>.link-text { border-bottom-color: transparent; }
+			}
+		}
+		&.toggled>a {
+			@include btn-main;
+			background: $main-normal-bg, $main-color-light;
+			&:hover { background: $main-hovered-bg, $main-color-light; }
+			@include set-border-colors('.link-text', transparent);
+		}
+	}
+
+	[data-header-version="v2"] &,
+	[data-header-version="v3"] &,
+	[data-header-version="v5"] & {
+		background: #ebebeb;
+		&:hover, &.active {
+			>a { @include set-colors(false, $main-normal-textcolor); }
+			background: $main-color-light;
+		}
+		&.toggled {
+			@include btn-main;
+			&>a { color: $main-normal-textcolor; }
+			background: $main-normal-bg, $main-color-light;
+			&:hover { background: $main-hovered-bg, $main-color-light; }
+		}
+	}
+
+	@media (max-width: 767px) {
+		[data-header-version="v1"] &,
+		[data-header-version="v2"] &,
+		[data-header-version="v3"] &,
+		[data-header-version="v4"] &,
+		[data-header-version="v5"] & {
+			border-color: darken(#ebebeb, 10%);
+			background: #ebebeb;
+			&:hover { @include main-hovered; }
+			&.toggled { @include main-clicked; }
+		}
+	}
+}
+
+.sitenav {
+	@media (min-width: 768px) {
+		&.menu-collapse {
+			.addsItems {
+				&:hover {
+					@include set-colors(false, $main-normal-textcolor);
+					background: $main-color-light;
+				}
+			}
+		}
+	}
+}
+
+.vertical>ul>.sitenav-menu-item {
+	&>a {
+		.text { @extend .link-black; }
+		&:before { border-color: $ul-circles-color; }
+	}
+
+	&.active {
+		>a, >span {
+			color: #000;
+			@include set-colors('.link-text, .text', #000);
+			font-weight: bold;
+		}
+	}
+}

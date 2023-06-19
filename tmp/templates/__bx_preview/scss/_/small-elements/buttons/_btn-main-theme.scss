@@ -1,0 +1,38 @@
+// common class for main button coloring
+.btn-main{
+	@include btn-main;
+	&.disabled{
+		&, &:hover, &:active{
+			@include silver-static;
+			&, &>.text, &:after{color: gray;}
+		}
+	}
+}
+
+.buy.disabled, .btn-buy-wrap>.buy.disabled{
+	&, &:hover, &:active{
+		@include silver-static;
+		&, &>.text, &>i, &>i:before, &:before, &:after{color: gray;}
+	}
+}
+
+// classes below should be used in cases where some element
+// is not a button (must not react to hover and clicks),
+// but is colored like button in some state
+.main-normal{
+	@include main-normal;
+}
+
+.main-hovered{
+	@include main-hovered;
+}
+
+.btn-buy-wrap .buy.main-clicked, .main-clicked{
+	@include main-clicked;
+
+	&.forced, &.buy{
+		&, &:hover, &:active{
+			@include main-clicked;
+		}
+	}
+}

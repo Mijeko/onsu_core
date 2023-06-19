@@ -1,0 +1,16 @@
+.header-contacts {
+	.contacts-content:hover { border-color: $main-color-dark; }
+	a { @extend .link-std; }
+	
+	@media (max-width: 767px) {
+		&>i {
+			background: #e7e7e7;
+			&:hover { background: darken(#e7e7e7, 5%); }
+			&.toggled {
+				background: $main-color-soft;
+				color: $main-normal-textcolor;
+			}
+		}
+		.contacts-content { @include silver-static; }
+	}
+}

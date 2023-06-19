@@ -1,0 +1,49 @@
+.simple-slider {
+	.noUi-background {
+		background: #dedce4;
+		box-shadow: $noui-simple-track-shadow;
+	}
+	&.noUi-connect {
+		background: $noui-simple-bar-bg;
+		box-shadow: $noui-simple-bar-shadow;
+		border-color: #dedce4;
+	}
+
+	.noUi-handle {
+		@include silver-normal;
+		&:before {
+			background: $main-gradient-to-top;
+			box-shadow: inset 0px 1px 2px fade-out(#582500, 0.64);
+		}
+	}
+}
+
+.range-slider {
+	&.noUi-horizontal, &.noUi-background, .noUi-background {
+		background: #ededed;
+		box-shadow: $noui-range-track-shadow;
+	}
+	.noUi-limiter {
+		background: #fff;
+		&:after {
+			background: $noui-range-bar-normal-bg;
+			box-shadow: $noui-range-bar-shadow;
+			border-color: $noui-range-bar-bordercolor;
+		}
+	}
+	.noUi-active {
+		border-color: $main-color-soft;
+		background: $main-color-soft;
+		&:before { border-color: $main-normal-textcolor; }
+		.noUi-arrow {
+			border-bottom-color: $main-color-soft;
+			&:before, &:after { border-bottom-color: $main-color-soft; }
+		}
+	}
+
+	.noUi-tooltip { @extend .tooltip-inner; }
+
+	[disabled].noUi-connect,
+	[disabled] .noUi-connect { background: #B8B8B8; }
+	[disabled] .noUi-handle { cursor: not-allowed; }
+}

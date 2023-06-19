@@ -1,0 +1,11 @@
+.tooltip-inner {
+	background: $tooltip-bg;
+	border-color: $tooltip-border;
+}
+
+.buy+.tooltip {
+	>.tooltip-inner {
+		background: fade-out(#000, 0.1);
+		color: #fff;
+	}
+}

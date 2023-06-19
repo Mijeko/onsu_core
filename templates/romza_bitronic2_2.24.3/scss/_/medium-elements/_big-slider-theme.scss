@@ -1,0 +1,9 @@
+.big-slider {
+	.slide {
+		background: $bigslider-gradient;
+		color: $bigslider-textcolor;
+	}
+
+	.btn-buy { @include set-colors('.text', #fff, $bigslider-btnview-textcolor, $bigslider-btnview-textcolor, #fff); }
+	.btn-view { @include set-colors('.text', $bigslider-btnview-textcolor); }
+}

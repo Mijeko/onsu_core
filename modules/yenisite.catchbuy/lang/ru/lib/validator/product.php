@@ -1,0 +1,7 @@
+<?
+$MESS["RMZ_VALIDATOR_ERROR_FIELD_NOT_PRODUCT_SUFF"] = "Значение поля #FIELD_TITLE# (#FIELD_NAME#) должно быть существующим ID товара! \n<br>";
+$MESS["RMZ_VALIDATOR_ERROR_FIELD_NOT_PRODUCT"] = $MESS["RMZ_VALIDATOR_ERROR_FIELD_NOT_PRODUCT_SUFF"] . "Текущее значение #VALUE# - не товар";
+$MESS["RMZ_VALIDATOR_ERROR_FIELD_NOT_EXIST"] = $MESS["RMZ_VALIDATOR_ERROR_FIELD_NOT_PRODUCT_SUFF"] . "Элемента с ID #VALUE# - не существует";
+$MESS["RMZ_VALIDATOR_ERROR_FIELD_NOT_CATALOG"] = $MESS["RMZ_VALIDATOR_ERROR_FIELD_NOT_PRODUCT_SUFF"] . "Инфоблок элемента с ID #VALUE# - не является торговым каталогом";
+$MESS["RMZ_VALIDATOR_ERROR_IBLOCK_MODULE_NOT_INSTALLED"] = "Модуль 'Инфоблоки' не установлен";
+$MESS["RMZ_VALIDATOR_ERROR_CATALOG_MODULE_NOT_INSTALLED"] = "Модуль 'Каталог' не установлен";

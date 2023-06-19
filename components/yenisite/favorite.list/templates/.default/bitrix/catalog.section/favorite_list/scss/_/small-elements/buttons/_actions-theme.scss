@@ -1,0 +1,11 @@
+.action{
+	&, &>.text, &>i{ color: #000;}
+	&:hover{ &, &>.text, &>i{ color: #909090;} }
+
+	&.toggled{
+		&, &>.text, &>i{ color: #ff6600;}
+		&:hover{
+			&, &>.text, &>i{ color: #a44200; }
+		}
+	}
+}

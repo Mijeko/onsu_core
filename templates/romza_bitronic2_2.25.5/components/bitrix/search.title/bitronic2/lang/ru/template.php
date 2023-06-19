@@ -1,0 +1,11 @@
+<?
+$MESS["BITRONIC2_BST_SEARCH_BUTTON"] = "Поиск";
+$MESS["BITRONIC2_SEARCH_PLACEHOLDER"] = "Я ищу";
+$MESS["BITRONIC2_SEARCH_ADD_TO_BASKET"] = "В корзину";
+$MESS["BITRONIC2_SEARCH_TO_DETAIL"] = "Подробнее";
+$MESS["BITRONIC2_CLEAR_PLACEHOLDER"] = "Очистить поиск";
+$MESS["BITRONIC2_PRODUCT_IN_CART"] = "Уже в корзине";
+$MESS["BITRONIC2_EVERYWHERE"] = "Везде";
+
+$MESS["BITRONIC2_EXAMPLE"] = "Я ищу, например, ";
+?>

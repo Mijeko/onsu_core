@@ -1,0 +1,32 @@
+.header-contacts{
+	.free-call-text{
+		color: #383838;
+	}
+	background: #fff;
+	.contacts-content{
+		border-color: transparent;
+	}
+	.contacts-content:hover{
+		border-color: $main-color-dark;
+		box-shadow: 0px 2px 5px fade-out(#743900, 0.24);
+	}
+	a{
+		@include set-colors(false, $link-base-color, $link-hover-color,
+									$link-clicked-color);
+	}
+
+	
+	@media (max-width: 767px){
+		&>i{
+			background: #e7e7e7;
+			&.toggled{
+				background: $main-color-soft;
+				color: $main-normal-textcolor;
+			}
+		}
+		.contacts-content{
+			@include silver-static;
+		}
+
+	}
+}/* .contacts */

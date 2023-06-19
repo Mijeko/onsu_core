@@ -1,0 +1,208 @@
+.form-order{
+	h3{
+		font-size: 18px;
+		padding-bottom: 10px;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid;
+		color: #2b3946;
+		border-bottom-color: #c8c2cb;
+	}
+	
+	.radio-styled{
+		margin-right: 20px;
+		margin-bottom: 15px;
+	}
+	input[name="payer-type"]+label{
+		margin-right: 30px;
+		font-weight: bold;
+	}
+
+	input[name="payer-type"]+.radio-content, .delivery-info{
+		color: #5a555d;
+	}
+
+	label{
+		font-size: 14px;
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+	.delivery-info{
+		.text{
+			display: inline-block;
+			margin-bottom: 5px;
+			margin-right: 10px;
+		}
+		@media (max-width: 991px){
+			.jq-selectbox{
+				margin-top: 0;
+			}
+		}
+	}/* .selector */
+	
+	.buyer-info-toggle{
+		display: inline-block;
+		vertical-align: bottom;
+		margin-left: 10px;
+		width: 20px;
+		height: 20px;
+		font-size: 16px;
+	}
+	.buyer-info{ 
+		display: none;
+		padding-left: 2px;
+		.textinput{
+			width: auto;
+			max-width: 290px;
+		}
+		.checkbox-styled{
+			margin-bottom: 5px;
+		}
+		textarea.textinput{ width: 100%;}
+		.buyer-info-section{
+			margin-bottom: 10px;
+			>.text{
+				margin-right: 10px;
+			}
+		}
+	}
+	
+	.pay-from-inner-wrap{
+		margin-top: -10px;
+		margin-bottom: 10px;
+	}
+	.delivery-type, .payment-system-type{
+		>label{
+			display: inline-block;
+			float: none;
+			vertical-align: top;
+			margin-right: -4px;
+		}
+		.radio-item{
+			display: block;
+			transition: .4s;
+			padding: 10px 15px;
+			margin-right: -15px;
+			margin-left: -15px;
+			border: 1px solid;
+			border-color: transparent;
+
+			&-header{
+				display: block;
+				font-size: 14px;
+				font-weight: bold;
+				margin-top: 15px;
+				margin-bottom: 10px;
+				color: #5a555d;
+			}
+			&-description{
+				display: block;
+				margin: 0;
+				font-size: 12px;
+				font-weight: normal;
+				color: #5a555d;
+			}
+			&:hover{
+				cursor: pointer;
+				border-color: #c8c2cb;
+				box-shadow: 0px 1px 4px fade-out(#000, 0.5);
+			}
+			label{ cursor: pointer;}
+			img{
+				pointer-events: none;
+				user-select: none;
+			}
+
+			@media (max-width: 767px){
+				margin-right: -10px;
+				margin-left: -10px;
+			}
+		}
+
+		input:checked+.radio-item{
+			box-shadow: 0px 1px 4px fade-out(#000, 0.5);
+		}	
+	}
+
+	.basket { border-top-color: transparent; }
+
+	.payment-system-type{
+		.radio-item-header{
+			text-align: center;
+
+			@media (max-width: 767px){
+				font-size: 12px;
+			}
+		}
+
+	}
+
+	input[type="radio"], input[type="checkbox"]{
+		display: none;
+	}
+	.radio-img{
+		display: block;
+		
+		width: 100%;
+		height: 109px;
+		line-height: 109px;
+		text-align: center;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+	}
+
+	.items-table{
+		.availability{
+			@media (max-width: 767px){
+				display: block;
+				width: 100%;
+				padding-right: 0;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.total-price, .total-weight{
+		font-size: 16px;
+		color: #000;
+		span{ font-size: 18px;}
+	}
+
+	.total-weight{margin-right: 30%;}
+
+	.make-order{
+		float: right;
+		height: 47px;
+		line-height: 47px;
+		
+		margin-top: 20px;
+		margin-bottom: 40px;
+		
+		padding: 0 40px;
+
+		font-size: 16px;
+		font-weight: bold;
+		border-radius: 4px;
+		&:before{
+			border-radius: 4px;
+		}
+		text-decoration: none;	
+	}
+
+	@media (max-width: 767px){
+		h3{
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		.make-order{
+			display: inline-block;
+			height: auto;
+			line-height: normal;
+			padding: 10px 20px;
+			text-align: center;
+		}
+	}
+}/* .form-order */

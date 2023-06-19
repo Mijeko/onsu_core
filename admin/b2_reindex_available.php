@@ -1,0 +1,1 @@
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/yenisite.core/admin/b2_reindex_available.php");?>

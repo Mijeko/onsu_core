@@ -1,0 +1,27 @@
+.catalog-hits {
+	&.hits-hidden { @include btn-silver; }
+	&.hits-shown { @include silver-static; }
+	&>.hits-item {
+		&:hover { background: white; }
+		&>.rating>.comments {
+			color: #1a1a1a;
+			&>.positive { color: #2b6c00; }
+			&>.negative { color: #ff0000; }
+		}
+	}
+}
+
+.show-not-in-stock-wrap .show-not-in-stock {
+	&>.text { @extend .link-black; }
+}
+
+.related-categories { @include silver-static; }
+
+.more-catalog-wrap .more-catalog {
+	.text { @extend .link-black; }
+	&>.btn-plus { @include main-normal; }
+	&:hover > .btn-plus { @include main-hovered; }
+	&:active > .btn-plus { @include main-clicked; }
+}
+
+.show-not-in-stock { @include set-colors('.text', #a9a9a9, darken(#a9a9a9, 20%)); }

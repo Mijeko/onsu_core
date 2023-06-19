@@ -1,0 +1,21 @@
+.special-blocks {
+	.combo-link, .combo-header {
+		@include set-colors(false, #000);
+		@include silver-normal;
+		box-shadow: $shadow-specialblocks-silver;
+		span.i-number { @include main-normal; }
+		a.i-number { @include btn-main; }
+		&:hover {
+			@include silver-hovered;
+			box-shadow: $shadow-specialblocks-silver;
+		}
+
+		&:active, &.active {
+			@include main-normal;
+			color: $main-normal-textcolor;
+			span.i-number { @include silver-normal; }
+			a.i-number { @include btn-silver; }
+			box-shadow: $shadow-specialblocks-main;
+		}
+	}
+}

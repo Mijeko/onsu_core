@@ -1,0 +1,19 @@
+.items-table .apply-coupon { @include btn-main; }
+.table-item {
+	&:hover { background: $table-hovered-bg; }
+
+	@media (max-width: 991px) {
+		button:hover {
+			>i { color: $main-color-dark; }
+		}
+	}
+
+	@media (max-width: 767px) {
+		.actions>button {
+			@include btn-silver;
+			&:hover, &:active {
+				>i { color: #000; }
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.aligns{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+	&.property-desc, &.setting-desc{
+		margin-right: 10px;
+		margin-top: 18px;
+	}
+
+	// &.to-right{
+	// 	position: absolute;
+	// 	top: 50%;
+
+	// 	left: 100%;
+	// 	margin-left: 20px;
+	// 	margin-bottom: auto;
+
+	// 	font-size: 14px;
+	// 	line-height: 20px;
+
+	// 	&.h{
+	// 		margin-top: -50px;
+	// 	}
+	// 	&.v{
+	// 		margin-top: 10px;
+	// 	}
+	// }
+}
+
+.statebox{
+	display: none;
+}
+
+.align-btn-label{
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+	overflow: hidden;
+
+	&:first-child{
+		border-radius: 6px 0 0 6px;
+	}
+	&:last-child{
+		border-radius: 0 6px 6px 0;
+	}
+}
+.align-btn{
+	display: block;
+	padding: 5px 10px;
+
+	&:hover{
+		cursor: pointer;
+	}
+
+	.statebox:checked + &{
+		&:hover{ cursor: default;}
+	}
+}
+
+.bs_anim-wrap, .bs_setting-target-wrap, .bs_background-wrap{
+	select, .ik_select{
+		width: 100% !important;
+	}
+}

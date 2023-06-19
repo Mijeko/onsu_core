@@ -1,0 +1,66 @@
+.tooltip{
+	font-size: 12px;
+	
+	.accessory &{
+		min-width: 140px;
+	}
+
+	.view-type &{
+		white-space: nowrap;
+	}
+	transition: opacity .3s .2s;
+
+	max-width: 200px;
+	display: inline-block;
+}
+
+.tooltip-inner{
+	color: #000;
+	border: 1px solid;
+}
+
+.tooltip-arrow{
+	display: none;
+}
+
+// tooltips for adding to order mustn't be shown on out of stock items
+.out-of-stock .add-to-order + .tooltip{
+	display: none !important;
+}
+
+
+.buy+.tooltip{
+	>.tooltip-arrow{
+		display: block;
+	}
+	>.tooltip-inner{
+		position: relative;
+		font-weight: normal;
+		text-align: left;
+		border: none;
+		padding: 5px 5px 10px 60px;
+
+		>i{
+			position: absolute;
+			top: 5px;
+			bottom: 0;
+			left: 10px;
+			&:before{
+				font-size: 36px;
+
+			}
+		}
+	}
+	&.top>.tooltip-arrow{
+		border-top-color: fade-out(#000, 0.1);
+	}
+	&.left>.tooltip-arrow{
+		border-left-color: fade-out(#000, 0.1);
+	}
+	&.right>.tooltip-arrow{
+		border-right-color: fade-out(#000, 0.1);
+	}
+	&.bottom>.tooltip-arrow{
+		border-bottom-color: fade-out(#000, 0.1);
+	}
+}

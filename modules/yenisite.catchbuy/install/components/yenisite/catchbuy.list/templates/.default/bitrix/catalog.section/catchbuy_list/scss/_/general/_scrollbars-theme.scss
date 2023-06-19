@@ -1,0 +1,50 @@
+.scroller__track_v{
+     background: #e6e6e6;
+}
+.scroller__bar_v{
+    background: $main-normal-bg;
+    box-shadow: $scroll-bar-v-shadow;
+    &:hover{
+        background: $main-hovered-bg;
+
+    }
+    &:active{
+        background: $main-clicked-bg;
+        outline: $scroll-bar-v-clicked-outline;
+    }
+}
+
+/*************** SCROLLBAR RAIL ***************/
+.scrollbar-rail.slider-content{
+    & > .scroll-element{
+        
+        .scroll-element_size{
+            background-color: #f0f0f0;
+            box-shadow: 0px 2px 3px fade-out(#000, 0.77);
+            &:before{
+                background: #c0c0c0;
+                box-shadow: 0px 1px 0px #fff,
+                            inset 0px 1px 2px fade-out(#000, 0.53);
+            }
+        }
+        &.scroll-x .scroll-bar{
+            background: $silver-normal-bg;
+            border-color: #cbcdcc;
+            &:before{
+                color: #cbcdcc;
+            }
+        }
+
+        .scroll-element_outer:hover{
+            .scroll-bar{
+                background: $silver-hovered-bg;
+            }
+        } 
+        &.scroll-draggable>.scroll-element_outer>.scroll-bar{
+            box-shadow: 0px 0px 2px 2px #fdc240;
+        }
+
+
+    }/* & > .scroll-element */
+
+}/* .scrollbar-rail */

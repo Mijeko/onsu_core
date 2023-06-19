@@ -1,0 +1,360 @@
+.account-page{
+	h1{
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
+
+	table{
+		width: 100%;
+		th, td{
+			padding: 15px 15px;
+			// &:first-child{ padding-left: 15px;}
+			// &:last-child{ padding-right: 15px;}
+		}
+		thead>tr>th{ font-weight: normal;}
+		tbody>tr{ border-bottom: 1px dashed;}
+		>thead>tr{ background: #ededed;}
+	}
+
+}
+
+// .account-content {
+// 	@media (min-width: 768px) and (max-width: 991px) {
+// 		width: 100%;
+// 	}
+// }
+// .account-personal-panel {
+// 	.account-content {
+// 		@media (min-width: 768px) and (max-width: 991px) {width: 75%;}
+// 	}
+// }
+
+.btn-add-account-profile{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 7px 15px 10px;
+	&>.text{
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+
+.form_order-filter{
+	margin-bottom: 50px;
+	.main-content{
+		padding: 15px 25px 15px 20px;
+		text-align: justify;
+		line-height: 0;
+		margin-bottom: 10px;
+		&:after{
+			content: '';
+			display: inline-block;
+			width: 100%;
+			vertical-align: top;
+			height: 0;
+		}
+		label, button{
+			position: relative;
+			display: inline-block;
+			line-height: normal;
+			margin-bottom: 10px;
+		}
+		label>.text{
+			font-weight: normal;
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+		.textinput{ 
+			width: 120px;
+			font-weight: normal;
+		}
+		.order-dates{
+			display: inline-block;
+			margin-bottom: 10px;
+			&>.text{
+				font-weight: normal;
+				margin-right: 5px;
+				margin-left: 5px;
+			}
+			.textinput{
+				text-align: center;
+				padding-right: 0;
+				width: 150px;
+			}
+		}
+		.order-filter-submit{
+			padding: 10px 15px;
+
+			font-size: 16px;
+			font-weight: bold;
+			
+			border-radius: 3px;
+			&:active>.text{
+				position: relative;
+				top: 1px;
+			}
+		}
+	}/* .main-content */
+
+	footer{
+		.order-filter-reset{
+			float: right;
+		}
+
+		.order-filter-small{
+			@include transition(false, color);
+			margin-right: 20px;
+			padding: 4px 10px 5px;
+			border-radius: 3px;
+			&>.text{
+				border-bottom: 1px dotted;
+			}
+
+			cursor: pointer;
+			&:hover{ color: silver;}
+			&.active{
+				cursor: default;
+				&>.text{ border-color: transparent;}
+			}
+		}
+		.order-filter-reset{
+			margin-top: 4px;
+		}
+	}
+
+	@media (max-width: 767px){
+		margin-bottom: 20px;
+		.main-content{
+			padding: 10px 5px;
+			text-align: left;
+			line-height: normal;
+			&:after{
+				display: none;
+			}
+			.order-code{
+				.textinput{
+					margin-left: 59px;
+				}
+			}
+			.textinput{
+				width: 128px !important;
+				font-size: 13px;
+				padding-left: 10px;
+			}
+			.order-dates{
+				
+				>.text:first-child{
+					display: block;
+					margin-bottom: 5px;
+				}
+			}
+
+			.order-filter-submit{
+				margin-top: 10px;
+			}
+		}
+		
+		footer{
+			position: relative;
+		}
+		.order-filter-reset{
+			position: absolute;
+			top: -50px;
+			right: 7px;
+		}
+	}
+}/* .form_order-filter */
+
+.table_order-history{
+	thead{ font-size: 12px;}
+	tbody{ font-size: 12px;}
+	
+	th.order-code{ white-space: nowrap;}
+	.order-content{ width: 100%;}
+
+	.order-sum, .order-status{ text-align: center;}
+	
+	.order-code>.link{
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.order-date{
+		margin-top: 5px;
+		font-size: 11px;
+		color: #797979;
+		.date{
+			white-space: nowrap;
+		}
+	}
+
+	.order-status{
+		.when-payed{ color: #366e00;}
+	}
+	
+	td.order-sum{
+		white-space: nowrap;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.order-contents{
+
+	}
+	.order-content-product + .order-content-product{
+		margin-top: 5px;
+	}
+	.order-payment-n-delivery-types{
+		.payment, .delivery{
+			.value{ white-space: nowrap;}
+		}
+		.delivery{ margin-top: 5px;}
+	}
+	.action{
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 5px;
+	}
+	@media (min-width: 992px){
+		.order-contents{
+			display: table-cell !important;
+		}
+		.switch-order-content{
+			display: none;
+		}
+	}
+	@media (max-width: 991px){
+		.switch-order-content{
+			white-space: nowrap;
+			display: block;
+			margin-bottom: 5px;
+			&:hover{
+				cursor: pointer;
+				transition: color .4s;
+				color: gray;
+			}
+			&>.text{
+				border-bottom: 1px dotted;
+			}
+			&:before{
+				content: '';
+				display: inline-block;
+				margin-right: 2px;
+				vertical-align: middle;
+				border: 4px solid;
+				border-left-color: transparent;
+				border-right-color: transparent;
+				border-bottom-width: 0;
+	
+			}
+		}
+		thead{
+			display: none;
+		}
+		tr{
+			display: block;
+			@include clearfix;
+			position: relative;
+
+			&:first-child{
+				border-top: 1px dashed;
+			}
+
+			&.shown{
+				.order-actions{
+					padding-top: 5px;
+					width: 50%;
+				}
+				.switch-order-content:before{
+					border-top-width: 0px;
+					border-bottom-width: 4px;
+				}
+				.order-content, .order-payment-n-delivery-types{
+					display: block !important;
+				}
+			}
+		}
+		
+		td{
+			display: block;
+			padding: 5px !important;
+		}
+		.order-content, .order-payment-n-delivery-types{
+			display: none;
+		}
+		.order-code, .order-sum, .order-status, .order-payment-n-delivery-types{
+			float: left;
+		}
+		.order-code, .order-sum, .order-status{
+			width: 100 / 3 * 1%;
+		}
+		.order-code{
+			position: relative;
+		}
+		.order-status{
+			text-align: right;
+		}
+		.order-payment-n-delivery-types{
+			width: 50%;
+		}
+		.order-actions{
+			float: right;
+			text-align: right;
+		}
+		.order-content{
+			clear: both;
+		}
+	}
+}/* .table_order-history */
+.profile-actions{
+	text-align: center;
+}
+.profile-action{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+
+	width: 27px;
+	height: 27px;
+	line-height: 25px;
+
+	cursor: pointer;
+	&:active{
+		top: 1px;
+	}
+	&.edit{
+		margin-right: 10px;
+	}
+	&.edit:before{
+		font-size: 17px;
+	}
+	&.delete:before{
+		position: relative;
+		left: -1px;
+	}
+}
+
+.table_account-profiles{
+	.profile-actions{
+		white-space: nowrap;
+	}
+	@media (max-width: 991px){
+		td, th{
+			padding: 10px !important;
+		}
+	}
+	@media (max-width: 767px){
+		td, th{
+			padding: 5px !important;
+		}
+		font-size: 12px;
+		.profile-action.edit{
+			margin-right: 0;
+			margin-bottom: 5px;
+		}
+		.profile-actions{
+			white-space: normal;
+			width: 1px;
+			padding: 5px 0 !important;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+<?
+$MESS["BITRONIC2_AUTH_REGISTER"] = "Регистрация";
+$MESS["BITRONIC2_REGISTER_CAPTCHA_TITLE"] = "Защита от автоматической регистрации";
+$MESS["BITRONIC2_REGISTER_CAPTCHA_PROMT"] = "Код с картинки";
+$MESS["BITRONIC2_AUTH_REQ"] = "Поля, отмеченные звездочкой, обязательны для заполнения";
+$MESS["BITRONIC2_USER_DONT_KNOW"] = "(неизвестно)";
+$MESS["BITRONIC2_USER_MALE"] = "Мужской";
+$MESS["BITRONIC2_USER_FEMALE"] = "Женский";
+$MESS["BITRONIC2_REGISTER_FIELD_LOGIN"] = "Логин (мин. 3 символа)";
+$MESS["BITRONIC2_REGISTER_FIELD_EMAIL"] = "Адрес e-mail";
+$MESS["BITRONIC2_REGISTER_FIELD_PASSWORD"] = "Пароль";
+$MESS["BITRONIC2_REGISTER_FIELD_CONFIRM_PASSWORD"] = "Подтверждение пароля";
+$MESS["BITRONIC2_REGISTER_FIELD_TITLE"] = "Обращение";
+$MESS["BITRONIC2_REGISTER_FIELD_NAME"] = "Имя";
+$MESS["BITRONIC2_REGISTER_FIELD_SECOND_NAME"] = "Отчество";
+$MESS["BITRONIC2_REGISTER_FIELD_LAST_NAME"] = "Фамилия";
+$MESS["BITRONIC2_REGISTER_FIELD_AUTO_TIME_ZONE"] = "Часовой пояс";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_PROFESSION"] = "Профессия";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_WWW"] = "WWW-страница";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_ICQ"] = "ICQ";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_GENDER"] = "Пол";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_BIRTHDAY"] = "Дата рождения";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_PHOTO"] = "Фотография";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_PHONE"] = "Телефон";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_FAX"] = "Факс";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_MOBILE"] = "Мобильный";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_PAGER"] = "Пейджер";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_STREET"] = "Улица, дом";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_MAILBOX"] = "Почтовый ящик";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_CITY"] = "Город";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_STATE"] = "Область / край";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_ZIP"] = "Почтовый индекс";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_COUNTRY"] = "Страна";
+$MESS["BITRONIC2_REGISTER_FIELD_PERSONAL_NOTES"] = "Дополнительные заметки";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_COMPANY"] = "Наименование компании";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_DEPARTMENT"] = "Департамент / Отдел";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_POSITION"] = "Должность";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_WWW"] = "WWW-страница (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_PHONE"] = "Телефон (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_FAX"] = "Факс (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_PAGER"] = "Пейджер (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_STREET"] = "Улица, дом (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_MAILBOX"] = "Почтовый ящик (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_CITY"] = "Город (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_STATE"] = "Область / край (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_ZIP"] = "Почтовый индекс (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_COUNTRY"] = "Страна (работа)";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_PROFILE"] = "Направления деятельности";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_LOGO"] = "Логотип компании";
+$MESS["BITRONIC2_REGISTER_FIELD_WORK_NOTES"] = "Дополнительные заметки (работа)";
+$MESS["BITRONIC2_REGISTER_EMAIL_WILL_BE_SENT"] = "На указанный в форме e-mail придет запрос на подтверждение регистрации.";
+$MESS["BITRONIC2_MAIN_REGISTER_AUTH"] = "Вы зарегистрированы на сервере и успешно авторизованы.";
+$MESS["BITRONIC2_main_profile_time_zones_auto"] = "Автоматически определять часовой пояс:";
+$MESS["BITRONIC2_main_profile_time_zones_auto_def"] = "(по умолчанию)";
+$MESS["BITRONIC2_main_profile_time_zones_auto_yes"] = "Да, определить по браузеру";
+$MESS["BITRONIC2_main_profile_time_zones_auto_no"] = "Нет, выбрать из списка";
+$MESS["BITRONIC2_main_profile_time_zones_zones"] = "Часовой пояс:";
+$MESS["BITRONIC2_AUTH_SECURE_NOTE"] = "Перед отправкой формы пароль будет зашифрован в браузере. Это позволит избежать передачи пароля в открытом виде.";
+$MESS["BITRONIC2_AUTH_NONSECURE_NOTE"] = "Пароль будет отправлен в открытом виде. Включите JavaScript в браузере, чтобы зашифровать пароль перед отправкой.";
+
+$MESS["BITRONIC2_AUTH_EMAIL_WILL_BE_SENT"] = "На указанный в форме e-mail придет запрос на подтверждение регистрации.";
+$MESS["BITRONIC2_AUTH_EMAIL_SENT"] = "На указанный в форме e-mail было выслано письмо с информацией о подтверждении регистрации.";
+
+
+$MESS["BITRONIC2_REGISTER_IN_OUR_SHOP"] = " в нашем магазине";
+$MESS["BITRONIC2_REGISTER_OR"] = "или ";
+$MESS["BITRONIC2_REGISTER_ENTER"] = "вход";
+$MESS["BITRONIC2_REGISTER_GENERATE_PASS_AUTO"] = "Генерировать логин/пароль";
+$MESS["BITRONIC2_REGISTER_GENERATE_PASS_MANUAL"] = "Задать логин/пароль вручную";
+$MESS["BITRONIC2_REGISTER_I_ACCEPT"] = "Я принимаю";
+$MESS["BITRONIC2_REGISTER_SHOP_RULES"] = "Правила магазина";
+$MESS["BITRONIC2_AUTH_FORM_ALERT"] = "Пожалуйста, примите правила магазина";
+$MESS["BITRONIC2_SUBSCRIBE_ACCEPT"] = "Я хочу получать информационную рассылку";
+
+$MESS["BITRONIC2_REGISTER_FIELD_HELPER_LOGIN"] = "Введите логин";
+$MESS["BITRONIC2_REGISTER_FIELD_HELPER_PASSWORD"] = "Введите пароль";
+$MESS["BITRONIC2_REGISTER_FIELD_HELPER_CONFIRM_PASSWORD"] = "Повторите пароль";
+$MESS["BITRONIC2_REGISTER_FIELD_HELPER_EMAIL"] = "Введите e-mail.<br>Используется для входа в личный кабинет";
+$MESS["BITRONIC2_REGISTER_FIELD_HELPER_NAME"] = "Введите имя";
+$MESS["BITRONIC2_REGISTER_FIELD_HELPER_LAST_NAME"] = "Введите фамилию";
+$MESS["BITRONIC2_REGISTER_FIELD_HELPER_CAPTCHA"] = "Введите код с картинки";
+
+$MESS["BITRONIC2_REGISTER_FIELD_EMAIL_NOTICE"] = 'На этот адрес будет приходить информация о ваших заказах, а также скидках на будущие покупки. Все данные наших клиентов надёжно защищены.';
+?>

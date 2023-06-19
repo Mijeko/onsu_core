@@ -1,0 +1,89 @@
+.modal_quick-view.modal-dialog{
+	width: 920px;
+	padding: 30px 15px;
+	background: #fff;
+	h2{
+		margin-top: 0;
+		font-size: 28px;
+	}
+
+	.info.price-update-date{
+		display: none;
+	}
+	
+	.buy-block-origin{
+		position: static;
+		margin-bottom: 15px;
+	}
+	.product-main{
+		padding-right: 15px;
+	}
+	.product-photos{
+		float: left;
+		padding-right: 100px;
+		padding-top: 0;
+		width: 500px;
+
+		.product-photo:hover{cursor: default;}
+	}
+	.buy-block-origin{
+		width: 370px;
+		float: right;
+		margin-right: 10px;
+	}
+	.buy-block-content>.price-wrap>.price-actions{
+		display: none;
+	}
+	
+	.go2detailed{
+		position: absolute;
+		top: 102%;
+		left: 0;
+	}
+
+	.arrow{
+		transition: background .3s, color .3s;
+		position: absolute;
+		top: 250px;
+
+		background: fade-out(#fff, 0.8);
+		border: 1px solid #bcbcbc;
+		width: 40px;
+		height: 100px;
+
+		text-align: center;
+		line-height: 100px;
+
+		&.prev{
+			right: 100%;
+			margin-right: 10px;
+		}
+		&.next{
+			left: 100%;
+			margin-left: 10px;
+		}
+
+		&:hover{
+			background: fade-out(#fff, 0.7);
+		}
+		&:active{
+			transition: none;
+			background: fade-out(#fff, 0.6);
+		}
+	}
+
+	@media (max-width: 991px){
+		width: 760px;
+		.product-photos{
+			padding-right: 0;
+			width: 400px;
+		}
+		.buy-block-origin{
+			width: 320px;
+			margin-right: 0;
+		}
+		.go2detailed{
+			right: 10px;
+		}
+	}
+}

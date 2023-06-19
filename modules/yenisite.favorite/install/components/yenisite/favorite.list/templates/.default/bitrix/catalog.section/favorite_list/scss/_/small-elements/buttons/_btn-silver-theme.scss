@@ -1,0 +1,67 @@
+@mixin silver-static{
+	color: 		$silver-static-textcolor;
+	background: $silver-static-bg;
+	box-shadow: $silver-static-shadow;
+	border: 	$silver-static-border;
+}
+@mixin silver-normal{
+	color: 		$silver-normal-textcolor;
+	text-shadow:$silver-normal-textshadow;
+	background: $silver-normal-bg;
+	box-shadow: $silver-normal-shadow;
+	border: 	none;
+}
+@mixin silver-hovered{
+	color: 		$silver-hovered-textcolor;
+	text-shadow:$silver-hovered-textshadow;
+	background: $silver-hovered-bg;
+	box-shadow: $silver-hovered-shadow;
+	border: 	none;
+}
+@mixin silver-clicked{
+	color: 		$silver-clicked-textcolor;
+	text-shadow:$silver-clicked-textshadow;
+	background: $silver-clicked-bg;
+	box-shadow: $silver-clicked-shadow;
+	border: 	none;
+}
+@mixin silver-disabled{
+	color: 		$silver-disabled-textcolor;
+	text-shadow:$silver-disabled-textshadow;
+	background: $silver-disabled-bg;
+	box-shadow: $silver-disabled-shadow;
+	border: 	1px solid $silver-disabled-bordercolor;
+}
+// classes below should be used in cases where some element
+// is not a button (must not react to hover and clicks),
+// but is colored like button in some state
+.silver-normal{
+	@include silver-normal;
+}
+
+.silver-hovered{
+	@include silver-hovered;
+}
+
+.silver-clicked{
+	@include silver-clicked;
+}
+
+.silver-disabled{
+	@include silver-disabled;
+}
+
+.silver-static{
+	@include silver-static;
+}
+
+@mixin btn-silver{
+	@include silver-normal;
+	&:hover{ @include silver-hovered;}
+	&:active{ @include silver-clicked;}
+	&.disabled{ @include silver-disabled;}
+}
+// common class for silver buttons
+.btn-silver{
+	@include btn-silver;
+}

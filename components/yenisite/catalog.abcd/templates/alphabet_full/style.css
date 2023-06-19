@@ -1,0 +1,6 @@
+div.alphabetdiv { overflow:hidden; background:#007ACF; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; float:left; clear:both; }
+ul.alphabet { list-style:none; clear:both; float:left; margin:0; padding:0;}
+ul.alphabet li { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px;  float:left; list-style:none; padding:0;  }
+ul.alphabet li a { color: #FFF; padding:4px; }
+ul.alphabet li b { color: #FFDAB9; padding:4px; }
+ul.alphabet li span { color: #A8B6D4; padding:4px; }

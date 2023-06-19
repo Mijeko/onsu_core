@@ -1,0 +1,19 @@
+.slider-controls-wrap {
+	.dots {
+		.dot {
+			background: $hurry-slidercontrols-bg;
+			box-shadow: $hurry-slidercontrols-shadow;
+
+			&:before {
+				background: $hurry-slidercontrols-dot-bg;
+				box-shadow: $hurry-slidercontrols-dot-shadow;
+			}
+
+			&.active {
+				background: $hurry-slidercontrols-active-bg;
+				box-shadow: $hurry-slidercontrols-active-shadow;
+				&:before { background: $hurry-slidercontrols-active-dot-bg; }
+			}
+		}
+	}
+}

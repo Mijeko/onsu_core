@@ -1,0 +1,27 @@
+span.quantity-counter {
+	display: inline-block;
+}
+
+tr.out-of-stock td.actions .btn-to-waitlist {
+	visibility: hidden;
+}
+
+a.coupon-link,
+div.coupon-outer-wrap {
+	float: left;
+	clear: left;
+}
+
+a.coupon-link + div.coupon-outer-wrap {
+	display: none;
+}
+
+div.coupon-help {
+	float: left;
+	clear: left;
+	margin-top: 30px;
+}
+
+div.basket-footer-info {
+	display: inline-block;
+}

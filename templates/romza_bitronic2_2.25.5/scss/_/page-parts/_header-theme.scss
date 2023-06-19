@@ -1,0 +1,5 @@
+.page-header{
+	[data-catalog-placement="side"] &, &[data-header-version="v3"]{
+		box-shadow: $silver-static-shadow;
+	}
+}

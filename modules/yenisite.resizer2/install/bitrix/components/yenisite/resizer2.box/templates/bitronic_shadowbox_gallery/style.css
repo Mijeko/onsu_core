@@ -1,0 +1,23 @@
+a.yenisite-zoom {
+	border: none !important;
+}
+
+#gallery {
+list-style-type:none;
+float: left;
+width: 100%;
+}
+#gallery li {
+list-style-type:none;         
+float: left;
+padding: 5px;
+}
+#gallery a img {
+border: 1px solid #A0BF9D;
+}
+#gallery a:hover img {
+border: 1px solid #000;
+}
+
+
+div #sb-nav a {border:none !important;}

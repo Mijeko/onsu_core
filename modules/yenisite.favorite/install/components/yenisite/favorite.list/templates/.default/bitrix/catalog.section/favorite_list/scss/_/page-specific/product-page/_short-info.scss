@@ -1,0 +1,211 @@
+.rating-w-comments{
+	&>.rating-stars{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+		margin-right: 7px;
+		&>i{
+			vertical-align: top;
+			width: 16px;
+			&:before{
+				top: -3px;
+			}
+		}
+	}
+	&>.comments{
+		font-size: 12px;
+	}
+} 
+
+.short-info{
+	text-align: justify;
+	margin-bottom: -10px;
+	&.under-image{
+		margin: 65px 150px 0 0;
+		
+		strong{
+			border-bottom: 1px dotted;
+			&:hover{
+				cursor: help;
+			}
+		}
+
+		&>.info{
+			position: relative;
+			padding-left: 25px;
+			&>i{
+				position: absolute;
+				left: 0;
+				top: -10px;
+			}
+		}
+
+		.list-item &{
+			text-align: left;
+			&:after{display: none;}
+			margin: 0;
+			&>.info{
+				display: block;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	&:after{
+		content: '';
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		height: 0;
+		line-height: 0;
+	}
+
+	&>.info, &>.action{
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 10px;
+
+		font-size: em(12px);
+
+		padding-bottom: 1px; // fighting Chrome bug with not displaying border bottom
+	}
+
+	&>.info.art{
+		margin-top: -3px; // compensating padding-top
+	}
+
+	&>.info{
+		&.credit{
+			&>i{
+				top: -5px;
+				left: 0px;
+			}
+		}
+
+		&.delivery{
+			&>i{
+				top: -7px;
+				left: 0;
+				&:before{
+					font-size: 19px;
+				}
+			}
+		}
+
+		&.warranty{
+			&>i{
+				top: 0;
+				left: 1px;
+				&:before{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	&>.action{
+		&>i{
+			position: absolute;
+		}
+	}
+
+
+	.popup_detailed{ // .um_popup-shown
+		position: absolute;
+		z-index: 4;
+		
+		display: none;
+
+		width: 250px;
+
+		border: 1px solid;
+		border-radius: 3px;
+		padding: 10px 15px;
+		left: 0;
+		top: 100%;
+		margin-top: 7px;
+
+		font-size: em(12px, 12px);
+		text-align: left;
+		&:before, &:after{
+			content: '';
+			position: absolute;
+
+			width: 0;
+			height: 0;
+
+			border: 7px solid transparent;
+
+			top: -14px;
+
+			left: 50%;
+			margin-left: -7px;
+		}
+		&:after{
+			margin-top: 1px;
+		}
+
+		.detailed-header{
+			position: relative;
+			&.iconed{ 
+				padding-left: 40px;
+			}
+			
+			margin-bottom: 10px;
+			font-weight: bold;
+			&>i{
+				position: absolute;
+				font-weight: normal;
+			}
+
+			&.self{
+				 margin-top: 20px;
+			}
+		}
+
+		.icon-courier{
+			left: 0px;
+			top: -15px;
+			&:before{
+				font-size: 35px;
+			}
+		}
+		.icon-self{
+			left: 5px;
+			top: -15px;
+			&:before{
+				font-size: 30px;
+			}
+		}
+	}/* .popup_detailed */
+	
+	@media (min-width: 992px){
+		&.under-image{
+			margin-right: 150px;
+			margin-top: 65px;
+		}
+	}
+	@media (max-width: 991px){
+		.info.rating{
+			display: none;
+		}
+		&.under-image{
+			margin-right: 0px;
+			margin-top: 0px;
+		}
+	}
+
+	@media (max-width: 767px){
+		
+		&.under-image{
+			&:after{
+				display: none;
+			}
+			&>.info{
+				margin-right: 10px;
+				margin-bottom: 15px;
+
+			}
+		}
+	}
+
+}/* /.short-info */

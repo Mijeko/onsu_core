@@ -1,0 +1,5 @@
+.comment-wrap {
+	footer {
+		.link { @include set-colors(false, $link-base-color, $link-hover-color, $link-clicked-color, $link-visited-color); }
+	}
+}

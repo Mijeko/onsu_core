@@ -1,0 +1,4 @@
+.be-first {
+	color: $main-color-dark;
+	@include set-border-colors(false, transparent, initial, initial, transparent);
+}

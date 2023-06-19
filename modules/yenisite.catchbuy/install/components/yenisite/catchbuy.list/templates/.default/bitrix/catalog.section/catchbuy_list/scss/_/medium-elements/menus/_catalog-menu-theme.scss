@@ -1,0 +1,242 @@
+.catalog-menu.mainmenu{
+	@media (min-width: 768px){
+		.v1 &, .v4 &{
+			@include silver-static;
+			.catalog-menu-lvl0.additional{ @include silver-static;}
+			.category-name{
+				color: #000;
+			}
+			.category-items-number{
+				@include main-normal;
+			}
+			.catalog-menu-lvl0-item:hover > a{
+				@include main-normal;
+				.category-name{
+					color: $main-normal-textcolor;
+					text-shadow: $main-normal-textshadow;
+				}
+				
+				.category-items-number{
+					@include silver-normal;
+				}
+			}
+			.btn-catalog{
+				background: fade-out(#d2d2d2, 0.69);
+				@include set-colors(false, #000);
+				&:hover{
+					background: darken(fade-out(#d2d2d2, 0.69), 10%);
+				}
+				&:active{
+					background: darken(fade-out(#d2d2d2, 0.69), 20%);
+				}
+			}
+		}
+		.v2 &{
+			@include main-normal;
+			.category-name{
+				color: $main-normal-textcolor;
+				text-shadow: $main-normal-textshadow;
+			}
+			.category-items-number{
+				@include silver-normal;
+			}
+			.catalog-menu-lvl0-item:hover > a,
+			.catalog-menu-lvl0.additional>.catalog-menu-lvl0-item:hover>a{
+				@include silver-normal;
+				.category-name{
+					color: #000;
+					text-shadow: none;
+				}
+				
+				.category-items-number{
+					@include main-normal;
+				}
+			}
+			.btn-catalog{
+				color: #000;
+				@include btn-silver;
+				text-shadow: none;
+			}
+			.submenu-wrap{
+				text-shadow: none;
+			}
+		}
+
+		.v1 &, .v2 &{
+			.catalog-menu-lvl0.additional{ 
+				@include silver-static;
+
+				.category-name{
+					color: #000;
+					text-shadow: none;
+				}
+				.category-items-number{
+					@include main-normal;
+				}
+				.catalog-menu-lvl0-item>a{
+					border-bottom-color: #e3e3e3;
+					&:hover{
+						border-bottom-color: transparent;
+					}
+				}
+				.catalog-menu-lvl0-item:hover > a{
+					@include main-normal;
+					.category-name{
+						color: $main-normal-textcolor;
+						text-shadow: $main-normal-textshadow;
+					}
+					
+					.category-items-number{
+						@include silver-normal;
+					}
+				}
+			}
+			
+		}
+		.catalog-at-side &{
+			.category-name{
+				color: #000;
+			}
+			.category-items-number{
+				@include main-normal;
+			}
+			.catalog-menu-lvl0-item{
+				>a{ border-bottom-color: #e3e3e3;}
+				&:hover>a{
+					border-bottom-color: transparent;
+					@include main-normal;
+					.category-name{
+						color: $main-normal-textcolor;
+						text-shadow: $main-normal-textshadow;
+					}
+					
+					.category-items-number{
+						@include silver-normal;
+					}
+				}
+			}
+
+			.btn-catalog{
+				@include btn-main;
+				.bullets{
+					color: $main-normal-textcolor;
+				}
+			}
+		}
+
+		.catalog-at-side.full &{
+			>.container, >.container-fluid{
+				@include silver-static;
+			}
+		}
+		.catalog-at-side.minified &{
+			.catalog-menu-lvl0{
+				@include silver-static;
+			}
+		}
+	}/* @media (min-width: 768px) */
+
+	
+	@media (max-width: 767px){
+		.btn-catalog{
+			@include btn-main;
+		}
+		.catalog-menu-lvl0{
+			@include silver-static;
+			
+		}
+		.category-name{
+			color: #000;
+			text-shadow: none;
+		}
+		.category-items-number{
+			@include silver-normal;
+		}
+		.catalog-menu-lvl0-item > a{
+
+		}
+	}
+}
+
+.catalog-menu-footer{
+	&>ul>li{
+		&:before{
+			border-color: $ul-circles-color;
+		}
+	}
+}
+
+.submenu-wrap{
+	@media (min-width: 768px){
+		@include silver-static;
+	}
+	
+	.catalog-menu-lvl0.additional &, .catalog-at-side &{
+		&:before, &:after{
+			background: $main-gradient-to-top;
+			box-shadow: $submenu-wrap-borders-shadow;
+		}
+		border-top-width: 0;
+		border-bottom-width: 0;
+	}
+
+	@media (max-width: 767px){
+		&:before, &:after{
+			background: $main-gradient-to-top;
+			box-shadow: $submenu-wrap-borders-shadow;
+		}
+	}
+}
+
+.catalog-menu-lvl1{
+	.menu-lvl1-header{
+		text-shadow: none;
+		.i-number{
+			background: $main-color-soft;
+			color: $main-normal-textcolor;
+		}
+		.menu-lvl1-link{
+			@include set-colors('.text', #000);
+			@include set-border-colors('.text', #000, transparent, transparent, #000);
+			&.active{
+				@include set-colors('.text', $main-color-dark);
+				.text{
+					border-color: transparent;
+				}
+			}
+		}
+		
+	}
+
+	.link{
+		@include set-colors('.text', $link-base-color, #000, #000, $link-visited-color);
+		@include set-border-colors('.text', $link-base-color, transparent, transparent, $link-visited-color);
+		&:hover, &:active, &.active{
+			color: $main-normal-textcolor;
+			.text{ 
+				color: $main-normal-textcolor;
+				border-color: transparent;
+			}
+			background: $main-color-soft;
+		}
+	}
+
+	@media (max-width: 767px){
+		.menu-lvl1-header{
+			@include btn-silver;
+			&:focus, &:active{
+				@include silver-clicked;
+			}
+
+			.menu-lvl1-link{
+				@include set-border-colors('.text', transparent);
+			}
+		}
+
+	}
+}
+
+.show-hide-hits{
+	@include set-colors(false, #000, lighten(#000, 40%));
+	@include set-border-colors('.text', #000, lighten(#000, 40%));
+}

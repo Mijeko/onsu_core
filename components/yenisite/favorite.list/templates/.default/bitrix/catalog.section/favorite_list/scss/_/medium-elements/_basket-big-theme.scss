@@ -1,0 +1,32 @@
+.basket-big-page{
+	.um_tabs>a{
+		@extend .silver-normal;
+		&:hover{
+			@extend .silver-hovered;
+		}
+
+		&:active{
+			@extend .silver-clicked;
+		}
+		&.active{
+			@extend .main-clicked;
+		}
+	}
+
+	footer{
+		.btn-return{
+			@include set-colors('.text', #6f6f6f);
+		}
+		.btn-main{
+			@include set-colors('.text', #000);
+		}
+
+		.helper{
+			color: #666666;
+		}
+
+		.shopping-bg{
+			color: #eaeaea;
+		}
+	}
+}
